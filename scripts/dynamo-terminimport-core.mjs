@@ -1,0 +1,225 @@
+import fs from "node:fs";
+
+export function readJson(path) {
+  return JSON.parse(fs.readFileSync(path, "utf8"));
+}
+
+export function writeJson(path, data) {
+  fs.writeFileSync(path, JSON.stringify(data, null, 2) + "\n", "utf8");
+}
+
+export function normalize(value) {
+  return String(value ?? "")
+    .trim()
+    .toLocaleLowerCase("de")
+    .replace(/ß/g, "ss")
+    .replace(/[‐‑‒–—]/g, "-")
+    .replace(/[^a-z0-9äöü -]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function seasonMatches(data) {
+  return (Array.isArray(data?.saisons) ? data.saisons : [])
+    .flatMap(s => Array.isArray(s?.spiele) ? s.spiele : [])
+    .filter(m => m?.wettbewerb === "2-bundesliga" && m?.saison === "2026/2027");
+}
+
+export function dynamoMatches(data) {
+  return seasonMatches(data).filter(m =>
+    m?.heimTeamId === "dynamo-dresden" || m?.auswaertsTeamId === "dynamo-dresden"
+  );
+}
+
+function teamArray(teamsData) {
+  return Array.isArray(teamsData) ? teamsData :
+    Array.isArray(teamsData?.teams) ? teamsData.teams : [];
+}
+
+export function buildAliasIndex(teamsData) {
+  const map = new Map();
+  for (const team of teamArray(teamsData)) {
+    if (!team?.id) continue;
+    const aliases = new Set([
+      team.id,
+      team.name,
+      team.kurzname,
+      ...(Array.isArray(team.apiAliase) ? team.apiAliase : [])
+    ].filter(Boolean));
+    for (const alias of aliases) {
+      const key = normalize(alias);
+      if (!key) continue;
+      const existing = map.get(key);
+      if (existing && existing !== team.id) {
+        throw new Error(`Mehrdeutiger Team-Alias '${alias}': ${existing} / ${team.id}`);
+      }
+      map.set(key, team.id);
+    }
+  }
+  return map;
+}
+
+export function teamIdFromApi(team, aliasIndex) {
+  const candidates = [
+    team?.teamName, team?.TeamName,
+    team?.shortName, team?.ShortName
+  ].filter(Boolean);
+  for (const candidate of candidates) {
+    const id = aliasIndex.get(normalize(candidate));
+    if (id) return id;
+  }
+  return null;
+}
+
+function matchday(apiMatch) {
+  return Number(apiMatch?.group?.groupOrderID ?? apiMatch?.group?.GroupOrderID ?? 0);
+}
+
+function fixtureKey(spieltag, homeId, awayId) {
+  return `${Number(spieltag)}|${homeId}|${awayId}`;
+}
+
+function parseLocalDateTime(apiMatch) {
+  const raw = String(apiMatch?.matchDateTime ?? apiMatch?.MatchDateTime ?? "").trim();
+  const m = raw.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}):(\d{2})/);
+  if (!m) return null;
+  const date = m[1];
+  const time = `${m[2]}:${m[3]}`;
+  if (time === "00:00") return null;
+  return { date, time };
+}
+
+function apiLastUpdateDate(apiMatch) {
+  const raw = String(apiMatch?.lastUpdateDateTime ?? apiMatch?.LastUpdateDateTime ?? "").trim();
+  const m = raw.match(/^(\d{4}-\d{2}-\d{2})/);
+  return m ? m[1] : null;
+}
+
+function dateInWindow(date, from, to) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(date || ""))) return false;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(from || ""))) return false;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(to || ""))) return false;
+  return date >= from && date <= to;
+}
+
+function displayDate(date) {
+  const [y,m,d] = date.split("-");
+  return `${d}.${m}.${y}`;
+}
+
+function isFreshEnough(apiDate, localSourceDate) {
+  if (!apiDate) return false;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(localSourceDate || ""))) return true;
+  return apiDate > localSourceDate;
+}
+
+export function validateAndPlan(data, teamsData, apiMatches) {
+  const local = dynamoMatches(data);
+  if (local.length !== 34) {
+    throw new Error(`Lokaler Dynamo-Saisonplan unvollständig: ${local.length}/34.`);
+  }
+  if (!Array.isArray(apiMatches)) throw new Error("OpenLigaDB-Antwort ist kein Array.");
+
+  const aliases = buildAliasIndex(teamsData);
+  const localIndex = new Map();
+  for (const m of local) {
+    const key = fixtureKey(m?.spieltagNummer, m?.heimTeamId, m?.auswaertsTeamId);
+    if (localIndex.has(key)) throw new Error(`Doppelter lokaler Dynamo-Schlüssel: ${key}`);
+    localIndex.set(key, m);
+  }
+
+  const apiDynamo = [];
+  const mappingErrors = [];
+  for (const apiMatch of apiMatches) {
+    const homeId = teamIdFromApi(apiMatch?.team1, aliases);
+    const awayId = teamIdFromApi(apiMatch?.team2, aliases);
+    if (homeId !== "dynamo-dresden" && awayId !== "dynamo-dresden") continue;
+    const st = matchday(apiMatch);
+    if (!st || !homeId || !awayId) {
+      mappingErrors.push({ matchID: apiMatch?.matchID ?? null, reason: "Team/Spieltag nicht auflösbar" });
+      continue;
+    }
+    apiDynamo.push({ apiMatch, st, homeId, awayId });
+  }
+
+  if (apiDynamo.length !== 34) {
+    throw new Error(`OpenLigaDB-Dynamo-Saisonplan unvollständig/unerwartet: ${apiDynamo.length}/34. Keine Änderung.`);
+  }
+
+  const matched = new Set();
+  const planned = [];
+  const skipped = [];
+
+  for (const item of apiDynamo) {
+    const key = fixtureKey(item.st, item.homeId, item.awayId);
+    const localMatch = localIndex.get(key);
+    if (!localMatch) {
+      mappingErrors.push({ spieltag: item.st, homeId: item.homeId, awayId: item.awayId, reason: "Keine lokale Paarung" });
+      continue;
+    }
+    if (matched.has(localMatch.id)) {
+      mappingErrors.push({ spieltag: item.st, localId: localMatch.id, reason: "Doppelte API-Zuordnung" });
+      continue;
+    }
+    matched.add(localMatch.id);
+
+    if (localMatch.terminBestaetigt === true || localMatch.status === "beendet") {
+      skipped.push({ localId: localMatch.id, reason: "lokal bereits bestätigt/beendet" });
+      continue;
+    }
+
+    const exact = parseLocalDateTime(item.apiMatch);
+    const sourceDate = apiLastUpdateDate(item.apiMatch);
+    if (!exact) {
+      skipped.push({ localId: localMatch.id, reason: "kein konkreter OpenLigaDB-Zeitpunkt" });
+      continue;
+    }
+    if (!dateInWindow(exact.date, localMatch.datumVon, localMatch.datumBis)) {
+      skipped.push({ localId: localMatch.id, reason: "OpenLigaDB-Datum außerhalb des lokalen Spieltagfensters" });
+      continue;
+    }
+    if (!isFreshEnough(sourceDate, localMatch.quelleStand)) {
+      skipped.push({ localId: localMatch.id, reason: "OpenLigaDB-Stand nicht neuer als lokaler Quellenstand" });
+      continue;
+    }
+
+    planned.push({
+      localId: localMatch.id,
+      datum: exact.date,
+      anstoss: exact.time,
+      quelleStand: sourceDate
+    });
+  }
+
+  if (mappingErrors.length || matched.size !== 34) {
+    throw new Error(`Dynamo-Paarungszuordnung unvollständig: API-Fehler ${mappingErrors.length}, gemappt ${matched.size}/34. Keine Änderung.`);
+  }
+
+  return { localCount: local.length, apiDynamoCount: apiDynamo.length, matched: matched.size, planned, skipped };
+}
+
+export function applyPlan(data, plan, updatedAt) {
+  const index = new Map(dynamoMatches(data).map(m => [m.id, m]));
+  let changed = 0;
+  for (const item of plan.planned) {
+    const m = index.get(item.localId);
+    if (!m) throw new Error(`Spiel ${item.localId} beim Anwenden nicht gefunden.`);
+    if (m.terminBestaetigt === true || m.status === "beendet") {
+      throw new Error(`Schutzverletzung: ${item.localId} ist inzwischen bestätigt/beendet.`);
+    }
+    m.datum = item.datum;
+    m.datumVon = item.datum;
+    m.datumBis = item.datum;
+    m.datumAnzeige = displayDate(item.datum);
+    m.anstoss = item.anstoss;
+    m.terminBestaetigt = true;
+    m.status = "terminiert";
+    m.quelleStand = item.quelleStand;
+    changed += 1;
+  }
+  if (changed > 0) {
+    data.datenVersion = Number(data.datenVersion || 0) + 1;
+    data.aktualisiert = updatedAt;
+  }
+  return changed;
+}
