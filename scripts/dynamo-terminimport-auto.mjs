@@ -44,12 +44,19 @@ const teams = readJson(TEAMS_PATH);
 const apiMatches = await loadApiMatches();
 const plan = validateAndPlan(data, teams, apiMatches);
 
+const skipGruende = Object.fromEntries(
+  [...new Set(plan.skipped.map(item => item.reason))]
+    .sort((a, b) => a.localeCompare(b, "de"))
+    .map(reason => [reason, plan.skipped.filter(item => item.reason === reason).length])
+);
+
 console.log(JSON.stringify({
   lokaleDynamoSpiele: plan.localCount,
   openLigaDbDynamoSpiele: plan.apiDynamoCount,
   eindeutigZugeordnet: plan.matched,
   neueExakteTermine: plan.planned,
-  uebersprungen: plan.skipped.length
+  uebersprungen: plan.skipped.length,
+  uebersprungenNachGrund: skipGruende
 }, null, 2));
 
 if (!plan.planned.length) {

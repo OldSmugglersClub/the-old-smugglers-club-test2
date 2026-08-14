@@ -107,12 +107,6 @@ function displayDate(date) {
   return `${d}.${m}.${y}`;
 }
 
-function isFreshEnough(apiDate, localSourceDate) {
-  if (!apiDate) return false;
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(localSourceDate || ""))) return true;
-  return apiDate > localSourceDate;
-}
-
 export function validateAndPlan(data, teamsData, apiMatches) {
   const local = dynamoMatches(data);
   if (local.length !== 34) {
@@ -178,8 +172,8 @@ export function validateAndPlan(data, teamsData, apiMatches) {
       skipped.push({ localId: localMatch.id, reason: "OpenLigaDB-Datum außerhalb des lokalen Spieltagfensters" });
       continue;
     }
-    if (!isFreshEnough(sourceDate, localMatch.quelleStand)) {
-      skipped.push({ localId: localMatch.id, reason: "OpenLigaDB-Stand nicht neuer als lokaler Quellenstand" });
+    if (!sourceDate) {
+      skipped.push({ localId: localMatch.id, reason: "kein OpenLigaDB-Quellenstand" });
       continue;
     }
 
