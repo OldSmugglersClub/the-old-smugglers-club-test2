@@ -1,0 +1,51 @@
+{
+  "bereich": "Smuggleraufträge",
+  "statusSchild": "Saisonplanung",
+  "titel": "Dynamo Dresden",
+  "beschreibung": "Ausgewählte Spiele von Dynamo Dresden werden als eigenständige Smuggleraufträge geführt, separat dokumentiert und ausgewertet.",
+  "karten": [
+    {
+      "titel": "Aufträge",
+      "text": "Nur ausdrücklich ausgewählte Dynamo-Spiele zählen als Smugglerauftrag."
+    },
+    {
+      "titel": "Wertung",
+      "text": "Jeder Auftrag wird mit Termin, Gegner, Tipp, Ergebnis und erreichten Punkten dokumentiert."
+    },
+    {
+      "titel": "Historie",
+      "text": "Abgeschlossene Aufträge bleiben dauerhaft als Saisonchronik sichtbar."
+    }
+  ],
+  "aktuellerStandTitel": "",
+  "aktuellerStand": "",
+  "bereiche": [
+    {
+      "typ": "liste",
+      "titel": "Regeln der Dynamo-Aufträge",
+      "anzeigen": true,
+      "eintraege": [
+        "Nur ausdrücklich angekündigte Dynamo-Spiele werden gewertet.",
+        "Der Auftrag wird vor dem Spiel mit Name, Termin und Begegnung veröffentlicht.",
+        "Nach dem Spiel werden Ergebnis, Punkte und Status in der Historie ergänzt."
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Zum Kicktipp",
+      "link": "https://www.kicktipp.de/the-old-smugglers-club/",
+      "neuesFenster": true,
+      "stil": "primaer",
+      "anzeigen": true
+    },
+    {
+      "text": "Zurück zu allen Wettbewerben",
+      "link": "./index.html#wettbewerbe",
+      "neuesFenster": false,
+      "stil": "sekundaer",
+      "anzeigen": true
+    }
+  ],
+  "fusszeile": "The Old Smugglers Club · Smuggleraufträge Dynamo Dresden"
+}

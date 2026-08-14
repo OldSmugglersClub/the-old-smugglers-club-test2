@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "datenVersion": 1,
+  "aktualisiert": "2026-07-31",
+  "saison": "2026/2027",
+  "hinweis": "Exportziel der zentralen Teamwertung. Die Datei wird von teamwertung.html lokal erzeugt.",
+  "berechnetAm": null,
+  "quelle": "punkte.json + teilnehmer.json",
+  "teams": [],
+  "mitglieder": []
+}

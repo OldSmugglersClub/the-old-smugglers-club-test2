@@ -1,0 +1,40 @@
+{
+  "bereich": "Wettbewerbszentrale",
+  "statusSchild": "Ab Ligaphase",
+  "titel": "Champions League",
+  "beschreibung": "Die Champions League wird ab der Ligaphase als eigener Wettbewerb der Tipprunde geführt. Alle vorgesehenen Wertungsspieltage werden zentral aus den Saison- und Spieldaten aufgebaut.",
+  "karten": [
+    {
+      "titel": "Ligaphase",
+      "text": "Alle acht Spieltage der Ligaphase sind in der Saisonfolge als eigene Kicktipp-Spieltage vorgesehen. Die konkreten Paarungen werden nach der offiziellen Auslosung ergänzt."
+    },
+    {
+      "titel": "K.-o.-Phase",
+      "text": "Danach folgen Zwischenrunde, Achtelfinale, Viertelfinale und Halbfinale jeweils mit Hin- und Rückspiel. Jede Runde bleibt ein eigener Wertungsabschnitt."
+    },
+    {
+      "titel": "Wertung",
+      "text": "Gewertet wird nach den Clubregeln: 2 Punkte für die Tendenz, 3 Punkte für die richtige Tordifferenz und 5 Punkte für das exakte Ergebnis."
+    }
+  ],
+  "aktuellerStandTitel": "",
+  "aktuellerStand": "",
+  "bereiche": [],
+  "buttons": [
+    {
+      "text": "Zum Kicktipp",
+      "link": "https://www.kicktipp.de/the-old-smugglers-club/",
+      "neuesFenster": true,
+      "stil": "primaer",
+      "anzeigen": true
+    },
+    {
+      "text": "Zurück zu allen Wettbewerben",
+      "link": "./index.html#wettbewerbe",
+      "neuesFenster": false,
+      "stil": "sekundaer",
+      "anzeigen": true
+    }
+  ],
+  "fusszeile": "The Old Smugglers Club · Champions League 2026/2027"
+}

@@ -1,0 +1,17 @@
+# Dateiliste Website 4.7.1-TEST9
+
+## Ersetzen
+- index.html
+- VERSION.txt
+- CHANGELOG.md
+
+## Neu
+- CHANGELOG_4.7.1-TEST9.md
+- README_4.7.1-TEST9.md
+- TESTPROTOKOLL_4.7.1-TEST9.md
+- GITHUB-DESKTOP_4.7.1-TEST9.md
+- SHA256-MANIFEST_4.7.1-TEST9.json
+- DATEILISTE_ERSETZEN_NEU_LOESCHEN_4.7.1-TEST9.md
+
+## Löschen
+- keine

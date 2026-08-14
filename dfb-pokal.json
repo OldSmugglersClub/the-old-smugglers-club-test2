@@ -1,0 +1,40 @@
+{
+  "bereich": "Wettbewerbszentrale",
+  "statusSchild": "Ab Achtelfinale",
+  "titel": "DFB-Pokal",
+  "beschreibung": "Der DFB-Pokal wird in unserer Tipprunde ab dem Achtelfinale als eigener Wettbewerb geführt. Alle vorgesehenen K.-o.-Runden werden nach Auslosung und Terminierung zentral ergänzt.",
+  "karten": [
+    {
+      "titel": "Start im Tippspiel",
+      "text": "Gewertet wird der DFB-Pokal ab dem Achtelfinale. Die 1. und 2. Hauptrunde gehören nicht zu unserem Tippspiel."
+    },
+    {
+      "titel": "K.-o.-Phase 2026/2027",
+      "text": "Achtelfinale: 1./2. Dezember 2026 · Viertelfinale: 2./3. und 9./10. Februar 2027 · Halbfinale: 20./21. April 2027 · Finale in Berlin: 29. Mai 2027."
+    },
+    {
+      "titel": "Wertung",
+      "text": "Gewertet wird nach den Clubregeln: 2 Punkte für die Tendenz, 3 Punkte für die richtige Tordifferenz und 5 Punkte für das exakte Ergebnis."
+    }
+  ],
+  "aktuellerStandTitel": "",
+  "aktuellerStand": "",
+  "bereiche": [],
+  "buttons": [
+    {
+      "text": "Zum Kicktipp",
+      "link": "https://www.kicktipp.de/the-old-smugglers-club/",
+      "neuesFenster": true,
+      "stil": "primaer",
+      "anzeigen": true
+    },
+    {
+      "text": "Zurück zu allen Wettbewerben",
+      "link": "./index.html#wettbewerbe",
+      "neuesFenster": false,
+      "stil": "sekundaer",
+      "anzeigen": true
+    }
+  ],
+  "fusszeile": "The Old Smugglers Club · DFB-Pokal 2026/2027"
+}

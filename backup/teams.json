@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.1",
+  "quelle": "Generiert aus spielbetrieb.json/stammdaten.vereine",
+  "teams": [
+    {
+      "id": "heidenheim",
+      "name": "1. FC Heidenheim 1846",
+      "kurzname": "1. FC Heidenheim",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/heidenheim.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "FCH"
+      ],
+      "apiAliase": [
+        "1. FC Heidenheim 1846",
+        "1. FC Heidenheim",
+        "heidenheim",
+        "FC Heidenheim",
+        "1 FC Heidenheim"
+      ],
+      "vereinsfarben": [
+        "#b51f2e",
+        "#143a74"
+      ]
+    },
+    {
+      "id": "kaiserslautern",
+      "name": "1. FC Kaiserslautern",
+      "kurzname": "1. FC Kaiserslautern",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/kaiserslautern.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "FCK"
+      ],
+      "apiAliase": [
+        "1. FC Kaiserslautern",
+        "kaiserslautern",
+        "FC Kaiserslautern",
+        "1 FC Kaiserslautern"
+      ],
+      "vereinsfarben": [
+        "#9b1526",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "koeln",
+      "name": "1. FC Köln",
+      "kurzname": "1. FC Köln",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/koeln.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "KOE"
+      ],
+      "apiAliase": [
+        "1. FC Köln",
+        "koeln",
+        "1 FC Koln",
+        "FC Koln",
+        "Cologne"
+      ],
+      "vereinsfarben": [
+        "#d71920",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "magdeburg",
+      "name": "1. FC Magdeburg",
+      "kurzname": "1. FC Magdeburg",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/magdeburg.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "1. FC Magdeburg",
+        "magdeburg"
+      ],
+      "vereinsfarben": [
+        "#1268b3",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "nuernberg",
+      "name": "1. FC Nürnberg",
+      "kurzname": "1. FC Nürnberg",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/nuernberg.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "FCN"
+      ],
+      "apiAliase": [
+        "1. FC Nürnberg",
+        "nuernberg",
+        "1 FC Nurnberg",
+        "FC Nurnberg",
+        "Nurnberg"
+      ],
+      "vereinsfarben": [
+        "#751325",
+        "#f4eadc"
+      ]
+    },
+    {
+      "id": "union-berlin",
+      "name": "1. FC Union Berlin",
+      "kurzname": "1. FC Union Berlin",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/union-berlin.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "FCU"
+      ],
+      "apiAliase": [
+        "1. FC Union Berlin",
+        "union-berlin",
+        "1 FC Union Berlin",
+        "Union Berlin"
+      ],
+      "vereinsfarben": [
+        "#c71924",
+        "#f2d23c"
+      ]
+    },
+    {
+      "id": "mainz-05",
+      "name": "1. FSV Mainz 05",
+      "kurzname": "Mainz 05",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/mainz-05.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "M05"
+      ],
+      "apiAliase": [
+        "1. FSV Mainz 05",
+        "Mainz 05",
+        "mainz-05",
+        "FSV Mainz 05",
+        "Mainz"
+      ],
+      "vereinsfarben": [
+        "#c91f2b",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "ac-mailand",
+      "name": "AC Mailand",
+      "kurzname": "AC Mailand",
+      "land": "Italien",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/ac-mailand.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "AC Mailand",
+        "ac-mailand"
+      ],
+      "vereinsfarben": [
+        "#b31628",
+        "#151515"
+      ]
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "kurzname": "Aston Villa",
+      "land": "England",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/aston-villa.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Aston Villa",
+        "aston-villa"
+      ],
+      "vereinsfarben": [
+        "#7a1538",
+        "#85c8e8"
+      ]
+    },
+    {
+      "id": "leverkusen",
+      "name": "Bayer 04 Leverkusen",
+      "kurzname": "Bayer 04 Leverkusen",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/leverkusen.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "B04"
+      ],
+      "apiAliase": [
+        "Bayer 04 Leverkusen",
+        "leverkusen",
+        "Bayer Leverkusen"
+      ],
+      "vereinsfarben": [
+        "#c5152d",
+        "#111111"
+      ]
+    },
+    {
+      "id": "benfica-lissabon",
+      "name": "Benfica Lissabon",
+      "kurzname": "Benfica Lissabon",
+      "land": "Portugal",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/benfica-lissabon.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Benfica Lissabon",
+        "benfica-lissabon"
+      ],
+      "vereinsfarben": [
+        "#d91e2b",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "dortmund",
+      "name": "Borussia Dortmund",
+      "kurzname": "Borussia Dortmund",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/dortmund.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "BVB"
+      ],
+      "apiAliase": [
+        "Borussia Dortmund",
+        "dortmund"
+      ],
+      "vereinsfarben": [
+        "#f4d300",
+        "#121212"
+      ]
+    },
+    {
+      "id": "moenchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "kurzname": "Gladbach",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/moenchengladbach.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "BMG"
+      ],
+      "apiAliase": [
+        "Borussia Mönchengladbach",
+        "Gladbach",
+        "moenchengladbach",
+        "Borussia Monchengladbach",
+        "Borussia M Gladbach",
+        "Monchengladbach"
+      ],
+      "vereinsfarben": [
+        "#111111",
+        "#f2f2f2"
+      ]
+    },
+    {
+      "id": "arminia-bielefeld",
+      "name": "DSC Arminia Bielefeld",
+      "kurzname": "Arminia Bielefeld",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/arminia-bielefeld.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "DSC Arminia Bielefeld",
+        "Arminia Bielefeld",
+        "arminia-bielefeld"
+      ],
+      "vereinsfarben": [
+        "#1767aa",
+        "#111111"
+      ]
+    },
+    {
+      "id": "braunschweig",
+      "name": "Eintracht Braunschweig",
+      "kurzname": "Braunschweig",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/braunschweig.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Eintracht Braunschweig",
+        "Braunschweig"
+      ],
+      "vereinsfarben": [
+        "#f0c400",
+        "#1c4a95"
+      ]
+    },
+    {
+      "id": "frankfurt",
+      "name": "Eintracht Frankfurt",
+      "kurzname": "Eintracht Frankfurt",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/frankfurt.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "SGE"
+      ],
+      "apiAliase": [
+        "Eintracht Frankfurt",
+        "frankfurt"
+      ],
+      "vereinsfarben": [
+        "#d71920",
+        "#111111"
+      ]
+    },
+    {
+      "id": "augsburg",
+      "name": "FC Augsburg",
+      "kurzname": "FC Augsburg",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/augsburg.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "FCA"
+      ],
+      "apiAliase": [
+        "FC Augsburg",
+        "augsburg"
+      ],
+      "vereinsfarben": [
+        "#b7192d",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "barcelona",
+      "name": "FC Barcelona",
+      "kurzname": "FC Barcelona",
+      "land": "Spanien",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/barcelona.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "FC Barcelona",
+        "barcelona"
+      ],
+      "vereinsfarben": [
+        "#a61f3d",
+        "#21468b"
+      ]
+    },
+    {
+      "id": "bayern-muenchen",
+      "name": "FC Bayern München",
+      "kurzname": "FC Bayern",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/bayern-muenchen.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "FCB"
+      ],
+      "apiAliase": [
+        "FC Bayern München",
+        "FC Bayern",
+        "bayern-muenchen",
+        "Bayern Munich",
+        "FC Bayern Munich",
+        "Bayern Munchen"
+      ],
+      "vereinsfarben": [
+        "#c9152e",
+        "#f3f3f3"
+      ]
+    },
+    {
+      "id": "fc-bologna",
+      "name": "FC Bologna",
+      "kurzname": "FC Bologna",
+      "land": "Italien",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/fc-bologna.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "FC Bologna",
+        "fc-bologna"
+      ],
+      "vereinsfarben": [
+        "#b4162c",
+        "#17396b"
+      ]
+    },
+    {
+      "id": "energie-cottbus",
+      "name": "FC Energie Cottbus",
+      "kurzname": "Energie Cottbus",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/energie-cottbus.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "FC Energie Cottbus",
+        "Energie Cottbus",
+        "energie-cottbus"
+      ],
+      "vereinsfarben": [
+        "#d51b2b",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "fc-liverpool",
+      "name": "FC Liverpool",
+      "kurzname": "FC Liverpool",
+      "land": "England",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/fc-liverpool.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "FC Liverpool",
+        "fc-liverpool"
+      ],
+      "vereinsfarben": [
+        "#b5162a",
+        "#f2d9a6"
+      ]
+    },
+    {
+      "id": "schalke-04",
+      "name": "FC Schalke 04",
+      "kurzname": "FC Schalke 04",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/schalke-04.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "S04"
+      ],
+      "apiAliase": [
+        "FC Schalke 04",
+        "schalke-04",
+        "Schalke 04",
+        "Schalke"
+      ],
+      "vereinsfarben": [
+        "#1261a6",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "st-pauli",
+      "name": "FC St. Pauli",
+      "kurzname": "FC St. Pauli",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/st-pauli.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "STP"
+      ],
+      "apiAliase": [
+        "FC St. Pauli",
+        "st-pauli"
+      ],
+      "vereinsfarben": [
+        "#5f3525",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "hamburger-sv",
+      "name": "Hamburger SV",
+      "kurzname": "Hamburger SV",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/hamburger-sv.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "HSV"
+      ],
+      "apiAliase": [
+        "Hamburger SV",
+        "hamburger-sv",
+        "Hamburg"
+      ],
+      "vereinsfarben": [
+        "#1769aa",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "hannover-96",
+      "name": "Hannover 96",
+      "kurzname": "Hannover 96",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/hannover-96.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Hannover 96",
+        "hannover-96"
+      ],
+      "vereinsfarben": [
+        "#1d6b3a",
+        "#111111"
+      ]
+    },
+    {
+      "id": "hertha-bsc",
+      "name": "Hertha BSC",
+      "kurzname": "Hertha BSC",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/hertha-bsc.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "BSC"
+      ],
+      "apiAliase": [
+        "Hertha BSC",
+        "hertha-bsc",
+        "Hertha Berlin"
+      ],
+      "vereinsfarben": [
+        "#1f6bb5",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "holstein-kiel",
+      "name": "Holstein Kiel",
+      "kurzname": "Holstein Kiel",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/holstein-kiel.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Holstein Kiel",
+        "holstein-kiel"
+      ],
+      "vereinsfarben": [
+        "#1b4e8c",
+        "#d21d2b"
+      ]
+    },
+    {
+      "id": "inter-mailand",
+      "name": "Inter Mailand",
+      "kurzname": "Inter Mailand",
+      "land": "Italien",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/inter-mailand.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Inter Mailand",
+        "inter-mailand"
+      ],
+      "vereinsfarben": [
+        "#1769aa",
+        "#111111"
+      ]
+    },
+    {
+      "id": "juventus-turin",
+      "name": "Juventus Turin",
+      "kurzname": "Juventus Turin",
+      "land": "Italien",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/juventus-turin.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Juventus Turin",
+        "juventus-turin"
+      ],
+      "vereinsfarben": [
+        "#111111",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "karlsruher-sc",
+      "name": "Karlsruher SC",
+      "kurzname": "Karlsruher SC",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/karlsruher-sc.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Karlsruher SC",
+        "karlsruher-sc"
+      ],
+      "vereinsfarben": [
+        "#1d67aa",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "kurzname": "Manchester City",
+      "land": "England",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/manchester-city.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Manchester City",
+        "manchester-city"
+      ],
+      "vereinsfarben": [
+        "#75b8df",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "kurzname": "Manchester United",
+      "land": "England",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/manchester-united.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Manchester United",
+        "manchester-united"
+      ],
+      "vereinsfarben": [
+        "#c81e2b",
+        "#f2c53d"
+      ]
+    },
+    {
+      "id": "nottingham-forest",
+      "name": "Nottingham Forest",
+      "kurzname": "Nottingham Forest",
+      "land": "England",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/nottingham-forest.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Nottingham Forest",
+        "nottingham-forest"
+      ],
+      "vereinsfarben": [
+        "#d71920",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "olympique-marseille",
+      "name": "Olympique Marseille",
+      "kurzname": "Olympique Marseille",
+      "land": "Frankreich",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/olympique-marseille.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Olympique Marseille",
+        "olympique-marseille"
+      ],
+      "vereinsfarben": [
+        "#38a8dc",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "kurzname": "Paris Saint-Germain",
+      "land": "Frankreich",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/paris-saint-germain.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Paris Saint-Germain",
+        "paris-saint-germain"
+      ],
+      "vereinsfarben": [
+        "#173b73",
+        "#c91f2b"
+      ]
+    },
+    {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "kurzname": "RB Leipzig",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/rb-leipzig.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "RBL"
+      ],
+      "apiAliase": [
+        "RB Leipzig",
+        "rb-leipzig",
+        "RasenBallsport Leipzig",
+        "Leipzig"
+      ],
+      "vereinsfarben": [
+        "#ffffff",
+        "#d7193f"
+      ]
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "kurzname": "Real Madrid",
+      "land": "Spanien",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/real-madrid.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Real Madrid",
+        "real-madrid"
+      ],
+      "vereinsfarben": [
+        "#f4f1e8",
+        "#c9a33b"
+      ]
+    },
+    {
+      "id": "paderborn",
+      "name": "SC Paderborn 07",
+      "kurzname": "SC Paderborn 07",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/paderborn.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "SCP"
+      ],
+      "apiAliase": [
+        "SC Paderborn 07",
+        "paderborn"
+      ],
+      "vereinsfarben": [
+        "#1b63a8",
+        "#111111"
+      ]
+    },
+    {
+      "id": "dynamo-dresden",
+      "name": "SG Dynamo Dresden",
+      "kurzname": "Dynamo Dresden",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/dynamo-dresden.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "SGD"
+      ],
+      "apiAliase": [
+        "SG Dynamo Dresden",
+        "Dynamo Dresden",
+        "dynamo-dresden"
+      ],
+      "vereinsfarben": [
+        "#e5b900",
+        "#17120a"
+      ]
+    },
+    {
+      "id": "freiburg",
+      "name": "Sport-Club Freiburg",
+      "kurzname": "SC Freiburg",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/freiburg.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "SCF"
+      ],
+      "apiAliase": [
+        "Sport-Club Freiburg",
+        "SC Freiburg",
+        "freiburg"
+      ],
+      "vereinsfarben": [
+        "#d51b2b",
+        "#111111"
+      ]
+    },
+    {
+      "id": "sporting-lissabon",
+      "name": "Sporting Lissabon",
+      "kurzname": "Sporting Lissabon",
+      "land": "Portugal",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/sporting-lissabon.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Sporting Lissabon",
+        "sporting-lissabon"
+      ],
+      "vereinsfarben": [
+        "#14864b",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "greuther-fuerth",
+      "name": "SpVgg Greuther Fürth",
+      "kurzname": "Greuther Fürth",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/greuther-fuerth.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "SpVgg Greuther Fürth",
+        "Greuther Fürth",
+        "greuther-fuerth"
+      ],
+      "vereinsfarben": [
+        "#2e8b57",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "darmstadt-98",
+      "name": "SV Darmstadt 98",
+      "kurzname": "Darmstadt 98",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/darmstadt-98.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "SVD"
+      ],
+      "apiAliase": [
+        "SV Darmstadt 98",
+        "Darmstadt 98",
+        "darmstadt-98",
+        "Darmstadt"
+      ],
+      "vereinsfarben": [
+        "#1768aa",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "elversberg",
+      "name": "SV Elversberg",
+      "kurzname": "SV Elversberg",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/elversberg.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "ELV"
+      ],
+      "apiAliase": [
+        "SV Elversberg",
+        "elversberg"
+      ],
+      "vereinsfarben": [
+        "#111111",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "werder-bremen",
+      "name": "SV Werder Bremen",
+      "kurzname": "Werder Bremen",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/werder-bremen.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "SVW"
+      ],
+      "apiAliase": [
+        "SV Werder Bremen",
+        "Werder Bremen",
+        "werder-bremen"
+      ],
+      "vereinsfarben": [
+        "#13834a",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "kurzname": "Tottenham Hotspur",
+      "land": "England",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/tottenham-hotspur.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "Tottenham Hotspur",
+        "tottenham-hotspur"
+      ],
+      "vereinsfarben": [
+        "#f2f2f2",
+        "#172a55"
+      ]
+    },
+    {
+      "id": "hoffenheim",
+      "name": "TSG Hoffenheim",
+      "kurzname": "TSG Hoffenheim",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/hoffenheim.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "TSG"
+      ],
+      "apiAliase": [
+        "TSG Hoffenheim",
+        "hoffenheim",
+        "1899 Hoffenheim"
+      ],
+      "vereinsfarben": [
+        "#1769aa",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "stuttgart",
+      "name": "VfB Stuttgart",
+      "kurzname": "VfB Stuttgart",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/stuttgart.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "VFB"
+      ],
+      "apiAliase": [
+        "VfB Stuttgart",
+        "stuttgart"
+      ],
+      "vereinsfarben": [
+        "#ffffff",
+        "#d71920"
+      ]
+    },
+    {
+      "id": "bochum",
+      "name": "VfL Bochum 1848",
+      "kurzname": "VfL Bochum",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/bochum.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "BOC"
+      ],
+      "apiAliase": [
+        "VfL Bochum 1848",
+        "VfL Bochum",
+        "bochum"
+      ],
+      "vereinsfarben": [
+        "#1769aa",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "osnabrueck",
+      "name": "VfL Osnabrück",
+      "kurzname": "VfL Osnabrück",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/osnabrueck.svg",
+      "aktiv": true,
+      "kicktippAliase": [],
+      "apiAliase": [
+        "VfL Osnabrück",
+        "osnabrueck"
+      ],
+      "vereinsfarben": [
+        "#5e2b83",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "wolfsburg",
+      "name": "VfL Wolfsburg",
+      "kurzname": "VfL Wolfsburg",
+      "land": "Deutschland",
+      "logo": "./assets/smugglers-design-system/schmugglersiegel/wolfsburg.svg",
+      "aktiv": true,
+      "kicktippAliase": [
+        "WOB"
+      ],
+      "apiAliase": [
+        "VfL Wolfsburg",
+        "wolfsburg"
+      ],
+      "vereinsfarben": [
+        "#69b52a",
+        "#ffffff"
+      ]
+    }
+  ]
+}

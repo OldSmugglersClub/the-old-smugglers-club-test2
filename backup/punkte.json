@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "datenVersion": 1,
+  "aktualisiert": "2026-07-31",
+  "saison": "2026/2027",
+  "hinweis": "Exportziel der zentralen Punkteberechnung. Die Datei wird von punkteberechnung.html lokal erzeugt.",
+  "berechnetAm": null,
+  "regeln": {
+    "tendenz": 2,
+    "differenz": 3,
+    "ergebnis": 5
+  },
+  "wertungen": [],
+  "rangliste": []
+}

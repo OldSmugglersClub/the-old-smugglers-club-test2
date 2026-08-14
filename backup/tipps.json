@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "datenVersion": 1,
+  "aktualisiert": "2026-07-31",
+  "saison": "2026/2027",
+  "hinweis": "Zentrale Tippdaten. Jeder Tipp referenziert genau einen Teilnehmer und ein Spiel über stabile IDs.",
+  "tipps": []
+}

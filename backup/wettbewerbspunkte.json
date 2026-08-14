@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "datenVersion": 1,
+  "aktualisiert": "2026-07-31",
+  "saison": "2026/2027",
+  "hinweis": "Exportziel der Wettbewerbs-Einzelwertungen. Die Datei wird von wettbewerbswertung.html lokal erzeugt.",
+  "berechnetAm": null,
+  "quelle": "punkte.json + wettbewerbe.json",
+  "wettbewerbe": []
+}

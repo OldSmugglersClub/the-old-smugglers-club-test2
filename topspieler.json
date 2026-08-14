@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "datenVersion": 1,
+  "aktualisiertAm": "2026-08-09T18:11:13.460Z",
+  "saison": "2026-27",
+  "status": "Berechnet",
+  "kategorien": [
+    {
+      "titel": "Spieltagsführer",
+      "name": "AdamJ",
+      "wert": "2 Punkte"
+    },
+    {
+      "titel": "Meiste exakte Tipps",
+      "name": "AdamJ",
+      "wert": "0"
+    },
+    {
+      "titel": "Beste Serie",
+      "name": "Noch offen",
+      "wert": "–"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "datenVersion": 1,
+  "aktualisiert": "2026-07-31",
+  "saison": "2026/2027",
+  "hinweis": "Exportziel der Smugglerauftrag-Auswertung. Enthält ausschließlich Wertungen aus den 34 Dynamo-Missionen.",
+  "berechnetAm": null,
+  "regeln": {
+    "tendenz": 2,
+    "differenz": 3,
+    "ergebnis": 5
+  },
+  "auftraegeGesamt": 34,
+  "auftraegeAbgeschlossen": 0,
+  "wertungen": [],
+  "rangliste": []
+}

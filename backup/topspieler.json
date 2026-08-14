@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "aktualisiertAm": "2026-07-29T16:00:00+02:00",
+  "saison": "2026/2027",
+  "status": "Noch keine Spieltagsdaten",
+  "kategorien": [
+    {
+      "titel": "Spieltagsführer",
+      "name": "Noch offen",
+      "wert": "–"
+    },
+    {
+      "titel": "Meiste exakte Tipps",
+      "name": "Noch offen",
+      "wert": "–"
+    },
+    {
+      "titel": "Beste Serie",
+      "name": "Noch offen",
+      "wert": "–"
+    }
+  ]
+}

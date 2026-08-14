@@ -1,0 +1,40 @@
+{
+  "bereich": "Wettbewerbszentrale",
+  "statusSchild": "Vorbereitung",
+  "titel": "Bundesliga",
+  "beschreibung": "Die Bundesliga-Zentrale bündelt alle 34 Spieltage, Ergebnisse, die automatisch berechnete Tabelle sowie kompakte Saisonstatistiken der Saison 2026/2027.",
+  "karten": [
+    {
+      "titel": "Wertung",
+      "text": "Die Bundesliga bildet die reguläre Hauptwertung der Saison 2026/2027."
+    },
+    {
+      "titel": "Saisonstart",
+      "text": "Der erste Spieltag beginnt am 28. August 2026."
+    },
+    {
+      "titel": "Datenzentrale",
+      "text": "Spieltage, Endergebnisse, Tabelle, Formkurven sowie Heim-, Auswärts- und Torstatistiken werden zentral aus den Spieldaten aufgebaut."
+    }
+  ],
+  "aktuellerStandTitel": "",
+  "aktuellerStand": "",
+  "bereiche": [],
+  "buttons": [
+    {
+      "text": "Zum Kicktipp",
+      "link": "https://www.kicktipp.de/the-old-smugglers-club/",
+      "neuesFenster": true,
+      "stil": "primaer",
+      "anzeigen": true
+    },
+    {
+      "text": "Zurück zu allen Wettbewerben",
+      "link": "./index.html#wettbewerbe",
+      "neuesFenster": false,
+      "stil": "sekundaer",
+      "anzeigen": true
+    }
+  ],
+  "fusszeile": "The Old Smugglers Club · Bundesliga 2026/2027"
+}
