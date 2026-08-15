@@ -8,6 +8,105 @@ export function writeJson(path, data) {
   fs.writeFileSync(path, JSON.stringify(data, null, 2) + "\n", "utf8");
 }
 
+function jsonScalar(value) {
+  return JSON.stringify(value);
+}
+
+function replaceExistingScalar(objectText, key, value) {
+  const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = new RegExp(`("${escaped}"\\s*:\\s*)(?:"(?:\\\\.|[^"\\\\])*"|true|false|null|-?\\d+(?:\\.\\d+)?)`);
+  if (!re.test(objectText)) {
+    throw new Error(`Pflichtfeld '${key}' im Dynamo-Spielobjekt fehlt. Keine Änderung.`);
+  }
+  return objectText.replace(re, `$1${jsonScalar(value)}`);
+}
+
+function findContainingObject(text, markerIndex) {
+  const stack = [];
+  let inString = false;
+  let escaped = false;
+
+  for (let i = 0; i <= markerIndex; i++) {
+    const ch = text[i];
+    if (inString) {
+      if (escaped) escaped = false;
+      else if (ch === "\\") escaped = true;
+      else if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') { inString = true; continue; }
+    if (ch === "{") stack.push(i);
+    else if (ch === "}") stack.pop();
+  }
+
+  if (!stack.length) throw new Error("Spielobjekt-Anfang nicht gefunden.");
+  const start = stack[stack.length - 1];
+
+  let depth = 0;
+  inString = false;
+  escaped = false;
+  for (let i = start; i < text.length; i++) {
+    const ch = text[i];
+    if (inString) {
+      if (escaped) escaped = false;
+      else if (ch === "\\") escaped = true;
+      else if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') { inString = true; continue; }
+    if (ch === "{") depth++;
+    else if (ch === "}") {
+      depth--;
+      if (depth === 0) return { start, end: i + 1 };
+    }
+  }
+  throw new Error("Spielobjekt-Ende nicht gefunden.");
+}
+
+function replaceRootScalar(text, key, value) {
+  const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = new RegExp(`^([ \\t]*"${escaped}"\\s*:\\s*)(?:"(?:\\\\.|[^"\\\\])*"|true|false|null|-?\\d+(?:\\.\\d+)?)`, "m");
+  if (!re.test(text)) throw new Error(`Root-Feld '${key}' fehlt. Keine Änderung.`);
+  return text.replace(re, `$1${jsonScalar(value)}`);
+}
+
+export function applyPlanToJsonText(originalText, plan, updatedAt) {
+  let text = originalText;
+
+  for (const item of plan.planned) {
+    const marker = `"id": "${item.localId}"`;
+    const markerIndex = text.indexOf(marker);
+    if (markerIndex < 0) throw new Error(`Spiel ${item.localId} im Rohtext nicht gefunden.`);
+    if (text.indexOf(marker, markerIndex + marker.length) >= 0) {
+      throw new Error(`Spiel-ID ${item.localId} ist im Rohtext nicht eindeutig. Keine Änderung.`);
+    }
+
+    const span = findContainingObject(text, markerIndex);
+    let objectText = text.slice(span.start, span.end);
+
+    objectText = replaceExistingScalar(objectText, "datum", item.datum);
+    objectText = replaceExistingScalar(objectText, "datumVon", item.datum);
+    objectText = replaceExistingScalar(objectText, "datumBis", item.datum);
+    objectText = replaceExistingScalar(objectText, "datumAnzeige", displayDate(item.datum));
+    objectText = replaceExistingScalar(objectText, "anstoss", item.anstoss);
+    objectText = replaceExistingScalar(objectText, "terminBestaetigt", true);
+    objectText = replaceExistingScalar(objectText, "status", "terminiert");
+    objectText = replaceExistingScalar(objectText, "quelleStand", item.quelleStand);
+
+    text = text.slice(0, span.start) + objectText + text.slice(span.end);
+  }
+
+  if (plan.planned.length > 0) {
+    const parsed = JSON.parse(originalText);
+    text = replaceRootScalar(text, "datenVersion", Number(parsed.datenVersion || 0) + 1);
+    text = replaceRootScalar(text, "aktualisiert", updatedAt);
+  }
+
+  // Sicherheitsprüfung: Das Ergebnis muss weiterhin valides JSON sein.
+  JSON.parse(text);
+  return text;
+}
+
 export function normalize(value) {
   return String(value ?? "")
     .trim()

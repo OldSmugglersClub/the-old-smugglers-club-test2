@@ -1,9 +1,8 @@
 import fs from "node:fs";
 import {
   readJson,
-  writeJson,
   validateAndPlan,
-  applyPlan
+  applyPlanToJsonText
 } from "./dynamo-terminimport-core.mjs";
 
 const SPIELDATEN_PATH = process.env.OSC_SPIELDATEN_PATH || "spieldaten.json";
@@ -39,7 +38,8 @@ async function loadApiMatches() {
 if (!fs.existsSync(SPIELDATEN_PATH)) throw new Error(`${SPIELDATEN_PATH} fehlt.`);
 if (!fs.existsSync(TEAMS_PATH)) throw new Error(`${TEAMS_PATH} fehlt.`);
 
-const data = readJson(SPIELDATEN_PATH);
+const originalSpieldatenText = fs.readFileSync(SPIELDATEN_PATH, "utf8");
+const data = JSON.parse(originalSpieldatenText);
 const teams = readJson(TEAMS_PATH);
 const apiMatches = await loadApiMatches();
 const plan = validateAndPlan(data, teams, apiMatches);
@@ -64,11 +64,11 @@ if (!plan.planned.length) {
   process.exit(0);
 }
 
-const changed = applyPlan(data, plan, berlinDate());
-if (!changed) {
+const updatedText = applyPlanToJsonText(originalSpieldatenText, plan, berlinDate());
+if (updatedText === originalSpieldatenText) {
   console.log("KEINE TERMINÄNDERUNG.");
   process.exit(0);
 }
 
-writeJson(SPIELDATEN_PATH, data);
-console.log(`TERMINIMPORT ERFOLGREICH: ${changed} Dynamo-Termin(e) konkretisiert; datenVersion exakt +1.`);
+fs.writeFileSync(SPIELDATEN_PATH, updatedText, "utf8");
+console.log(`TERMINIMPORT ERFOLGREICH: ${plan.planned.length} Dynamo-Termin(e) konkretisiert; datenVersion exakt +1; JSON-Struktur außerhalb der Zielfelder byte-nah erhalten.`);
