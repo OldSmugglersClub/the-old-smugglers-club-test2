@@ -1,0 +1,22 @@
+name: Bundesliga Terminimport - Audit TEST1-HF1
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Terminimport Commit auditieren
+        env:
+          AUDIT_BEFORE: bf28781
+          AUDIT_AFTER: 5487590
+        run: node scripts/bundesliga-terminimport-audit.mjs
