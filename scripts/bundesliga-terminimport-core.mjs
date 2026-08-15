@@ -118,16 +118,10 @@ export function normalize(value) {
     .trim();
 }
 
-export function seasonMatches(data) {
+export function bundesligaMatches(data) {
   return (Array.isArray(data?.saisons) ? data.saisons : [])
     .flatMap(s => Array.isArray(s?.spiele) ? s.spiele : [])
-    .filter(m => m?.wettbewerb === "2-bundesliga" && m?.saison === "2026/2027");
-}
-
-export function dynamoMatches(data) {
-  return seasonMatches(data).filter(m =>
-    m?.heimTeamId === "dynamo-dresden" || m?.auswaertsTeamId === "dynamo-dresden"
-  );
+    .filter(m => m?.wettbewerb === "bundesliga" && m?.saison === "2026/2027");
 }
 
 function teamArray(teamsData) {
