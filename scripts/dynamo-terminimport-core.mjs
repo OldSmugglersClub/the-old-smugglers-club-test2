@@ -194,6 +194,18 @@ function apiLastUpdateDate(apiMatch) {
   return m ? m[1] : null;
 }
 
+function newestSourceDate(localSourceDate, apiSourceDate) {
+  const valid = value => /^\d{4}-\d{2}-\d{2}$/.test(String(value || ""));
+
+  if (!valid(apiSourceDate)) {
+    return valid(localSourceDate) ? localSourceDate : null;
+  }
+  if (!valid(localSourceDate)) {
+    return apiSourceDate;
+  }
+  return localSourceDate >= apiSourceDate ? localSourceDate : apiSourceDate;
+}
+
 function dateInWindow(date, from, to) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(String(date || ""))) return false;
   if (!/^\d{4}-\d{2}-\d{2}$/.test(String(from || ""))) return false;
@@ -280,7 +292,7 @@ export function validateAndPlan(data, teamsData, apiMatches) {
       localId: localMatch.id,
       datum: exact.date,
       anstoss: exact.time,
-      quelleStand: sourceDate
+      quelleStand: newestSourceDate(localMatch.quelleStand, sourceDate)
     });
   }
 
