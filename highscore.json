@@ -2,8 +2,8 @@
   "meta": {
     "season": "2026-27",
     "matchday": "Smuggleraufträge 1. Spieltag",
-    "exportDate": "2026-08-09",
-    "source": "Kicktipp-Ranglisten + interne Tippstatistiken / Admin 6.2.0-a6-HF3",
+    "exportDate": "2026-08-15",
+    "source": "Kicktipp-Ranglisten + interne Tippstatistiken / Admin 6.2.0-a6-HF3-HF8",
     "privacy": "E-Mail-Adressen werden nicht übernommen.",
     "participantCount": 95,
     "status": "Kicktipp-Ranglisten übernommen",
@@ -16,7 +16,7 @@
         "participantId": "manuel",
         "name": "Manuel",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -24,7 +24,7 @@
         "participantId": "kleinersachse",
         "name": "kleinersachse",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -32,7 +32,7 @@
         "participantId": "ximmox",
         "name": "xIMMOx",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -40,7 +40,7 @@
         "participantId": "handgottes",
         "name": "HandGottes",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -48,7 +48,7 @@
         "participantId": "normiks",
         "name": "Normiks",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -56,7 +56,7 @@
         "participantId": "kevin",
         "name": "Kevin",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -64,7 +64,7 @@
         "participantId": "marius",
         "name": "Marius",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -72,7 +72,7 @@
         "participantId": "mary-grace",
         "name": "Mary-Grace",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -80,7 +80,7 @@
         "participantId": "quick",
         "name": "Quick",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -88,7 +88,7 @@
         "participantId": "nick-zg-1501",
         "name": "Nick_ZG_1501",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -96,7 +96,7 @@
         "participantId": "flying-dutchman",
         "name": "Flying-Dutchman",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -104,7 +104,7 @@
         "participantId": "salas1904",
         "name": "Salas1904",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -112,7 +112,7 @@
         "participantId": "sven-huhn",
         "name": "Sven_Huhn",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -120,7 +120,7 @@
         "participantId": "luca",
         "name": "Luca",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -128,7 +128,7 @@
         "participantId": "hardy17",
         "name": "Hardy17",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -136,7 +136,7 @@
         "participantId": "wildemoni",
         "name": "WildeMoni",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -144,7 +144,7 @@
         "participantId": "baslermario",
         "name": "baslermario",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -152,7 +152,7 @@
         "participantId": "maikiliii",
         "name": "Maikiliii",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -160,7 +160,7 @@
         "participantId": "bigdog",
         "name": "Bigdog",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -168,7 +168,7 @@
         "participantId": "rk69",
         "name": "RK69",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -176,7 +176,7 @@
         "participantId": "adamj",
         "name": "AdamJ",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -184,7 +184,7 @@
         "participantId": "mariusv",
         "name": "mariusv",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -192,7 +192,7 @@
         "participantId": "souvard",
         "name": "Souvard",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -200,7 +200,7 @@
         "participantId": "jakob",
         "name": "Jakob",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -208,7 +208,7 @@
         "participantId": "oifinger",
         "name": "Oifinger",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -216,7 +216,7 @@
         "participantId": "medic",
         "name": "Medic",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -224,7 +224,7 @@
         "participantId": "yauguru",
         "name": "Yauguru",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -232,7 +232,7 @@
         "participantId": "berndibroti",
         "name": "Berndibroti",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -240,7 +240,7 @@
         "participantId": "cobra",
         "name": "cobra",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -248,7 +248,7 @@
         "participantId": "best10",
         "name": "Best10",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -256,7 +256,7 @@
         "participantId": "co",
         "name": "Co",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -264,7 +264,7 @@
         "participantId": "realzaragoza",
         "name": "Realzaragoza",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -272,7 +272,7 @@
         "participantId": "cobra75",
         "name": "Cobra75",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -280,7 +280,7 @@
         "participantId": "juri",
         "name": "JuRi",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -288,7 +288,7 @@
         "participantId": "lucas",
         "name": "Lucas",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -296,7 +296,7 @@
         "participantId": "luki1887",
         "name": "Luki1887",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -304,7 +304,7 @@
         "participantId": "dani1893",
         "name": "Dani1893",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -312,7 +312,7 @@
         "participantId": "yorik",
         "name": "Yorik",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -320,7 +320,7 @@
         "participantId": "dominik1966",
         "name": "dominik1966",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -328,7 +328,7 @@
         "participantId": "g-1000",
         "name": "G.1000",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -336,7 +336,7 @@
         "participantId": "potterhead",
         "name": "Potterhead",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -344,7 +344,7 @@
         "participantId": "flokicker94",
         "name": "FloKicker94",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -352,7 +352,7 @@
         "participantId": "tribuna33",
         "name": "TRIBUNA33",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -360,7 +360,7 @@
         "participantId": "bvb09-opam",
         "name": "BvB09-OpaM",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -368,7 +368,7 @@
         "participantId": "nurderscf",
         "name": "NurDerSCF",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -376,7 +376,7 @@
         "participantId": "audauzvares",
         "name": "Audauzvares",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -384,7 +384,7 @@
         "participantId": "playboymarc88",
         "name": "PlayBoyMarc88",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -392,7 +392,7 @@
         "participantId": "erik",
         "name": "Erik",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -400,7 +400,7 @@
         "participantId": "marcor",
         "name": "MarcoR",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -408,7 +408,7 @@
         "participantId": "pochzerjung",
         "name": "PochzerJung",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -416,7 +416,7 @@
         "participantId": "sam2004",
         "name": "Sam2004",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -424,7 +424,7 @@
         "participantId": "maxpam",
         "name": "MaxPam",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -432,7 +432,7 @@
         "participantId": "ben1909",
         "name": "Ben1909",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -440,7 +440,7 @@
         "participantId": "bene",
         "name": "Bene",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -448,7 +448,7 @@
         "participantId": "cali79",
         "name": "Cali79",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -456,7 +456,7 @@
         "participantId": "waltersen",
         "name": "Waltersen",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -464,7 +464,7 @@
         "participantId": "steff77",
         "name": "Steff77",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -472,7 +472,7 @@
         "participantId": "sam-entspender",
         "name": "SAM_ENTSPENDER",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -480,7 +480,7 @@
         "participantId": "jwfussball",
         "name": "JWFUSSBALL",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -488,7 +488,7 @@
         "participantId": "gerrit1887",
         "name": "Gerrit1887",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -496,7 +496,7 @@
         "participantId": "finch",
         "name": "Finch",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -504,7 +504,7 @@
         "participantId": "marc86",
         "name": "Marc86",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -512,7 +512,7 @@
         "participantId": "frankfurterjung",
         "name": "FrankfurterJung",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -520,7 +520,7 @@
         "participantId": "juergen70",
         "name": "Juergen70",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -528,7 +528,7 @@
         "participantId": "eckes2359",
         "name": "Eckes2359",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -536,7 +536,7 @@
         "participantId": "stevie26",
         "name": "Stevie26",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -544,7 +544,7 @@
         "participantId": "sgbw",
         "name": "sgbw",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -781,7 +781,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -792,7 +792,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -803,7 +803,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -814,7 +814,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -825,7 +825,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -836,7 +836,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -847,7 +847,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -858,7 +858,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -869,7 +869,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -880,7 +880,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -891,7 +891,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -902,7 +902,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -913,7 +913,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -924,7 +924,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -935,7 +935,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -946,7 +946,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -957,7 +957,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -968,7 +968,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -979,7 +979,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -990,7 +990,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1001,7 +1001,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1012,7 +1012,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1023,7 +1023,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1034,7 +1034,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1045,7 +1045,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1056,7 +1056,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1067,7 +1067,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1078,7 +1078,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1089,7 +1089,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1100,7 +1100,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1111,7 +1111,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1122,7 +1122,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1133,7 +1133,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1144,7 +1144,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1155,7 +1155,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1166,7 +1166,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1177,7 +1177,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1188,7 +1188,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1199,7 +1199,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1210,7 +1210,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1221,7 +1221,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1232,7 +1232,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1243,7 +1243,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1254,7 +1254,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1265,7 +1265,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1276,7 +1276,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1287,7 +1287,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1298,7 +1298,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1309,7 +1309,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1320,7 +1320,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1331,7 +1331,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1342,7 +1342,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1353,7 +1353,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1364,7 +1364,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1375,7 +1375,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1386,7 +1386,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1397,7 +1397,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1408,7 +1408,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1419,7 +1419,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1430,7 +1430,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1441,7 +1441,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1452,7 +1452,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1463,7 +1463,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1474,7 +1474,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1485,7 +1485,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1496,7 +1496,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1507,7 +1507,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1828,7 +1828,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1839,7 +1839,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1850,7 +1850,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1861,7 +1861,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1872,7 +1872,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1883,7 +1883,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1894,7 +1894,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1905,7 +1905,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1916,7 +1916,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1927,7 +1927,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1938,7 +1938,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1949,7 +1949,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1960,7 +1960,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1971,7 +1971,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1982,7 +1982,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -1993,7 +1993,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2004,7 +2004,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2015,7 +2015,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2026,7 +2026,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2037,7 +2037,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2048,7 +2048,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2059,7 +2059,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2070,7 +2070,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2081,7 +2081,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2092,7 +2092,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2103,7 +2103,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2114,7 +2114,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2125,7 +2125,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2136,7 +2136,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2147,7 +2147,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2158,7 +2158,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2169,7 +2169,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2180,7 +2180,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2191,7 +2191,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2202,7 +2202,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2213,7 +2213,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2224,7 +2224,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2235,7 +2235,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2246,7 +2246,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2257,7 +2257,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2268,7 +2268,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2279,7 +2279,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2290,7 +2290,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2301,7 +2301,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2312,7 +2312,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2323,7 +2323,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2334,7 +2334,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2345,7 +2345,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2356,7 +2356,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2367,7 +2367,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2378,7 +2378,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2389,7 +2389,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2400,7 +2400,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2411,7 +2411,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2422,7 +2422,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2433,7 +2433,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2444,7 +2444,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2455,7 +2455,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2466,7 +2466,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2477,7 +2477,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2488,7 +2488,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2499,7 +2499,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2510,7 +2510,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2521,7 +2521,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2532,7 +2532,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2543,7 +2543,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2554,7 +2554,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -2944,7 +2944,7 @@
         "participantId": "manuel",
         "name": "Manuel",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -2952,7 +2952,7 @@
         "participantId": "kleinersachse",
         "name": "kleinersachse",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -2960,7 +2960,7 @@
         "participantId": "ximmox",
         "name": "xIMMOx",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -2968,7 +2968,7 @@
         "participantId": "handgottes",
         "name": "HandGottes",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -2976,7 +2976,7 @@
         "participantId": "normiks",
         "name": "Normiks",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -2984,7 +2984,7 @@
         "participantId": "kevin",
         "name": "Kevin",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -2992,7 +2992,7 @@
         "participantId": "marius",
         "name": "Marius",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3000,7 +3000,7 @@
         "participantId": "mary-grace",
         "name": "Mary-Grace",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3008,7 +3008,7 @@
         "participantId": "quick",
         "name": "Quick",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3016,7 +3016,7 @@
         "participantId": "nick-zg-1501",
         "name": "Nick_ZG_1501",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3024,7 +3024,7 @@
         "participantId": "flying-dutchman",
         "name": "Flying-Dutchman",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3032,7 +3032,7 @@
         "participantId": "salas1904",
         "name": "Salas1904",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3040,7 +3040,7 @@
         "participantId": "sven-huhn",
         "name": "Sven_Huhn",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3048,7 +3048,7 @@
         "participantId": "luca",
         "name": "Luca",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3056,7 +3056,7 @@
         "participantId": "hardy17",
         "name": "Hardy17",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3064,7 +3064,7 @@
         "participantId": "wildemoni",
         "name": "WildeMoni",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3072,7 +3072,7 @@
         "participantId": "baslermario",
         "name": "baslermario",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3080,7 +3080,7 @@
         "participantId": "maikiliii",
         "name": "Maikiliii",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3088,7 +3088,7 @@
         "participantId": "bigdog",
         "name": "Bigdog",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3096,7 +3096,7 @@
         "participantId": "rk69",
         "name": "RK69",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3104,7 +3104,7 @@
         "participantId": "adamj",
         "name": "AdamJ",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3112,7 +3112,7 @@
         "participantId": "mariusv",
         "name": "mariusv",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3120,7 +3120,7 @@
         "participantId": "souvard",
         "name": "Souvard",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3128,7 +3128,7 @@
         "participantId": "jakob",
         "name": "Jakob",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3136,7 +3136,7 @@
         "participantId": "oifinger",
         "name": "Oifinger",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3144,7 +3144,7 @@
         "participantId": "medic",
         "name": "Medic",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3152,7 +3152,7 @@
         "participantId": "yauguru",
         "name": "Yauguru",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3160,7 +3160,7 @@
         "participantId": "berndibroti",
         "name": "Berndibroti",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3168,7 +3168,7 @@
         "participantId": "cobra",
         "name": "cobra",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3176,7 +3176,7 @@
         "participantId": "best10",
         "name": "Best10",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3184,7 +3184,7 @@
         "participantId": "co",
         "name": "Co",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3192,7 +3192,7 @@
         "participantId": "realzaragoza",
         "name": "Realzaragoza",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3200,7 +3200,7 @@
         "participantId": "cobra75",
         "name": "Cobra75",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3208,7 +3208,7 @@
         "participantId": "juri",
         "name": "JuRi",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3216,7 +3216,7 @@
         "participantId": "lucas",
         "name": "Lucas",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3224,7 +3224,7 @@
         "participantId": "luki1887",
         "name": "Luki1887",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3232,7 +3232,7 @@
         "participantId": "dani1893",
         "name": "Dani1893",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3240,7 +3240,7 @@
         "participantId": "yorik",
         "name": "Yorik",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3248,7 +3248,7 @@
         "participantId": "dominik1966",
         "name": "dominik1966",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3256,7 +3256,7 @@
         "participantId": "g-1000",
         "name": "G.1000",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3264,7 +3264,7 @@
         "participantId": "potterhead",
         "name": "Potterhead",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3272,7 +3272,7 @@
         "participantId": "flokicker94",
         "name": "FloKicker94",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3280,7 +3280,7 @@
         "participantId": "tribuna33",
         "name": "TRIBUNA33",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3288,7 +3288,7 @@
         "participantId": "bvb09-opam",
         "name": "BvB09-OpaM",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3296,7 +3296,7 @@
         "participantId": "nurderscf",
         "name": "NurDerSCF",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3304,7 +3304,7 @@
         "participantId": "audauzvares",
         "name": "Audauzvares",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3312,7 +3312,7 @@
         "participantId": "playboymarc88",
         "name": "PlayBoyMarc88",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3320,7 +3320,7 @@
         "participantId": "erik",
         "name": "Erik",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3328,7 +3328,7 @@
         "participantId": "marcor",
         "name": "MarcoR",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3336,7 +3336,7 @@
         "participantId": "pochzerjung",
         "name": "PochzerJung",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3344,7 +3344,7 @@
         "participantId": "sam2004",
         "name": "Sam2004",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3352,7 +3352,7 @@
         "participantId": "maxpam",
         "name": "MaxPam",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3360,7 +3360,7 @@
         "participantId": "ben1909",
         "name": "Ben1909",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3368,7 +3368,7 @@
         "participantId": "bene",
         "name": "Bene",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3376,7 +3376,7 @@
         "participantId": "cali79",
         "name": "Cali79",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3384,7 +3384,7 @@
         "participantId": "waltersen",
         "name": "Waltersen",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3392,7 +3392,7 @@
         "participantId": "steff77",
         "name": "Steff77",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3400,7 +3400,7 @@
         "participantId": "sam-entspender",
         "name": "SAM_ENTSPENDER",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3408,7 +3408,7 @@
         "participantId": "jwfussball",
         "name": "JWFUSSBALL",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3416,7 +3416,7 @@
         "participantId": "gerrit1887",
         "name": "Gerrit1887",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3424,7 +3424,7 @@
         "participantId": "finch",
         "name": "Finch",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3432,7 +3432,7 @@
         "participantId": "marc86",
         "name": "Marc86",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3440,7 +3440,7 @@
         "participantId": "frankfurterjung",
         "name": "FrankfurterJung",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3448,7 +3448,7 @@
         "participantId": "juergen70",
         "name": "Juergen70",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3456,7 +3456,7 @@
         "participantId": "eckes2359",
         "name": "Eckes2359",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3464,7 +3464,7 @@
         "participantId": "stevie26",
         "name": "Stevie26",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3472,7 +3472,7 @@
         "participantId": "sgbw",
         "name": "sgbw",
         "bonusPoints": 0,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "totalPoints": 2
       },
       {
@@ -3731,7 +3731,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3742,7 +3742,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3753,7 +3753,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3764,7 +3764,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3775,7 +3775,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3786,7 +3786,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3797,7 +3797,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3808,7 +3808,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3819,7 +3819,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3830,7 +3830,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3841,7 +3841,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3852,7 +3852,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3863,7 +3863,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3874,7 +3874,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3885,7 +3885,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3896,7 +3896,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3907,7 +3907,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3918,7 +3918,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3929,7 +3929,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3940,7 +3940,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3951,7 +3951,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3962,7 +3962,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3973,7 +3973,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3984,7 +3984,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -3995,7 +3995,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4006,7 +4006,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4017,7 +4017,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4028,7 +4028,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4039,7 +4039,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4050,7 +4050,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4061,7 +4061,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4072,7 +4072,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4083,7 +4083,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4094,7 +4094,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4105,7 +4105,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4116,7 +4116,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4127,7 +4127,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4138,7 +4138,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4149,7 +4149,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4160,7 +4160,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4171,7 +4171,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4182,7 +4182,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4193,7 +4193,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4204,7 +4204,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4215,7 +4215,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4226,7 +4226,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4237,7 +4237,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4248,7 +4248,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4259,7 +4259,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4270,7 +4270,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4281,7 +4281,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4292,7 +4292,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4303,7 +4303,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4314,7 +4314,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4325,7 +4325,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4336,7 +4336,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4347,7 +4347,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4358,7 +4358,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4369,7 +4369,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4380,7 +4380,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4391,7 +4391,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4402,7 +4402,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4413,7 +4413,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4424,7 +4424,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4435,7 +4435,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4446,7 +4446,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4457,7 +4457,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 0,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       {
@@ -4856,7 +4856,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4867,7 +4867,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4878,7 +4878,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4889,7 +4889,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4900,7 +4900,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4911,7 +4911,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4922,7 +4922,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4933,7 +4933,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4944,7 +4944,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4955,7 +4955,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4966,7 +4966,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4977,7 +4977,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4988,7 +4988,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -4999,7 +4999,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5010,7 +5010,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5021,7 +5021,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5032,7 +5032,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5043,7 +5043,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5054,7 +5054,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5065,7 +5065,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5076,7 +5076,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5087,7 +5087,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5098,7 +5098,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5109,7 +5109,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5120,7 +5120,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5131,7 +5131,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5142,7 +5142,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5153,7 +5153,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5164,7 +5164,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5175,7 +5175,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5186,7 +5186,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5197,7 +5197,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5208,7 +5208,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5219,7 +5219,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5230,7 +5230,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5241,7 +5241,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5252,7 +5252,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5263,7 +5263,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5274,7 +5274,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5285,7 +5285,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5296,7 +5296,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5307,7 +5307,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5318,7 +5318,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5329,7 +5329,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5340,7 +5340,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5351,7 +5351,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5362,7 +5362,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5373,7 +5373,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5384,7 +5384,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5395,7 +5395,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5406,7 +5406,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5417,7 +5417,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5428,7 +5428,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5439,7 +5439,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5450,7 +5450,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5461,7 +5461,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5472,7 +5472,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5483,7 +5483,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5494,7 +5494,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5505,7 +5505,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5516,7 +5516,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5527,7 +5527,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5538,7 +5538,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5549,7 +5549,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5560,7 +5560,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5571,7 +5571,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -5582,7 +5582,7 @@
           "bonusPoints": 0,
           "matchdayWinner": 67,
           "totalPoints": 2,
-          "matchdayWins": 0,
+          "matchdayWins": 0.01,
           "matchdayRank": 1
         },
         {
@@ -6787,7 +6787,7 @@
         "bonusPoints": 0,
         "matchdayWinner": 67,
         "totalPoints": 2,
-        "matchdayWins": 0,
+        "matchdayWins": 0.01,
         "matchdayRank": 1
       },
       "teamWinner": {

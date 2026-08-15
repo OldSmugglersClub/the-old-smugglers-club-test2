@@ -30,6 +30,6 @@ NICHT HOCHLADEN:
 - PRUEFPROTOKOLL.json
 - MANIFEST.json
 
-Erstellt: 2026-08-09T18:11:13.460Z
+Erstellt: 2026-08-15T12:39:57.485Z
 Fachliche Auftrags-ID: 2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001
 Modus: produktiv

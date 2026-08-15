@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "datenVersion": 4,
-  "aktualisiertAm": "2026-08-09T18:11:13.460Z",
+  "aktualisiertAm": "2026-08-15T12:39:57.485Z",
   "aktiveSaison": "2026-27",
-  "quelle": "The Old Smugglers Club Admin 6.2.0-a6-HF3",
+  "quelle": "The Old Smugglers Club Admin 6.2.0-a6-HF3-HF8",
   "regeln": {
     "tendenz": 2,
     "differenz": 3,
@@ -25,7 +25,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -44,7 +44,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -63,7 +63,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -82,7 +82,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -101,7 +101,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -120,7 +120,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -139,7 +139,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -158,7 +158,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -177,7 +177,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -196,7 +196,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -215,7 +215,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -234,7 +234,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -253,7 +253,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -272,7 +272,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -309,7 +309,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -328,7 +328,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -347,7 +347,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -366,7 +366,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -385,7 +385,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -404,7 +404,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -423,7 +423,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -442,7 +442,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -461,7 +461,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -480,7 +480,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -499,7 +499,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -518,7 +518,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -537,7 +537,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -556,7 +556,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -575,7 +575,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -612,7 +612,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -631,7 +631,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -650,7 +650,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -669,7 +669,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -688,7 +688,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -707,7 +707,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -726,7 +726,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -763,7 +763,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -782,7 +782,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -801,7 +801,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -820,7 +820,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -839,7 +839,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -858,7 +858,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -877,7 +877,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -896,7 +896,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -915,7 +915,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -952,7 +952,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -971,7 +971,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -990,7 +990,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1009,7 +1009,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1028,7 +1028,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1047,7 +1047,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1066,7 +1066,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1085,7 +1085,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1104,7 +1104,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1123,7 +1123,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1142,7 +1142,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1161,7 +1161,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1180,7 +1180,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1199,7 +1199,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1218,7 +1218,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1237,7 +1237,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1256,7 +1256,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1293,7 +1293,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1312,7 +1312,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1331,7 +1331,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1350,7 +1350,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1369,7 +1369,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1406,7 +1406,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1425,7 +1425,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1444,7 +1444,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1463,7 +1463,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1482,7 +1482,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1501,7 +1501,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1520,7 +1520,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1539,7 +1539,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1558,7 +1558,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1595,7 +1595,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1614,7 +1614,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1633,7 +1633,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1670,7 +1670,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1689,7 +1689,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1708,7 +1708,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1727,7 +1727,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1746,7 +1746,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1765,7 +1765,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1784,7 +1784,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1803,7 +1803,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1822,7 +1822,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1841,7 +1841,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1860,7 +1860,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1879,7 +1879,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1898,7 +1898,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1917,7 +1917,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1936,7 +1936,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 2,
           "position": 1,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1955,7 +1955,7 @@
           "notiz": null
         },
         "kicktipp": {
-          "importiertAm": "2026-08-09",
+          "importiertAm": "2026-08-15",
           "punkte": 0,
           "position": 68,
           "quelle": "Kicktipp-Mitgliederexport",
@@ -1994,7 +1994,29 @@
             "heimTeamId": "nuernberg",
             "auswaertsTeamId": "dynamo-dresden",
             "ergebnisNach90MinutenBestaetigt": true,
-            "aktualisiertAm": "2026-08-09T18:11:13.460Z"
+            "tippverteilung": {
+              "schemaVersion": 1,
+              "quelle": "Kicktipp – Tipps aller Tipper",
+              "stand": "2026-08-15T12:39:57.485Z",
+              "abgegeben": 95,
+              "nichtAbgegeben": 0,
+              "verborgen": 0,
+              "tendenzen": {
+                "1": {
+                  "anzahl": 67,
+                  "prozent": 70.5
+                },
+                "2": {
+                  "anzahl": 14,
+                  "prozent": 14.7
+                },
+                "X": {
+                  "anzahl": 14,
+                  "prozent": 14.7
+                }
+              }
+            },
+            "aktualisiertAm": "2026-08-15T12:39:57.485Z"
           },
           {
             "id": "sma-2026-27-02-013",
@@ -10233,6 +10255,31 @@
             "quelleStand": "2026-07-30",
             "heim": "16. der 2. Liga",
             "auswaerts": "Dritter der 3. Liga"
+          },
+          {
+            "id": "pk-2026-27-07-title-decider",
+            "wettbewerb": "piratenkodex",
+            "wettbewerbAnzeige": "Piratenkodex",
+            "saison": "2026/2027",
+            "runde": "Piratenkodex VII – Title Decider",
+            "spieltagNummer": 7,
+            "spielNummer": null,
+            "datum": "2027-05-08",
+            "datumVon": "2027-05-08",
+            "datumBis": "2027-05-08",
+            "datumAnzeige": "08.05.2027",
+            "anstoss": "16:00",
+            "terminBestaetigt": true,
+            "heimtore": null,
+            "auswaertstore": null,
+            "status": "terminiert",
+            "sonderwertungen": [
+              "piratenkodex"
+            ],
+            "notiz": "Piratenkodex VII – Title Decider",
+            "quelleStand": "2026-08-14",
+            "heimTeamId": "manchester-city",
+            "auswaertsTeamId": "fc-liverpool"
           }
         ]
       }
@@ -12056,9 +12103,9 @@
       {
         "id": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
         "fachlicheId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
-        "erstelltAm": "2026-08-09T18:11:13.460Z",
-        "aktualisiertAm": "2026-08-09T18:11:13.460Z",
-        "gespeichertAm": "2026-08-09T18:11:13.460Z",
+        "erstelltAm": "2026-08-15T12:39:57.485Z",
+        "aktualisiertAm": "2026-08-15T12:39:57.485Z",
+        "gespeichertAm": "2026-08-15T12:39:57.485Z",
         "modus": "produktiv",
         "wertung": "smugglerauftrag",
         "label": "Smuggleraufträge",
@@ -15409,7 +15456,7 @@
     "bonuswertungen": [],
     "ranglistenKontrollen": [
       {
-        "gespeichertAm": "2026-08-09T18:11:13.460Z",
+        "gespeichertAm": "2026-08-15T12:39:57.485Z",
         "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
         "wertung": "smugglerauftrag",
         "runde": "1. Spieltag",
@@ -15422,7 +15469,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15433,7 +15480,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15444,7 +15491,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15455,7 +15502,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15466,7 +15513,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15477,7 +15524,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15488,7 +15535,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15499,7 +15546,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15510,7 +15557,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15521,7 +15568,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15532,7 +15579,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15543,7 +15590,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15554,7 +15601,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15565,7 +15612,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15576,7 +15623,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15587,7 +15634,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15598,7 +15645,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15609,7 +15656,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15620,7 +15667,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15631,7 +15678,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15642,7 +15689,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15653,7 +15700,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15664,7 +15711,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15675,7 +15722,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15686,7 +15733,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15697,7 +15744,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15708,7 +15755,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15719,7 +15766,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15730,7 +15777,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15741,7 +15788,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15752,7 +15799,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15763,7 +15810,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15774,7 +15821,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15785,7 +15832,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15796,7 +15843,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15807,7 +15854,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15818,7 +15865,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15829,7 +15876,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15840,7 +15887,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15851,7 +15898,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15862,7 +15909,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15873,7 +15920,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15884,7 +15931,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15895,7 +15942,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15906,7 +15953,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15917,7 +15964,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15928,7 +15975,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15939,7 +15986,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15950,7 +15997,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15961,7 +16008,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15972,7 +16019,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15983,7 +16030,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -15994,7 +16041,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16005,7 +16052,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16016,7 +16063,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16027,7 +16074,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16038,7 +16085,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16049,7 +16096,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16060,7 +16107,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16071,7 +16118,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16082,7 +16129,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16093,7 +16140,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16104,7 +16151,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16115,7 +16162,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16126,7 +16173,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16137,7 +16184,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16148,7 +16195,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16469,7 +16516,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16480,7 +16527,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16491,7 +16538,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16502,7 +16549,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16513,7 +16560,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16524,7 +16571,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16535,7 +16582,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16546,7 +16593,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16557,7 +16604,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16568,7 +16615,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16579,7 +16626,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16590,7 +16637,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16601,7 +16648,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16612,7 +16659,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16623,7 +16670,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16634,7 +16681,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16645,7 +16692,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16656,7 +16703,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16667,7 +16714,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16678,7 +16725,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16689,7 +16736,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16700,7 +16747,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16711,7 +16758,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16722,7 +16769,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16733,7 +16780,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16744,7 +16791,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16755,7 +16802,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16766,7 +16813,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16777,7 +16824,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16788,7 +16835,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16799,7 +16846,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16810,7 +16857,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16821,7 +16868,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16832,7 +16879,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16843,7 +16890,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16854,7 +16901,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16865,7 +16912,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16876,7 +16923,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16887,7 +16934,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16898,7 +16945,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16909,7 +16956,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16920,7 +16967,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16931,7 +16978,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16942,7 +16989,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16953,7 +17000,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16964,7 +17011,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16975,7 +17022,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16986,7 +17033,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -16997,7 +17044,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17008,7 +17055,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17019,7 +17066,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17030,7 +17077,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17041,7 +17088,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17052,7 +17099,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17063,7 +17110,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17074,7 +17121,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17085,7 +17132,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17096,7 +17143,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17107,7 +17154,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17118,7 +17165,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17129,7 +17176,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17140,7 +17187,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17151,7 +17198,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17162,7 +17209,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17173,7 +17220,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17184,7 +17231,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17195,7 +17242,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 67,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17516,7 +17563,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17527,7 +17574,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17538,7 +17585,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17549,7 +17596,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17560,7 +17607,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17571,7 +17618,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17582,7 +17629,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17593,7 +17640,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17604,7 +17651,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17615,7 +17662,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17626,7 +17673,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17637,7 +17684,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17648,7 +17695,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17659,7 +17706,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17670,7 +17717,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17681,7 +17728,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17692,7 +17739,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17703,7 +17750,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17714,7 +17761,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17725,7 +17772,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17736,7 +17783,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17747,7 +17794,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17758,7 +17805,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17769,7 +17816,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17780,7 +17827,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17791,7 +17838,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17802,7 +17849,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17813,7 +17860,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17824,7 +17871,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17835,7 +17882,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17846,7 +17893,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17857,7 +17904,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17868,7 +17915,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17879,7 +17926,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17890,7 +17937,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17901,7 +17948,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17912,7 +17959,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17923,7 +17970,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17934,7 +17981,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17945,7 +17992,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17956,7 +18003,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17967,7 +18014,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17978,7 +18025,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -17989,7 +18036,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18000,7 +18047,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18011,7 +18058,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18022,7 +18069,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18033,7 +18080,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18044,7 +18091,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18055,7 +18102,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18066,7 +18113,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18077,7 +18124,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18088,7 +18135,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18099,7 +18146,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18110,7 +18157,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18121,7 +18168,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18132,7 +18179,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18143,7 +18190,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18154,7 +18201,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18165,7 +18212,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18176,7 +18223,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18187,7 +18234,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18198,7 +18245,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18209,7 +18256,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18220,7 +18267,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18231,7 +18278,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18242,7 +18289,7 @@
             "bonusPoints": 0,
             "matchdayWinner": 0,
             "totalPoints": 2,
-            "matchdayWins": 0,
+            "matchdayWins": 0.01,
             "matchdayRank": 1
           },
           {
@@ -18558,10 +18605,10 @@
     ],
     "aenderungsprotokoll": [
       {
-        "zeitpunkt": "2026-08-09T18:11:13.460Z",
+        "zeitpunkt": "2026-08-15T12:39:57.485Z",
         "aktion": "Spieltag abgeschlossen",
         "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
-        "generatorVersion": "6.2.0-a6-HF3"
+        "generatorVersion": "6.2.0-a6-HF3-HF8"
       }
     ]
   },

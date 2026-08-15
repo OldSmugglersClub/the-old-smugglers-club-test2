@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "datenVersion": 3,
-  "aktualisiertAm": "2026-08-01T23:54:23.184039+00:00",
+  "aktualisiertAm": "2026-08-14T16:30:00+02:00",
   "aktiveSaison": "2026-27",
   "quelle": "The Old Smugglers Club Admin 6.0.0-A01.3d-1",
   "regeln": {
@@ -10082,6 +10082,31 @@
             "quelleStand": "2026-07-30",
             "heim": "16. der 2. Liga",
             "auswaerts": "Dritter der 3. Liga"
+          },
+          {
+            "id": "pk-2026-27-07-title-decider",
+            "wettbewerb": "piratenkodex",
+            "wettbewerbAnzeige": "Piratenkodex",
+            "saison": "2026/2027",
+            "runde": "Piratenkodex VII – Title Decider",
+            "spieltagNummer": 7,
+            "spielNummer": null,
+            "datum": "2027-05-08",
+            "datumVon": "2027-05-08",
+            "datumBis": "2027-05-08",
+            "datumAnzeige": "08.05.2027",
+            "anstoss": "16:00",
+            "terminBestaetigt": true,
+            "heimtore": null,
+            "auswaertstore": null,
+            "status": "terminiert",
+            "sonderwertungen": [
+              "piratenkodex"
+            ],
+            "notiz": "Piratenkodex VII – Title Decider",
+            "quelleStand": "2026-08-14",
+            "heimTeamId": "manchester-city",
+            "auswaertsTeamId": "fc-liverpool"
           }
         ]
       }
