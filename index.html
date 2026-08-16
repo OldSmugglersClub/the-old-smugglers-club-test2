@@ -6401,20 +6401,47 @@
         const focusEvent = state.focus;
         let upcoming = [];
         if (focusEvent) {
-          // Zuerst den vollständigen Zeitraum des fokussierten Tippspieltags bestimmen.
-          // Danach ALLE Tippereignisse innerhalb dieses Zeitraums aufnehmen – unabhängig
-          // vom Wettbewerb. So wird z.B. Smugglerauftrag "Anker" am Bundesliga-Wochenende
-          // chronologisch zwischen den Bundesliga-Spielen einsortiert.
-          const focusMatchdayEvents = timeline.exact.filter(event =>
-            event.matchdayNumber === focusEvent.matchdayNumber &&
-            event.matchdayType === focusEvent.matchdayType
-          );
-          const clusterStart = focusMatchdayEvents.length
-            ? new Date(Math.min(...focusMatchdayEvents.map(event => event._start.getTime())))
-            : focusEvent._start;
-          const clusterEnd = focusMatchdayEvents.length
-            ? new Date(Math.max(...focusMatchdayEvents.map(event => event._end.getTime())))
-            : focusEvent._end;
+          // Der sichtbare Block darf beim Fokuswechsel auf ein eingebettetes Einzelereignis
+          // (z.B. Smugglerauftrag) nicht auf dieses Einzelspiel zusammenschrumpfen.
+          // Deshalb suchen wir den kleinsten Mehrspiel-Tippspieltag, dessen Zeitspanne
+          // das Fokusereignis enthält, und verwenden dessen komplette Spanne als Cluster.
+          const groupedMatchdays = new Map();
+          timeline.exact.forEach(event => {
+            const key = `${event.matchdayType}::${event.matchdayNumber}`;
+            if (!groupedMatchdays.has(key)) groupedMatchdays.set(key, []);
+            groupedMatchdays.get(key).push(event);
+          });
+
+          const containingClusters = [...groupedMatchdays.values()]
+            .filter(events => events.length > 1)
+            .map(events => ({
+              start: new Date(Math.min(...events.map(event => event._start.getTime()))),
+              end: new Date(Math.max(...events.map(event => event._end.getTime())))
+            }))
+            .filter(cluster =>
+              focusEvent._start >= cluster.start &&
+              focusEvent._start <= cluster.end
+            )
+            .sort((a, b) => (a.end - a.start) - (b.end - b.start));
+
+          let clusterStart;
+          let clusterEnd;
+          if (containingClusters.length) {
+            clusterStart = containingClusters[0].start;
+            clusterEnd = containingClusters[0].end;
+          } else {
+            const ownEvents = timeline.exact.filter(event =>
+              event.matchdayNumber === focusEvent.matchdayNumber &&
+              event.matchdayType === focusEvent.matchdayType
+            );
+            clusterStart = ownEvents.length
+              ? new Date(Math.min(...ownEvents.map(event => event._start.getTime())))
+              : focusEvent._start;
+            clusterEnd = ownEvents.length
+              ? new Date(Math.max(...ownEvents.map(event => event._end.getTime())))
+              : focusEvent._end;
+          }
+
           upcoming = timeline.exact.filter(event =>
             event._end > now &&
             event._start >= clusterStart &&
