@@ -6010,6 +6010,7 @@
   <script src="./datenmodell.js"></script>
   <script src="./team-badge.js"></script>
   <script src="./schedule-data-adapter.js"></script>
+  <script src="./schedule-timeline.js"></script>
   <script>
     const menuButton = document.querySelector(".menu-button");
     const navigation = document.getElementById("navigation");
@@ -6382,49 +6383,24 @@
           return [];
         };
 
-        const preparedMatchdays = matchdays
-          .filter(matchday => matchday.aktiv !== false)
-          .map(matchday => {
-            const games = resolveGames(matchday).map((game, index) => {
-              const start = makeLocalDate(game.datum || game.datumVon, game.anstoss || "00:00");
-              if (!start) return null;
-              const liveMinutes = Math.max(1, Number(game.liveDauerMinuten) || liveMinutesDefault);
-              return {
-                ...game,
-                heim: resolveTeamName(game.heimTeamId, game.heim),
-                auswaerts: resolveTeamName(game.auswaertsTeamId, game.auswaerts),
-                _index: index,
-                _start: start,
-                _end: new Date(start.getTime() + liveMinutes * 60000)
-              };
-            }).filter(Boolean).sort((a, b) => a._start - b._start || a._index - b._index);
-            return {
-              ...matchday,
-              _games: games,
-              _start: games[0]?._start || null,
-              _end: games.length ? new Date(Math.max(...games.map(game => game._end.getTime()))) : null
-            };
-          })
-          .filter(matchday => matchday._games.length > 0)
-          .sort((a, b) => a._start - b._start || Number(a.nummer) - Number(b.nummer));
+        if (!window.OSCScheduleTimeline) throw new Error("Timeline-Kern fehlt");
+        const timeline = window.OSCScheduleTimeline.build({
+          matchdays,
+          resolveGames,
+          resolveTeamName,
+          liveMinutesDefault
+        });
+        const state = window.OSCScheduleTimeline.activeAndNext(timeline.exact, now);
+        const upcoming = window.OSCScheduleTimeline.windowEvents(timeline.exact, now, 7);
+        configureEventCountdown(timeline.exact, now, locale);
 
-        const countdownEvents = preparedMatchdays.flatMap(matchday => matchday._games.map(game => ({
-          ...game,
-          matchdayName: matchday.name || `Tippspieltag ${matchday.nummer}`
-        })));
-        configureEventCountdown(countdownEvents, now, locale);
-        const welcomeEvent = countdownEvents.find(event => event._end > now);
+        const welcomeEvent = state.focus;
         if (welcomeEvent) {
           const missionDate = new Intl.DateTimeFormat(locale, { day: "2-digit", month: "2-digit", year: "numeric" }).format(welcomeEvent._start);
-          const missionName = welcomeEvent.matchdayName || welcomeEvent.runde || welcomeEvent.wettbewerb || "Nächstes Event";
-          setWelcomeMission(missionName, missionDate);
+          setWelcomeMission(welcomeEvent.matchdayName || welcomeEvent.wettbewerbAnzeige || "Nächstes Event", missionDate);
         } else {
-          setWelcomeMission("Noch kein Termin");
+          setWelcomeMission("Noch kein bestätigter Termin");
         }
-
-        const currentMatchday = preparedMatchdays.find(matchday => matchday._start <= now && matchday._end >= now);
-        const nextMatchday = preparedMatchdays.find(matchday => matchday._end >= now);
-        const selectedMatchday = currentMatchday || nextMatchday;
 
         if (elements.note) {
           const noteVisible = Boolean(data.hinweisAnzeigen && data.hinweis);
@@ -6432,107 +6408,81 @@
           elements.note.classList.toggle("is-hidden", !noteVisible);
         }
 
-        if (!selectedMatchday) {
-          if (elements.label) elements.label.textContent = "Nächster Tippspieltag";
-          if (elements.title) elements.title.textContent = "Noch nicht terminiert";
-          if (elements.status) elements.status.textContent = "KEINE SPIELE";
+        const focus = state.focus;
+        if (!focus) {
+          if (elements.label) elements.label.textContent = "Nächste Tippereignisse";
+          if (elements.title) elements.title.textContent = "Noch kein bestätigter Termin";
+          if (elements.status) elements.status.textContent = "KEINE EXAKTEN TERMINE";
           setPlaceholder(data);
-          elements.list?.replaceChildren();
-          elements.list?.classList.add("is-empty");
         } else {
-          const games = selectedMatchday._games;
-          const isCurrent = Boolean(currentMatchday && currentMatchday === selectedMatchday);
-          const liveGames = games.filter(game => game._start <= now && game._end > now);
-          const firstGame = games.find(game => game._end >= now) || games[0];
-          const gameNoun = games.length === 1 ? "SPIEL" : "SPIELE";
-
-          if (elements.label) elements.label.textContent = `${isCurrent ? "Aktueller" : "Nächster"} Tippspieltag · Nr. ${selectedMatchday.nummer}`;
-          if (elements.title) elements.title.textContent = selectedMatchday.name || `Tippspieltag ${selectedMatchday.nummer}`;
-          if (elements.status) elements.status.textContent = liveGames.length ? "LIVE" : `${games.length} ${gameNoun}`;
+          if (elements.label) elements.label.textContent = state.live.length ? "Aktuelles Tippereignis" : "Nächstes Tippereignis";
+          if (elements.title) elements.title.textContent = focus.matchdayName || focus.wettbewerbAnzeige || "Nächstes Event";
+          if (elements.status) elements.status.textContent = state.live.length ? (state.live.length>1?`${state.live.length} LIVE`:"LIVE") : `${upcoming.length} EVENT${upcoming.length===1?"":"S"}`;
 
           elements.next?.classList.remove("is-placeholder");
-          const firstDate = new Intl.DateTimeFormat(locale, { weekday: "short", day: "2-digit", month: "2-digit", year: "numeric" }).format(firstGame._start);
-          if (elements.nextDate) elements.nextDate.textContent = `${firstDate} · ${firstGame.anstoss || "--:--"}`;
-          if (elements.nextCompetition) {
-            const mainGameLabel = liveGames.length
-              ? "Aktuelles Spiel"
-              : (firstGame._start > now ? "Nächstes Spiel" : "Letztes Spiel");
-            elements.nextCompetition.textContent = mainGameLabel;
-          }
-          if (elements.nextHomeName) elements.nextHomeName.textContent = firstGame.heim;
-          if (elements.nextSeparator) elements.nextSeparator.textContent = firstGame.trenner || "–";
-          if (elements.nextAwayName) elements.nextAwayName.textContent = firstGame.auswaerts;
-          renderTeamSeal(elements.nextHomeSeal, firstGame.heimTeamId, firstGame.heim);
-          renderTeamSeal(elements.nextAwaySeal, firstGame.auswaertsTeamId, firstGame.auswaerts);
-          if (elements.next && firstGame.ereignisLink) elements.next.href = firstGame.ereignisLink;
-          else elements.next?.removeAttribute("href");
+          const focusDate = new Intl.DateTimeFormat(locale,{weekday:"short",day:"2-digit",month:"2-digit",year:"numeric"}).format(focus._start);
+          if(elements.nextDate) elements.nextDate.textContent=`${focusDate} · ${focus.anstoss}`;
+          if(elements.nextCompetition) elements.nextCompetition.textContent=state.live.length?"Aktuelles Spiel":"Nächstes Spiel";
+          if(elements.nextHomeName) elements.nextHomeName.textContent=focus.heim;
+          if(elements.nextSeparator) elements.nextSeparator.textContent=focus.trenner||"–";
+          if(elements.nextAwayName) elements.nextAwayName.textContent=focus.auswaerts;
+          renderTeamSeal(elements.nextHomeSeal,focus.heimTeamId,focus.heim);
+          renderTeamSeal(elements.nextAwaySeal,focus.auswaertsTeamId,focus.auswaerts);
+          if(elements.next&&focus.ereignisLink) elements.next.href=focus.ereignisLink; else elements.next?.removeAttribute("href");
+        }
 
-          if (elements.list) {
-            elements.list.replaceChildren();
-            elements.list.classList.remove("is-empty", "is-single", "is-double", "is-multiple");
-            elements.list.classList.add(games.length === 1 ? "is-single" : (games.length === 2 ? "is-double" : "is-multiple"));
-            const groups = new Map();
-            games.forEach(game => {
-              const key = game.datum || game.datumVon;
-              if (!groups.has(key)) groups.set(key, []);
-              groups.get(key).push(game);
+        if(elements.list){
+          elements.list.replaceChildren();
+          elements.list.classList.remove("is-empty","is-single","is-double","is-multiple");
+          const visibleExact=upcoming.length?upcoming:(state.live||[]);
+          elements.list.classList.add(visibleExact.length===1?"is-single":visibleExact.length===2?"is-double":"is-multiple");
+          const groups=new Map();
+          visibleExact.forEach(game=>{
+            const key=game.datum;
+            if(!groups.has(key))groups.set(key,[]);
+            groups.get(key).push(game);
+          });
+          groups.forEach(eventsForDay=>{
+            const day=document.createElement("section"); day.className="sm-day";
+            const dayTitle=document.createElement("h3"); dayTitle.className="sm-day__title";
+            dayTitle.textContent=new Intl.DateTimeFormat(locale,{weekday:"long",day:"2-digit",month:"long"}).format(eventsForDay[0]._start);
+            day.appendChild(dayTitle);
+            eventsForDay.forEach(game=>{
+              const row=document.createElement(game.ereignisLink?"a":"div");
+              row.className="sm-event-row"; row.dataset.competition=game.matchdayType||game.wettbewerb||"";
+              if(game.ereignisLink)row.href=game.ereignisLink;
+              const time=document.createElement("span"); time.className="sm-event-row__time"; time.textContent=game.anstoss;
+              const competition=document.createElement("span"); competition.className="sm-event-row__competition";
+              competition.textContent=game.matchdayType==="Smugglerauftrag"?"Smugglerauftrag":(game.wettbewerbAnzeige||game.wettbewerb||"Ereignis");
+              const match=document.createElement("span"); match.className="sm-event-row__match";
+              match.textContent=`${game.heim} ${game.trenner||"–"} ${game.auswaerts}`;
+              const rowStatus=document.createElement("span"); rowStatus.className="sm-event-row__status";
+              rowStatus.textContent=game._start<=now&&game._end>now?"LIVE":(game.status||"TERMINIERT");
+              row.append(time,competition,match,rowStatus); day.appendChild(row);
             });
+            elements.list.appendChild(day);
+          });
 
-            groups.forEach(eventsForDay => {
-              const day = document.createElement("section");
-              day.className = "sm-day";
-              const dayTitle = document.createElement("h3");
-              dayTitle.className = "sm-day__title";
-              dayTitle.textContent = new Intl.DateTimeFormat(locale, { weekday: "long", day: "2-digit", month: "long" }).format(eventsForDay[0]._start);
-              day.appendChild(dayTitle);
-
-              eventsForDay.forEach(game => {
-                const row = document.createElement(game.ereignisLink ? "a" : "div");
-                row.className = "sm-event-row";
-                row.dataset.competition = selectedMatchday.typ || game.wettbewerb || "";
-                if (game.ereignisLink) row.href = game.ereignisLink;
-
-                const time = document.createElement("span");
-                time.className = "sm-event-row__time";
-                time.textContent = game.anstoss || "--:--";
-                const competition = document.createElement("span");
-                competition.className = "sm-event-row__competition";
-                competition.textContent = game.wettbewerbAnzeige || game.wettbewerb || "Ereignis";
-                const match = document.createElement("span");
-                match.className = "sm-event-row__match";
-                const home = document.createElement("span");
-                home.className = "sm-event-row__team sm-event-row__team--home";
-                const homeSeal = document.createElement("span");
-                homeSeal.className = "sm-event-row__seal";
-                homeSeal.setAttribute("aria-hidden", "true");
-                const homeName = document.createElement("span");
-                homeName.className = "sm-event-row__team-name";
-                homeName.textContent = game.heim;
-                home.append(homeSeal, homeName);
-                const separator = document.createElement("span");
-                separator.className = "sm-event-row__separator";
-                separator.textContent = game.trenner || "–";
-                const away = document.createElement("span");
-                away.className = "sm-event-row__team sm-event-row__team--away";
-                const awayName = document.createElement("span");
-                awayName.className = "sm-event-row__team-name";
-                awayName.textContent = game.auswaerts;
-                const awaySeal = document.createElement("span");
-                awaySeal.className = "sm-event-row__seal";
-                awaySeal.setAttribute("aria-hidden", "true");
-                away.append(awayName, awaySeal);
-                match.append(home, separator, away);
-                renderTeamSeal(homeSeal, game.heimTeamId, game.heim);
-                renderTeamSeal(awaySeal, game.auswaertsTeamId, game.auswaerts);
-                const rowStatus = document.createElement("span");
-                rowStatus.className = "sm-event-row__status";
-                rowStatus.textContent = game._start <= now && game._end > now ? "LIVE" : (game.status || "");
-                row.append(time, competition, match, rowStatus);
-                day.appendChild(row);
-              });
-              elements.list.appendChild(day);
+          // Unbestätigte Zeitfenster bleiben sichtbar, beeinflussen aber weder Reihenfolge noch Counter.
+          const announced=timeline.announced.filter(game=>{
+            const from=game._dateFrom;
+            return from && from >= new Intl.DateTimeFormat("en-CA",{year:"numeric",month:"2-digit",day:"2-digit"}).format(now);
+          }).slice(0,6);
+          if(announced.length){
+            const day=document.createElement("section"); day.className="sm-day sm-day--announced";
+            const title=document.createElement("h3"); title.className="sm-day__title"; title.textContent="Noch nicht zeitgenau terminiert";
+            day.appendChild(title);
+            announced.forEach(game=>{
+              const row=document.createElement("div"); row.className="sm-event-row"; row.dataset.competition=game.matchdayType||game.wettbewerb||"";
+              const time=document.createElement("span"); time.className="sm-event-row__time"; time.textContent="--:--";
+              const competition=document.createElement("span"); competition.className="sm-event-row__competition"; competition.textContent=game.matchdayName||game.wettbewerbAnzeige||game.wettbewerb||"Ereignis";
+              const match=document.createElement("span"); match.className="sm-event-row__match"; match.textContent=`${game.heim} ${game.trenner||"–"} ${game.auswaerts}`;
+              const status=document.createElement("span"); status.className="sm-event-row__status"; status.textContent="ZEIT OFFEN";
+              row.append(time,competition,match,status); day.appendChild(row);
             });
+            elements.list.appendChild(day);
           }
+          elements.list.classList.toggle("is-empty",!elements.list.children.length);
         }
 
         if (elements.overview) {

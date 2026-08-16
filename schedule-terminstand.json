@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-16T00:00:00.000Z",
+  "entries": {
+    "sma-2026-27-auftakt-001": {
+      "datum": "2026-08-09",
+      "datumVon": "2026-08-09",
+      "datumBis": "2026-08-09",
+      "anstoss": "13:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "sma-2026-27-02-013": {
+      "datum": "2026-08-16",
+      "datumVon": "2026-08-16",
+      "datumBis": "2026-08-16",
+      "anstoss": "13:30",
+      "status": "beendet",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "sma-2026-27-34-298": {
+      "datum": "2027-05-23",
+      "datumVon": "2027-05-23",
+      "datumBis": "2027-05-23",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-001": {
+      "datum": "2026-08-28",
+      "datumVon": "2026-08-28",
+      "datumBis": "2026-08-28",
+      "anstoss": "20:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-003": {
+      "datum": "2026-08-29",
+      "datumVon": "2026-08-29",
+      "datumBis": "2026-08-29",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-006": {
+      "datum": "2026-08-29",
+      "datumVon": "2026-08-29",
+      "datumBis": "2026-08-29",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-007": {
+      "datum": "2026-08-29",
+      "datumVon": "2026-08-29",
+      "datumBis": "2026-08-29",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-008": {
+      "datum": "2026-08-29",
+      "datumVon": "2026-08-29",
+      "datumBis": "2026-08-29",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-009": {
+      "datum": "2026-08-29",
+      "datumVon": "2026-08-29",
+      "datumBis": "2026-08-29",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-002": {
+      "datum": "2026-08-29",
+      "datumVon": "2026-08-29",
+      "datumBis": "2026-08-29",
+      "anstoss": "18:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-004": {
+      "datum": "2026-08-30",
+      "datumVon": "2026-08-30",
+      "datumBis": "2026-08-30",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-01-005": {
+      "datum": "2026-08-30",
+      "datumVon": "2026-08-30",
+      "datumBis": "2026-08-30",
+      "anstoss": "17:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-010": {
+      "datum": "2026-09-04",
+      "datumVon": "2026-09-04",
+      "datumBis": "2026-09-04",
+      "anstoss": "20:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-011": {
+      "datum": "2026-09-05",
+      "datumVon": "2026-09-05",
+      "datumBis": "2026-09-05",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-012": {
+      "datum": "2026-09-05",
+      "datumVon": "2026-09-05",
+      "datumBis": "2026-09-05",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-014": {
+      "datum": "2026-09-05",
+      "datumVon": "2026-09-05",
+      "datumBis": "2026-09-05",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-016": {
+      "datum": "2026-09-05",
+      "datumVon": "2026-09-05",
+      "datumBis": "2026-09-05",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-018": {
+      "datum": "2026-09-05",
+      "datumVon": "2026-09-05",
+      "datumBis": "2026-09-05",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-017": {
+      "datum": "2026-09-05",
+      "datumVon": "2026-09-05",
+      "datumBis": "2026-09-05",
+      "anstoss": "18:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-015": {
+      "datum": "2026-09-06",
+      "datumVon": "2026-09-06",
+      "datumBis": "2026-09-06",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-02-013": {
+      "datum": "2026-09-06",
+      "datumVon": "2026-09-06",
+      "datumBis": "2026-09-06",
+      "anstoss": "17:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-025": {
+      "datum": "2026-09-11",
+      "datumVon": "2026-09-11",
+      "datumBis": "2026-09-11",
+      "anstoss": "20:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-019": {
+      "datum": "2026-09-12",
+      "datumVon": "2026-09-12",
+      "datumBis": "2026-09-12",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-021": {
+      "datum": "2026-09-12",
+      "datumVon": "2026-09-12",
+      "datumBis": "2026-09-12",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-022": {
+      "datum": "2026-09-12",
+      "datumVon": "2026-09-12",
+      "datumBis": "2026-09-12",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-023": {
+      "datum": "2026-09-12",
+      "datumVon": "2026-09-12",
+      "datumBis": "2026-09-12",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-024": {
+      "datum": "2026-09-12",
+      "datumVon": "2026-09-12",
+      "datumBis": "2026-09-12",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-026": {
+      "datum": "2026-09-12",
+      "datumVon": "2026-09-12",
+      "datumBis": "2026-09-12",
+      "anstoss": "18:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-020": {
+      "datum": "2026-09-13",
+      "datumVon": "2026-09-13",
+      "datumBis": "2026-09-13",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-03-027": {
+      "datum": "2026-09-13",
+      "datumVon": "2026-09-13",
+      "datumBis": "2026-09-13",
+      "anstoss": "17:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-028": {
+      "datum": "2026-09-18",
+      "datumVon": "2026-09-18",
+      "datumBis": "2026-09-18",
+      "anstoss": "20:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-031": {
+      "datum": "2026-09-19",
+      "datumVon": "2026-09-19",
+      "datumBis": "2026-09-19",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-032": {
+      "datum": "2026-09-19",
+      "datumVon": "2026-09-19",
+      "datumBis": "2026-09-19",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-033": {
+      "datum": "2026-09-19",
+      "datumVon": "2026-09-19",
+      "datumBis": "2026-09-19",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-034": {
+      "datum": "2026-09-19",
+      "datumVon": "2026-09-19",
+      "datumBis": "2026-09-19",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-029": {
+      "datum": "2026-09-19",
+      "datumVon": "2026-09-19",
+      "datumBis": "2026-09-19",
+      "anstoss": "18:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-030": {
+      "datum": "2026-09-20",
+      "datumVon": "2026-09-20",
+      "datumBis": "2026-09-20",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-035": {
+      "datum": "2026-09-20",
+      "datumVon": "2026-09-20",
+      "datumBis": "2026-09-20",
+      "anstoss": "17:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-04-036": {
+      "datum": "2026-09-20",
+      "datumVon": "2026-09-20",
+      "datumBis": "2026-09-20",
+      "anstoss": "19:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-298": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-299": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-300": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-301": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-302": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-303": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-304": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-305": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "bl-2026-27-34-306": {
+      "datum": "2027-05-22",
+      "datumVon": "2027-05-22",
+      "datumBis": "2027-05-22",
+      "anstoss": "15:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "pk-2026-27-01-el-clasico": {
+      "datum": "2026-10-25",
+      "datumVon": "2026-10-25",
+      "datumBis": "2026-10-25",
+      "anstoss": "15:00",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "pk-2026-27-02-madonnina": {
+      "datum": "2026-11-01",
+      "datumVon": "2026-11-01",
+      "datumBis": "2026-11-01",
+      "anstoss": "18:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "pk-2026-27-03-nw-derby": {
+      "datum": "2026-11-21",
+      "datumVon": "2026-11-21",
+      "datumBis": "2026-11-21",
+      "anstoss": "16:00",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "pk-2026-27-04-ditalia": {
+      "datum": "2027-01-10",
+      "datumVon": "2027-01-10",
+      "datumBis": "2027-01-10",
+      "anstoss": "18:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "pk-2026-27-05-le-classique": {
+      "datum": "2027-02-07",
+      "datumVon": "2027-02-07",
+      "datumBis": "2027-02-07",
+      "anstoss": "20:45",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "pk-2026-27-06-mancu-derby": {
+      "datum": "2027-03-20",
+      "datumVon": "2027-03-20",
+      "datumBis": "2027-03-20",
+      "anstoss": "16:00",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "wr-2026-27-01": {
+      "datum": "2026-12-26",
+      "datumVon": "2026-12-26",
+      "datumBis": "2026-12-26",
+      "anstoss": "16:00",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "wr-2026-27-02": {
+      "datum": "2026-12-27",
+      "datumVon": "2026-12-27",
+      "datumBis": "2026-12-27",
+      "anstoss": "18:00",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "wr-2026-27-03": {
+      "datum": "2026-12-30",
+      "datumVon": "2026-12-30",
+      "datumBis": "2026-12-30",
+      "anstoss": "21:00",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "wr-2026-27-04": {
+      "datum": "2027-01-02",
+      "datumVon": "2027-01-02",
+      "datumBis": "2027-01-02",
+      "anstoss": "16:00",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "wr-2026-27-05": {
+      "datum": "2027-01-03",
+      "datumVon": "2027-01-03",
+      "datumBis": "2027-01-03",
+      "anstoss": "18:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "rel-2026-27-bl-hin": {
+      "datum": "2027-05-27",
+      "datumVon": "2027-05-27",
+      "datumBis": "2027-05-27",
+      "anstoss": "20:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "rel-2026-27-2bl-hin": {
+      "datum": "2027-05-28",
+      "datumVon": "2027-05-28",
+      "datumBis": "2027-05-28",
+      "anstoss": "20:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "rel-2026-27-bl-rueck": {
+      "datum": "2027-05-31",
+      "datumVon": "2027-05-31",
+      "datumBis": "2027-05-31",
+      "anstoss": "20:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "rel-2026-27-2bl-rueck": {
+      "datum": "2027-06-01",
+      "datumVon": "2027-06-01",
+      "datumBis": "2027-06-01",
+      "anstoss": "20:30",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-07-30"
+    },
+    "pk-2026-27-07-title-decider": {
+      "datum": "2027-05-08",
+      "datumVon": "2027-05-08",
+      "datumBis": "2027-05-08",
+      "anstoss": "16:00",
+      "status": "terminiert",
+      "terminBestaetigt": true,
+      "quelleStand": "2026-08-14"
+    }
+  }
+}

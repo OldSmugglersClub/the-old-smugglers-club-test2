@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { writeScheduleSnapshot } from "./schedule-terminstand.mjs";
 import {
   readJson,
   validateAndPlan,
@@ -60,6 +61,7 @@ console.log(JSON.stringify({
 }, null, 2));
 
 if (!plan.planned.length) {
+  const snapshot=writeScheduleSnapshot(data); console.log(`TERMINSTAND: ${snapshot.entries} bestätigte Termine${snapshot.changed?" · geändert":" · unverändert"}.`);
   console.log("KEINE TERMINÄNDERUNG: Keine neuen, sicher konkretisierbaren Dynamo-Termine.");
   process.exit(0);
 }
@@ -71,4 +73,6 @@ if (updatedText === originalSpieldatenText) {
 }
 
 fs.writeFileSync(SPIELDATEN_PATH, updatedText, "utf8");
+const snapshotResult=writeScheduleSnapshot(JSON.parse(updatedText));
+console.log(`TERMINSTAND: ${snapshotResult.entries} bestätigte Termine${snapshotResult.changed?" · geändert":" · unverändert"}.`);
 console.log(`TERMINIMPORT ERFOLGREICH: ${plan.planned.length} Dynamo-Termin(e) konkretisiert; datenVersion exakt +1; JSON-Struktur außerhalb der Zielfelder byte-nah erhalten.`);
