@@ -6394,13 +6394,28 @@
         // Die Badge-Anzahl beschreibt die Events des aktuell fokussierten Tippspieltags,
         // nicht ein willkürliches 7-Tage-Zeitfenster. So bleiben Kachel, Liste und Counter konsistent.
         const focusEvent = state.focus;
-        const upcoming = focusEvent
-          ? timeline.exact.filter(event =>
-              event.matchdayNumber === focusEvent.matchdayNumber &&
-              event.matchdayType === focusEvent.matchdayType &&
-              event._end > now
-            )
-          : [];
+        let upcoming = [];
+        if (focusEvent) {
+          // Zuerst den vollständigen Zeitraum des fokussierten Tippspieltags bestimmen.
+          // Danach ALLE Tippereignisse innerhalb dieses Zeitraums aufnehmen – unabhängig
+          // vom Wettbewerb. So wird z.B. Smugglerauftrag "Anker" am Bundesliga-Wochenende
+          // chronologisch zwischen den Bundesliga-Spielen einsortiert.
+          const focusMatchdayEvents = timeline.exact.filter(event =>
+            event.matchdayNumber === focusEvent.matchdayNumber &&
+            event.matchdayType === focusEvent.matchdayType
+          );
+          const clusterStart = focusMatchdayEvents.length
+            ? new Date(Math.min(...focusMatchdayEvents.map(event => event._start.getTime())))
+            : focusEvent._start;
+          const clusterEnd = focusMatchdayEvents.length
+            ? new Date(Math.max(...focusMatchdayEvents.map(event => event._end.getTime())))
+            : focusEvent._end;
+          upcoming = timeline.exact.filter(event =>
+            event._end > now &&
+            event._start >= clusterStart &&
+            event._start <= clusterEnd
+          );
+        }
         configureEventCountdown(timeline.exact, now, locale);
 
         const welcomeEvent = state.focus;
