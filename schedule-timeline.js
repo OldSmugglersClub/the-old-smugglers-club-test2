@@ -55,9 +55,8 @@
   }
 
   function activeAndNext(exact,now){
-    const live=exact.filter(e=>e._start<=now&&e._end>now);
     const next=exact.find(e=>e._start>now)||null;
-    return {live,next,focus:live[0]||next};
+    return {live:[],next,focus:next};
   }
 
   function windowEvents(exact,now,days=7){

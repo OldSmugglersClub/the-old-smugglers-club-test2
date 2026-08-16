@@ -6097,18 +6097,6 @@
       }
 
       const now = countdownClockNow();
-      const live = countdownRuntime.events.filter(event => event._start <= now && event._end > now);
-      if (live.length) {
-        setCountdownLiveMode(live.length);
-        const event = live[0];
-        const liveLabel = live.length > 1 ? `${live.length} EVENTS LIVE` : "JETZT LIVE";
-        const match = live.length > 1
-          ? `${live.length} Begegnungen laufen gleichzeitig`
-          : `${event.heim} ${event.trenner || "–"} ${event.auswaerts}`;
-        setCountdownInfo(liveLabel, event.matchdayName || event.wettbewerbAnzeige || "Event läuft", [match]);
-        return;
-      }
-
       const next = countdownRuntime.events.find(event => event._start > now);
       if (!next) {
         setCountdownLiveMode(0);
@@ -6443,7 +6431,7 @@
           }
 
           upcoming = timeline.exact.filter(event =>
-            event._end > now &&
+            event._start > now &&
             event._start >= clusterStart &&
             event._start <= clusterEnd
           );
@@ -6471,14 +6459,14 @@
           if (elements.status) elements.status.textContent = "KEINE EXAKTEN TERMINE";
           setPlaceholder(data);
         } else {
-          if (elements.label) elements.label.textContent = state.live.length ? "Aktuelles Tippereignis" : "Nächstes Tippereignis";
+          if (elements.label) elements.label.textContent = "Nächstes Tippereignis";
           if (elements.title) elements.title.textContent = focus.matchdayName || focus.wettbewerbAnzeige || "Nächstes Event";
-          if (elements.status) elements.status.textContent = state.live.length ? (state.live.length>1?`${state.live.length} LIVE`:"LIVE") : `${upcoming.length} EVENT${upcoming.length===1?"":"S"}`;
+          if (elements.status) elements.status.textContent = `${upcoming.length} EVENT${upcoming.length===1?"":"S"}`;
 
           elements.next?.classList.remove("is-placeholder");
           const focusDate = new Intl.DateTimeFormat(locale,{weekday:"short",day:"2-digit",month:"2-digit",year:"numeric"}).format(focus._start);
           if(elements.nextDate) elements.nextDate.textContent=`${focusDate} · ${focus.anstoss}`;
-          if(elements.nextCompetition) elements.nextCompetition.textContent=state.live.length?"Aktuelles Spiel":"Nächstes Spiel";
+          if(elements.nextCompetition) elements.nextCompetition.textContent="Nächstes Spiel";
           if(elements.nextHomeName) elements.nextHomeName.textContent=focus.heim;
           if(elements.nextSeparator) elements.nextSeparator.textContent=focus.trenner||"–";
           if(elements.nextAwayName) elements.nextAwayName.textContent=focus.auswaerts;
@@ -6490,7 +6478,7 @@
         if(elements.list){
           elements.list.replaceChildren();
           elements.list.classList.remove("is-empty","is-single","is-double","is-multiple");
-          const visibleExact=upcoming.length?upcoming:(state.live||[]);
+          const visibleExact=upcoming;
           elements.list.classList.add(visibleExact.length===1?"is-single":visibleExact.length===2?"is-double":"is-multiple");
           const groups=new Map();
           visibleExact.forEach(game=>{
@@ -6513,7 +6501,7 @@
               const match=document.createElement("span"); match.className="sm-event-row__match";
               match.textContent=`${game.heim} ${game.trenner||"–"} ${game.auswaerts}`;
               const rowStatus=document.createElement("span"); rowStatus.className="sm-event-row__status";
-              rowStatus.textContent=game._start<=now&&game._end>now?"LIVE":(game.status||"TERMINIERT");
+              rowStatus.textContent=game.status||"TERMINIERT";
               row.append(time,competition,match,rowStatus); day.appendChild(row);
             });
             elements.list.appendChild(day);
