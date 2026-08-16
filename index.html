@@ -6351,7 +6351,12 @@
           element.replaceChildren(fallback);
         };
 
-        const simulatedNow = typeof data.testJetzt === "string" && data.testJetzt.trim() ? new Date(data.testJetzt) : null;
+        // TEST2-Diagnose: URL-Parameter hat Vorrang vor einem optionalen Datenwert.
+        // Beispiel: ?testJetzt=2026-08-29T12:30
+        // Ohne Parameter bleibt der reale Produktivzeitpfad unverändert.
+        const testNowParam = new URLSearchParams(window.location.search).get("testJetzt");
+        const simulatedNowRaw = testNowParam || (typeof data.testJetzt === "string" ? data.testJetzt.trim() : "");
+        const simulatedNow = simulatedNowRaw ? new Date(simulatedNowRaw) : null;
         const now = simulatedNow && !Number.isNaN(simulatedNow.getTime()) ? simulatedNow : new Date();
 
         const allGames = Array.isArray(gameData.saisons)
