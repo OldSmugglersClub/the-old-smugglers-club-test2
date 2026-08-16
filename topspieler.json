@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
   "datenVersion": 1,
-  "aktualisiertAm": "2026-08-15T12:39:57.485Z",
+  "aktualisiertAm": "2026-08-16T16:19:08.078Z",
   "saison": "2026-27",
   "status": "Berechnet",
   "kategorien": [
     {
       "titel": "Spieltagsführer",
-      "name": "AdamJ",
-      "wert": "2 Punkte"
+      "name": "Andy1304",
+      "wert": "5 Punkte"
     },
     {
       "titel": "Meiste exakte Tipps",
-      "name": "AdamJ",
-      "wert": "0"
+      "name": "Andy1304",
+      "wert": "1"
     },
     {
       "titel": "Beste Serie",

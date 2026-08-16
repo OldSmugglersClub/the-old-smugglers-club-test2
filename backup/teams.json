@@ -817,7 +817,8 @@
       "logo": "./assets/smugglers-design-system/schmugglersiegel/darmstadt-98.svg",
       "aktiv": true,
       "kicktippAliase": [
-        "SVD"
+        "SVD",
+        "D98"
       ],
       "apiAliase": [
         "SV Darmstadt 98",
