@@ -2342,49 +2342,6 @@
     .countdown-panel .chronometer-seal span::before { transform: translate(-50%, -50%) rotate(45deg); height: 17px; opacity: .72; }
     .countdown-panel .chronometer-seal span::after { transform: translate(-50%, -50%) rotate(-45deg); height: 17px; opacity: .72; }
 
-    .countdown-live-state {
-      grid-column: 1 / -1;
-      min-height: 116px;
-      display: grid;
-      place-items: center;
-      align-content: center;
-      gap: .3rem;
-      padding: 1rem;
-      border: 1px solid #c78c31;
-      border-radius: 11px;
-      color: #e0c37f;
-      background:
-        radial-gradient(circle at 50% 35%, rgba(218,166,72,.13), transparent 46%),
-        linear-gradient(180deg, #2b1a0d 0%, #120b06 48%, #070402 51%, #1d1108 100%);
-      box-shadow:
-        inset 0 0 0 2px rgba(0,0,0,.54),
-        inset 0 1px 0 rgba(255,255,255,.11),
-        inset 0 -12px 22px rgba(0,0,0,.35),
-        0 8px 18px rgba(0,0,0,.46);
-      text-align: center;
-    }
-
-    .countdown-live-state[hidden] {
-      display: none !important;
-    }
-
-    .countdown-live-state strong {
-      color: #e5bd63;
-      font-size: clamp(1.75rem, 4vw, 2.55rem);
-      line-height: 1;
-      letter-spacing: .045em;
-      text-transform: uppercase;
-      text-shadow: 0 2px 0 #2d1906, 0 4px 9px rgba(0,0,0,.82);
-    }
-
-    .countdown-live-state span {
-      color: #c8a968;
-      font-size: .68rem;
-      font-weight: 800;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-    }
-
     .countdown-message {
       position: relative;
       z-index: 1;
@@ -5614,10 +5571,6 @@
               <span class="flip-label">Sekunden</span>
             </div>
           </div>
-          <div class="countdown-live-state" id="countdown-live-state" hidden>
-            <strong id="countdown-live-title">JETZT LIVE</strong>
-            <span>Aktueller Spielbetrieb</span>
-          </div>
         </div>
 
         <div class="countdown-rigging" aria-hidden="true">
@@ -6076,21 +6029,9 @@
       }
     }
 
-    function setCountdownLiveMode(count = 0) {
-      const liveState = document.getElementById("countdown-live-state");
-      const liveTitle = document.getElementById("countdown-live-title");
-      document.querySelectorAll(".countdown-panel .flip-unit").forEach(unit => {
-        unit.hidden = count > 0;
-      });
-      if (liveState) liveState.hidden = count <= 0;
-      if (liveTitle && count > 0) {
-        liveTitle.textContent = count > 1 ? `${count} SPIELE LIVE` : "JETZT LIVE";
-      }
-    }
 
     function updateCountdown() {
       if (!countdownRuntime || !countdownRuntime.events.length) {
-        setCountdownLiveMode(0);
         ["days", "hours", "minutes", "seconds"].forEach(id => setFlipValue(id, 0));
         setCountdownInfo("Nächstes Event", "Noch kein bestätigter Termin vorhanden.", ["Der nächste bestätigte Spieltermin steht noch nicht fest."]);
         return;
@@ -6099,13 +6040,11 @@
       const now = countdownClockNow();
       const next = countdownRuntime.events.find(event => event._start > now);
       if (!next) {
-        setCountdownLiveMode(0);
         ["days", "hours", "minutes", "seconds"].forEach(id => setFlipValue(id, 0));
         setCountdownInfo("SAISON BEENDET", `Für die Saison ${countdownSeason} ist kein weiteres Event terminiert.`, ["Neue Termine erscheinen nach ihrer Freigabe."]);
         return;
       }
 
-      setCountdownLiveMode(0);
       const distance = next._start.getTime() - now.getTime();
       setFlipValue("days", Math.floor(distance / 86400000));
       setFlipValue("hours", Math.floor((distance / 3600000) % 24));
@@ -6339,13 +6278,7 @@
           element.replaceChildren(fallback);
         };
 
-        // TEST2-Diagnose: URL-Parameter hat Vorrang vor einem optionalen Datenwert.
-        // Beispiel: ?testJetzt=2026-08-29T12:30
-        // Ohne Parameter bleibt der reale Produktivzeitpfad unverändert.
-        const testNowParam = new URLSearchParams(window.location.search).get("testJetzt");
-        const simulatedNowRaw = testNowParam || (typeof data.testJetzt === "string" ? data.testJetzt.trim() : "");
-        const simulatedNow = simulatedNowRaw ? new Date(simulatedNowRaw) : null;
-        const now = simulatedNow && !Number.isNaN(simulatedNow.getTime()) ? simulatedNow : new Date();
+        const now = new Date();
 
         const allGames = Array.isArray(gameData.saisons)
           ? gameData.saisons.flatMap(season => Array.isArray(season.spiele) ? season.spiele : [])
