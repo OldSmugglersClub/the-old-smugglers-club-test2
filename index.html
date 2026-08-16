@@ -6432,7 +6432,23 @@
               const competition=document.createElement("span"); competition.className="sm-event-row__competition";
               competition.textContent=game.matchdayType==="Smugglerauftrag"?"Smugglerauftrag":(game.wettbewerbAnzeige||game.wettbewerb||"Ereignis");
               const match=document.createElement("span"); match.className="sm-event-row__match";
-              match.textContent=`${game.heim} ${game.trenner||"–"} ${game.auswaerts}`;
+
+              const homeWrap=document.createElement("span"); homeWrap.className="sm-event-row__team sm-event-row__team--home";
+              const homeSeal=document.createElement("span"); homeSeal.className="sm-event-row__seal";
+              const homeName=document.createElement("span"); homeName.className="sm-event-row__team-name"; homeName.textContent=game.heim;
+              homeWrap.append(homeSeal,homeName);
+
+              const separator=document.createElement("span"); separator.className="sm-event-row__separator"; separator.textContent=game.trenner||"–";
+
+              const awayWrap=document.createElement("span"); awayWrap.className="sm-event-row__team sm-event-row__team--away";
+              const awayName=document.createElement("span"); awayName.className="sm-event-row__team-name"; awayName.textContent=game.auswaerts;
+              const awaySeal=document.createElement("span"); awaySeal.className="sm-event-row__seal";
+              awayWrap.append(awayName,awaySeal);
+
+              match.append(homeWrap,separator,awayWrap);
+              renderTeamSeal(homeSeal,game.heimTeamId,game.heim);
+              renderTeamSeal(awaySeal,game.auswaertsTeamId,game.auswaerts);
+
               const rowStatus=document.createElement("span"); rowStatus.className="sm-event-row__status";
               rowStatus.textContent=game.status||"TERMINIERT";
               row.append(time,competition,match,rowStatus); day.appendChild(row);
@@ -6453,7 +6469,24 @@
               const row=document.createElement("div"); row.className="sm-event-row"; row.dataset.competition=game.matchdayType||game.wettbewerb||"";
               const time=document.createElement("span"); time.className="sm-event-row__time"; time.textContent="--:--";
               const competition=document.createElement("span"); competition.className="sm-event-row__competition"; competition.textContent=game.matchdayName||game.wettbewerbAnzeige||game.wettbewerb||"Ereignis";
-              const match=document.createElement("span"); match.className="sm-event-row__match"; match.textContent=`${game.heim} ${game.trenner||"–"} ${game.auswaerts}`;
+              const match=document.createElement("span"); match.className="sm-event-row__match";
+
+              const homeWrap=document.createElement("span"); homeWrap.className="sm-event-row__team sm-event-row__team--home";
+              const homeSeal=document.createElement("span"); homeSeal.className="sm-event-row__seal";
+              const homeName=document.createElement("span"); homeName.className="sm-event-row__team-name"; homeName.textContent=game.heim;
+              homeWrap.append(homeSeal,homeName);
+
+              const separator=document.createElement("span"); separator.className="sm-event-row__separator"; separator.textContent=game.trenner||"–";
+
+              const awayWrap=document.createElement("span"); awayWrap.className="sm-event-row__team sm-event-row__team--away";
+              const awayName=document.createElement("span"); awayName.className="sm-event-row__team-name"; awayName.textContent=game.auswaerts;
+              const awaySeal=document.createElement("span"); awaySeal.className="sm-event-row__seal";
+              awayWrap.append(awayName,awaySeal);
+
+              match.append(homeWrap,separator,awayWrap);
+              renderTeamSeal(homeSeal,game.heimTeamId,game.heim);
+              renderTeamSeal(awaySeal,game.auswaertsTeamId,game.auswaerts);
+
               const status=document.createElement("span"); status.className="sm-event-row__status"; status.textContent=game._openReason==="verlegt"?"VERLEGT · TERMIN OFFEN":game._openReason==="abgesagt"?"ABGESAGT · TERMIN OFFEN":game._openReason==="ausgefallen"?"AUSGEFALLEN · TERMIN OFFEN":"ZEIT OFFEN";
               row.append(time,competition,match,status); day.appendChild(row);
             });
