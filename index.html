@@ -6391,7 +6391,16 @@
           liveMinutesDefault
         });
         const state = window.OSCScheduleTimeline.activeAndNext(timeline.exact, now);
-        const upcoming = window.OSCScheduleTimeline.windowEvents(timeline.exact, now, 7);
+        // Die Badge-Anzahl beschreibt die Events des aktuell fokussierten Tippspieltags,
+        // nicht ein willkürliches 7-Tage-Zeitfenster. So bleiben Kachel, Liste und Counter konsistent.
+        const focusEvent = state.focus;
+        const upcoming = focusEvent
+          ? timeline.exact.filter(event =>
+              event.matchdayNumber === focusEvent.matchdayNumber &&
+              event.matchdayType === focusEvent.matchdayType &&
+              event._end > now
+            )
+          : [];
         configureEventCountdown(timeline.exact, now, locale);
 
         const welcomeEvent = state.focus;
