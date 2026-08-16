@@ -17,7 +17,9 @@ export function writeScheduleSnapshot(data,path=SNAPSHOT_PATH){
   const current=fs.existsSync(path)?JSON.parse(fs.readFileSync(path,"utf8")):{schemaVersion:1,updatedAt:null,entries:{}};
   const fresh=extractConfirmedSchedule(data);
 
-  // Never delete a previously confirmed event merely because a later admin export regressed it.
+  // ID-stabile Persistenz:
+  // - bestätigte aktuelle Werte derselben Spiel-ID ersetzen ältere Snapshot-Werte (Verlegung/Nachholtermin);
+  // - fehlt ein Spiel im aktuellen Export oder fällt auf unbestätigt zurück, bleibt der letzte bestätigte Wert erhalten.
   const mergedEntries={...(current.entries||{}),...fresh.entries};
 
   // Stable comparison: updatedAt itself must never create a false-positive repository change.

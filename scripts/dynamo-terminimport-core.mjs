@@ -268,31 +268,65 @@ export function validateAndPlan(data, teamsData, apiMatches) {
     }
     matched.add(localMatch.id);
 
-    if (localMatch.terminBestaetigt === true || localMatch.status === "beendet") {
-      skipped.push({ localId: localMatch.id, reason: "lokal bereits bestätigt/beendet" });
+    if (localMatch.status === "beendet" ||
+        (Number.isInteger(localMatch.heimtore) && Number.isInteger(localMatch.auswaertstore))) {
+      skipped.push({ localId: localMatch.id, reason: "lokal bereits beendet/mit Ergebnis" });
       continue;
     }
 
-    const exact = parseLocalDateTime(item.apiMatch);
-    const sourceDate = apiLastUpdateDate(item.apiMatch);
-    if (!exact) {
-      skipped.push({ localId: localMatch.id, reason: "kein konkreter OpenLigaDB-Zeitpunkt" });
+    const exact=parseLocalDateTime(item.apiMatch);
+    const sourceDate=apiLastUpdateDate(item.apiMatch);
+    if(!exact){
+      skipped.push({localId:localMatch.id,reason:"kein konkreter OpenLigaDB-Zeitpunkt"});
       continue;
     }
-    if (!dateInWindow(exact.date, localMatch.datumVon, localMatch.datumBis)) {
-      skipped.push({ localId: localMatch.id, reason: "OpenLigaDB-Datum außerhalb des lokalen Spieltagfensters" });
+    if(!sourceDate){
+      skipped.push({localId:localMatch.id,reason:"kein OpenLigaDB-Quellenstand"});
       continue;
     }
-    if (!sourceDate) {
-      skipped.push({ localId: localMatch.id, reason: "kein OpenLigaDB-Quellenstand" });
+
+    const localExact=
+      localMatch.terminBestaetigt===true &&
+      /^\d{4}-\d{2}-\d{2}$/.test(String(localMatch.datum||"")) &&
+      /^\d{2}:\d{2}$/.test(String(localMatch.anstoss||""));
+
+    if(!localExact){
+      // Erstkonkretisierung muss im bekannten Fenster liegen.
+      if(!dateInWindow(exact.date,localMatch.datumVon,localMatch.datumBis)){
+        skipped.push({localId:localMatch.id,reason:"OpenLigaDB-Datum außerhalb des lokalen Spieltagfensters"});
+        continue;
+      }
+      planned.push({
+        localId:localMatch.id,datum:exact.date,anstoss:exact.time,
+        quelleStand:newestSourceDate(localMatch.quelleStand,sourceDate),
+        aenderungsart:"Konkretisierung"
+      });
+      continue;
+    }
+
+    if(localMatch.datum===exact.date && localMatch.anstoss===exact.time){
+      skipped.push({localId:localMatch.id,reason:"Termin bereits identisch"});
+      continue;
+    }
+
+    // Verlegung/Nachholtermin: dieselbe eindeutig gemappte Spiel-ID darf neu terminiert werden.
+    // Sicherheitsfenster verhindert automatische Änderungen unmittelbar vor einem der beiden Anstoßzeitpunkte.
+    const apiKickoff=new Date(`${exact.date}T${exact.time}:00+02:00`);
+    const localKickoff=new Date(`${localMatch.datum}T${localMatch.anstoss}:00+02:00`);
+    const sixHours=6*60*60*1000;
+    if(Number.isNaN(apiKickoff.getTime())||Number.isNaN(localKickoff.getTime())){
+      skipped.push({localId:localMatch.id,reason:"Terminvergleich technisch ungültig"});
+      continue;
+    }
+    if(Math.min(apiKickoff.getTime(),localKickoff.getTime())-now.getTime()<sixHours){
+      skipped.push({localId:localMatch.id,reason:"abweichender bestätigter Termin innerhalb 6h-Sicherheitsfenster"});
       continue;
     }
 
     planned.push({
-      localId: localMatch.id,
-      datum: exact.date,
-      anstoss: exact.time,
-      quelleStand: newestSourceDate(localMatch.quelleStand, sourceDate)
+      localId:localMatch.id,datum:exact.date,anstoss:exact.time,
+      quelleStand:newestSourceDate(localMatch.quelleStand,sourceDate),
+      aenderungsart:"Verlegung"
     });
   }
 
@@ -309,8 +343,9 @@ export function applyPlan(data, plan, updatedAt) {
   for (const item of plan.planned) {
     const m = index.get(item.localId);
     if (!m) throw new Error(`Spiel ${item.localId} beim Anwenden nicht gefunden.`);
-    if (m.terminBestaetigt === true || m.status === "beendet") {
-      throw new Error(`Schutzverletzung: ${item.localId} ist inzwischen bestätigt/beendet.`);
+    if (m.status === "beendet" ||
+        (Number.isInteger(m.heimtore) && Number.isInteger(m.auswaertstore))) {
+      throw new Error(`Schutzverletzung: ${item.localId} ist inzwischen beendet/mit Ergebnis.`);
     }
     m.datum = item.datum;
     m.datumVon = item.datum;

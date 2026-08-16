@@ -6477,7 +6477,7 @@
               const time=document.createElement("span"); time.className="sm-event-row__time"; time.textContent="--:--";
               const competition=document.createElement("span"); competition.className="sm-event-row__competition"; competition.textContent=game.matchdayName||game.wettbewerbAnzeige||game.wettbewerb||"Ereignis";
               const match=document.createElement("span"); match.className="sm-event-row__match"; match.textContent=`${game.heim} ${game.trenner||"–"} ${game.auswaerts}`;
-              const status=document.createElement("span"); status.className="sm-event-row__status"; status.textContent="ZEIT OFFEN";
+              const status=document.createElement("span"); status.className="sm-event-row__status"; status.textContent=game._openReason==="verlegt"?"VERLEGT · TERMIN OFFEN":game._openReason==="abgesagt"?"ABGESAGT · TERMIN OFFEN":game._openReason==="ausgefallen"?"AUSGEFALLEN · TERMIN OFFEN":"ZEIT OFFEN";
               row.append(time,competition,match,status); day.appendChild(row);
             });
             elements.list.appendChild(day);
