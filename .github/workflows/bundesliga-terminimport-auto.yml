@@ -24,14 +24,15 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Bundesliga-Termine aus OpenLigaDB prüfen
-        run: node scripts/bundesliga-terminimport-auto.mjs
-        node scripts/schedule-terminstand.mjs
+        run: |
+          node scripts/bundesliga-terminimport-auto.mjs
+          node scripts/schedule-terminstand.mjs
 
       - name: Änderungen prüfen
         id: changes
         shell: bash
         run: |
-          if git diff --quiet -- spieldaten.json; then
+          if git diff --quiet -- spieldaten.json schedule-terminstand.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "Keine Änderung an spieldaten.json – kein Commit."
           else
