@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "datenVersion": 5,
-  "aktualisiertAm": "2026-08-17T14:58:50.772Z",
+  "aktualisiertAm": "2026-08-17T18:25:35.135Z",
   "aktiveSaison": "2026-27",
-  "quelle": "The Old Smugglers Club Admin 6.2.0-a6-HF3-HF12",
+  "quelle": "The Old Smugglers Club Admin 6.2.0-a6-HF3-HF13",
   "regeln": {
     "tendenz": 2,
     "differenz": 3,
@@ -2137,7 +2137,7 @@
             "tippverteilung": {
               "schemaVersion": 1,
               "quelle": "Kicktipp – Tipps aller Tipper",
-              "stand": "2026-08-17T14:58:50.772Z",
+              "stand": "2026-08-17T18:25:35.135Z",
               "abgegeben": 93,
               "nichtAbgegeben": 4,
               "verborgen": 0,
@@ -2156,7 +2156,7 @@
                 }
               }
             },
-            "aktualisiertAm": "2026-08-17T14:58:50.772Z"
+            "aktualisiertAm": "2026-08-17T18:25:35.135Z"
           },
           {
             "id": "sma-2026-27-03-020",
@@ -14618,9 +14618,9 @@
       {
         "id": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
         "fachlicheId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-        "erstelltAm": "2026-08-17T14:58:50.772Z",
-        "aktualisiertAm": "2026-08-17T14:58:50.772Z",
-        "gespeichertAm": "2026-08-17T14:58:50.772Z",
+        "erstelltAm": "2026-08-17T18:25:35.135Z",
+        "aktualisiertAm": "2026-08-17T18:25:35.135Z",
+        "gespeichertAm": "2026-08-17T18:25:35.135Z",
         "modus": "test",
         "wertung": "smugglerauftrag",
         "label": "Smuggleraufträge",
@@ -24209,14 +24209,14 @@
   },
   "testbereich": {
     "aktiv": true,
-    "letzterTest": "2026-08-17T14:58:50.772Z",
+    "letzterTest": "2026-08-17T18:25:35.135Z",
     "auftraege": [
       {
         "id": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
         "fachlicheId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-        "erstelltAm": "2026-08-17T14:58:50.772Z",
-        "aktualisiertAm": "2026-08-17T14:58:50.772Z",
-        "gespeichertAm": "2026-08-17T14:58:50.772Z",
+        "erstelltAm": "2026-08-17T18:25:35.135Z",
+        "aktualisiertAm": "2026-08-17T18:25:35.135Z",
+        "gespeichertAm": "2026-08-17T18:25:35.135Z",
         "modus": "test",
         "wertung": "smugglerauftrag",
         "label": "Smuggleraufträge",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-17T14:58:50.772Z",
+  "updatedAt": "2026-08-17T18:25:35.135Z",
   "imports": [
     {
       "id": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001-1786299073479",
@@ -52,8 +52,8 @@
       }
     },
     {
-      "id": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013-1786978730801",
-      "createdAt": "2026-08-17T14:58:50.772Z",
+      "id": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013-1786991135173",
+      "createdAt": "2026-08-17T18:25:35.135Z",
       "mode": "test",
       "valuation": "smugglerauftrag",
       "round": "2. Spieltag",
