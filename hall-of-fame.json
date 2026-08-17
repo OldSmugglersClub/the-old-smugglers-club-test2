@@ -3,23 +3,21 @@
     "name": "Manuel",
     "wettbewerb": "Gesamtwertung",
     "titel": "Gesamtchampion",
+    "saison": "2025/2026",
     "jahr": "2025/2026",
     "label": "Old Smugglers Saison-Champion",
-    "saison": "2025/2026",
     "offen": false
   },
   "teamChampion": {
-    "saison": null,
+    "saison": "",
     "name": "Keine Vorsaisonwertung",
     "offen": true,
-    "erstmals": true,
-    "label": "Gesamt-Team-Sieger"
+    "erstmals": "2026/2027"
   },
   "meister": {
     "saison": "2025/2026",
     "name": "Manuel",
-    "offen": false,
-    "label": "Bundesliga"
+    "offen": false
   },
   "dfbPokal": {
     "saison": "2025/2026",
@@ -36,34 +34,37 @@
     "name": "Marius",
     "offen": false
   },
+  "smugglerauftraege": {
+    "saison": "",
+    "name": "Erstmals 2026/2027",
+    "offen": true,
+    "erstmals": "2026/2027"
+  },
   "bonuswettbewerb": {
     "saison": "2025/2026",
     "name": "Marius",
-    "offen": false
-  },
-  "smugglerauftraege": {
-    "saison": "2026/2027",
-    "name": "Erstmals 2026/2027",
-    "offen": true,
-    "erstmals": true
+    "offen": false,
+    "fragen": 25,
+    "punkteProAntwort": 5
   },
   "weihnachtsregatta": {
-    "saison": "2026/2027",
+    "jahr": "",
+    "saison": "",
     "name": "Erstmals 2026/2027",
     "offen": true,
-    "erstmals": true
+    "erstmals": "2026/2027"
   },
   "piratenkodex": {
-    "saison": "2026/2027",
+    "saison": "",
     "name": "Erstmals 2026/2027",
     "offen": true,
-    "erstmals": true
+    "erstmals": "2026/2027"
   },
   "relegation": {
-    "saison": "2026/2027",
+    "saison": "",
     "name": "Erstmals 2026/2027",
     "offen": true,
-    "erstmals": true
+    "erstmals": "2026/2027"
   },
   "meisterchronik": [
     {
@@ -72,36 +73,23 @@
       "offen": false
     }
   ],
-  "besondereLeistungen": [
-    {
-      "jahr": "2026",
-      "kategorie": "Sonderchampion",
-      "titel": "Champion der WM-Runde 2026",
-      "name": "ZweikampfGott",
-      "offen": false,
-      "bestaetigt": true
-    }
-  ],
   "rekorde": {
     "gesamtpunkte": {
       "label": "Gesamtpunkte",
-      "wert": 346,
+      "wert": "346",
       "name": "Manuel",
-      "saison": "2025/2026",
       "offen": false
     },
     "bonuspunkte": {
       "label": "Bonuspunkte",
-      "wert": 60,
+      "wert": "60",
       "name": "ZweikampfGott",
-      "saison": "2025/2026",
       "offen": false
     },
     "exakteTipps": {
       "label": "Exakte Tipps",
-      "wert": 17,
+      "wert": "17",
       "name": "Marius",
-      "saison": "2025/2026",
       "offen": false
     },
     "weitere": {
@@ -110,14 +98,30 @@
       "offen": true
     }
   },
+  "besondereLeistungen": [
+    {
+      "titel": "Champion der WM-Runde 2026",
+      "name": "ZweikampfGott",
+      "jahr": "2026",
+      "offen": false
+    }
+  ],
   "ehrenmitglieder": {
-    "label": "Status",
-    "wert": "Noch keine Einträge",
-    "offen": true
+    "label": "Champion der WM-Runde 2026",
+    "wert": "ZweikampfGott",
+    "offen": false
+  },
+  "meta": {
+    "titel": "Ehrenlogbuch des Old Smugglers Club",
+    "stand": "2026-08-17T14:58:50.772Z",
+    "hinweis": "Nur bestätigte Titel und Rekorde werden dauerhaft eingetragen.",
+    "schemaVersion": 2,
+    "adminUebergabeErforderlich": true,
+    "generatorVersion": "6.2.0-a6-HF3-HF7"
   },
   "schemaVersion": 3,
   "datenVersion": 1,
-  "aktualisiertAm": "2026-08-16T16:19:08.078Z",
+  "aktualisiertAm": "2026-08-17T14:58:50.772Z",
   "saison": "2026-27",
   "quelle": "Admin 6.2.0-a6-HF3-HF7 – bestätigte Titel, Bestandsschutz und Website-Zielstruktur",
   "aktuelleSaison": {
@@ -202,7 +206,7 @@
         "abschluss": {
           "completed": false,
           "target": 34,
-          "processed": 1,
+          "processed": 0,
           "source": "wertungstage-ziel"
         },
         "sieger": null
@@ -225,11 +229,8 @@
     "status": "laufend"
   },
   "pruefung": {
-    "gueltig": false,
-    "hinweise": [
-      "Rekord Gesamtpunkte: 6 gleichrangige Bestwerte (7); keine automatische Ersetzung.",
-      "Rekord Exakte Tipps: 8 gleichrangige Bestwerte (1); keine automatische Ersetzung."
-    ],
+    "gueltig": true,
+    "hinweise": [],
     "entscheidungen": [],
     "bestandsschutz": true,
     "websiteFeldzuordnung": true,
@@ -245,11 +246,5 @@
       "hinweise": [],
       "entscheidungen": []
     }
-  },
-  "meta": {
-    "titel": "Ehrenlogbuch des Old Smugglers Club",
-    "stand": "2026-08-16T16:19:08.078Z",
-    "hinweis": "Nur bestätigte Titel und Rekorde werden dauerhaft eingetragen.",
-    "generatorVersion": "6.2.0-a6-HF3-HF7"
   }
 }

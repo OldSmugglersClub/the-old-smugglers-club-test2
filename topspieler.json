@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "datenVersion": 1,
-  "aktualisiertAm": "2026-08-16T16:19:08.078Z",
+  "datenVersion": 2,
+  "aktualisiertAm": "2026-08-17T14:58:50.772Z",
   "saison": "2026-27",
   "status": "Berechnet",
   "kategorien": [
     {
       "titel": "Spieltagsführer",
-      "name": "Andy1304",
-      "wert": "5 Punkte"
+      "name": "baslermario",
+      "wert": "7 Punkte"
     },
     {
       "titel": "Meiste exakte Tipps",
-      "name": "Andy1304",
+      "name": "baslermario",
       "wert": "1"
     },
     {

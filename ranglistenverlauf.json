@@ -1,35 +1,29 @@
 {
   "schemaVersion": 1,
-  "datenVersion": 2,
-  "aktualisiert": "2026-08-16",
+  "datenVersion": 3,
+  "aktualisiert": "2026-08-17",
   "saison": "2026-27",
   "hinweis": "Kumulativer Ranglistenverlauf nach jedem abgeschlossenen Auftrag.",
   "verlaeufe": [
-    {
-      "teilnehmerId": "andy1304",
-      "teilnehmer": "Andy1304",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 1,
-          "punkte": 5
-        }
-      ]
-    },
     {
       "teilnehmerId": "baslermario",
       "teilnehmer": "baslermario",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
           "platz": 1,
-          "punkte": 5
+          "punkte": 7
         }
       ]
     },
@@ -38,11 +32,129 @@
       "teilnehmer": "FrankfurterJung",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
           "platz": 1,
+          "punkte": 7
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "nick-zg-1501",
+      "teilnehmer": "Nick_ZG_1501",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 1,
+          "punkte": 7
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "rk69",
+      "teilnehmer": "RK69",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 1,
+          "punkte": 7
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "wildemoni",
+      "teilnehmer": "WildeMoni",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 1,
+          "punkte": 7
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "yauguru",
+      "teilnehmer": "Yauguru",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 1,
+          "punkte": 7
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "andy1304",
+      "teilnehmer": "Andy1304",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 7,
           "punkte": 5
         }
       ]
@@ -52,68 +164,306 @@
       "teilnehmer": "MiKoog",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 1,
+          "platz": 7,
           "punkte": 5
         }
       ]
     },
     {
-      "teilnehmerId": "nick-zg-1501",
-      "teilnehmer": "Nick_ZG_1501",
+      "teilnehmerId": "cobra",
+      "teilnehmer": "cobra",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 1,
+          "platz": 9,
           "punkte": 5
         }
       ]
     },
     {
-      "teilnehmerId": "rk69",
-      "teilnehmer": "RK69",
+      "teilnehmerId": "eckes2359",
+      "teilnehmer": "Eckes2359",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 1,
+          "platz": 9,
           "punkte": 5
         }
       ]
     },
     {
-      "teilnehmerId": "wildemoni",
-      "teilnehmer": "WildeMoni",
+      "teilnehmerId": "flokicker94",
+      "teilnehmer": "FloKicker94",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 1,
+          "platz": 9,
           "punkte": 5
         }
       ]
     },
     {
-      "teilnehmerId": "yauguru",
-      "teilnehmer": "Yauguru",
+      "teilnehmerId": "oifinger",
+      "teilnehmer": "Oifinger",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 1,
+          "platz": 9,
           "punkte": 5
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "steff77",
+      "teilnehmer": "Steff77",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 9,
+          "punkte": 5
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "tribuna33",
+      "teilnehmer": "TRIBUNA33",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 9,
+          "punkte": 5
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "waltersen",
+      "teilnehmer": "Waltersen",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 9,
+          "punkte": 5
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "adamj",
+      "teilnehmer": "AdamJ",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 16,
+          "punkte": 4
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "best10",
+      "teilnehmer": "Best10",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 16,
+          "punkte": 4
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "dominik1966",
+      "teilnehmer": "dominik1966",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 16,
+          "punkte": 4
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "erik",
+      "teilnehmer": "Erik",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 16,
+          "punkte": 4
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "marius",
+      "teilnehmer": "Marius",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 16,
+          "punkte": 4
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "souvard",
+      "teilnehmer": "Souvard",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 16,
+          "punkte": 4
         }
       ]
     },
@@ -122,11 +472,19 @@
       "teilnehmer": "11LE",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -136,53 +494,19 @@
       "teilnehmer": "18AMFG99",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
-          "punkte": 3
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "cobra",
-      "teilnehmer": "cobra",
-      "punkte": [
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
-          "punkte": 3
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "eckes2359",
-      "teilnehmer": "Eckes2359",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
-          "punkte": 3
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "flokicker94",
-      "teilnehmer": "FloKicker94",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -192,11 +516,19 @@
       "teilnehmer": "Glatze583",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -206,11 +538,19 @@
       "teilnehmer": "gRuBer",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -220,25 +560,19 @@
       "teilnehmer": "Lattenkracher",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
-          "punkte": 3
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "oifinger",
-      "teilnehmer": "Oifinger",
-      "punkte": [
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -248,11 +582,11 @@
       "teilnehmer": "Olympiakos",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -262,11 +596,19 @@
       "teilnehmer": "Opipeter",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -276,11 +618,19 @@
       "teilnehmer": "Redwing",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -290,25 +640,11 @@
       "teilnehmer": "Seboso",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
-          "punkte": 3
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "steff77",
-      "teilnehmer": "Steff77",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -318,25 +654,19 @@
       "teilnehmer": "TortugaSGE",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
-          "punkte": 3
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "tribuna33",
-      "teilnehmer": "TRIBUNA33",
-      "punkte": [
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
@@ -346,81 +676,319 @@
       "teilnehmer": "VebFriwiwerk",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
+          "platz": 22,
           "punkte": 3
         }
       ]
     },
     {
-      "teilnehmerId": "waltersen",
-      "teilnehmer": "Waltersen",
+      "teilnehmerId": "audauzvares",
+      "teilnehmer": "Audauzvares",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 9,
-          "punkte": 3
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "adamj",
-      "teilnehmer": "AdamJ",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
           "punkte": 2
         }
       ]
     },
     {
-      "teilnehmerId": "best10",
-      "teilnehmer": "Best10",
+      "teilnehmerId": "ben1909",
+      "teilnehmer": "Ben1909",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
           "punkte": 2
         }
       ]
     },
     {
-      "teilnehmerId": "dominik1966",
-      "teilnehmer": "dominik1966",
+      "teilnehmerId": "bene",
+      "teilnehmer": "Bene",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
           "punkte": 2
         }
       ]
     },
     {
-      "teilnehmerId": "erik",
-      "teilnehmer": "Erik",
+      "teilnehmerId": "berndibroti",
+      "teilnehmer": "Berndibroti",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "bigdog",
+      "teilnehmer": "Bigdog",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "bvb09-opam",
+      "teilnehmer": "BvB09-OpaM",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "cali79",
+      "teilnehmer": "Cali79",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "co",
+      "teilnehmer": "Co",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "cobra75",
+      "teilnehmer": "Cobra75",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "dani1893",
+      "teilnehmer": "Dani1893",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "finch",
+      "teilnehmer": "Finch",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "flying-dutchman",
+      "teilnehmer": "Flying-Dutchman",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "g-1000",
+      "teilnehmer": "G.1000",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "gerrit1887",
+      "teilnehmer": "Gerrit1887",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
           "punkte": 2
         }
       ]
@@ -430,11 +998,151 @@
       "teilnehmer": "Glückspfennig",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "handgottes",
+      "teilnehmer": "HandGottes",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "hardy17",
+      "teilnehmer": "Hardy17",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "jakob",
+      "teilnehmer": "Jakob",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "juergen70",
+      "teilnehmer": "Juergen70",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "juri",
+      "teilnehmer": "JuRi",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "jwfussball",
+      "teilnehmer": "JWFUSSBALL",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
           "punkte": 2
         }
       ]
@@ -444,25 +1152,305 @@
       "teilnehmer": "Kev1999",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
           "punkte": 2
         }
       ]
     },
     {
-      "teilnehmerId": "marius",
-      "teilnehmer": "Marius",
+      "teilnehmerId": "kevin",
+      "teilnehmer": "Kevin",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "kleinersachse",
+      "teilnehmer": "kleinersachse",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "luca",
+      "teilnehmer": "Luca",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "lucas",
+      "teilnehmer": "Lucas",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "luki1887",
+      "teilnehmer": "Luki1887",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "maikiliii",
+      "teilnehmer": "Maikiliii",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "manuel",
+      "teilnehmer": "Manuel",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "marc86",
+      "teilnehmer": "Marc86",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "marcor",
+      "teilnehmer": "MarcoR",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "mariusv",
+      "teilnehmer": "mariusv",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "mary-grace",
+      "teilnehmer": "Mary-Grace",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "maxpam",
+      "teilnehmer": "MaxPam",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "medic",
+      "teilnehmer": "Medic",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
           "punkte": 2
         }
       ]
@@ -472,25 +1460,305 @@
       "teilnehmer": "Munmarkus",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
           "punkte": 2
         }
       ]
     },
     {
-      "teilnehmerId": "souvard",
-      "teilnehmer": "Souvard",
+      "teilnehmerId": "normiks",
+      "teilnehmer": "Normiks",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "nurderscf",
+      "teilnehmer": "NurDerSCF",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "playboymarc88",
+      "teilnehmer": "PlayBoyMarc88",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "pochzerjung",
+      "teilnehmer": "PochzerJung",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "potterhead",
+      "teilnehmer": "Potterhead",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "quick",
+      "teilnehmer": "Quick",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "realzaragoza",
+      "teilnehmer": "Realzaragoza",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "salas1904",
+      "teilnehmer": "Salas1904",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "sam-entspender",
+      "teilnehmer": "SAM_ENTSPENDER",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "sam2004",
+      "teilnehmer": "Sam2004",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "sgbw",
+      "teilnehmer": "sgbw",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "stevie26",
+      "teilnehmer": "Stevie26",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "sven-huhn",
+      "teilnehmer": "Sven_Huhn",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
           "punkte": 2
         }
       ]
@@ -500,25 +1768,85 @@
       "teilnehmer": "Urkel",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 27,
+          "platz": 33,
           "punkte": 2
         }
       ]
     },
     {
-      "teilnehmerId": "audauzvares",
-      "teilnehmer": "Audauzvares",
+      "teilnehmerId": "ximmox",
+      "teilnehmer": "xIMMOx",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "yorik",
+      "teilnehmer": "Yorik",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 1,
+          "punkte": 2
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 33,
+          "punkte": 2
+        }
+      ]
+    },
+    {
+      "teilnehmerId": "alex2507",
+      "teilnehmer": "Alex2507",
+      "punkte": [
+        {
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "2. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -528,67 +1856,19 @@
       "teilnehmer": "AufdieBlaue",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "ben1909",
-      "teilnehmer": "Ben1909",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "bene",
-      "teilnehmer": "Bene",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "berndibroti",
-      "teilnehmer": "Berndibroti",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "bigdog",
-      "teilnehmer": "Bigdog",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -598,81 +1878,41 @@
       "teilnehmer": "Birgit_Blaubart",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
     },
     {
-      "teilnehmerId": "bvb09-opam",
-      "teilnehmer": "BvB09-OpaM",
+      "teilnehmerId": "ddd",
+      "teilnehmer": "Ddd",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "cali79",
-      "teilnehmer": "Cali79",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "co",
-      "teilnehmer": "Co",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "cobra75",
-      "teilnehmer": "Cobra75",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "dani1893",
-      "teilnehmer": "Dani1893",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -682,53 +1922,19 @@
       "teilnehmer": "FCAhnungslos",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "finch",
-      "teilnehmer": "Finch",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "flying-dutchman",
-      "teilnehmer": "Flying-Dutchman",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "g-1000",
-      "teilnehmer": "G.1000",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -738,25 +1944,11 @@
       "teilnehmer": "G.Threepwood",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "gerrit1887",
-      "teilnehmer": "Gerrit1887",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -766,67 +1958,11 @@
       "teilnehmer": "Gordinho",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "handgottes",
-      "teilnehmer": "HandGottes",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "hardy17",
-      "teilnehmer": "Hardy17",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "jakob",
-      "teilnehmer": "Jakob",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "juergen70",
-      "teilnehmer": "Juergen70",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -836,67 +1972,19 @@
       "teilnehmer": "JungundDurstig",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "juri",
-      "teilnehmer": "JuRi",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "jwfussball",
-      "teilnehmer": "JWFUSSBALL",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "kevin",
-      "teilnehmer": "Kevin",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "kleinersachse",
-      "teilnehmer": "kleinersachse",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -906,39 +1994,19 @@
       "teilnehmer": "Kunstblume",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "luca",
-      "teilnehmer": "Luca",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "lucas",
-      "teilnehmer": "Lucas",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -948,11 +2016,19 @@
       "teilnehmer": "LucasPodolski",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -962,137 +2038,19 @@
       "teilnehmer": "LuCipher",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "luki1887",
-      "teilnehmer": "Luki1887",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "maikiliii",
-      "teilnehmer": "Maikiliii",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "manuel",
-      "teilnehmer": "Manuel",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "marc86",
-      "teilnehmer": "Marc86",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "marcor",
-      "teilnehmer": "MarcoR",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "mariusv",
-      "teilnehmer": "mariusv",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "mary-grace",
-      "teilnehmer": "Mary-Grace",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "maxpam",
-      "teilnehmer": "MaxPam",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "medic",
-      "teilnehmer": "Medic",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -1102,11 +2060,19 @@
       "teilnehmer": "Milad",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -1116,39 +2082,19 @@
       "teilnehmer": "Mythos",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "normiks",
-      "teilnehmer": "Normiks",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "nurderscf",
-      "teilnehmer": "NurDerSCF",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -1158,165 +2104,19 @@
       "teilnehmer": "Pauli",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "playboymarc88",
-      "teilnehmer": "PlayBoyMarc88",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "pochzerjung",
-      "teilnehmer": "PochzerJung",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "potterhead",
-      "teilnehmer": "Potterhead",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "quick",
-      "teilnehmer": "Quick",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "realzaragoza",
-      "teilnehmer": "Realzaragoza",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "salas1904",
-      "teilnehmer": "Salas1904",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "sam-entspender",
-      "teilnehmer": "SAM_ENTSPENDER",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "sam2004",
-      "teilnehmer": "Sam2004",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "sgbw",
-      "teilnehmer": "sgbw",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "stevie26",
-      "teilnehmer": "Stevie26",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
-          "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "sven-huhn",
-      "teilnehmer": "Sven_Huhn",
-      "punkte": [
-        {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
-          "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -1326,25 +2126,19 @@
       "teilnehmer": "Xib0o",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
           "wettbewerb": "smugglerauftrag",
-          "runde": "2. Spieltag",
-          "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
           "punkte": 0
-        }
-      ]
-    },
-    {
-      "teilnehmerId": "ximmox",
-      "teilnehmer": "xIMMOx",
-      "punkte": [
+        },
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]
@@ -1354,11 +2148,19 @@
       "teilnehmer": "ZweikampfGott",
       "punkte": [
         {
-          "zeitpunkt": "2026-08-16T16:19:08.078Z",
+          "zeitpunkt": "2026-08-09T18:11:13.460Z",
+          "wettbewerb": "smugglerauftrag",
+          "runde": "1. Spieltag",
+          "auftragId": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001",
+          "platz": 68,
+          "punkte": 0
+        },
+        {
+          "zeitpunkt": "2026-08-17T14:58:50.772Z",
           "wettbewerb": "smugglerauftrag",
           "runde": "2. Spieltag",
           "auftragId": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
-          "platz": 37,
+          "platz": 85,
           "punkte": 0
         }
       ]

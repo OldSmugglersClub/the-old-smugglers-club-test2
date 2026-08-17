@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "datenVersion": 4,
-  "aktualisiert": "2026-08-16",
+  "datenVersion": 5,
+  "aktualisiert": "2026-08-17",
   "hinweis": "Kompatible Website-Ausgabe, automatisch aus spielbetrieb.json/stammdaten.vereine erzeugt. Nicht direkt bearbeiten.",
-  "quelle": "Admin 6.2.0-a6-HF3-HF9",
+  "quelle": "Admin 6.2.0-a6-HF3-HF12",
   "teams": [
     {
       "id": "heidenheim",
@@ -868,8 +868,7 @@
         "wettbewerb": null
       },
       "kicktippAliase": [
-        "SVD",
-        "D98"
+        "SVD"
       ],
       "apiAliase": [
         "SV Darmstadt 98",
