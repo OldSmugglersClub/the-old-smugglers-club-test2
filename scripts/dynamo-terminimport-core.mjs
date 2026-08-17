@@ -1,3 +1,4 @@
+// HF14 AUTOMATION FIX – stabile Verlegungszeit + Persistenz-Workflow
 import fs from "node:fs";
 
 export function readJson(path) {
@@ -219,6 +220,7 @@ function displayDate(date) {
 }
 
 export function validateAndPlan(data, teamsData, apiMatches) {
+  const now = new Date();
   const local = dynamoMatches(data);
   if (local.length !== 34) {
     throw new Error(`Lokaler Dynamo-Saisonplan unvollständig: ${local.length}/34.`);

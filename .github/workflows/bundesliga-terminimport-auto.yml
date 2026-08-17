@@ -25,6 +25,7 @@ jobs:
 
       - name: Bundesliga-Termine aus OpenLigaDB prüfen
         run: node scripts/bundesliga-terminimport-auto.mjs
+        node scripts/schedule-terminstand.mjs
 
       - name: Änderungen prüfen
         id: changes
@@ -44,6 +45,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add spieldaten.json
+          git add spieldaten.json schedule-terminstand.json
           git commit -m "Bundesliga-Termine automatisch aktualisiert"
           git push
