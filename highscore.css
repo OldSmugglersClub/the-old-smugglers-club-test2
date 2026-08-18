@@ -930,3 +930,209 @@
   .hs-table-wrap.is-individual-table .hs-table td:nth-child(n+3)::before{font-size:.53rem}
 }
 
+
+/* =========================================================
+   Website 4.8.0 – DAS FÜHRUNGSDECK
+   Präsentations-Hotfix ausschließlich innerhalb der Highscore.
+   Ranglogik und übriges Website-Raster bleiben unverändert.
+   ========================================================= */
+
+/* Gemeinsame Farbwelt: Führungsdeck, Auswahl und Rangliste wirken wie ein Raum. */
+.hs-page .hs-structure-panel,
+.hs-page .hs-podium-panel,
+.hs-page #table-panel{
+  border-color:rgba(198,148,57,.68);
+  background:
+    radial-gradient(circle at 50% -20%,rgba(178,119,43,.13),transparent 44%),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 38px),
+    linear-gradient(145deg,rgba(45,28,15,.985),rgba(17,10,5,.992) 58%,rgba(30,17,8,.99));
+  box-shadow:inset 0 0 0 4px rgba(0,0,0,.24),0 18px 46px rgba(0,0,0,.38);
+}
+.hs-page .hs-structure-panel .hs-panel-head,
+.hs-page .hs-podium-panel .hs-panel-head,
+.hs-page #table-panel .hs-panel-head{
+  padding-bottom:14px;
+  border-bottom:1px solid rgba(212,164,74,.28);
+}
+.hs-page #table-panel .hs-ranking-toolbar{
+  border-color:rgba(203,153,61,.56);
+  background:rgba(177,118,36,.18);
+}
+.hs-page #table-panel .hs-ranking-toolbar>div{
+  background:linear-gradient(180deg,rgba(55,34,17,.98),rgba(20,12,6,.99));
+}
+.hs-page #table-panel .hs-table-wrap{
+  border-color:rgba(197,146,54,.62);
+  background:rgba(12,7,3,.42);
+  box-shadow:inset 0 0 0 3px rgba(0,0,0,.25),0 10px 24px rgba(0,0,0,.22);
+}
+.hs-page #table-panel .hs-table th{
+  background:linear-gradient(180deg,#3a2512,#211307);
+  color:#efd598;
+  border-bottom-color:rgba(210,160,70,.42);
+}
+.hs-page #table-panel .hs-table tbody tr:nth-child(even){background:rgba(190,139,52,.035)}
+.hs-page #table-panel .hs-table tbody tr:hover{background:rgba(206,155,65,.09)}
+
+/* Podiumsraum */
+.hs-podium-panel{overflow:hidden}
+.hs-podium-panel::before{
+  opacity:.46;
+  background:
+    radial-gradient(circle at 12% 82%,rgba(197,146,55,.13),transparent 25%),
+    radial-gradient(circle at 88% 24%,rgba(197,146,55,.11),transparent 27%),
+    repeating-linear-gradient(90deg,rgba(109,68,28,.08) 0 2px,transparent 2px 132px);
+}
+.hs-podium-panel::after{top:88px;background:linear-gradient(90deg,transparent,rgba(232,190,100,.54),transparent)}
+.hs-podium{
+  position:relative;
+  grid-template-columns:1fr 1.13fr 1fr;
+  align-items:end;
+  column-gap:22px;
+  row-gap:28px;
+  min-height:520px;
+  padding:42px 18px 56px;
+}
+.hs-podium::before,.hs-podium::after{opacity:.34}
+.hs-podium--empty{display:block;min-height:330px;padding-top:42px}
+
+/* Messing-Schild oberhalb beider Darstellungsarten */
+.hs-deck-banner{
+  grid-column:1/-1;
+  justify-self:center;
+  position:relative;
+  z-index:6;
+  min-width:min(620px,82%);
+  max-width:760px;
+  padding:13px 46px 12px;
+  text-align:center;
+  border:1px solid rgba(226,180,83,.78);
+  border-radius:7px 7px 14px 14px;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.38),transparent 18%,transparent 82%,rgba(0,0,0,.38)),
+    linear-gradient(180deg,#5b3517,#2d190b 52%,#170d06);
+  box-shadow:inset 0 0 0 4px rgba(0,0,0,.3),0 12px 24px rgba(0,0,0,.45);
+}
+.hs-deck-banner::before,.hs-deck-banner::after{
+  content:"";position:absolute;top:50%;width:42px;height:2px;
+  background:linear-gradient(90deg,transparent,#d6aa54);
+}
+.hs-deck-banner::before{right:100%;transform:translateY(-50%)}
+.hs-deck-banner::after{left:100%;transform:translateY(-50%) rotate(180deg)}
+.hs-deck-banner>span{
+  display:block;color:#f5d782;font:800 clamp(1.5rem,3vw,2.35rem)/1 Georgia,serif;
+  text-transform:uppercase;letter-spacing:.055em;text-shadow:0 2px 0 #4a2a0d,0 5px 12px rgba(0,0,0,.7)
+}
+.hs-deck-banner>strong{display:block;margin-top:9px;color:#f1d89e;font:700 clamp(1rem,1.6vw,1.22rem) Georgia,serif}
+.hs-deck-banner>small{display:block;margin-top:6px;color:#cdb886;font-size:.82rem;letter-spacing:.03em}
+
+/* Klassisches 2–1–3-Führungsdeck */
+.hs-podium--classic .hs-podium-card{
+  position:relative;
+  text-align:center;
+  border:1px solid rgba(188,137,51,.85);
+  border-radius:6px 6px 2px 2px;
+  padding:78px 18px 122px;
+  min-width:0;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.34),transparent 15%,transparent 85%,rgba(0,0,0,.34)),
+    repeating-linear-gradient(0deg,#4a2c15 0 39px,#2c190c 40px 42px,#543117 43px 82px);
+  box-shadow:inset 0 0 0 5px rgba(0,0,0,.28),0 18px 34px rgba(0,0,0,.48);
+}
+.hs-podium--classic .hs-podium-card::before{inset:9px;border-color:rgba(234,193,105,.12)}
+.hs-podium--classic .hs-podium-card::after{top:18px;height:7px}
+.hs-podium--classic .place-1{order:2;min-height:392px;transform:translateY(-32px);border-color:rgba(236,192,86,.98);background:
+  linear-gradient(90deg,rgba(0,0,0,.30),transparent 16%,transparent 84%,rgba(0,0,0,.30)),
+  repeating-linear-gradient(0deg,#63401e 0 39px,#33200f 40px 42px,#704821 43px 82px)}
+.hs-podium--classic .place-2{order:1;min-height:326px;filter:saturate(.80)}
+.hs-podium--classic .place-3{order:3;min-height:302px;filter:saturate(.92) sepia(.08)}
+.hs-podium--classic .place-2 .hs-rank-seal{border-color:#b9b4a7;background:radial-gradient(circle at 36% 28%,#77746d,#24211d 66%,#090807 72%)}
+.hs-podium--classic .place-2 .hs-rank-seal span{color:#eee7d9;text-shadow:0 2px #37332e,0 5px 10px #000}
+.hs-podium--classic .place-3 .hs-rank-seal{border-color:#a96b35;background:radial-gradient(circle at 36% 28%,#6c3e20,#25140b 66%,#080503 72%)}
+.hs-podium--classic .place-3 .hs-rank-seal span{color:#e6a86d}
+.hs-podium--classic .hs-podium-nameplate{
+  position:relative;z-index:3;margin:4px -5px 15px;padding:10px 12px;
+  border:1px solid rgba(218,169,76,.72);
+  background:linear-gradient(180deg,#49301a,#231408);
+  box-shadow:inset 0 0 0 3px rgba(0,0,0,.26),0 5px 12px rgba(0,0,0,.34)
+}
+.hs-podium--classic .place-1 .hs-podium-nameplate{background:linear-gradient(180deg,#9b6a25,#52320f);border-color:#edc161}
+.hs-podium--classic .hs-podium-nameplate strong{margin:0;color:#f8e2aa;font-size:clamp(1.15rem,2vw,1.65rem)}
+.hs-podium--classic .hs-podium-score{position:relative;z-index:3;display:grid;gap:2px;justify-items:center;margin-top:8px}
+.hs-podium--classic .hs-podium-score b{color:#f1d08a;font:800 clamp(2rem,4vw,3.15rem)/1 Georgia,serif;text-shadow:0 2px #43270e,0 5px 12px #000}
+.hs-podium--classic .hs-podium-score span{color:#e4c88e;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;font-weight:800}
+.hs-podium--classic .hs-podium-card small{margin-top:11px;color:#bda97e;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em}
+.hs-podium--classic .hs-pedestal-face{height:94px}
+.hs-podium--classic .hs-podium-deck{display:block}
+
+/* Gleichstand: keine künstliche Hierarchie, sondern gleichwertige Führende. */
+.hs-podium--shared{display:grid;grid-template-columns:1fr;align-items:start;min-height:0;padding:42px 18px 48px}
+.hs-podium--shared::before,.hs-podium--shared::after{display:none}
+.hs-leader-grid{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  width:100%;
+  max-width:1000px;
+  margin:4px auto 0;
+}
+.hs-leader-card{
+  position:relative;min-width:0;min-height:178px;padding:72px 14px 22px;text-align:center;
+  border:1px solid rgba(220,169,72,.82);border-radius:5px;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.30),transparent 16%,transparent 84%,rgba(0,0,0,.30)),
+    repeating-linear-gradient(0deg,#4f3017 0 35px,#2b180c 36px 38px,#59361a 39px 75px);
+  box-shadow:inset 0 0 0 5px rgba(0,0,0,.28),0 12px 24px rgba(0,0,0,.38)
+}
+.hs-leader-card::before{content:"";position:absolute;inset:8px;border:1px solid rgba(235,193,102,.13);pointer-events:none}
+.hs-leader-card::after{content:"";position:absolute;left:12%;right:12%;bottom:14px;height:2px;background:linear-gradient(90deg,transparent,#b98235,transparent);opacity:.65}
+.hs-leader-seal{
+  position:absolute;left:50%;top:16px;transform:translateX(-50%);display:grid;place-items:center;
+  width:48px;height:48px;border:1px solid #dfb557;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#805523,#211207 68%);box-shadow:0 0 0 4px rgba(0,0,0,.38),0 8px 14px rgba(0,0,0,.38)
+}
+.hs-leader-seal span{color:#f3d27f;font:800 1.45rem Georgia,serif}
+.hs-leader-card strong{position:relative;z-index:2;display:block;color:#f6dca0;font:700 clamp(1rem,1.8vw,1.25rem) Georgia,serif;overflow-wrap:anywhere}
+.hs-leader-card>span{position:relative;z-index:2;display:block;margin-top:12px;color:#e3c47f;font-size:.86rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}
+
+/* Der Hinweis direkt über dem Deck soll nicht wie eine technische Meldung wirken. */
+.hs-podium-panel .hs-ranking-notice{
+  max-width:900px;margin:4px auto 0;border-color:rgba(193,143,54,.35);
+  background:linear-gradient(180deg,rgba(48,29,14,.58),rgba(20,11,5,.64));
+  color:#bda980;box-shadow:none;font-size:.82rem
+}
+
+@media(max-width:700px){
+  .hs-podium{padding:30px 4px 42px;row-gap:18px}
+  .hs-deck-banner{min-width:0;width:100%;max-width:100%;padding:11px 26px 10px}
+  .hs-deck-banner::before,.hs-deck-banner::after{display:none}
+  .hs-deck-banner>span{font-size:clamp(1.25rem,6.6vw,1.75rem)}
+  .hs-podium--classic{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px;align-items:end}
+  .hs-podium--classic .hs-deck-banner{grid-column:1/-1;grid-row:1}
+  .hs-podium--classic .place-1{grid-column:1/-1;grid-row:2;justify-self:center;width:min(76%,300px);min-height:300px;transform:none;order:initial;padding:68px 14px 106px}
+  .hs-podium--classic .place-2{grid-column:1;grid-row:3;min-height:250px;order:initial;padding:61px 10px 100px}
+  .hs-podium--classic .place-3{grid-column:2;grid-row:3;min-height:235px;order:initial;padding:61px 10px 100px}
+  .hs-podium--classic .hs-rank-seal{width:68px;height:68px;top:-32px}
+  .hs-podium--classic .place-1 .hs-rank-seal{width:82px;height:82px;top:-39px}
+  .hs-podium--classic .hs-rank-seal span{font-size:1.75rem}.hs-podium--classic .place-1 .hs-rank-seal span{font-size:2.15rem}
+  .hs-podium--classic .hs-podium-nameplate{padding:8px 6px;margin-left:-2px;margin-right:-2px}
+  .hs-podium--classic .hs-podium-nameplate strong{font-size:clamp(.9rem,4.2vw,1.15rem)}
+  .hs-podium--classic .hs-podium-score b{font-size:clamp(1.55rem,8vw,2.3rem)}
+  .hs-podium--classic .hs-podium-card small{font-size:.62rem;letter-spacing:.04em}
+  .hs-podium--classic .hs-pedestal-face{height:82px}
+  .hs-podium--classic .hs-podium-deck{display:none}
+  .hs-podium--shared{padding:30px 4px 38px}
+  .hs-leader-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .hs-leader-card{min-height:150px;padding:64px 8px 18px}
+  .hs-leader-card strong{font-size:clamp(.9rem,4vw,1.08rem)}
+  .hs-leader-card>span{font-size:.72rem}
+  .hs-page #table-panel .hs-table tbody tr{border-color:rgba(207,155,63,.62);background:linear-gradient(180deg,rgba(59,37,19,.98),rgba(20,11,5,.99))}
+}
+
+@media(max-width:390px){
+  .hs-podium--classic .place-1{width:84%}
+  .hs-podium--classic .place-2,.hs-podium--classic .place-3{padding-left:7px;padding-right:7px}
+  .hs-leader-grid{gap:8px}
+  .hs-leader-card{padding-left:6px;padding-right:6px}
+}
