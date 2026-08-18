@@ -174,7 +174,77 @@
     modalClose.focus();
 
     const snapshot = await loadSnapshot();
-    modalBody.innerHTML = contentFor(snapshot?.entries?.[game.id], game);
+    modalBody.innerHTML = contentFor(findSnapshotEntry(snapshot, game), game);
+  }
+
+  function normText(value) {
+    return safe(value)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/ß/g, "ss")
+      .replace(/[^a-z0-9]+/g, "");
+  }
+
+  function normCompetition(value) {
+    const v = normText(value);
+    if (v === "bl" || v.includes("bundesliga") && !v.includes("2")) return "bundesliga";
+    if (v === "bl2" || v.includes("2bundesliga") || v.includes("zweitebundesliga")) return "2bundesliga";
+    return v;
+  }
+
+  function kickoffMs(value) {
+    if (!value) return NaN;
+    const d = new Date(value);
+    return Number.isNaN(d.getTime()) ? NaN : d.getTime();
+  }
+
+  function findSnapshotEntry(snapshot, game) {
+    const entries = snapshot?.entries || {};
+
+    // 1. Exakte interne ID bleibt der bevorzugte und billigste Weg.
+    if (game?.id && entries[game.id]) return entries[game.id];
+
+    const values = Object.values(entries);
+    if (!values.length) return null;
+
+    // 2. Falls der Snapshot seine gameId im Objekt trägt.
+    if (game?.id) {
+      const byEmbeddedId = values.find(entry => entry?.gameId === game.id);
+      if (byEmbeddedId) return byEmbeddedId;
+    }
+
+    // 3. Robuster Fallback: Teams + Wettbewerb + Anstoßzeit.
+    const home = normText(game?.heim);
+    const away = normText(game?.auswaerts);
+    const competition = normCompetition(game?.wettbewerb);
+    const gameKickoff = kickoffMs(game?.beginn || game?.anpfiff || game?.datum);
+
+    const candidates = values.filter(entry => {
+      const eHome = normText(entry?.openLiga?.["Heimteamname"] || entry?.heim || entry?.home);
+      const eAway = normText(entry?.openLiga?.["Auswärtsteamname"] || entry?.auswaerts || entry?.away);
+      if (!home || !away || eHome !== home || eAway !== away) return false;
+
+      const eCompetition = normCompetition(entry?.Wettbewerb || entry?.wettbewerb);
+      if (competition && eCompetition && competition !== eCompetition) return false;
+
+      return true;
+    });
+
+    if (!candidates.length) return null;
+    if (candidates.length === 1) return candidates[0];
+
+    // Bei mehreren gleichnamigen Paarungen entscheidet die Anstoßzeit.
+    if (Number.isFinite(gameKickoff)) {
+      const exactTime = candidates.find(entry => {
+        const eKickoff = kickoffMs(entry?.Beginn || entry?.beginn);
+        return Number.isFinite(eKickoff) && Math.abs(eKickoff - gameKickoff) <= 5 * 60 * 1000;
+      });
+      if (exactTime) return exactTime;
+    }
+
+    // Keine unsichere Zuordnung: lieber keine Daten als Daten eines falschen Spiels.
+    return null;
   }
 
   function attach(row, game) {

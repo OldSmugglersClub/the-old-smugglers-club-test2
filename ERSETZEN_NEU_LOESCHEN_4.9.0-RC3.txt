@@ -1,0 +1,18 @@
+ERSETZEN:
+- index.html
+- h2h-startseite.js
+- VERSION.txt
+
+NEU:
+- CHANGELOG_4.9.0-RC3.md
+- README-WEBSITE-4.9.0-RC3.md
+- ERSETZEN_NEU_LOESCHEN_4.9.0-RC3.txt
+
+UNVERÄNDERT:
+- h2h-startseite.css
+- h2h-spieldaten.json
+- scripts/h2h-snapshot.mjs
+- .github/workflows/h2h-snapshot.yml
+
+LÖSCHEN:
+- nichts
