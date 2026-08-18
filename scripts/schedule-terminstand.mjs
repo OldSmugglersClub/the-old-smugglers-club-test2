@@ -41,3 +41,16 @@ export function writeScheduleSnapshot(data,path=SNAPSHOT_PATH){
     changed
   };
 }
+
+
+// CLI-Einstieg für GitHub Actions / manuelle Ausführung.
+// Beim Import als Modul bleibt das bisherige Verhalten unverändert.
+if (import.meta.url === `file://${process.argv[1]?.replace(/\\/g, "/")}`) {
+  const dataPath = process.env.OSC_SPIELDATEN_PATH || "spieldaten.json";
+  if (!fs.existsSync(dataPath)) {
+    throw new Error(`Spieldaten nicht gefunden: ${dataPath}`);
+  }
+  const data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+  const result = writeScheduleSnapshot(data);
+  console.log(`Terminstand: ${result.entries} bestätigte Spiele; ${result.changed ? "Snapshot aktualisiert" : "keine Änderung"}.`);
+}
