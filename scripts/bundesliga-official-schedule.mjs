@@ -80,11 +80,12 @@ export async function loadOfficialConfirmedMatchdays(competition, options = {}) 
   if (!cfg) throw new Error(`Unbekannter Wettbewerb für offizielle Terminprüfung: ${competition}`);
 
   const fixtureDir = options.fixtureDir || process.env.OSC_OFFICIAL_FIXTURE_DIR || "";
+  const startMatchday = Math.max(1, Number(options.startMatchday || 1));
   const confirmed = new Set();
 
   // DFL terminiert fortlaufende Blöcke. Bis zum ersten offiziell als offen
   // gekennzeichneten Spieltag prüfen; spätere Rahmentermine werden nicht freigegeben.
-  for (let st = 1; st <= 34; st++) {
+  for (let st = startMatchday; st <= 34; st++) {
     const html = await loadPage(cfg.slug, st, fixtureDir);
     const isConfirmed = classifyOfficialMatchdayPage(html, st);
     if (!isConfirmed) break;

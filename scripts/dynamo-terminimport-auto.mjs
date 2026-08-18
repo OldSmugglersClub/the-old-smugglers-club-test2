@@ -43,7 +43,21 @@ const originalSpieldatenText = fs.readFileSync(SPIELDATEN_PATH, "utf8");
 const data = JSON.parse(originalSpieldatenText);
 const teams = readJson(TEAMS_PATH);
 const apiMatches = await loadApiMatches();
-const officialConfirmedMatchdays = await loadOfficialConfirmedMatchdays("2-bundesliga");
+const saisonSpiele = (Array.isArray(data?.saisons) ? data.saisons : [])
+  .flatMap(s => Array.isArray(s?.spiele) ? s.spiele : []);
+const dynamoSpiele = saisonSpiele.filter(spiel =>
+  spiel?.wettbewerb === "2-bundesliga" &&
+  (spiel?.heimTeamId === "dynamo-dresden" || spiel?.auswaertsTeamId === "dynamo-dresden")
+);
+const offeneSpieltage = dynamoSpiele
+  .filter(spiel => spiel?.status !== "beendet")
+  .map(spiel => Number(spiel?.spieltagNummer))
+  .filter(Number.isFinite);
+const firstRelevantMatchday = offeneSpieltage.length ? Math.min(...offeneSpieltage) : 34;
+console.log(`Offizielle Terminprüfung ab erstem nicht beendeten Dynamo-Spieltag: ${firstRelevantMatchday}`);
+const officialConfirmedMatchdays = await loadOfficialConfirmedMatchdays("2-bundesliga", {
+  startMatchday: firstRelevantMatchday
+});
 console.log(`Offiziell fix terminierte Spieltage: ${[...officialConfirmedMatchdays].join(", ")}`);
 const plan = validateAndPlan(data, teams, apiMatches, officialConfirmedMatchdays, new Date());
 
