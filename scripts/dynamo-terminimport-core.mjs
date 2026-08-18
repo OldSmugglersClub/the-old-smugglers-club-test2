@@ -218,7 +218,7 @@ function displayDate(date) {
   return `${d}.${m}.${y}`;
 }
 
-export function validateAndPlan(data, teamsData, apiMatches) {
+export function validateAndPlan(data, teamsData, apiMatches, officialConfirmedMatchdays = null, now = new Date()) {
   const local = dynamoMatches(data);
   if (local.length !== 34) {
     throw new Error(`Lokaler Dynamo-Saisonplan unvollständig: ${local.length}/34.`);
@@ -274,6 +274,11 @@ export function validateAndPlan(data, teamsData, apiMatches) {
       continue;
     }
 
+    if (!(officialConfirmedMatchdays instanceof Set) || !officialConfirmedMatchdays.has(item.st)) {
+      skipped.push({localId:localMatch.id,reason:"Spieltag laut offizieller Bundesliga-Quelle noch nicht fix terminiert"});
+      continue;
+    }
+
     const exact=parseLocalDateTime(item.apiMatch);
     const sourceDate=apiLastUpdateDate(item.apiMatch);
     if(!exact){
@@ -316,7 +321,6 @@ export function validateAndPlan(data, teamsData, apiMatches) {
 
     // Verlegung/Nachholtermin: dieselbe eindeutig gemappte Spiel-ID darf neu terminiert werden.
     // Sicherheitsfenster verhindert automatische Änderungen unmittelbar vor einem der beiden Anstoßzeitpunkte.
-    const now=new Date();
     const apiKickoff=new Date(`${exact.date}T${exact.time}:00+02:00`);
     const localKickoff=new Date(`${localMatch.datum}T${localMatch.anstoss}:00+02:00`);
     const sixHours=6*60*60*1000;

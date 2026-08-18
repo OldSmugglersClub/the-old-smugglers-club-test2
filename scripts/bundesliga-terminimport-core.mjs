@@ -212,7 +212,7 @@ function displayDate(date) {
   return `${d}.${m}.${y}`;
 }
 
-export function validateAndPlan(data, teamsData, apiMatches, now = new Date()) {
+export function validateAndPlan(data, teamsData, apiMatches, officialConfirmedMatchdays = null, now = new Date()) {
   const local = bundesligaMatches(data);
   if (local.length !== 306) {
     throw new Error(`Lokaler Bundesliga-Saisonplan unvollständig: ${local.length}/306.`);
@@ -265,6 +265,11 @@ export function validateAndPlan(data, teamsData, apiMatches, now = new Date()) {
     if (localMatch.status === "beendet" ||
         (Number.isInteger(localMatch.heimtore) && Number.isInteger(localMatch.auswaertstore))) {
       skipped.push({ localId: localMatch.id, reason: "lokal bereits beendet/mit Ergebnis" });
+      continue;
+    }
+
+    if (!(officialConfirmedMatchdays instanceof Set) || !officialConfirmedMatchdays.has(st)) {
+      skipped.push({ localId: localMatch.id, reason: "Spieltag laut offizieller Bundesliga-Quelle noch nicht fix terminiert" });
       continue;
     }
 

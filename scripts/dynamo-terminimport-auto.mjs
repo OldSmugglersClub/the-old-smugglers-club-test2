@@ -1,3 +1,4 @@
+import { loadOfficialConfirmedMatchdays } from "./bundesliga-official-schedule.mjs";
 import fs from "node:fs";
 import {
   readJson,
@@ -42,7 +43,9 @@ const originalSpieldatenText = fs.readFileSync(SPIELDATEN_PATH, "utf8");
 const data = JSON.parse(originalSpieldatenText);
 const teams = readJson(TEAMS_PATH);
 const apiMatches = await loadApiMatches();
-const plan = validateAndPlan(data, teams, apiMatches);
+const officialConfirmedMatchdays = await loadOfficialConfirmedMatchdays("2-bundesliga");
+console.log(`Offiziell fix terminierte Spieltage: ${[...officialConfirmedMatchdays].join(", ")}`);
+const plan = validateAndPlan(data, teams, apiMatches, officialConfirmedMatchdays, new Date());
 
 const skipGruende = Object.fromEntries(
   [...new Set(plan.skipped.map(item => item.reason))]
