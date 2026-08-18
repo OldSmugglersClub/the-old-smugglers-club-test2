@@ -78,7 +78,8 @@ function renderPodium(list){
    return;
  }
  const top=list.slice(0,3);
- podium.className='hs-podium hs-podium--classic';
+ const podiumCount=Math.max(1,Math.min(3,top.length));
+ podium.className=`hs-podium hs-podium--classic hs-podium--count-${podiumCount}`;
  podium.innerHTML=top.length?`<header class="hs-deck-banner"><span>Das Führungsdeck</span><small>Die aktuelle Spitze der Highscore</small></header>${top.map((r,i)=>podiumCard(r,i+1,false)).join('')}<div class="hs-deck-floor" aria-hidden="true"></div>`:'<p class="hs-empty">Noch keine Daten vorhanden.</p>';
 }
 function paginationHtml(total){const pages=Math.max(1,Math.ceil(total/pageSize));page=Math.min(Math.max(1,page),pages);if(total<=pageSize)return '';const nums=Array.from({length:pages},(_,i)=>i+1).map(n=>`<button class="hs-page-btn ${n===page?'is-active':''}" type="button" data-page="${n}" aria-label="Seite ${n}" aria-current="${n===page?'page':'false'}">${n}</button>`).join('');return `<nav class="hs-pagination" aria-label="Ranglistenseiten"><button class="hs-page-btn" type="button" data-page="${page-1}" ${page===1?'disabled':''}>Zurück</button><span>Einträge ${(page-1)*pageSize+1}–${Math.min(page*pageSize,total)} von ${total}</span><div class="hs-page-numbers">${nums}</div><button class="hs-page-btn" type="button" data-page="${page+1}" ${page===pages?'disabled':''}>Weiter</button></nav>`;}

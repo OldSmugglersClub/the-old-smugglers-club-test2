@@ -1366,137 +1366,138 @@
 
 
 /* =======================================================================
-   4.8.0-RC2-P1 – Zentrierung / Innenabstände
-   Nur Präsentation: keine Rang-, Daten- oder Assetänderung.
+   4.8.0-RC2-P2 – stabile Podiumszentrierung
+   Basis wieder RC2; P1 bewusst verworfen.
    ======================================================================= */
 
-/* Gemeinsame Mittelachse für Banner, Führendenraster und Deckboden */
-.hs-podium{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-start;
-}
-
+/* Banner: niemals mitten im Wort umbrechen */
 .hs-deck-banner{
-  left:auto;
-  transform:none;
-  margin-left:auto;
-  margin-right:auto;
+  width:min(820px,88%);
+  padding-left:64px;
+  padding-right:64px;
+}
+.hs-deck-banner span{
+  white-space:nowrap;
+  font-size:clamp(1.85rem,4vw,3.05rem);
 }
 
+/* Gleichstand: RC2-Raster beibehalten, nur vertikal kompakter */
 .hs-podium--shared{
-  display:flex!important;
-  flex-direction:column;
-  align-items:center;
+  min-height:520px;
+  padding-top:86px;
+  padding-bottom:58px;
 }
-
-.hs-podium--shared .hs-deck-banner{
-  position:relative;
-  top:auto;
-  width:min(760px,82%);
-  margin:0 auto 26px;
-  flex:0 0 auto;
-}
-
 .hs-podium--shared .hs-leader-grid{
-  width:min(1000px,94%);
-  margin:0 auto;
+  margin-top:92px;
 }
-
 .hs-podium--shared .hs-deck-floor{
-  position:relative;
-  left:auto;
-  right:auto;
-  bottom:auto;
-  width:min(1000px,94%);
-  margin:18px auto 0;
-  flex:0 0 auto;
+  bottom:18px;
 }
 
-/* Klassisches 1-2-3-Podium als komplett zentrierte Gruppe */
+/* Normalpodium: feste gemeinsame Mittelachse */
 .hs-podium--classic{
-  display:grid!important;
-  grid-template-columns:minmax(0,1fr) minmax(0,1.14fr) minmax(0,1fr);
-  align-items:end;
-  justify-content:center;
-  width:min(1000px,94%);
+  width:min(1040px,96%);
   margin:0 auto;
-  padding-left:0;
-  padding-right:0;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  column-gap:22px;
+  padding:146px 18px 60px;
 }
-
 .hs-podium--classic .hs-deck-banner{
-  grid-column:1 / -1;
-  position:relative;
-  top:auto;
-  left:auto;
-  transform:none;
-  justify-self:center;
-  width:min(760px,82%);
-  margin:0 auto 10px;
+  left:50%;
+  transform:translateX(-50%);
 }
 
-.hs-podium--classic .place-1,
-.hs-podium--classic .place-2,
-.hs-podium--classic .place-3{
-  justify-self:stretch;
-}
+/* 3 Plätze: klassisch 2 – 1 – 3, exakt symmetrisch */
+.hs-podium--count-3 .place-1{grid-column:2;grid-row:1;transform:translateY(-48px)}
+.hs-podium--count-3 .place-2{grid-column:1;grid-row:1}
+.hs-podium--count-3 .place-3{grid-column:3;grid-row:1}
 
-.hs-podium--classic .hs-deck-floor{
-  grid-column:1 / -1;
-  position:relative;
-  left:auto;
-  right:auto;
-  bottom:auto;
-  width:100%;
-  margin-top:4px;
-}
-
-/* Teamwertung: wenn nur zwei Podiumsplätze vorhanden sind, Gesamtgruppe zentrieren */
-.hs-podium--classic .hs-podium-card:nth-of-type(1):nth-last-of-type(2){
-  grid-column:2;
-}
-.hs-podium--classic .hs-podium-card:nth-of-type(2):last-of-type{
-  grid-column:1;
-}
-
-/* Für 2 Karten explizit eine zweispaltige, mittige Gruppe erzeugen */
-.hs-podium--classic:has(.hs-podium-card:nth-of-type(2):last-of-type){
-  grid-template-columns:minmax(260px, .92fr) minmax(300px, 1fr);
-  width:min(760px,88%);
+/* 2 Plätze: eigene, zentrierte Zweiergruppe.
+   Die beiden belegten Spalten liegen symmetrisch um die Seitenmitte. */
+.hs-podium--count-2{
+  width:min(820px,88%);
+  grid-template-columns:repeat(2,minmax(0,1fr));
   column-gap:28px;
 }
-.hs-podium--classic:has(.hs-podium-card:nth-of-type(2):last-of-type) .hs-deck-banner,
-.hs-podium--classic:has(.hs-podium-card:nth-of-type(2):last-of-type) .hs-deck-floor{
-  grid-column:1 / -1;
+.hs-podium--count-2 .place-1{
+  grid-column:2;
+  grid-row:1;
+  transform:translateY(-42px);
+}
+.hs-podium--count-2 .place-2{
+  grid-column:1;
+  grid-row:1;
+  transform:none;
+}
+.hs-podium--count-2 .hs-deck-floor{
+  left:0;
+  right:0;
+}
+
+/* 1 Platz: Einzelkarte sauber mittig */
+.hs-podium--count-1{
+  width:min(460px,74%);
+  grid-template-columns:1fr;
+}
+.hs-podium--count-1 .place-1{
+  grid-column:1;
+  grid-row:1;
+  transform:translateY(-34px);
+}
+.hs-podium--count-1 .hs-deck-floor{
+  left:0;
+  right:0;
+}
+
+/* Keine übergroßen vertikalen Leerzonen */
+.hs-podium--classic.hs-podium--count-2,
+.hs-podium--classic.hs-podium--count-1{
+  min-height:500px;
 }
 
 /* Mobile */
 @media (max-width:760px){
-  .hs-podium--shared .hs-deck-banner{
+  .hs-deck-banner{
     width:96%;
-    margin-bottom:18px;
+    padding-left:30px;
+    padding-right:30px;
+  }
+  .hs-deck-banner span{
+    white-space:nowrap;
+    font-size:clamp(1.15rem,6vw,1.7rem);
+  }
+
+  .hs-podium--shared{
+    padding-top:78px;
+    padding-bottom:42px;
   }
   .hs-podium--shared .hs-leader-grid{
-    width:100%;
-  }
-  .hs-podium--shared .hs-deck-floor{
-    width:100%;
-    margin-top:12px;
+    margin-top:72px;
   }
 
   .hs-podium--classic{
     width:100%;
-  }
-  .hs-podium--classic .hs-deck-banner{
-    width:96%;
-    margin-bottom:8px;
+    padding:118px 4px 45px;
+    column-gap:7px;
   }
 
-  .hs-podium--classic:has(.hs-podium-card:nth-of-type(2):last-of-type){
+  .hs-podium--count-2{
     width:100%;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2,minmax(0,1fr));
     column-gap:8px;
+  }
+  .hs-podium--count-2 .place-1{transform:translateY(-22px)}
+  .hs-podium--count-1{width:min(300px,86%)}
+  .hs-podium--count-1 .place-1{transform:translateY(-18px)}
+}
+
+@media (max-width:420px){
+  .hs-deck-banner{
+    padding-left:22px;
+    padding-right:22px;
+  }
+  .hs-deck-banner span{
+    font-size:clamp(1rem,5.7vw,1.35rem);
+    letter-spacing:.025em;
   }
 }
