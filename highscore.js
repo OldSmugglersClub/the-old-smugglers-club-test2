@@ -59,6 +59,7 @@ function leaderCard(r){
  </article>`;
 }
 function renderPodium(list){
+ document.body.dataset.view=view;
  const podium=$('podium');
  const zero=allZero(list);
  $('ranking-notice').textContent='';
