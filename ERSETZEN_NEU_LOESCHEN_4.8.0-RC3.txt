@@ -1,0 +1,13 @@
+ERSETZEN:
+- highscore.css
+- highscore.html
+- highscore.js
+- VERSION.txt
+
+NEU:
+- CHANGELOG_4.8.0-RC3.md
+- README-WEBSITE-4.8.0-RC3.md
+- ERSETZEN_NEU_LOESCHEN_4.8.0-RC3.txt
+
+LÖSCHEN:
+- nichts

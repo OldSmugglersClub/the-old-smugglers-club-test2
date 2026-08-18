@@ -1366,138 +1366,258 @@
 
 
 /* =======================================================================
-   4.8.0-RC2-P2 – stabile Podiumszentrierung
-   Basis wieder RC2; P1 bewusst verworfen.
+   4.8.0-RC3 – Geometrie-Neuaufbau
+   Design aus RC2 bleibt; Layout intern stabilisiert.
    ======================================================================= */
 
-/* Banner: niemals mitten im Wort umbrechen */
+.hs-podium{
+  min-height:0!important;
+  padding:24px 18px 28px!important;
+  display:block!important;
+}
+
+.hs-deck-shell{
+  width:min(1040px,96%);
+  margin:0 auto;
+  display:grid;
+  grid-template-rows:auto auto auto;
+  gap:22px;
+  align-items:start;
+  justify-items:stretch;
+}
+
 .hs-deck-banner{
-  width:min(820px,88%);
-  padding-left:64px;
-  padding-right:64px;
+  position:relative!important;
+  inset:auto!important;
+  left:auto!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:auto!important;
+  transform:none!important;
+  width:min(820px,88%)!important;
+  min-height:120px;
+  margin:0 auto!important;
+  padding:18px 66px 22px!important;
 }
 .hs-deck-banner span{
   white-space:nowrap;
-  font-size:clamp(1.85rem,4vw,3.05rem);
+  overflow:visible;
+  font-size:clamp(1.8rem,3.8vw,3rem)!important;
+}
+.hs-deck-banner strong,
+.hs-deck-banner small{
+  max-width:100%;
+  text-align:center;
 }
 
-/* Gleichstand: RC2-Raster beibehalten, nur vertikal kompakter */
-.hs-podium--shared{
-  min-height:520px;
-  padding-top:86px;
-  padding-bottom:58px;
+/* Gemeinsame Führende */
+.hs-leader-grid{
+  width:100%!important;
+  margin:0!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:18px!important;
+  align-items:stretch;
 }
-.hs-podium--shared .hs-leader-grid{
-  margin-top:92px;
+.hs-leader-card{
+  box-sizing:border-box;
+  min-width:0;
+  min-height:186px!important;
+  height:auto!important;
+  padding:74px 18px 18px!important;
+  display:grid!important;
+  grid-template-rows:auto auto 1fr;
+  align-content:end;
+  justify-items:center;
+  overflow:hidden!important;
 }
-.hs-podium--shared .hs-deck-floor{
-  bottom:18px;
+.hs-leader-nameplate{
+  box-sizing:border-box;
+  width:88%!important;
+  min-width:0;
+  max-width:250px;
+}
+.hs-leader-nameplate strong{
+  display:block;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  line-height:1.12;
+}
+.hs-leader-score{
+  align-self:end;
 }
 
-/* Normalpodium: feste gemeinsame Mittelachse */
-.hs-podium--classic{
-  width:min(1040px,96%);
+/* Klassisches Podium */
+.hs-podium-grid{
+  width:100%;
   margin:0 auto;
+  display:grid;
+  align-items:end;
+  justify-content:center;
+  gap:20px;
+}
+.hs-podium-grid--count-3{
   grid-template-columns:repeat(3,minmax(0,1fr));
-  column-gap:22px;
-  padding:146px 18px 60px;
 }
-.hs-podium--classic .hs-deck-banner{
-  left:50%;
-  transform:translateX(-50%);
-}
-
-/* 3 Plätze: klassisch 2 – 1 – 3, exakt symmetrisch */
-.hs-podium--count-3 .place-1{grid-column:2;grid-row:1;transform:translateY(-48px)}
-.hs-podium--count-3 .place-2{grid-column:1;grid-row:1}
-.hs-podium--count-3 .place-3{grid-column:3;grid-row:1}
-
-/* 2 Plätze: eigene, zentrierte Zweiergruppe.
-   Die beiden belegten Spalten liegen symmetrisch um die Seitenmitte. */
-.hs-podium--count-2{
-  width:min(820px,88%);
+.hs-podium-grid--count-2{
+  width:min(760px,82%);
   grid-template-columns:repeat(2,minmax(0,1fr));
-  column-gap:28px;
+  gap:28px;
 }
-.hs-podium--count-2 .place-1{
-  grid-column:2;
-  grid-row:1;
-  transform:translateY(-42px);
-}
-.hs-podium--count-2 .place-2{
-  grid-column:1;
-  grid-row:1;
-  transform:none;
-}
-.hs-podium--count-2 .hs-deck-floor{
-  left:0;
-  right:0;
-}
-
-/* 1 Platz: Einzelkarte sauber mittig */
-.hs-podium--count-1{
-  width:min(460px,74%);
+.hs-podium-grid--count-1{
+  width:min(420px,54%);
   grid-template-columns:1fr;
 }
-.hs-podium--count-1 .place-1{
-  grid-column:1;
-  grid-row:1;
-  transform:translateY(-34px);
+
+.hs-podium-grid--count-3 .place-2{grid-column:1}
+.hs-podium-grid--count-3 .place-1{grid-column:2;transform:translateY(-42px)}
+.hs-podium-grid--count-3 .place-3{grid-column:3}
+.hs-podium-grid--count-2 .place-2{grid-column:1;transform:none}
+.hs-podium-grid--count-2 .place-1{grid-column:2;transform:translateY(-36px)}
+.hs-podium-grid--count-1 .place-1{grid-column:1;transform:translateY(-24px)}
+
+.hs-podium-card{
+  min-width:0;
+  width:100%;
 }
-.hs-podium--count-1 .hs-deck-floor{
-  left:0;
-  right:0;
+.hs-podium-plinth{
+  box-sizing:border-box;
+  width:100%!important;
+  min-width:0;
+  overflow:hidden!important;
+  display:grid;
+  grid-template-rows:auto auto auto auto;
+  align-content:start;
+  justify-items:center;
+}
+.hs-podium-nameplate{
+  box-sizing:border-box;
+  width:82%!important;
+  min-width:0;
+}
+.hs-podium-nameplate strong{
+  display:block;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  line-height:1.15;
+}
+.hs-podium-score{
+  min-width:0;
+}
+.hs-podium-score b{
+  white-space:nowrap;
+}
+.hs-podium-plinth small{
+  max-width:88%;
+  white-space:normal;
+  text-align:center;
+  line-height:1.25;
 }
 
-/* Keine übergroßen vertikalen Leerzonen */
-.hs-podium--classic.hs-podium--count-2,
-.hs-podium--classic.hs-podium--count-1{
-  min-height:500px;
+/* Deckboden gehört immer zur Podiumsbreite */
+.hs-deck-floor{
+  position:relative!important;
+  inset:auto!important;
+  left:auto!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:auto!important;
+  width:100%!important;
+  height:54px!important;
+  margin:0!important;
+}
+
+/* Teamwertung: feste Zweiergruppe bleibt innerhalb eigener Hülle */
+.hs-podium--count-2 .hs-deck-shell{
+  width:min(900px,88%);
+}
+
+/* Vertikale Überläufe vermeiden */
+.hs-podium-panel,
+.hs-podium,
+.hs-deck-shell,
+.hs-podium-grid,
+.hs-leader-grid{
+  overflow:visible;
+}
+.hs-podium-card,
+.hs-leader-card{
+  overflow:hidden!important;
 }
 
 /* Mobile */
 @media (max-width:760px){
+  .hs-podium{
+    padding:14px 8px 20px!important;
+  }
+  .hs-deck-shell{
+    width:100%;
+    gap:14px;
+  }
   .hs-deck-banner{
-    width:96%;
-    padding-left:30px;
-    padding-right:30px;
+    width:96%!important;
+    min-height:96px;
+    padding:14px 28px 17px!important;
   }
   .hs-deck-banner span{
-    white-space:nowrap;
-    font-size:clamp(1.15rem,6vw,1.7rem);
+    font-size:clamp(1.12rem,5.4vw,1.6rem)!important;
   }
 
-  .hs-podium--shared{
-    padding-top:78px;
-    padding-bottom:42px;
+  .hs-leader-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:9px!important;
   }
-  .hs-podium--shared .hs-leader-grid{
-    margin-top:72px;
+  .hs-leader-card{
+    min-height:142px!important;
+    padding:58px 8px 12px!important;
+  }
+  .hs-leader-nameplate{
+    width:94%!important;
   }
 
-  .hs-podium--classic{
+  .hs-podium-grid{
+    gap:6px;
+  }
+  .hs-podium-grid--count-3{
     width:100%;
-    padding:118px 4px 45px;
-    column-gap:7px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
   }
-
-  .hs-podium--count-2{
+  .hs-podium-grid--count-2{
     width:100%;
     grid-template-columns:repeat(2,minmax(0,1fr));
-    column-gap:8px;
+    gap:8px;
   }
-  .hs-podium--count-2 .place-1{transform:translateY(-22px)}
-  .hs-podium--count-1{width:min(300px,86%)}
-  .hs-podium--count-1 .place-1{transform:translateY(-18px)}
+  .hs-podium-grid--count-1{
+    width:min(300px,86%);
+  }
+  .hs-podium-grid--count-3 .place-1{transform:translateY(-20px)}
+  .hs-podium-grid--count-2 .place-1{transform:translateY(-16px)}
+  .hs-podium-grid--count-1 .place-1{transform:translateY(-12px)}
+
+  .hs-podium-nameplate{
+    width:94%!important;
+    padding-left:5px!important;
+    padding-right:5px!important;
+  }
+  .hs-podium-nameplate strong{
+    font-size:.8rem!important;
+  }
+  .hs-podium-plinth small{
+    max-width:94%;
+    font-size:.61rem!important;
+  }
 }
 
 @media (max-width:420px){
   .hs-deck-banner{
-    padding-left:22px;
-    padding-right:22px;
+    padding-left:18px!important;
+    padding-right:18px!important;
   }
   .hs-deck-banner span{
-    font-size:clamp(1rem,5.7vw,1.35rem);
-    letter-spacing:.025em;
+    font-size:1rem!important;
+    letter-spacing:.02em!important;
+  }
+  .hs-leader-grid{
+    gap:7px!important;
   }
 }
