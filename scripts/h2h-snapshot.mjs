@@ -17,6 +17,7 @@ const COMPETITIONS = {
 const HOUR = 60 * 60 * 1000;
 const DAY = 24 * HOUR;
 const FUTURE_WINDOW = 7 * DAY;
+const FALLBACK_NEXT_WINDOW = 14 * DAY;
 const RETENTION = 7 * DAY;
 const FINAL_REFRESH = 24 * HOUR;
 const MAX_EMPTY_MAPPING_ATTEMPTS = 3;
@@ -263,13 +264,20 @@ function emptySnapshot(previous = {}) {
 function eligibleGames(gameDoc, current) {
   const min = new Date(current.getTime() - 3 * HOUR);
   const max = new Date(current.getTime() + FUTURE_WINDOW);
-  return flattenGames(gameDoc).filter(game => {
-    const kickoff = kickoffOf(game);
-    return kickoff
-      && game?.terminBestaetigt === true
-      && kickoff >= min
-      && kickoff <= max;
-  });
+  const fallbackMax = new Date(current.getTime() + FALLBACK_NEXT_WINDOW);
+  const all = flattenGames(gameDoc)
+    .map(game => ({ game, kickoff: kickoffOf(game) }))
+    .filter(x => x.kickoff && x.game?.terminBestaetigt === true && x.kickoff >= min)
+    .sort((a,b) => a.kickoff - b.kickoff);
+
+  const regular = all.filter(x => x.kickoff <= max).map(x => x.game);
+  if (regular.length) return regular;
+
+  // Falls innerhalb von 7 Tagen noch kein Spiel liegt, den aktuell nächsten
+  // sichtbaren Termin bis maximal 14 Tage vorladen. Damit ist der Match-Check
+  // bereits test-/nutzbar, ohne die Browser-Seite live an OpenLigaDB zu koppeln.
+  const fallback = all.find(x => x.kickoff <= fallbackMax);
+  return fallback ? [fallback.game] : [];
 }
 
 function cleanup(entries, current) {

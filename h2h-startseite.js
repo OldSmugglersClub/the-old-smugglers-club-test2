@@ -16,13 +16,20 @@
     }).format(d);
   };
 
-  async function loadSnapshot() {
+  function loadSnapshot() {
     if (!snapshotPromise) {
       snapshotPromise = fetch("./h2h-spieldaten.json", { cache:"no-store" })
         .then(r => r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`)))
         .catch(() => ({ schemaVersion:1, entries:{} }));
     }
     return snapshotPromise;
+  }
+
+  // Sofort nach Seitenaufbau lokal vorladen. Kein OpenLigaDB-Request im Browser.
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => { loadSnapshot(); }, { once:true });
+  } else {
+    loadSnapshot();
   }
 
   const formHtml = values => {
@@ -38,8 +45,8 @@
     if (!h2h?.available) return "";
     const s = h2h.summary || {};
     const meetings = Array.isArray(h2h.lastMeetings) ? h2h.lastMeetings : [];
-    const home = esc(game.heim || game.heimName || "Heim");
-    const away = esc(game.auswaerts || game.auswaertsName || "Gast");
+    const home = esc(game.heim || "Heim");
+    const away = esc(game.auswaerts || "Gast");
     return `
       <section class="sm-h2h__section">
         <h4>Direkter Vergleich</h4>
@@ -53,7 +60,7 @@
             <time>${formatDate(m.date)}</time>
             <span>${esc(m.home)} <b>${m.result ? `${m.result.home}:${m.result.away}` : "–"}</b> ${esc(m.away)}</span>
           </div>`).join("")}</div>` :
-          '<p class="sm-h2h__muted">Noch keine direkten Duelle in OpenLigaDB vorhanden.</p>'}
+          '<p class="sm-h2h__muted">Noch keine direkten Duelle vorhanden.</p>'}
       </section>`;
   }
 
@@ -108,10 +115,10 @@
     if (!entry) {
       const supported = ["bundesliga", "2-bundesliga"].includes(game.wettbewerb);
       return supported
-        ? `<p class="sm-h2h__state">H2H-Daten werden noch geladen.</p>`
+        ? `<p class="sm-h2h__state">H2H-Daten werden vorbereitet.</p>`
         : `<p class="sm-h2h__state">Für dieses Spiel sind keine H2H-Daten verfügbar.</p>`;
     }
-    if (entry.status === "retry") return `<p class="sm-h2h__state">H2H-Daten werden noch geladen.</p>`;
+    if (entry.status === "retry") return `<p class="sm-h2h__state">H2H-Daten werden vorbereitet.</p>`;
     if (entry.status !== "ready") return `<p class="sm-h2h__state">Für dieses Spiel sind keine H2H-Daten verfügbar.</p>`;
 
     const modules = [
@@ -124,55 +131,70 @@
     return modules || `<p class="sm-h2h__state">Für dieses Spiel sind keine H2H-Daten verfügbar.</p>`;
   }
 
-  async function attach(row, game, options = {}) {
+  let modal, modalBody, modalTitle, modalClose, lastFocus;
+
+  function ensureModal() {
+    if (modal) return;
+    modal = document.createElement("div");
+    modal.className = "sm-h2h-modal";
+    modal.hidden = true;
+    modal.innerHTML = `
+      <div class="sm-h2h-modal__backdrop" data-h2h-close></div>
+      <section class="sm-h2h-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="sm-h2h-title">
+        <button class="sm-h2h-modal__close" type="button" aria-label="Match-Check schließen" data-h2h-close>×</button>
+        <header class="sm-h2h-modal__head">
+          <span>Match-Check</span>
+          <strong id="sm-h2h-title"></strong>
+        </header>
+        <div class="sm-h2h-modal__body"></div>
+      </section>`;
+    document.body.appendChild(modal);
+    modalBody = modal.querySelector(".sm-h2h-modal__body");
+    modalTitle = modal.querySelector("#sm-h2h-title");
+    modalClose = modal.querySelector(".sm-h2h-modal__close");
+
+    const close = () => {
+      modal.hidden = true;
+      document.documentElement.classList.remove("sm-h2h-modal-open");
+      lastFocus?.focus?.();
+    };
+    modal.querySelectorAll("[data-h2h-close]").forEach(el => el.addEventListener("click", close));
+    document.addEventListener("keydown", e => {
+      if (!modal.hidden && e.key === "Escape") close();
+    });
+  }
+
+  async function openModal(game, trigger) {
+    ensureModal();
+    lastFocus = trigger || document.activeElement;
+    modalTitle.textContent = `${game.heim || "Heim"} – ${game.auswaerts || "Gast"}`;
+    modalBody.innerHTML = `<p class="sm-h2h__state">H2H-Daten werden geladen …</p>`;
+    modal.hidden = false;
+    document.documentElement.classList.add("sm-h2h-modal-open");
+    modalClose.focus();
+
+    const snapshot = await loadSnapshot();
+    modalBody.innerHTML = contentFor(snapshot?.entries?.[game.id], game);
+  }
+
+  function attach(row, game) {
     if (!row || !game?.id) return;
     row.classList.add("sm-event-row--details");
     row.setAttribute("role", "button");
     row.setAttribute("tabindex", row.getAttribute("tabindex") || "0");
-    row.setAttribute("aria-expanded", "false");
+    row.setAttribute("aria-haspopup", "dialog");
 
-    const panel = document.createElement("section");
-    panel.className = "sm-h2h";
-    panel.hidden = true;
-    panel.setAttribute("aria-label", `Match-Check ${game.heim || ""} gegen ${game.auswaerts || ""}`);
-
-    const head = document.createElement("header");
-    head.className = "sm-h2h__head";
-    head.innerHTML = `<span>Match-Check</span><strong>${esc(game.heim || "Heim")} – ${esc(game.auswaerts || "Gast")}</strong>`;
-    panel.appendChild(head);
-
-    const body = document.createElement("div");
-    body.className = "sm-h2h__body";
-    body.innerHTML = `<p class="sm-h2h__state">H2H-Daten werden geladen …</p>`;
-    panel.appendChild(body);
-
-    if (game.ereignisLink) {
-      const foot = document.createElement("footer");
-      foot.className = "sm-h2h__foot";
-      foot.innerHTML = `<a href="${esc(game.ereignisLink)}">Wettbewerb öffnen</a>`;
-      panel.appendChild(foot);
-    }
-
-    row.insertAdjacentElement("afterend", panel);
-
-    const toggle = async event => {
+    const open = event => {
       if (event?.target?.closest?.("a")) return;
       event?.preventDefault?.();
-      const open = panel.hidden;
-      panel.hidden = !open;
-      row.setAttribute("aria-expanded", String(open));
-      if (open && !panel.dataset.loaded) {
-        const snapshot = await loadSnapshot();
-        body.innerHTML = contentFor(snapshot?.entries?.[game.id], game);
-        panel.dataset.loaded = "true";
-      }
+      openModal(game, row);
     };
 
-    row.addEventListener("click", toggle);
+    row.addEventListener("click", open);
     row.addEventListener("keydown", event => {
-      if (event.key === "Enter" || event.key === " ") toggle(event);
+      if (event.key === "Enter" || event.key === " ") open(event);
     });
   }
 
-  window.OSCH2HPanel = Object.freeze({ attach, loadSnapshot });
+  window.OSCH2HPanel = Object.freeze({ attach, loadSnapshot, openModal });
 })();
