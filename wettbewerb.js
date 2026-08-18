@@ -219,12 +219,6 @@
     wrapper.appendChild(table);
     article.appendChild(wrapper);
 
-    const note = document.createElement("p");
-    note.className = "data-note";
-    note.textContent = standings.playedMatches
-      ? "Die Tabelle wird automatisch aus den in spieldaten.json hinterlegten Endergebnissen berechnet."
-      : "Die Mannschaften sind vorbereitet. Ergebnisse und Tabelle werden nach Saisonstart automatisch aus spieldaten.json aufgebaut.";
-    article.appendChild(note);
     root.appendChild(article);
   }
 
@@ -393,14 +387,7 @@
     heading.textContent = "Saisonstatistik und Rekorde";
     section.appendChild(heading);
 
-    if (!stats.games.length) {
-      const empty = document.createElement("div");
-      empty.className = "statistics-empty";
-      empty.innerHTML = "<strong>Bereit für den Saisonstart</strong><span>Sobald Endergebnisse in spieldaten.json eingetragen sind, erscheinen hier automatisch Torstatistik, Form, Heim-/Auswärtswerte und Saisonrekorde.</span>";
-      section.appendChild(empty);
-      root.appendChild(section);
-      return;
-    }
+    if (!stats.games.length) return;
 
     const overview = document.createElement("div");
     overview.className = "season-stat-grid";
@@ -784,17 +771,13 @@
     headingRow.className = "section-heading-row";
     const heading = document.createElement("h2");
     heading.textContent = "Champions-League-Tabelle";
-    const badge = document.createElement("span");
-    badge.className = "data-status-badge";
-    const complete = rows.length === 36 && rows.every(team => team.played === 8);
-    badge.textContent = complete ? "OpenLigaDB 2026/27 · Ligaphase vollständig" : `OpenLigaDB 2026/27 · ${rows.length} Teams`;
-    headingRow.append(heading, badge);
+    headingRow.append(heading);
     section.appendChild(headingRow);
 
     if (!rows.length) {
       const note = document.createElement("p");
       note.className = "data-note";
-      note.textContent = "OpenLigaDB liefert derzeit keine verwertbaren Daten für die Champions-League-Ligaphase.";
+      note.textContent = "Aktuelle Daten für die Champions-League-Ligaphase sind momentan nicht verfügbar.";
       section.appendChild(note); root.appendChild(section); return;
     }
 
@@ -916,10 +899,7 @@
     headingRow.className = "section-heading-row";
     const heading = document.createElement("h2");
     heading.textContent = "Champions League · Turnierbaum";
-    const badge = document.createElement("span");
-    badge.className = "data-status-badge";
-    badge.textContent = "OpenLigaDB 2026/27";
-    headingRow.append(heading, badge);
+    headingRow.append(heading);
     section.appendChild(headingRow);
 
     const note = document.createElement("p");
@@ -966,10 +946,6 @@
     section.appendChild(scroll);
     activateBracketConnections(bracket);
 
-    const source = document.createElement("p");
-    source.className = "data-note ko-source-note";
-    source.textContent = "Sportdaten: OpenLigaDB · Darstellung ausschließlich als externe Wettbewerbsinformation.";
-    section.appendChild(source);
     root.appendChild(section);
   }
 
@@ -1141,17 +1117,9 @@
     const heading = document.createElement("h2");
     heading.textContent = "Europa League · Turnierbaum";
 
-    const badge = document.createElement("span");
-    badge.className = "data-status-badge";
-    badge.textContent = "OpenLigaDB + lokaler Fallback 2026/27";
-
-    headingRow.append(heading, badge);
+    headingRow.append(heading);
     section.appendChild(headingRow);
 
-    const note = document.createElement("p");
-    note.className = "data-note";
-    note.textContent = "OpenLigaDB wird rundenweise bevorzugt. Nur unvollständige K.-o.-Runden werden durch den lokalen Test-Fallback ergänzt.";
-    section.appendChild(note);
 
     const scroll = document.createElement("div");
     scroll.className = "ko-bracket-scroll";
@@ -1166,7 +1134,7 @@
 
       const title = document.createElement("h3");
       title.className = "ko-round__title";
-      title.textContent = `${round.label} · ${sources.get(round.key)}`;
+      title.textContent = round.label;
       column.appendChild(title);
 
       const list = document.createElement("div");
@@ -1190,11 +1158,6 @@
     section.appendChild(scroll);
     activateBracketConnections(bracket);
 
-    const source = document.createElement("p");
-    source.className = "data-note ko-source-note";
-    source.textContent = "Sportdaten: OpenLigaDB; fehlende Runden: lokaler Fallback 2026/27.";
-    section.appendChild(source);
-
     root.appendChild(section);
   }
 
@@ -1208,10 +1171,7 @@
     headingRow.className = "section-heading-row";
     const heading = document.createElement("h2");
     heading.textContent = "DFB-Pokal · Turnierbaum";
-    const badge = document.createElement("span");
-    badge.className = "data-status-badge";
-    badge.textContent = "OpenLigaDB 2026/27";
-    headingRow.append(heading, badge);
+    headingRow.append(heading);
     section.appendChild(headingRow);
 
     const note = document.createElement("p");
@@ -1229,7 +1189,7 @@
     if (!total) {
       const empty = document.createElement("div");
       empty.className = "schedule-empty";
-      empty.textContent = "OpenLigaDB liefert aktuell keine verwertbaren K.-o.-Runden für den Turnierbaum.";
+      empty.textContent = "Aktuelle K.-o.-Runden sind momentan nicht verfügbar.";
       section.appendChild(empty);
       root.appendChild(section);
       return;
@@ -1273,10 +1233,6 @@
     section.appendChild(scroll);
     activateBracketConnections(bracket);
 
-    const source = document.createElement("p");
-    source.className = "data-note ko-source-note";
-    source.textContent = "Sportdaten: OpenLigaDB · Darstellung ausschließlich als externe Wettbewerbsinformation.";
-    section.appendChild(source);
     root.appendChild(section);
   }
 
@@ -1431,10 +1387,6 @@
     table.appendChild(tbody);
     tableWrap.appendChild(table);
     body.appendChild(tableWrap);
-    const note = document.createElement("p");
-    note.className = "data-note";
-    note.textContent = "Die Gesamtlage wird ausschließlich aus spieldaten.json berechnet. Sie dient zugleich als Kontrollansicht für die spätere zentrale Datenpflege.";
-    body.appendChild(note);
     section.appendChild(body);
     root.appendChild(section);
   }

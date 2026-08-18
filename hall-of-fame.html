@@ -28,7 +28,7 @@
       <article class="panel"><h2>Ehrenchampions Sonderwettbewerbe</h2><div class="list achievement-list" id="achievements"></div><div class="note achievement-note pirate-note"><img class="pirate-note__emblem" src="./club-crest.svg" alt="" aria-hidden="true"><span>Champions zusätzlicher Sonderwettbewerbe außerhalb der regulären Saison-Gesamtwertung werden hier chronologisch dokumentiert. Die Startseite zeigt den zuletzt bestätigten Ehrenchampion.</span></div></article>
     </section>
     <div class="note hall-logbook-note pirate-note"><img class="pirate-note__emblem" src="./club-crest.svg" alt="" aria-hidden="true"><span><strong>Ehrenlogbuch</strong><br>Jeder bestätigte Titel und Rekord bleibt erhalten. Offene Wettbewerbe werden erst nach ihrer offiziellen Auswertung in die Ehrenhalle übernommen.</span></div>
-    <div class="status" id="dataStatus">Ehrenlogbuch wird geladen …</div>
+    <div class="status" id="dataStatus" role="status" aria-live="polite" hidden></div>
   </main>
   <script src="./hall-of-fame-runtime.js"></script>
   <script src="./highscore-data-adapter.js"></script>
@@ -44,8 +44,8 @@
       document.getElementById('chronicle').innerHTML=(d.meisterchronik||[]).map(x=>row(x.saison,x.name,x.offen)).join('');
       const rec=d.rekorde||{};document.getElementById('records').innerHTML=Object.values(rec).map(x=>row(x.label,[x.wert,x.name].filter(Boolean).join(' · '),x.offen)).join('');
       const achievements=d.besondereLeistungen||[];document.getElementById('achievements').innerHTML=achievements.length?achievements.map(item=>row([item.jahr,item.titel].filter(Boolean).join(' · '),item.name,item.offen)).join(''):row('Status','Noch keine Einträge',true);
-      document.getElementById('dataStatus').textContent=d.meta?.hinweis||'Ehrenlogbuch geladen.';
-    }).catch(()=>{document.getElementById('dataStatus').textContent='Das Ehrenlogbuch konnte nicht vollständig geladen werden.'});
+      document.getElementById('dataStatus').hidden=true;document.getElementById('dataStatus').textContent='';
+    }).catch(()=>{const status=document.getElementById('dataStatus');status.hidden=false;status.textContent='Das Ehrenlogbuch konnte nicht vollständig geladen werden.';});
     fetch('./VERSION.txt',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject()).then(v=>{document.getElementById('legal-version').textContent='Version '+v.trim();}).catch(()=>{document.getElementById('legal-version').textContent='Version nicht verfügbar';});
   </script>
 
