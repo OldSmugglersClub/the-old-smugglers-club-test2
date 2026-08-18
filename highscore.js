@@ -42,42 +42,44 @@ function podiumCard(r,pos,zero){
  const score=isTeam?fmt(rowPoints(r),1):fmt(rowPoints(r));
  const scoreLabel=isTeam?'Ø Punkte':'Punkte';
  const detailLine=zero?'Noch ohne Wertung':isTeam?`${fmt(r.pointsSum??r.punktesumme??r.totalPoints??0,1)} gesamt · ${num(r.memberCount??r.mitglieder)} Mitglieder`:view==='bonus'?'Bonuswertung':'Aktueller Rang';
+ const medalClass=pos===1?'gold':pos===2?'silver':'bronze';
  return `<article class="hs-podium-card place-${pos}" aria-label="Platz ${pos}: ${esc(rowName(r))}, ${score} ${scoreLabel}">
-   <div class="hs-rank-seal" aria-hidden="true"><span>${zero?'–':pos}</span></div>
-   <div class="hs-podium-nameplate"><strong>${esc(rowName(r))}</strong></div>
-   <div class="hs-podium-score"><b>${score}</b><span>${scoreLabel}</span></div>
-   <small>${detailLine}</small>
-   <div class="hs-pedestal-face" aria-hidden="true"><span>${zero?'–':pos}</span></div>
+   <div class="hs-medal hs-medal--${medalClass}" aria-hidden="true"><span>${zero?'–':pos}</span></div>
+   <div class="hs-podium-plinth">
+     <div class="hs-podium-nameplate"><strong>${esc(rowName(r))}</strong></div>
+     <div class="hs-podium-score"><b>${score}</b><span>${scoreLabel}</span></div>
+     <small>${detailLine}</small>
+     <div class="hs-plinth-mark" aria-hidden="true"></div>
+   </div>
  </article>`;
 }
 function leaderCard(r){
  const score=fmt(rowPoints(r));
  return `<article class="hs-leader-card" aria-label="Gemeinsam Rang 1: ${esc(rowName(r))}, ${score} Punkte">
-   <div class="hs-leader-seal" aria-hidden="true"><span>1</span></div>
-   <strong>${esc(rowName(r))}</strong>
-   <span>${score} Punkte</span>
+   <div class="hs-leader-emblem" aria-hidden="true"></div>
+   <div class="hs-leader-nameplate"><strong>${esc(rowName(r))}</strong></div>
+   <div class="hs-leader-score"><b>${score}</b><span>Punkte</span></div>
  </article>`;
 }
 function renderPodium(list){
  const podium=$('podium');
  const zero=allZero(list);
+ $('ranking-notice').textContent='';
+ $('ranking-notice').hidden=true;
  if(zero){
    podium.className='hs-podium hs-podium--empty';
    podium.innerHTML='<div class="hs-podium-empty-state"><strong>Das Führungsdeck ist noch unbesetzt.</strong><span>Nach der ersten bestätigten Wertung erscheint hier die aktuelle Spitze.</span></div>';
-   $('ranking-notice').textContent=''; $('ranking-notice').hidden=true;
    return;
  }
  const sharedLeaders=view!=='team'&&view!=='bonus'?list.filter(r=>Number(rowRank(r,0))===1):[];
  if(sharedLeaders.length>1){
    podium.className='hs-podium hs-podium--shared';
-   podium.innerHTML=`<div class="hs-deck-banner"><span>Das Führungsdeck</span><strong>${sharedLeaders.length} Freibeuter teilen sich Rang 1</strong><small>je ${fmt(rowPoints(sharedLeaders[0]))} Punkte</small></div><div class="hs-leader-grid">${sharedLeaders.map(leaderCard).join('')}</div>`;
-   $('ranking-notice').textContent=''; $('ranking-notice').hidden=true;
+   podium.innerHTML=`<header class="hs-deck-banner"><span>Das Führungsdeck</span><strong>${sharedLeaders.length} Freibeuter teilen sich Rang 1</strong><small>je ${fmt(rowPoints(sharedLeaders[0]))} Punkte</small></header><div class="hs-leader-grid">${sharedLeaders.map(leaderCard).join('')}</div><div class="hs-deck-floor" aria-hidden="true"></div>`;
    return;
  }
  const top=list.slice(0,3);
  podium.className='hs-podium hs-podium--classic';
- podium.innerHTML=top.length?`<div class="hs-deck-banner"><span>Das Führungsdeck</span><small>Die aktuelle Spitze der Highscore</small></div>${top.map((r,i)=>podiumCard(r,i+1,false)).join('')}<div class="hs-podium-deck" aria-hidden="true"><span></span></div>`:'<p class="hs-empty">Noch keine Daten vorhanden.</p>';
- $('ranking-notice').textContent=''; $('ranking-notice').hidden=true;
+ podium.innerHTML=top.length?`<header class="hs-deck-banner"><span>Das Führungsdeck</span><small>Die aktuelle Spitze der Highscore</small></header>${top.map((r,i)=>podiumCard(r,i+1,false)).join('')}<div class="hs-deck-floor" aria-hidden="true"></div>`:'<p class="hs-empty">Noch keine Daten vorhanden.</p>';
 }
 function paginationHtml(total){const pages=Math.max(1,Math.ceil(total/pageSize));page=Math.min(Math.max(1,page),pages);if(total<=pageSize)return '';const nums=Array.from({length:pages},(_,i)=>i+1).map(n=>`<button class="hs-page-btn ${n===page?'is-active':''}" type="button" data-page="${n}" aria-label="Seite ${n}" aria-current="${n===page?'page':'false'}">${n}</button>`).join('');return `<nav class="hs-pagination" aria-label="Ranglistenseiten"><button class="hs-page-btn" type="button" data-page="${page-1}" ${page===1?'disabled':''}>Zurück</button><span>Einträge ${(page-1)*pageSize+1}–${Math.min(page*pageSize,total)} von ${total}</span><div class="hs-page-numbers">${nums}</div><button class="hs-page-btn" type="button" data-page="${page+1}" ${page===pages?'disabled':''}>Weiter</button></nav>`;}
 function bindPagination(){document.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>{page=Number(b.dataset.page)||1;renderTable(rows());$('table-panel').scrollIntoView({behavior:'smooth',block:'start'});});}

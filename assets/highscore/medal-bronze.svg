@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+<defs>
+ <radialGradient id="m" cx=".35" cy=".28" r=".75">
+   <stop offset="0" stop-color="#e5a06b"/><stop offset=".38" stop-color="#a35d2a"/><stop offset=".82" stop-color="#542713"/><stop offset="1" stop-color="#1a0d05"/>
+ </radialGradient>
+ <filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000" flood-opacity=".65"/></filter>
+</defs>
+<circle cx="110" cy="110" r="96" fill="#100906" stroke="#542713" stroke-width="8" filter="url(#s)"/>
+<circle cx="110" cy="110" r="82" fill="url(#m)" stroke="#e5a06b" stroke-width="3"/>
+<circle cx="110" cy="110" r="68" fill="#16100a" stroke="#a35d2a" stroke-width="2"/>
+<g fill="none" stroke="#e5a06b" stroke-width="4" opacity=".8">
+ <path d="M48 125c8 34 31 55 62 63M172 125c-8 34-31 55-62 63"/>
+ <path d="M58 142l-12 2m19 10-13 5m26 7-11 8M162 142l12 2m-19 10 13 5m-26 7 11 8"/>
+</g>
+<circle cx="110" cy="110" r="8" fill="#e5a06b" opacity=".28"/>
+</svg>

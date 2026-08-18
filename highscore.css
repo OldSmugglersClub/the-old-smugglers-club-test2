@@ -931,305 +931,435 @@
 }
 
 
-/* =========================================================
-   Website 4.8.0 – DAS FÜHRUNGSDECK
-   Präsentations-Hotfix ausschließlich innerhalb der Highscore.
-   Ranglogik und übriges Website-Raster bleiben unverändert.
-   ========================================================= */
 
-/* Gemeinsame Farbwelt: Führungsdeck, Auswahl und Rangliste wirken wie ein Raum. */
-.hs-page .hs-structure-panel,
-.hs-page .hs-podium-panel,
-.hs-page #table-panel{
-  border-color:rgba(198,148,57,.68);
+/* =======================================================================
+   4.8.0-RC2 – Führungsdeck
+   Präsentationsschicht ausschließlich innerhalb der Highscore-Seite.
+   ======================================================================= */
+
+.hs-page{
+  --deck-gold:#d9aa48;
+  --deck-gold-hi:#f4d47c;
+  --deck-brass:#8f5a19;
+  --deck-ink:#0a0604;
+  --deck-cream:#f4dfad;
+  position:relative;
+}
+.hs-page::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
   background:
-    radial-gradient(circle at 50% -20%,rgba(178,119,43,.13),transparent 44%),
-    repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 38px),
-    linear-gradient(145deg,rgba(45,28,15,.985),rgba(17,10,5,.992) 58%,rgba(30,17,8,.99));
-  box-shadow:inset 0 0 0 4px rgba(0,0,0,.24),0 18px 46px rgba(0,0,0,.38);
+    linear-gradient(rgba(5,3,2,.28),rgba(5,3,2,.72)),
+    url("./assets/highscore/deck-wood.svg") center/960px 640px repeat;
 }
-.hs-page .hs-structure-panel .hs-panel-head,
-.hs-page .hs-podium-panel .hs-panel-head,
-.hs-page #table-panel .hs-panel-head{
-  padding-bottom:14px;
-  border-bottom:1px solid rgba(212,164,74,.28);
+.hs-page::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:radial-gradient(circle at 50% 0,rgba(217,170,72,.10),transparent 42%);
 }
-.hs-page #table-panel .hs-ranking-toolbar{
-  border-color:rgba(203,153,61,.56);
-  background:rgba(177,118,36,.18);
-}
-.hs-page #table-panel .hs-ranking-toolbar>div{
-  background:linear-gradient(180deg,rgba(55,34,17,.98),rgba(20,12,6,.99));
-}
-.hs-page #table-panel .hs-table-wrap{
-  border-color:rgba(197,146,54,.62);
-  background:rgba(12,7,3,.42);
-  box-shadow:inset 0 0 0 3px rgba(0,0,0,.25),0 10px 24px rgba(0,0,0,.22);
-}
-.hs-page #table-panel .hs-table th{
-  background:linear-gradient(180deg,#3a2512,#211307);
-  color:#efd598;
-  border-bottom-color:rgba(210,160,70,.42);
-}
-.hs-page #table-panel .hs-table tbody tr:nth-child(even){background:rgba(190,139,52,.035)}
-.hs-page #table-panel .hs-table tbody tr:hover{background:rgba(206,155,65,.09)}
 
-/* Podiumsraum */
-.hs-podium-panel{overflow:hidden}
+/* Highscore-Hülle als zusammengehöriges Bauteil */
+.hs-hero,.hs-structure-panel,.hs-leaderboard-shell,.hs-leaderboard-table{
+  border-color:rgba(217,170,72,.58)!important;
+  background:
+    linear-gradient(rgba(14,8,4,.90),rgba(8,5,3,.97)),
+    url("./assets/highscore/deck-wood.svg") center/960px 640px repeat!important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,222,145,.05),
+    inset 0 16px 30px rgba(255,188,66,.025),
+    0 18px 48px rgba(0,0,0,.48)!important;
+}
+
+/* Der Besucher braucht keinen dominanten Systemstatus im normalen Zustand */
+.hs-system-status.is-ready{display:none!important}
+.hs-ranking-notice[hidden]{display:none!important}
+
+/* Podiumrahmen */
+.hs-podium-panel{
+  position:relative;
+  overflow:hidden;
+  padding:22px 26px 28px!important;
+}
 .hs-podium-panel::before{
-  opacity:.46;
-  background:
-    radial-gradient(circle at 12% 82%,rgba(197,146,55,.13),transparent 25%),
-    radial-gradient(circle at 88% 24%,rgba(197,146,55,.11),transparent 27%),
-    repeating-linear-gradient(90deg,rgba(109,68,28,.08) 0 2px,transparent 2px 132px);
+  content:"";
+  position:absolute;
+  inset:10px;
+  border:1px solid rgba(217,170,72,.24);
+  border-radius:11px;
+  pointer-events:none;
+  box-shadow:inset 0 0 40px rgba(0,0,0,.46);
 }
-.hs-podium-panel::after{top:88px;background:linear-gradient(90deg,transparent,rgba(232,190,100,.54),transparent)}
+.hs-podium-panel>.hs-panel-head{
+  position:relative;
+  z-index:3;
+  margin:0 0 6px!important;
+  padding:0 4px 12px;
+  border-bottom:1px solid rgba(217,170,72,.22);
+}
+.hs-podium-panel>.hs-panel-head .hs-eyebrow{color:#c99538}
+.hs-podium-panel>.hs-panel-head h2{font-size:clamp(1.55rem,3vw,2.15rem)}
+.hs-podium-panel>.hs-panel-head .hs-status{color:#c8b083}
+
+/* Das eigentliche Deck */
 .hs-podium{
   position:relative;
-  grid-template-columns:1fr 1.13fr 1fr;
-  align-items:end;
-  column-gap:22px;
-  row-gap:28px;
-  min-height:520px;
-  padding:42px 18px 56px;
+  min-height:560px;
+  padding:98px 34px 72px;
+  border-radius:16px;
+  isolation:isolate;
 }
-.hs-podium::before,.hs-podium::after{opacity:.34}
-.hs-podium--empty{display:block;min-height:330px;padding-top:42px}
+.hs-podium::before{
+  content:"";
+  position:absolute;
+  inset:14px 6px 20px;
+  z-index:-3;
+  border-radius:16px;
+  background:
+    linear-gradient(rgba(12,7,4,.48),rgba(6,4,3,.82)),
+    url("./assets/highscore/deck-wood.svg") center/960px 640px repeat;
+  border:1px solid rgba(217,170,72,.22);
+  box-shadow:
+    inset 0 0 70px rgba(0,0,0,.68),
+    inset 0 1px rgba(255,215,120,.06);
+}
+.hs-podium::after{
+  content:"";
+  position:absolute;
+  inset:28px 22px 36px;
+  z-index:-2;
+  background:
+    radial-gradient(circle at 9% 78%,rgba(230,173,61,.08),transparent 17%),
+    radial-gradient(circle at 92% 73%,rgba(230,173,61,.07),transparent 18%);
+  pointer-events:none;
+}
 
-/* Messing-Schild oberhalb beider Darstellungsarten */
+/* Banner */
 .hs-deck-banner{
-  grid-column:1/-1;
-  justify-self:center;
-  position:relative;
-  z-index:6;
-  min-width:min(620px,82%);
-  max-width:760px;
-  padding:13px 46px 12px;
+  position:absolute;
+  z-index:5;
+  top:18px;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(760px,82%);
+  min-height:124px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
-  border:1px solid rgba(226,180,83,.78);
-  border-radius:7px 7px 14px 14px;
-  background:
-    linear-gradient(90deg,rgba(0,0,0,.38),transparent 18%,transparent 82%,rgba(0,0,0,.38)),
-    linear-gradient(180deg,#5b3517,#2d190b 52%,#170d06);
-  box-shadow:inset 0 0 0 4px rgba(0,0,0,.3),0 12px 24px rgba(0,0,0,.45);
+  padding:19px 76px 24px;
+  background:url("./assets/highscore/deck-ribbon.svg") center/100% 100% no-repeat;
+  color:var(--deck-cream);
+  text-shadow:0 3px 4px #000;
 }
-.hs-deck-banner::before,.hs-deck-banner::after{
-  content:"";position:absolute;top:50%;width:42px;height:2px;
-  background:linear-gradient(90deg,transparent,#d6aa54);
+.hs-deck-banner span{
+  font-family:Georgia,"Times New Roman",serif;
+  text-transform:uppercase;
+  letter-spacing:.055em;
+  font-weight:800;
+  font-size:clamp(2rem,4.4vw,3.25rem);
+  line-height:.95;
+  color:#f2cf72;
 }
-.hs-deck-banner::before{right:100%;transform:translateY(-50%)}
-.hs-deck-banner::after{left:100%;transform:translateY(-50%) rotate(180deg)}
-.hs-deck-banner>span{
-  display:block;color:#f5d782;font:800 clamp(1.5rem,3vw,2.35rem)/1 Georgia,serif;
-  text-transform:uppercase;letter-spacing:.055em;text-shadow:0 2px 0 #4a2a0d,0 5px 12px rgba(0,0,0,.7)
+.hs-deck-banner strong{
+  margin-top:8px;
+  font-size:clamp(1rem,2vw,1.35rem);
+  color:#f1dab0;
 }
-.hs-deck-banner>strong{display:block;margin-top:9px;color:#f1d89e;font:700 clamp(1rem,1.6vw,1.22rem) Georgia,serif}
-.hs-deck-banner>small{display:block;margin-top:6px;color:#cdb886;font-size:.82rem;letter-spacing:.03em}
+.hs-deck-banner small{
+  margin-top:4px;
+  color:#e5c678;
+  font-size:.95rem;
+}
 
-/* Klassisches 2–1–3-Führungsdeck */
-.hs-podium--classic .hs-podium-card{
-  position:relative;
-  text-align:center;
-  border:1px solid rgba(188,137,51,.85);
-  border-radius:6px 6px 2px 2px;
-  padding:78px 18px 122px;
-  min-width:0;
-  background:
-    linear-gradient(90deg,rgba(0,0,0,.34),transparent 15%,transparent 85%,rgba(0,0,0,.34)),
-    repeating-linear-gradient(0deg,#4a2c15 0 39px,#2c190c 40px 42px,#543117 43px 82px);
-  box-shadow:inset 0 0 0 5px rgba(0,0,0,.28),0 18px 34px rgba(0,0,0,.48);
-}
-.hs-podium--classic .hs-podium-card::before{inset:9px;border-color:rgba(234,193,105,.12)}
-.hs-podium--classic .hs-podium-card::after{top:18px;height:7px}
-.hs-podium--classic .place-1{order:2;min-height:392px;transform:translateY(-32px);border-color:rgba(236,192,86,.98);background:
-  linear-gradient(90deg,rgba(0,0,0,.30),transparent 16%,transparent 84%,rgba(0,0,0,.30)),
-  repeating-linear-gradient(0deg,#63401e 0 39px,#33200f 40px 42px,#704821 43px 82px)}
-.hs-podium--classic .place-2{order:1;min-height:326px;filter:saturate(.80)}
-.hs-podium--classic .place-3{order:3;min-height:302px;filter:saturate(.92) sepia(.08)}
-.hs-podium--classic .place-2 .hs-rank-seal{border-color:#b9b4a7;background:radial-gradient(circle at 36% 28%,#77746d,#24211d 66%,#090807 72%)}
-.hs-podium--classic .place-2 .hs-rank-seal span{color:#eee7d9;text-shadow:0 2px #37332e,0 5px 10px #000}
-.hs-podium--classic .place-3 .hs-rank-seal{border-color:#a96b35;background:radial-gradient(circle at 36% 28%,#6c3e20,#25140b 66%,#080503 72%)}
-.hs-podium--classic .place-3 .hs-rank-seal span{color:#e6a86d}
-.hs-podium--classic .hs-podium-nameplate{
-  position:relative;z-index:3;margin:4px -5px 15px;padding:10px 12px;
-  border:1px solid rgba(218,169,76,.72);
-  background:linear-gradient(180deg,#49301a,#231408);
-  box-shadow:inset 0 0 0 3px rgba(0,0,0,.26),0 5px 12px rgba(0,0,0,.34)
-}
-.hs-podium--classic .place-1 .hs-podium-nameplate{background:linear-gradient(180deg,#9b6a25,#52320f);border-color:#edc161}
-.hs-podium--classic .hs-podium-nameplate strong{margin:0;color:#f8e2aa;font-size:clamp(1.15rem,2vw,1.65rem)}
-.hs-podium--classic .hs-podium-score{position:relative;z-index:3;display:grid;gap:2px;justify-items:center;margin-top:8px}
-.hs-podium--classic .hs-podium-score b{color:#f1d08a;font:800 clamp(2rem,4vw,3.15rem)/1 Georgia,serif;text-shadow:0 2px #43270e,0 5px 12px #000}
-.hs-podium--classic .hs-podium-score span{color:#e4c88e;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;font-weight:800}
-.hs-podium--classic .hs-podium-card small{margin-top:11px;color:#bda97e;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em}
-.hs-podium--classic .hs-pedestal-face{height:94px}
-.hs-podium--classic .hs-podium-deck{display:block}
-
-/* Gleichstand: keine künstliche Hierarchie, sondern gleichwertige Führende. */
-.hs-podium--shared{display:grid;grid-template-columns:1fr;align-items:start;min-height:0;padding:42px 18px 48px}
-.hs-podium--shared::before,.hs-podium--shared::after{display:none}
+/* Gemeinsame Führende */
+.hs-podium--shared{display:block!important}
 .hs-leader-grid{
-  grid-column:1/-1;
+  position:relative;
+  z-index:3;
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:16px;
-  width:100%;
-  max-width:1000px;
-  margin:4px auto 0;
+  gap:18px;
+  width:min(1000px,94%);
+  margin:105px auto 0;
+  align-items:stretch;
 }
 .hs-leader-card{
-  position:relative;min-width:0;min-height:178px;padding:72px 14px 22px;text-align:center;
-  border:1px solid rgba(220,169,72,.82);border-radius:5px;
+  position:relative;
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-end;
+  padding:78px 20px 21px;
+  border:0!important;
+  border-radius:0!important;
   background:
-    linear-gradient(90deg,rgba(0,0,0,.30),transparent 16%,transparent 84%,rgba(0,0,0,.30)),
-    repeating-linear-gradient(0deg,#4f3017 0 35px,#2b180c 36px 38px,#59361a 39px 75px);
-  box-shadow:inset 0 0 0 5px rgba(0,0,0,.28),0 12px 24px rgba(0,0,0,.38)
+    linear-gradient(rgba(31,17,8,.12),rgba(9,5,3,.72)),
+    url("./assets/highscore/brass-frame.svg") center/100% 100% no-repeat!important;
+  box-shadow:none!important;
+  color:var(--deck-cream);
+  overflow:visible;
 }
-.hs-leader-card::before{content:"";position:absolute;inset:8px;border:1px solid rgba(235,193,102,.13);pointer-events:none}
-.hs-leader-card::after{content:"";position:absolute;left:12%;right:12%;bottom:14px;height:2px;background:linear-gradient(90deg,transparent,#b98235,transparent);opacity:.65}
-.hs-leader-seal{
-  position:absolute;left:50%;top:16px;transform:translateX(-50%);display:grid;place-items:center;
-  width:48px;height:48px;border:1px solid #dfb557;border-radius:50%;
-  background:radial-gradient(circle at 35% 30%,#805523,#211207 68%);box-shadow:0 0 0 4px rgba(0,0,0,.38),0 8px 14px rgba(0,0,0,.38)
+.hs-leader-card::before{
+  content:"";
+  position:absolute;
+  inset:15px 18px 18px;
+  z-index:-1;
+  background:
+    linear-gradient(180deg,rgba(100,54,21,.36),rgba(23,12,6,.76)),
+    url("./assets/highscore/deck-wood.svg") center/640px 430px repeat;
 }
-.hs-leader-seal span{color:#f3d27f;font:800 1.45rem Georgia,serif}
-.hs-leader-card strong{position:relative;z-index:2;display:block;color:#f6dca0;font:700 clamp(1rem,1.8vw,1.25rem) Georgia,serif;overflow-wrap:anywhere}
-.hs-leader-card>span{position:relative;z-index:2;display:block;margin-top:12px;color:#e3c47f;font-size:.86rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}
+.hs-leader-emblem{
+  position:absolute;
+  top:18px;
+  width:66px;
+  height:66px;
+  border-radius:50%;
+  background:
+    url("./assets/highscore/anchor-mark.svg") center/54% no-repeat,
+    radial-gradient(circle at 35% 28%,#7b4d17,#160d06 62%,#050302);
+  background-size:36px 36px,auto;
+  border:2px solid #d7aa4a;
+  box-shadow:0 0 0 4px #241307,0 6px 14px rgba(0,0,0,.62);
+}
+.hs-leader-nameplate{
+  width:min(88%,250px);
+  padding:8px 12px;
+  margin-bottom:10px;
+  text-align:center;
+  background:linear-gradient(90deg,#5a3210,#d2a344 18%,#9b661f 50%,#d2a344 82%,#5a3210);
+  border:1px solid #f0cf77;
+  box-shadow:inset 0 0 0 2px rgba(44,23,6,.62),0 4px 9px rgba(0,0,0,.48);
+}
+.hs-leader-nameplate strong{
+  display:block;
+  overflow-wrap:anywhere;
+  color:#170c05;
+  text-shadow:0 1px rgba(255,238,190,.45);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.15rem;
+}
+.hs-leader-score{
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.hs-leader-score b{display:block;color:#f2d27c;font-size:1.35rem}
+.hs-leader-score span{font-size:.72rem;color:#ceb985}
 
-/* Der Hinweis direkt über dem Deck soll nicht wie eine technische Meldung wirken. */
-.hs-podium-panel .hs-ranking-notice{
-  max-width:900px;margin:4px auto 0;border-color:rgba(193,143,54,.35);
-  background:linear-gradient(180deg,rgba(48,29,14,.58),rgba(20,11,5,.64));
-  color:#bda980;box-shadow:none;font-size:.82rem
+/* Klassisches 2-1-3 Podium */
+.hs-podium--classic{
+  display:grid!important;
+  grid-template-columns:1fr 1.14fr 1fr;
+  align-items:end;
+  gap:22px;
+  padding-top:160px;
+}
+.hs-podium-card{
+  position:relative;
+  z-index:3;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-width:0;
+  color:var(--deck-cream);
+}
+.hs-podium-card.place-1{grid-column:2;transform:translateY(-48px)}
+.hs-podium-card.place-2{grid-column:1;grid-row:1}
+.hs-podium-card.place-3{grid-column:3;grid-row:1}
+.hs-medal{
+  position:relative;
+  z-index:3;
+  width:150px;
+  aspect-ratio:1;
+  display:grid;
+  place-items:center;
+  margin-bottom:-26px;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  filter:drop-shadow(0 10px 11px rgba(0,0,0,.58));
+}
+.hs-medal--gold{background-image:url("./assets/highscore/medal-gold.svg")}
+.hs-medal--silver{background-image:url("./assets/highscore/medal-silver.svg")}
+.hs-medal--bronze{background-image:url("./assets/highscore/medal-bronze.svg")}
+.hs-medal span{
+  margin-top:-2px;
+  font:800 3.5rem/1 Georgia,"Times New Roman",serif;
+  color:#f4e3b2;
+  text-shadow:0 3px 3px #000;
+}
+.hs-podium-plinth{
+  position:relative;
+  width:100%;
+  min-height:255px;
+  padding:50px 28px 28px;
+  text-align:center;
+  background:
+    linear-gradient(rgba(33,18,8,.10),rgba(8,5,3,.72)),
+    url("./assets/highscore/brass-frame.svg") center/100% 100% no-repeat;
+}
+.place-1 .hs-podium-plinth{min-height:300px}
+.place-2 .hs-podium-plinth{min-height:240px}
+.place-3 .hs-podium-plinth{min-height:220px}
+.hs-podium-plinth::before{
+  content:"";
+  position:absolute;
+  inset:22px 26px 24px;
+  z-index:-1;
+  background:
+    linear-gradient(180deg,rgba(89,47,17,.35),rgba(19,10,5,.82)),
+    url("./assets/highscore/deck-wood.svg") center/620px 420px repeat;
+}
+.hs-podium-nameplate{
+  position:relative;
+  z-index:2;
+  margin:0 auto 16px;
+  width:82%;
+  padding:10px 12px;
+  background:linear-gradient(90deg,#4e2a0c,#d7a84a 18%,#9c681f 50%,#d7a84a 82%,#4e2a0c);
+  border:1px solid #f2d17b;
+  box-shadow:inset 0 0 0 2px rgba(53,27,7,.68),0 5px 12px rgba(0,0,0,.5);
+}
+.place-2 .hs-podium-nameplate{filter:saturate(.35) brightness(1.08)}
+.place-3 .hs-podium-nameplate{filter:sepia(.4) saturate(.8) brightness(.82)}
+.hs-podium-nameplate strong{
+  color:#160c05;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.2rem;
+  text-shadow:0 1px rgba(255,238,190,.38);
+}
+.hs-podium-score b{
+  display:block;
+  color:#f4d67c;
+  font:700 clamp(2.5rem,5vw,4.15rem)/1 Georgia,"Times New Roman",serif;
+}
+.hs-podium-score span{
+  display:block;
+  margin-top:3px;
+  color:#d7bd83;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.72rem;
+}
+.hs-podium-plinth small{display:block;margin-top:10px;color:#bba57e}
+.hs-plinth-mark{
+  width:42px;height:42px;margin:14px auto 0;
+  background:url("./assets/highscore/anchor-mark.svg") center/contain no-repeat;
+  opacity:.72;
 }
 
-@media(max-width:700px){
-  .hs-podium{padding:30px 4px 42px;row-gap:18px}
-  .hs-deck-banner{min-width:0;width:100%;max-width:100%;padding:11px 26px 10px}
-  .hs-deck-banner::before,.hs-deck-banner::after{display:none}
-  .hs-deck-banner>span{font-size:clamp(1.25rem,6.6vw,1.75rem)}
-  .hs-podium--classic{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px;align-items:end}
-  .hs-podium--classic .hs-deck-banner{grid-column:1/-1;grid-row:1}
-  .hs-podium--classic .place-1{grid-column:1/-1;grid-row:2;justify-self:center;width:min(76%,300px);min-height:300px;transform:none;order:initial;padding:68px 14px 106px}
-  .hs-podium--classic .place-2{grid-column:1;grid-row:3;min-height:250px;order:initial;padding:61px 10px 100px}
-  .hs-podium--classic .place-3{grid-column:2;grid-row:3;min-height:235px;order:initial;padding:61px 10px 100px}
-  .hs-podium--classic .hs-rank-seal{width:68px;height:68px;top:-32px}
-  .hs-podium--classic .place-1 .hs-rank-seal{width:82px;height:82px;top:-39px}
-  .hs-podium--classic .hs-rank-seal span{font-size:1.75rem}.hs-podium--classic .place-1 .hs-rank-seal span{font-size:2.15rem}
-  .hs-podium--classic .hs-podium-nameplate{padding:8px 6px;margin-left:-2px;margin-right:-2px}
-  .hs-podium--classic .hs-podium-nameplate strong{font-size:clamp(.9rem,4.2vw,1.15rem)}
-  .hs-podium--classic .hs-podium-score b{font-size:clamp(1.55rem,8vw,2.3rem)}
-  .hs-podium--classic .hs-podium-card small{font-size:.62rem;letter-spacing:.04em}
-  .hs-podium--classic .hs-pedestal-face{height:82px}
-  .hs-podium--classic .hs-podium-deck{display:none}
-  .hs-podium--shared{padding:30px 4px 38px}
-  .hs-leader-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .hs-leader-card{min-height:150px;padding:64px 8px 18px}
-  .hs-leader-card strong{font-size:clamp(.9rem,4vw,1.08rem)}
-  .hs-leader-card>span{font-size:.72rem}
-  .hs-page #table-panel .hs-table tbody tr{border-color:rgba(207,155,63,.62);background:linear-gradient(180deg,rgba(59,37,19,.98),rgba(20,11,5,.99))}
+/* Gemeinsamer Deckboden */
+.hs-deck-floor{
+  position:absolute;
+  left:4%;
+  right:4%;
+  bottom:26px;
+  height:54px;
+  z-index:1;
+  border:1px solid #684112;
+  border-top-color:#d0a348;
+  background:
+    linear-gradient(180deg,rgba(120,70,24,.42),rgba(16,8,4,.92)),
+    url("./assets/highscore/deck-wood.svg") center/720px 480px repeat;
+  box-shadow:0 13px 20px rgba(0,0,0,.60),inset 0 1px #e4bd67;
 }
 
-@media(max-width:390px){
-  .hs-podium--classic .place-1{width:84%}
-  .hs-podium--classic .place-2,.hs-podium--classic .place-3{padding-left:7px;padding-right:7px}
-  .hs-leader-grid{gap:8px}
-  .hs-leader-card{padding-left:6px;padding-right:6px}
-}
-
-/* ========================================================================== 
-   4.8.0-RC1 – Führungsdeck, visuelle Zielumsetzung
-   Präsentationsschicht בלבד: keine Rang-/Datenlogik.
-   ========================================================================== */
-.hs-leaderboard-shell,
+/* Rangliste: Unterdeck statt separatem Fremdkörper */
 .hs-leaderboard-table{
-  --deck-gold:#e6bd61;
-  --deck-gold-soft:#c99642;
-  --deck-ink:#0d0804;
-  --deck-wood:#2a160a;
-  --deck-wood-hi:#4a2912;
-  border-color:rgba(205,151,54,.72)!important;
-  background:
-    linear-gradient(90deg,rgba(0,0,0,.38),transparent 8%,transparent 92%,rgba(0,0,0,.38)),
-    repeating-linear-gradient(0deg,#211207 0 72px,#130a05 73px 76px,#2b1709 77px 148px)!important;
-  box-shadow:inset 0 0 0 5px rgba(0,0,0,.34),inset 0 0 0 6px rgba(226,181,86,.10),0 20px 45px rgba(0,0,0,.42)!important;
+  margin-top:-6px!important;
+  border-top-left-radius:4px!important;
+  border-top-right-radius:4px!important;
+  position:relative;
 }
-.hs-leaderboard-shell{padding:26px 30px 30px!important;margin-bottom:0!important;border-radius:14px 14px 0 0!important;border-bottom-color:rgba(205,151,54,.34)!important}
-.hs-leaderboard-shell>.hs-panel-head{display:none!important}
-.hs-leaderboard-shell .hs-ranking-notice{display:none!important}
-.hs-leaderboard-shell::after{display:none!important}
-.hs-leaderboard-shell .hs-podium{padding:8px 10px 18px!important;min-height:0!important}
-.hs-leaderboard-shell .hs-podium::before,.hs-leaderboard-shell .hs-podium::after{display:none!important}
-
-.hs-leaderboard-shell .hs-deck-banner{
-  width:min(720px,82%);min-width:0;max-width:none;
-  padding:16px 54px 14px!important;margin:0 auto 24px;
-  border:1px solid #d4a44a!important;border-radius:3px 3px 12px 12px!important;
-  background:
-    linear-gradient(90deg,#1b0d05 0,#3e210e 13%,#563018 50%,#3e210e 87%,#1b0d05 100%)!important;
-  box-shadow:inset 0 0 0 4px #120904,inset 0 0 0 5px rgba(238,198,105,.20),0 10px 18px rgba(0,0,0,.55)!important;
+.hs-leaderboard-table::before{
+  content:"DIE KOMPLETTE HIGHSCORE-TABELLE";
+  display:block;
+  width:min(580px,80%);
+  margin:-8px auto 20px;
+  padding:9px 18px;
+  text-align:center;
+  color:#e2bd69;
+  font-family:Georgia,"Times New Roman",serif;
+  letter-spacing:.06em;
+  background:linear-gradient(90deg,transparent,#311a09 12%,#311a09 88%,transparent);
+  border-top:1px solid rgba(217,170,72,.42);
+  border-bottom:1px solid rgba(217,170,72,.42);
 }
-.hs-leaderboard-shell .hs-deck-banner::before,.hs-leaderboard-shell .hs-deck-banner::after{width:90px!important;height:10px!important;border-top:1px solid #c99642;border-bottom:1px solid #6b3d17;background:none!important}
-.hs-leaderboard-shell .hs-deck-banner>span{font-size:clamp(1.7rem,3.6vw,2.8rem)!important;letter-spacing:.035em!important;color:#f3cf76!important}
-.hs-leaderboard-shell .hs-deck-banner>strong{font-size:clamp(1.05rem,2vw,1.35rem)!important;color:#f3d797!important}
-.hs-leaderboard-shell .hs-deck-banner>small{font-size:.9rem!important;color:#e0c17d!important}
-
-/* Gleichstand: ein gemeinsames Deck, keine sechs losgelösten Standardkarten. */
-.hs-leaderboard-shell .hs-podium--shared{display:grid!important;grid-template-columns:1fr!important;padding-top:8px!important}
-.hs-leaderboard-shell .hs-leader-grid{
-  position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
-  width:min(100%,1030px);margin:0 auto;padding:18px 18px 22px;
-  border:1px solid rgba(205,151,54,.52);border-radius:8px;
-  background:
-    linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.32)),
-    repeating-linear-gradient(90deg,#3a200e 0 31%,#1c0e06 31.2% 31.7%,#422411 32% 64%);
-  box-shadow:inset 0 0 0 6px rgba(0,0,0,.30),0 15px 28px rgba(0,0,0,.35);
+.hs-table-wrap{
+  border:1px solid rgba(217,170,72,.30);
+  background:rgba(6,4,3,.55);
+  box-shadow:inset 0 0 30px rgba(0,0,0,.45);
 }
-.hs-leaderboard-shell .hs-leader-grid::before,
-.hs-leaderboard-shell .hs-leader-grid::after{content:"";position:absolute;left:18px;right:18px;height:5px;border-top:1px solid #d1a14b;border-bottom:1px solid #5f3514;background:linear-gradient(90deg,transparent,#9b6829 12%,#d2a54e 50%,#9b6829 88%,transparent)}
-.hs-leaderboard-shell .hs-leader-grid::before{top:8px}.hs-leaderboard-shell .hs-leader-grid::after{bottom:8px}
-.hs-leaderboard-shell .hs-leader-card{
-  min-height:154px;padding:64px 12px 18px!important;border:1px solid rgba(216,166,70,.76)!important;border-radius:3px!important;
-  background:
-    radial-gradient(circle at 50% -20%,rgba(235,191,91,.13),transparent 44%),
-    linear-gradient(180deg,#4c2a12 0,#2a1509 48%,#160b05 49%,#251207 100%)!important;
-  box-shadow:inset 0 0 0 4px #140a05,inset 0 0 0 5px rgba(235,191,91,.14),0 7px 14px rgba(0,0,0,.34)!important;
+.hs-table thead th{
+  color:#dfbc72;
+  background:rgba(41,23,10,.88)!important;
+  border-bottom-color:rgba(217,170,72,.38)!important;
 }
-.hs-leaderboard-shell .hs-leader-card::before{inset:7px!important;border-color:rgba(239,199,104,.17)!important}
-.hs-leaderboard-shell .hs-leader-card::after{left:9%!important;right:9%!important;bottom:12px!important}
-.hs-leaderboard-shell .hs-leader-seal{top:12px!important;width:52px!important;height:52px!important;border:2px solid #d9aa4f!important;background:radial-gradient(circle at 36% 28%,#8d5d22,#2b1608 64%,#0a0502 72%)!important;box-shadow:0 0 0 4px #120904,0 0 0 5px rgba(230,189,96,.35),0 7px 13px #000!important}
-.hs-leaderboard-shell .hs-leader-seal span{font-size:1.55rem!important;color:#f3cf76!important}
-.hs-leaderboard-shell .hs-leader-card strong{display:block!important;margin:0 auto!important;padding:7px 8px!important;width:92%;border:1px solid rgba(214,162,67,.64);background:linear-gradient(180deg,#684018,#321b0b);box-shadow:inset 0 0 0 2px rgba(0,0,0,.28);color:#f5d78e!important;font:700 clamp(1rem,1.8vw,1.28rem) Georgia,serif!important}
-.hs-leaderboard-shell .hs-leader-card>span{margin-top:10px!important;color:#e8c36f!important;font-size:.78rem!important}
+.hs-table tbody tr:nth-child(odd){background:rgba(70,37,15,.18)}
+.hs-table tbody tr:hover{background:rgba(160,101,31,.16)}
 
-/* Normalfall: Podeste kompakter und stärker wie das freigegebene Mockup. */
-.hs-leaderboard-shell .hs-podium--classic{grid-template-columns:1fr 1.13fr 1fr!important;gap:14px!important;align-items:end!important;padding-bottom:18px!important}
-.hs-leaderboard-shell .hs-podium--classic .hs-deck-banner{grid-column:1/-1!important;margin-bottom:52px!important}
-.hs-leaderboard-shell .hs-podium--classic .hs-podium-card{min-height:250px!important;padding:68px 14px 88px!important;border-radius:3px!important}
-.hs-leaderboard-shell .hs-podium--classic .place-1{min-height:315px!important;transform:translateY(-24px)!important}
-.hs-leaderboard-shell .hs-podium--classic .place-2{min-height:270px!important}.hs-leaderboard-shell .hs-podium--classic .place-3{min-height:245px!important}
-.hs-leaderboard-shell .hs-podium--classic .hs-pedestal-face{height:70px!important}
-.hs-leaderboard-shell .hs-podium--classic .hs-rank-seal{width:78px!important;height:78px!important;top:-38px!important}.hs-leaderboard-shell .hs-podium--classic .place-1 .hs-rank-seal{width:96px!important;height:96px!important;top:-48px!important}
+/* Mobile */
+@media (max-width:760px){
+  .hs-podium-panel{padding:14px 10px 18px!important}
+  .hs-podium{min-height:0;padding:90px 8px 44px}
+  .hs-deck-banner{
+    width:96%;
+    min-height:102px;
+    padding:15px 42px 18px;
+  }
+  .hs-deck-banner span{font-size:1.65rem}
+  .hs-deck-banner strong{font-size:.95rem}
+  .hs-leader-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+    width:100%;
+    margin-top:78px;
+  }
+  .hs-leader-card{
+    min-height:145px;
+    padding:61px 9px 14px;
+  }
+  .hs-leader-emblem{width:52px;height:52px;top:13px;background-size:28px 28px,auto}
+  .hs-leader-nameplate{width:94%;padding:6px 7px}
+  .hs-leader-nameplate strong{font-size:.9rem}
+  .hs-leader-score b{font-size:1.05rem}
 
-/* Rangliste wird optisch zum Unterdeck derselben Komponente. */
-.hs-leaderboard-table{margin-top:0!important;border-radius:0 0 14px 14px!important;border-top:0!important;padding-top:20px!important}
-.hs-leaderboard-table::after{content:"";position:absolute;left:7%;right:7%;top:0;height:4px;border-top:1px solid #d0a04a;border-bottom:1px solid #5c3213;background:linear-gradient(90deg,transparent,#9e6a2b 15%,#d4a94f 50%,#9e6a2b 85%,transparent)}
-.hs-leaderboard-table .hs-panel-head{align-items:end!important;margin-bottom:12px!important;padding-bottom:10px!important}
-.hs-leaderboard-table .hs-eyebrow{color:#b98a3d!important}.hs-leaderboard-table h2{font-size:clamp(1.55rem,3vw,2.25rem)!important;color:#f0cf83!important}
-.hs-leaderboard-table .hs-table-wrap{border-radius:4px!important;border-color:rgba(206,155,62,.58)!important}
-.hs-leaderboard-table .hs-table th{background:linear-gradient(180deg,#38200d,#1b0d05)!important;color:#e8c878!important}
-.hs-leaderboard-table .hs-table td{background:rgba(29,15,7,.88)!important}.hs-leaderboard-table .hs-table tbody tr:nth-child(even) td{background:rgba(45,24,10,.82)!important}
+  .hs-podium--classic{
+    grid-template-columns:1fr 1.12fr 1fr;
+    gap:7px;
+    padding:126px 2px 47px;
+  }
+  .hs-podium-card.place-1{transform:translateY(-25px)}
+  .hs-medal{width:82px;margin-bottom:-15px}
+  .hs-medal span{font-size:2rem}
+  .hs-podium-plinth,.place-1 .hs-podium-plinth,.place-2 .hs-podium-plinth,.place-3 .hs-podium-plinth{
+    min-height:155px;
+    padding:31px 7px 13px;
+  }
+  .place-1 .hs-podium-plinth{min-height:180px}
+  .hs-podium-plinth::before{inset:14px 12px 14px}
+  .hs-podium-nameplate{width:96%;padding:6px 4px;margin-bottom:9px}
+  .hs-podium-nameplate strong{font-size:.84rem;overflow-wrap:anywhere}
+  .hs-podium-score b{font-size:1.55rem}
+  .hs-podium-score span{font-size:.55rem}
+  .hs-podium-plinth small{font-size:.62rem}
+  .hs-plinth-mark{width:24px;height:24px;margin-top:7px}
+  .hs-deck-floor{left:1%;right:1%;height:33px;bottom:15px}
+  .hs-leaderboard-table::before{font-size:.76rem;width:94%}
+}
 
-@media(max-width:700px){
-  .hs-leaderboard-shell{padding:18px 12px 20px!important}
-  .hs-leaderboard-shell .hs-deck-banner{width:100%!important;padding:13px 18px 12px!important;margin-bottom:16px!important}
-  .hs-leaderboard-shell .hs-deck-banner>span{font-size:clamp(1.45rem,8vw,2rem)!important}
-  .hs-leaderboard-shell .hs-leader-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;padding:16px 10px 18px!important}
-  .hs-leaderboard-shell .hs-leader-card{min-height:136px!important;padding:59px 7px 15px!important}
-  .hs-leaderboard-shell .hs-leader-card strong{width:96%!important;font-size:clamp(.88rem,4.1vw,1.05rem)!important;padding:6px 4px!important}
-  .hs-leaderboard-shell .hs-leader-card>span{font-size:.68rem!important}
-  .hs-leaderboard-shell .hs-podium--classic{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px 8px!important}
-  .hs-leaderboard-shell .hs-podium--classic .hs-deck-banner{grid-column:1/-1!important;margin-bottom:42px!important}
-  .hs-leaderboard-shell .hs-podium--classic .place-1{grid-column:1/-1!important;width:min(78%,300px)!important;justify-self:center!important;transform:none!important}
-  .hs-leaderboard-table{padding:18px 12px!important}
+/* Sehr schmale Geräte */
+@media (max-width:420px){
+  .hs-deck-banner span{font-size:1.45rem}
+  .hs-podium--classic{gap:3px}
+  .hs-medal{width:70px}
+  .hs-podium-nameplate strong{font-size:.74rem}
+  .hs-leader-grid{gap:7px}
 }

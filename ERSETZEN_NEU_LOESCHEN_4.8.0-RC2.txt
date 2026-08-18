@@ -1,0 +1,20 @@
+ERSETZEN:
+- highscore.css
+- highscore.html
+- highscore.js
+- VERSION.txt
+
+NEU:
+- assets/highscore/deck-wood.svg
+- assets/highscore/brass-frame.svg
+- assets/highscore/deck-ribbon.svg
+- assets/highscore/medal-gold.svg
+- assets/highscore/medal-silver.svg
+- assets/highscore/medal-bronze.svg
+- assets/highscore/anchor-mark.svg
+- CHANGELOG_4.8.0-RC2.md
+- README-WEBSITE-4.8.0-RC2.md
+- ERSETZEN_NEU_LOESCHEN_4.8.0-RC2.txt
+
+LÖSCHEN:
+- nichts
