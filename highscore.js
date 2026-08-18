@@ -64,20 +64,20 @@ function renderPodium(list){
  if(zero){
    podium.className='hs-podium hs-podium--empty';
    podium.innerHTML='<div class="hs-podium-empty-state"><strong>Das Führungsdeck ist noch unbesetzt.</strong><span>Nach der ersten bestätigten Wertung erscheint hier die aktuelle Spitze.</span></div>';
-   $('ranking-notice').textContent='Noch keine Wertung. Die vollständige Rangliste bleibt zur Kontrolle alphabetisch sichtbar.';
+   $('ranking-notice').textContent=''; $('ranking-notice').hidden=true;
    return;
  }
  const sharedLeaders=view!=='team'&&view!=='bonus'?list.filter(r=>Number(rowRank(r,0))===1):[];
  if(sharedLeaders.length>1){
    podium.className='hs-podium hs-podium--shared';
    podium.innerHTML=`<div class="hs-deck-banner"><span>Das Führungsdeck</span><strong>${sharedLeaders.length} Freibeuter teilen sich Rang 1</strong><small>je ${fmt(rowPoints(sharedLeaders[0]))} Punkte</small></div><div class="hs-leader-grid">${sharedLeaders.map(leaderCard).join('')}</div>`;
-   $('ranking-notice').textContent='Alle gemeinsam Führenden werden gleichwertig dargestellt. Die Rangfolge im Führungsdeck verändert die offizielle Wertung nicht.';
+   $('ranking-notice').textContent=''; $('ranking-notice').hidden=true;
    return;
  }
  const top=list.slice(0,3);
  podium.className='hs-podium hs-podium--classic';
  podium.innerHTML=top.length?`<div class="hs-deck-banner"><span>Das Führungsdeck</span><small>Die aktuelle Spitze der Highscore</small></div>${top.map((r,i)=>podiumCard(r,i+1,false)).join('')}<div class="hs-podium-deck" aria-hidden="true"><span></span></div>`:'<p class="hs-empty">Noch keine Daten vorhanden.</p>';
- $('ranking-notice').textContent='Die offizielle Rangfolge aus dem Datenpaket wird unverändert angezeigt.';
+ $('ranking-notice').textContent=''; $('ranking-notice').hidden=true;
 }
 function paginationHtml(total){const pages=Math.max(1,Math.ceil(total/pageSize));page=Math.min(Math.max(1,page),pages);if(total<=pageSize)return '';const nums=Array.from({length:pages},(_,i)=>i+1).map(n=>`<button class="hs-page-btn ${n===page?'is-active':''}" type="button" data-page="${n}" aria-label="Seite ${n}" aria-current="${n===page?'page':'false'}">${n}</button>`).join('');return `<nav class="hs-pagination" aria-label="Ranglistenseiten"><button class="hs-page-btn" type="button" data-page="${page-1}" ${page===1?'disabled':''}>Zurück</button><span>Einträge ${(page-1)*pageSize+1}–${Math.min(page*pageSize,total)} von ${total}</span><div class="hs-page-numbers">${nums}</div><button class="hs-page-btn" type="button" data-page="${page+1}" ${page===pages?'disabled':''}>Weiter</button></nav>`;}
 function bindPagination(){document.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>{page=Number(b.dataset.page)||1;renderTable(rows());$('table-panel').scrollIntoView({behavior:'smooth',block:'start'});});}

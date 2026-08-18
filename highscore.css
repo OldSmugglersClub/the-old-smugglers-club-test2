@@ -1136,3 +1136,100 @@
   .hs-leader-grid{gap:8px}
   .hs-leader-card{padding-left:6px;padding-right:6px}
 }
+
+/* ========================================================================== 
+   4.8.0-RC1 – Führungsdeck, visuelle Zielumsetzung
+   Präsentationsschicht בלבד: keine Rang-/Datenlogik.
+   ========================================================================== */
+.hs-leaderboard-shell,
+.hs-leaderboard-table{
+  --deck-gold:#e6bd61;
+  --deck-gold-soft:#c99642;
+  --deck-ink:#0d0804;
+  --deck-wood:#2a160a;
+  --deck-wood-hi:#4a2912;
+  border-color:rgba(205,151,54,.72)!important;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.38),transparent 8%,transparent 92%,rgba(0,0,0,.38)),
+    repeating-linear-gradient(0deg,#211207 0 72px,#130a05 73px 76px,#2b1709 77px 148px)!important;
+  box-shadow:inset 0 0 0 5px rgba(0,0,0,.34),inset 0 0 0 6px rgba(226,181,86,.10),0 20px 45px rgba(0,0,0,.42)!important;
+}
+.hs-leaderboard-shell{padding:26px 30px 30px!important;margin-bottom:0!important;border-radius:14px 14px 0 0!important;border-bottom-color:rgba(205,151,54,.34)!important}
+.hs-leaderboard-shell>.hs-panel-head{display:none!important}
+.hs-leaderboard-shell .hs-ranking-notice{display:none!important}
+.hs-leaderboard-shell::after{display:none!important}
+.hs-leaderboard-shell .hs-podium{padding:8px 10px 18px!important;min-height:0!important}
+.hs-leaderboard-shell .hs-podium::before,.hs-leaderboard-shell .hs-podium::after{display:none!important}
+
+.hs-leaderboard-shell .hs-deck-banner{
+  width:min(720px,82%);min-width:0;max-width:none;
+  padding:16px 54px 14px!important;margin:0 auto 24px;
+  border:1px solid #d4a44a!important;border-radius:3px 3px 12px 12px!important;
+  background:
+    linear-gradient(90deg,#1b0d05 0,#3e210e 13%,#563018 50%,#3e210e 87%,#1b0d05 100%)!important;
+  box-shadow:inset 0 0 0 4px #120904,inset 0 0 0 5px rgba(238,198,105,.20),0 10px 18px rgba(0,0,0,.55)!important;
+}
+.hs-leaderboard-shell .hs-deck-banner::before,.hs-leaderboard-shell .hs-deck-banner::after{width:90px!important;height:10px!important;border-top:1px solid #c99642;border-bottom:1px solid #6b3d17;background:none!important}
+.hs-leaderboard-shell .hs-deck-banner>span{font-size:clamp(1.7rem,3.6vw,2.8rem)!important;letter-spacing:.035em!important;color:#f3cf76!important}
+.hs-leaderboard-shell .hs-deck-banner>strong{font-size:clamp(1.05rem,2vw,1.35rem)!important;color:#f3d797!important}
+.hs-leaderboard-shell .hs-deck-banner>small{font-size:.9rem!important;color:#e0c17d!important}
+
+/* Gleichstand: ein gemeinsames Deck, keine sechs losgelösten Standardkarten. */
+.hs-leaderboard-shell .hs-podium--shared{display:grid!important;grid-template-columns:1fr!important;padding-top:8px!important}
+.hs-leaderboard-shell .hs-leader-grid{
+  position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+  width:min(100%,1030px);margin:0 auto;padding:18px 18px 22px;
+  border:1px solid rgba(205,151,54,.52);border-radius:8px;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.32)),
+    repeating-linear-gradient(90deg,#3a200e 0 31%,#1c0e06 31.2% 31.7%,#422411 32% 64%);
+  box-shadow:inset 0 0 0 6px rgba(0,0,0,.30),0 15px 28px rgba(0,0,0,.35);
+}
+.hs-leaderboard-shell .hs-leader-grid::before,
+.hs-leaderboard-shell .hs-leader-grid::after{content:"";position:absolute;left:18px;right:18px;height:5px;border-top:1px solid #d1a14b;border-bottom:1px solid #5f3514;background:linear-gradient(90deg,transparent,#9b6829 12%,#d2a54e 50%,#9b6829 88%,transparent)}
+.hs-leaderboard-shell .hs-leader-grid::before{top:8px}.hs-leaderboard-shell .hs-leader-grid::after{bottom:8px}
+.hs-leaderboard-shell .hs-leader-card{
+  min-height:154px;padding:64px 12px 18px!important;border:1px solid rgba(216,166,70,.76)!important;border-radius:3px!important;
+  background:
+    radial-gradient(circle at 50% -20%,rgba(235,191,91,.13),transparent 44%),
+    linear-gradient(180deg,#4c2a12 0,#2a1509 48%,#160b05 49%,#251207 100%)!important;
+  box-shadow:inset 0 0 0 4px #140a05,inset 0 0 0 5px rgba(235,191,91,.14),0 7px 14px rgba(0,0,0,.34)!important;
+}
+.hs-leaderboard-shell .hs-leader-card::before{inset:7px!important;border-color:rgba(239,199,104,.17)!important}
+.hs-leaderboard-shell .hs-leader-card::after{left:9%!important;right:9%!important;bottom:12px!important}
+.hs-leaderboard-shell .hs-leader-seal{top:12px!important;width:52px!important;height:52px!important;border:2px solid #d9aa4f!important;background:radial-gradient(circle at 36% 28%,#8d5d22,#2b1608 64%,#0a0502 72%)!important;box-shadow:0 0 0 4px #120904,0 0 0 5px rgba(230,189,96,.35),0 7px 13px #000!important}
+.hs-leaderboard-shell .hs-leader-seal span{font-size:1.55rem!important;color:#f3cf76!important}
+.hs-leaderboard-shell .hs-leader-card strong{display:block!important;margin:0 auto!important;padding:7px 8px!important;width:92%;border:1px solid rgba(214,162,67,.64);background:linear-gradient(180deg,#684018,#321b0b);box-shadow:inset 0 0 0 2px rgba(0,0,0,.28);color:#f5d78e!important;font:700 clamp(1rem,1.8vw,1.28rem) Georgia,serif!important}
+.hs-leaderboard-shell .hs-leader-card>span{margin-top:10px!important;color:#e8c36f!important;font-size:.78rem!important}
+
+/* Normalfall: Podeste kompakter und stärker wie das freigegebene Mockup. */
+.hs-leaderboard-shell .hs-podium--classic{grid-template-columns:1fr 1.13fr 1fr!important;gap:14px!important;align-items:end!important;padding-bottom:18px!important}
+.hs-leaderboard-shell .hs-podium--classic .hs-deck-banner{grid-column:1/-1!important;margin-bottom:52px!important}
+.hs-leaderboard-shell .hs-podium--classic .hs-podium-card{min-height:250px!important;padding:68px 14px 88px!important;border-radius:3px!important}
+.hs-leaderboard-shell .hs-podium--classic .place-1{min-height:315px!important;transform:translateY(-24px)!important}
+.hs-leaderboard-shell .hs-podium--classic .place-2{min-height:270px!important}.hs-leaderboard-shell .hs-podium--classic .place-3{min-height:245px!important}
+.hs-leaderboard-shell .hs-podium--classic .hs-pedestal-face{height:70px!important}
+.hs-leaderboard-shell .hs-podium--classic .hs-rank-seal{width:78px!important;height:78px!important;top:-38px!important}.hs-leaderboard-shell .hs-podium--classic .place-1 .hs-rank-seal{width:96px!important;height:96px!important;top:-48px!important}
+
+/* Rangliste wird optisch zum Unterdeck derselben Komponente. */
+.hs-leaderboard-table{margin-top:0!important;border-radius:0 0 14px 14px!important;border-top:0!important;padding-top:20px!important}
+.hs-leaderboard-table::after{content:"";position:absolute;left:7%;right:7%;top:0;height:4px;border-top:1px solid #d0a04a;border-bottom:1px solid #5c3213;background:linear-gradient(90deg,transparent,#9e6a2b 15%,#d4a94f 50%,#9e6a2b 85%,transparent)}
+.hs-leaderboard-table .hs-panel-head{align-items:end!important;margin-bottom:12px!important;padding-bottom:10px!important}
+.hs-leaderboard-table .hs-eyebrow{color:#b98a3d!important}.hs-leaderboard-table h2{font-size:clamp(1.55rem,3vw,2.25rem)!important;color:#f0cf83!important}
+.hs-leaderboard-table .hs-table-wrap{border-radius:4px!important;border-color:rgba(206,155,62,.58)!important}
+.hs-leaderboard-table .hs-table th{background:linear-gradient(180deg,#38200d,#1b0d05)!important;color:#e8c878!important}
+.hs-leaderboard-table .hs-table td{background:rgba(29,15,7,.88)!important}.hs-leaderboard-table .hs-table tbody tr:nth-child(even) td{background:rgba(45,24,10,.82)!important}
+
+@media(max-width:700px){
+  .hs-leaderboard-shell{padding:18px 12px 20px!important}
+  .hs-leaderboard-shell .hs-deck-banner{width:100%!important;padding:13px 18px 12px!important;margin-bottom:16px!important}
+  .hs-leaderboard-shell .hs-deck-banner>span{font-size:clamp(1.45rem,8vw,2rem)!important}
+  .hs-leaderboard-shell .hs-leader-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;padding:16px 10px 18px!important}
+  .hs-leaderboard-shell .hs-leader-card{min-height:136px!important;padding:59px 7px 15px!important}
+  .hs-leaderboard-shell .hs-leader-card strong{width:96%!important;font-size:clamp(.88rem,4.1vw,1.05rem)!important;padding:6px 4px!important}
+  .hs-leaderboard-shell .hs-leader-card>span{font-size:.68rem!important}
+  .hs-leaderboard-shell .hs-podium--classic{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px 8px!important}
+  .hs-leaderboard-shell .hs-podium--classic .hs-deck-banner{grid-column:1/-1!important;margin-bottom:42px!important}
+  .hs-leaderboard-shell .hs-podium--classic .place-1{grid-column:1/-1!important;width:min(78%,300px)!important;justify-self:center!important;transform:none!important}
+  .hs-leaderboard-table{padding:18px 12px!important}
+}

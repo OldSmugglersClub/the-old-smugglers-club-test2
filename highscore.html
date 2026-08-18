@@ -4,7 +4,7 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Highscore und Ranglisten des The Old Smugglers Club">
   <title>Highscore | The Old Smugglers Club</title>
-  <link rel="stylesheet" href="./wettbewerb.css"><link rel="stylesheet" href="./highscore.css?v=4.8.0"><link rel="stylesheet" href="./accessibility-v33.css"><link rel="stylesheet" href="./legal.css">
+  <link rel="stylesheet" href="./wettbewerb.css"><link rel="stylesheet" href="./highscore.css?v=4.8.0-RC1"><link rel="stylesheet" href="./accessibility-v33.css"><link rel="stylesheet" href="./legal.css">
 </head>
 <body>
 <a class="hs-skip-link" href="#highscore-content">Direkt zum Highscore-Inhalt</a>
@@ -27,13 +27,13 @@
 
   <div class="hs-system-status is-loading" id="hs-system-status" role="status" aria-live="polite"><strong>Highscore wird geladen</strong><span>Die aktuellen Ranglisten werden vorbereitet.</span></div>
 
-  <section class="hs-panel hs-podium-panel" id="ranking-panel">
+  <section class="hs-panel hs-podium-panel hs-leaderboard-shell" id="ranking-panel">
     <div class="hs-panel-head"><div><div class="hs-eyebrow">Top 3</div><h2 id="ranking-title">Gesamtwertung</h2><p class="hs-status" id="ranking-caption"></p></div></div>
     <div class="hs-ranking-notice" id="ranking-notice" role="status" aria-live="polite"></div>
     <div class="hs-podium" id="podium"></div>
   </section>
 
-  <section class="hs-panel" id="table-panel">
+  <section class="hs-panel hs-leaderboard-table" id="table-panel">
     <div class="hs-panel-head hs-panel-head-tools"><div><div class="hs-eyebrow">Komplette Rangliste</div><h2 id="table-title">Gesamtwertung</h2></div><label class="hs-search" id="search-box"><span>Spieler suchen</span><input id="player-search" type="search" placeholder="Name eingeben …" autocomplete="off"></label></div>
     <div class="hs-ranking-toolbar"><div><span>Bereich</span><strong id="toolbar-scope">Gesamtwertung</strong></div><div><span>Auswertung</span><strong id="toolbar-view">Gesamtwertung</strong></div><div><span>Treffer</span><strong id="toolbar-count">0 Einträge</strong></div></div>
     <div id="pagination-top"></div><div class="hs-table-wrap"><table class="hs-table"><caption class="sr-only">Highscore-Rangliste</caption><thead id="ranking-head"></thead><tbody id="ranking-body"></tbody></table></div><div id="pagination-bottom"></div>
@@ -44,7 +44,7 @@
 <footer class="legal-footer" aria-label="Rechtliche Hinweise"><div class="legal-footer__inner"><span>© 2026 The Old Smugglers Club</span><nav class="legal-footer__links"><a href="./impressum.html">Impressum</a><a href="./datenschutz.html">Datenschutz</a>
       <a href="./nutzungsrechte.html">Nutzungsrechte</a><span id="legal-version">Version wird geladen</span></nav></div></footer>
 <script src="./highscore-data-adapter.js"></script>
-<script src="./highscore.js?v=4.8.0"></script>
+<script src="./highscore.js?v=4.8.0-RC1"></script>
 
 <script>
 (function(){
