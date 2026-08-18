@@ -5,8 +5,166 @@
     "license": "ODbL",
     "url": "https://www.openligadb.de/"
   },
-  "generatedAt": null,
+  "generatedAt": "2026-08-18T19:10:50.818Z",
   "windowDays": 7,
   "retentionDays": 7,
-  "entries": {}
+  "entries": {
+    "bl-2026-27-01-001": {
+      "gameId": "bl-2026-27-01-001",
+      "competition": "bundesliga",
+      "kickoff": "2026-08-28T20:30:00.000Z",
+      "status": "ready",
+      "reason": "",
+      "updatedAt": "2026-08-18T19:10:50.818Z",
+      "source": {
+        "name": "OpenLigaDB",
+        "license": "ODbL",
+        "url": "https://www.openligadb.de/"
+      },
+      "openLiga": {
+        "leagueShortcut": "bl1",
+        "season": "2026",
+        "homeTeamId": 40,
+        "awayTeamId": 16,
+        "homeTeamName": "FC Bayern München",
+        "awayTeamName": "VfB Stuttgart"
+      },
+      "freshness": {
+        "initialLoadedAt": "2026-08-18T19:10:50.818Z",
+        "finalRefreshDone": false
+      },
+      "modules": {
+        "h2h": {
+          "available": true,
+          "total": 50,
+          "summary": {
+            "homeWins": 40,
+            "draws": 5,
+            "awayWins": 5
+          },
+          "lastMeetings": [
+            {
+              "matchId": 84687,
+              "date": "2026-07-06T13:30:00.000Z",
+              "home": "FC Bayern München",
+              "away": "VfB Stuttgart",
+              "homeTeamId": 40,
+              "awayTeamId": 16,
+              "result": {
+                "home": 3,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 83155,
+              "date": "2026-06-01T18:30:00.000Z",
+              "home": "FC Bayern München",
+              "away": "VfB Stuttgart",
+              "homeTeamId": 40,
+              "awayTeamId": 16,
+              "result": {
+                "home": 2,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 81581,
+              "date": "2026-05-23T18:00:00.000Z",
+              "home": "FC Bayern München",
+              "away": "VfB Stuttgart",
+              "homeTeamId": 40,
+              "awayTeamId": 16,
+              "result": {
+                "home": 3,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 77518,
+              "date": "2026-04-19T15:30:00.000Z",
+              "home": "FC Bayern München",
+              "away": "VfB Stuttgart",
+              "homeTeamId": 40,
+              "awayTeamId": 16,
+              "result": {
+                "home": 4,
+                "away": 2
+              }
+            },
+            {
+              "matchId": 77367,
+              "date": "2025-12-06T14:30:00.000Z",
+              "home": "VfB Stuttgart",
+              "away": "FC Bayern München",
+              "homeTeamId": 16,
+              "awayTeamId": 40,
+              "result": {
+                "home": 0,
+                "away": 5
+              }
+            }
+          ]
+        },
+        "form": {
+          "available": false,
+          "home": {
+            "available": false,
+            "values": [],
+            "matches": []
+          },
+          "away": {
+            "available": false,
+            "values": [],
+            "matches": []
+          }
+        },
+        "table": {
+          "available": true,
+          "home": {
+            "available": true,
+            "position": 9,
+            "points": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          },
+          "away": {
+            "available": true,
+            "position": 18,
+            "points": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          }
+        },
+        "homeAway": {
+          "available": false,
+          "home": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          }
+        }
+      }
+    }
+  }
 }
