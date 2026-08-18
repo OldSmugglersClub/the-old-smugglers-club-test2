@@ -1,0 +1,40 @@
+[
+  {
+    "matchID": 1,
+    "matchDateTime": "2026-08-01T13:00:00",
+    "team1": {
+      "teamId": 100,
+      "teamName": "SG Dynamo Dresden"
+    },
+    "team2": {
+      "teamId": 300,
+      "teamName": "Test FC"
+    },
+    "matchResults": [
+      {
+        "resultTypeID": 2,
+        "pointsTeam1": 2,
+        "pointsTeam2": 0
+      }
+    ]
+  },
+  {
+    "matchID": 2,
+    "matchDateTime": "2026-08-02T13:00:00",
+    "team1": {
+      "teamId": 400,
+      "teamName": "Other FC"
+    },
+    "team2": {
+      "teamId": 200,
+      "teamName": "SV Darmstadt 98"
+    },
+    "matchResults": [
+      {
+        "resultTypeID": 2,
+        "pointsTeam1": 1,
+        "pointsTeam2": 1
+      }
+    ]
+  }
+]

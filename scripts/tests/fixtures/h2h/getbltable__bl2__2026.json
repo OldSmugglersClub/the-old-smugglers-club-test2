@@ -1,0 +1,24 @@
+[
+  {
+    "teamInfoId": 200,
+    "teamName": "SV Darmstadt 98",
+    "points": 6,
+    "won": 2,
+    "draw": 0,
+    "lost": 0,
+    "goals": 4,
+    "opponentGoals": 1,
+    "goalDiff": 3
+  },
+  {
+    "teamInfoId": 100,
+    "teamName": "SG Dynamo Dresden",
+    "points": 3,
+    "won": 1,
+    "draw": 0,
+    "lost": 1,
+    "goals": 2,
+    "opponentGoals": 2,
+    "goalDiff": 0
+  }
+]

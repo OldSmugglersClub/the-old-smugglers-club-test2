@@ -5262,6 +5262,7 @@
   </style>
   <link rel="stylesheet" href="./highscore.css?v=4.0.1">
   <link rel="stylesheet" href="./accessibility-v33.css">
+  <link rel="stylesheet" href="./h2h-startseite.css?v=4.9.0-RC1">
   <style id="welcome-cleanup-v434">
     /* Version 4.4.14: Startzentrale vollständig deckend halten und alle alten Dekore abschalten.
        Wichtig: kein background-image:none – das hatte die eigenen Farbverläufe entfernt und
@@ -5964,6 +5965,7 @@
   <script src="./team-badge.js"></script>
   <script src="./schedule-data-adapter.js"></script>
   <script src="./schedule-timeline.js"></script>
+  <script src="./h2h-startseite.js?v=4.9.0-RC1"></script>
   <script>
     const menuButton = document.querySelector(".menu-button");
     const navigation = document.getElementById("navigation");
@@ -6425,9 +6427,8 @@
             dayTitle.textContent=new Intl.DateTimeFormat(locale,{weekday:"long",day:"2-digit",month:"long"}).format(eventsForDay[0]._start);
             day.appendChild(dayTitle);
             eventsForDay.forEach(game=>{
-              const row=document.createElement(game.ereignisLink?"a":"div");
+              const row=document.createElement("div");
               row.className="sm-event-row"; row.dataset.competition=game.matchdayType||game.wettbewerb||"";
-              if(game.ereignisLink)row.href=game.ereignisLink;
               const time=document.createElement("span"); time.className="sm-event-row__time"; time.textContent=game.anstoss;
               const competition=document.createElement("span"); competition.className="sm-event-row__competition";
               competition.textContent=game.matchdayType==="Smugglerauftrag"?"Smugglerauftrag":(game.wettbewerbAnzeige||game.wettbewerb||"Ereignis");
@@ -6452,6 +6453,11 @@
               const rowStatus=document.createElement("span"); rowStatus.className="sm-event-row__status";
               rowStatus.textContent=game.status||"TERMINIERT";
               row.append(time,competition,match,rowStatus); day.appendChild(row);
+              window.OSCH2HPanel?.attach(row,{
+                ...game,
+                heim:game.heim,
+                auswaerts:game.auswaerts
+              });
             });
             elements.list.appendChild(day);
           });

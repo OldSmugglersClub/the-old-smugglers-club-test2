@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "name": "OpenLigaDB",
+    "license": "ODbL",
+    "url": "https://www.openligadb.de/"
+  },
+  "generatedAt": null,
+  "windowDays": 7,
+  "retentionDays": 7,
+  "entries": {}
+}
