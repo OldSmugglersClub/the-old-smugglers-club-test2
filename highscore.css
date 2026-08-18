@@ -1366,258 +1366,284 @@
 
 
 /* =======================================================================
-   4.8.0-RC3 – Geometrie-Neuaufbau
-   Design aus RC2 bleibt; Layout intern stabilisiert.
+   4.8.0-RC4 – vereinfachtes, robustes Führungsdeck
+   Keine variablen Namensschilder / keine hohen Podestkonstruktionen.
    ======================================================================= */
 
-.hs-podium{
-  min-height:0!important;
-  padding:24px 18px 28px!important;
+.hs-podium.hs-podium--simple{
   display:block!important;
+  min-height:0!important;
+  padding:22px 24px 28px!important;
 }
-
-.hs-deck-shell{
-  width:min(1040px,96%);
+.hs-podium--simple .hs-simple-deck{
+  box-sizing:border-box;
+  width:min(1000px,96%);
   margin:0 auto;
-  display:grid;
-  grid-template-rows:auto auto auto;
-  gap:22px;
-  align-items:start;
-  justify-items:stretch;
+  padding:0 22px 24px;
+  border:1px solid rgba(213,164,67,.52);
+  border-radius:14px;
+  background:
+    linear-gradient(rgba(17,9,5,.50),rgba(7,4,3,.84)),
+    url("./assets/highscore/deck-wood.svg") center/960px 640px repeat;
+  box-shadow:inset 0 0 42px rgba(0,0,0,.52),0 14px 30px rgba(0,0,0,.34);
+  overflow:hidden;
 }
 
-.hs-deck-banner{
-  position:relative!important;
-  inset:auto!important;
-  left:auto!important;
-  right:auto!important;
-  top:auto!important;
-  bottom:auto!important;
-  transform:none!important;
-  width:min(820px,88%)!important;
-  min-height:120px;
-  margin:0 auto!important;
-  padding:18px 66px 22px!important;
-}
-.hs-deck-banner span{
-  white-space:nowrap;
-  overflow:visible;
-  font-size:clamp(1.8rem,3.8vw,3rem)!important;
-}
-.hs-deck-banner strong,
-.hs-deck-banner small{
-  max-width:100%;
+.hs-podium--simple .hs-simple-banner{
+  box-sizing:border-box;
+  width:min(760px,92%);
+  margin:18px auto 24px;
+  padding:15px 28px 17px;
   text-align:center;
+  border:1px solid #a36a20;
+  border-radius:10px;
+  background:linear-gradient(180deg,#321a0b,#160c06);
+  box-shadow:inset 0 0 0 2px rgba(238,196,102,.08),0 7px 16px rgba(0,0,0,.40);
 }
-
-/* Gemeinsame Führende */
-.hs-leader-grid{
-  width:100%!important;
-  margin:0!important;
-  display:grid!important;
-  grid-template-columns:repeat(3,minmax(0,1fr))!important;
-  gap:18px!important;
-  align-items:stretch;
-}
-.hs-leader-card{
-  box-sizing:border-box;
-  min-width:0;
-  min-height:186px!important;
-  height:auto!important;
-  padding:74px 18px 18px!important;
-  display:grid!important;
-  grid-template-rows:auto auto 1fr;
-  align-content:end;
-  justify-items:center;
-  overflow:hidden!important;
-}
-.hs-leader-nameplate{
-  box-sizing:border-box;
-  width:88%!important;
-  min-width:0;
-  max-width:250px;
-}
-.hs-leader-nameplate strong{
+.hs-podium--simple .hs-simple-banner span{
   display:block;
-  white-space:normal!important;
-  overflow-wrap:anywhere!important;
-  line-height:1.12;
+  color:#f1cc70;
+  font:800 clamp(1.7rem,3.5vw,2.8rem)/1 Georgia,"Times New Roman",serif;
+  letter-spacing:.035em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  text-shadow:0 2px 3px #000;
 }
-.hs-leader-score{
-  align-self:end;
+.hs-podium--simple .hs-simple-banner strong{
+  display:block;
+  margin-top:8px;
+  color:#f0ddb0;
+  font-size:1.08rem;
+}
+.hs-podium--simple .hs-simple-banner small{
+  display:block;
+  margin-top:4px;
+  color:#d8b76f;
 }
 
-/* Klassisches Podium */
-.hs-podium-grid{
+/* Gleichstand: einheitliche, vollständig selbsttragende Karten */
+.hs-podium--simple .hs-tie-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
   width:100%;
-  margin:0 auto;
+  margin:0;
+}
+.hs-podium--simple .hs-tie-card{
+  box-sizing:border-box;
+  min-width:0;
+  min-height:132px;
+  padding:16px 16px 14px;
   display:grid;
+  grid-template-columns:44px minmax(0,1fr);
+  grid-template-rows:auto auto;
+  column-gap:12px;
+  row-gap:5px;
+  align-items:center;
+  border:1px solid #9b651f;
+  border-radius:8px;
+  background:linear-gradient(180deg,rgba(67,35,13,.78),rgba(16,9,5,.94));
+  box-shadow:inset 0 0 0 1px rgba(244,207,114,.09),0 6px 13px rgba(0,0,0,.28);
+  overflow:hidden;
+}
+.hs-podium--simple .hs-tie-rank{
+  grid-row:1 / 3;
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:2px solid #d4a341;
+  background:#1b0f07;
+  color:#f1cd72;
+  font:700 1.25rem Georgia,"Times New Roman",serif;
+}
+.hs-podium--simple .hs-tie-name{
+  min-width:0;
+  text-align:center!important;
+  color:#f0dcae;
+  font:700 1.08rem/1.15 Georgia,"Times New Roman",serif;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+.hs-podium--simple .hs-tie-score{
+  min-width:0;
+  text-align:center!important;
+  color:#d8bc80;
+  text-transform:uppercase;
+  font-size:.68rem;
+  letter-spacing:.05em;
+}
+.hs-podium--simple .hs-tie-score b{
+  margin-right:5px;
+  color:#f1cb6b;
+  font-size:1.05rem;
+}
+
+/* Eindeutige Platzierungen: kompakte Ehrenkarten */
+.hs-podium--simple .hs-rank-grid{
+  display:grid!important;
   align-items:end;
   justify-content:center;
+  margin:0 auto;
+}
+.hs-podium--simple .hs-rank-grid--count-3{
+  width:100%;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.hs-podium--simple .hs-rank-grid--count-2{
+  width:min(680px,82%);
+  grid-template-columns:repeat(2,minmax(0,1fr));
   gap:20px;
 }
-.hs-podium-grid--count-3{
-  grid-template-columns:repeat(3,minmax(0,1fr));
-}
-.hs-podium-grid--count-2{
-  width:min(760px,82%);
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:28px;
-}
-.hs-podium-grid--count-1{
-  width:min(420px,54%);
+.hs-podium--simple .hs-rank-grid--count-1{
+  width:min(330px,55%);
   grid-template-columns:1fr;
 }
-
-.hs-podium-grid--count-3 .place-2{grid-column:1}
-.hs-podium-grid--count-3 .place-1{grid-column:2;transform:translateY(-42px)}
-.hs-podium-grid--count-3 .place-3{grid-column:3}
-.hs-podium-grid--count-2 .place-2{grid-column:1;transform:none}
-.hs-podium-grid--count-2 .place-1{grid-column:2;transform:translateY(-36px)}
-.hs-podium-grid--count-1 .place-1{grid-column:1;transform:translateY(-24px)}
-
-.hs-podium-card{
-  min-width:0;
-  width:100%;
-}
-.hs-podium-plinth{
+.hs-podium--simple .hs-rank-card{
   box-sizing:border-box;
-  width:100%!important;
   min-width:0;
-  overflow:hidden!important;
+  min-height:220px;
+  padding:18px 18px 16px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  border:1px solid #86581e;
+  border-radius:10px;
+  background:linear-gradient(180deg,rgba(68,36,14,.74),rgba(15,8,5,.96));
+  box-shadow:inset 0 0 0 1px rgba(255,220,138,.07),0 8px 17px rgba(0,0,0,.34);
+  overflow:hidden;
+  text-align:center!important;
+}
+.hs-podium--simple .hs-rank-card--place-1{
+  transform:translateY(-16px);
+  border-color:#c18b2b;
+  box-shadow:inset 0 0 0 1px rgba(255,224,139,.13),0 10px 21px rgba(0,0,0,.38);
+}
+.hs-podium--simple .hs-rank-medal{
+  width:72px;
+  height:72px;
+  flex:0 0 72px;
   display:grid;
-  grid-template-rows:auto auto auto auto;
-  align-content:start;
-  justify-items:center;
+  place-items:center;
+  margin-bottom:14px;
+  border-radius:50%;
+  border:4px double #cfa343;
+  background:#160c06;
+  color:#f0cf78;
+  font:800 2rem Georgia,"Times New Roman",serif;
+  box-shadow:0 5px 11px rgba(0,0,0,.45);
 }
-.hs-podium-nameplate{
+.hs-podium--simple .hs-rank-card--silver .hs-rank-medal{
+  border-color:#bdbcb3;color:#ece7d7;
+}
+.hs-podium--simple .hs-rank-card--bronze .hs-rank-medal{
+  border-color:#ad6d39;color:#e0a26d;
+}
+.hs-podium--simple .hs-rank-name{
   box-sizing:border-box;
-  width:82%!important;
+  width:100%;
   min-width:0;
-}
-.hs-podium-nameplate strong{
-  display:block;
-  white-space:normal!important;
-  overflow-wrap:anywhere!important;
-  line-height:1.15;
-}
-.hs-podium-score{
-  min-width:0;
-}
-.hs-podium-score b{
-  white-space:nowrap;
-}
-.hs-podium-plinth small{
-  max-width:88%;
+  min-height:2.4em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 6px;
+  color:#f1ddb0;
+  font:700 1.12rem/1.2 Georgia,"Times New Roman",serif;
+  text-align:center!important;
   white-space:normal;
-  text-align:center;
+  overflow-wrap:anywhere;
+}
+.hs-podium--simple .hs-rank-score{
+  margin-top:10px;
+  text-align:center!important;
+}
+.hs-podium--simple .hs-rank-score b{
+  display:block;
+  color:#f2ce70;
+  font:700 2.15rem/1 Georgia,"Times New Roman",serif;
+}
+.hs-podium--simple .hs-rank-score span{
+  display:block;
+  margin-top:3px;
+  color:#cdb57e;
+  text-transform:uppercase;
+  font-size:.65rem;
+  letter-spacing:.06em;
+}
+.hs-podium--simple .hs-rank-card small{
+  width:100%;
+  margin-top:10px;
+  color:#baa57c;
   line-height:1.25;
+  text-align:center!important;
+  white-space:normal;
+  overflow-wrap:break-word;
 }
 
-/* Deckboden gehört immer zur Podiumsbreite */
-.hs-deck-floor{
-  position:relative!important;
-  inset:auto!important;
-  left:auto!important;
-  right:auto!important;
-  top:auto!important;
-  bottom:auto!important;
-  width:100%!important;
-  height:54px!important;
-  margin:0!important;
-}
+/* Reihenfolge 2 – 1 – 3 */
+.hs-podium--simple .hs-rank-grid--count-3 .hs-rank-card--place-2{grid-column:1;grid-row:1}
+.hs-podium--simple .hs-rank-grid--count-3 .hs-rank-card--place-1{grid-column:2;grid-row:1}
+.hs-podium--simple .hs-rank-grid--count-3 .hs-rank-card--place-3{grid-column:3;grid-row:1}
 
-/* Teamwertung: feste Zweiergruppe bleibt innerhalb eigener Hülle */
-.hs-podium--count-2 .hs-deck-shell{
-  width:min(900px,88%);
-}
-
-/* Vertikale Überläufe vermeiden */
-.hs-podium-panel,
-.hs-podium,
-.hs-deck-shell,
-.hs-podium-grid,
-.hs-leader-grid{
-  overflow:visible;
-}
-.hs-podium-card,
-.hs-leader-card{
-  overflow:hidden!important;
-}
+/* Zwei Plätze: 2 links, 1 rechts; Gruppe als Ganzes zentriert */
+.hs-podium--simple .hs-rank-grid--count-2 .hs-rank-card--place-2{grid-column:1}
+.hs-podium--simple .hs-rank-grid--count-2 .hs-rank-card--place-1{grid-column:2}
 
 /* Mobile */
 @media (max-width:760px){
-  .hs-podium{
-    padding:14px 8px 20px!important;
+  .hs-podium.hs-podium--simple{padding:12px 8px 18px!important}
+  .hs-podium--simple .hs-simple-deck{width:100%;padding:0 10px 16px}
+  .hs-podium--simple .hs-simple-banner{
+    width:96%;
+    margin:12px auto 16px;
+    padding:12px 12px 14px;
   }
-  .hs-deck-shell{
-    width:100%;
-    gap:14px;
+  .hs-podium--simple .hs-simple-banner span{
+    font-size:clamp(1.05rem,5.2vw,1.55rem);
+    white-space:nowrap;
   }
-  .hs-deck-banner{
-    width:96%!important;
-    min-height:96px;
-    padding:14px 28px 17px!important;
-  }
-  .hs-deck-banner span{
-    font-size:clamp(1.12rem,5.4vw,1.6rem)!important;
-  }
+  .hs-podium--simple .hs-simple-banner strong{font-size:.88rem}
 
-  .hs-leader-grid{
-    grid-template-columns:repeat(2,minmax(0,1fr))!important;
-    gap:9px!important;
-  }
-  .hs-leader-card{
-    min-height:142px!important;
-    padding:58px 8px 12px!important;
-  }
-  .hs-leader-nameplate{
-    width:94%!important;
-  }
-
-  .hs-podium-grid{
-    gap:6px;
-  }
-  .hs-podium-grid--count-3{
-    width:100%;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-  }
-  .hs-podium-grid--count-2{
-    width:100%;
+  .hs-podium--simple .hs-tie-grid{
     grid-template-columns:repeat(2,minmax(0,1fr));
     gap:8px;
   }
-  .hs-podium-grid--count-1{
-    width:min(300px,86%);
+  .hs-podium--simple .hs-tie-card{
+    min-height:112px;
+    padding:11px 8px;
+    grid-template-columns:34px minmax(0,1fr);
+    column-gap:7px;
   }
-  .hs-podium-grid--count-3 .place-1{transform:translateY(-20px)}
-  .hs-podium-grid--count-2 .place-1{transform:translateY(-16px)}
-  .hs-podium-grid--count-1 .place-1{transform:translateY(-12px)}
+  .hs-podium--simple .hs-tie-rank{width:32px;height:32px;font-size:1rem}
+  .hs-podium--simple .hs-tie-name{font-size:.82rem}
+  .hs-podium--simple .hs-tie-score{font-size:.58rem}
 
-  .hs-podium-nameplate{
-    width:94%!important;
-    padding-left:5px!important;
-    padding-right:5px!important;
+  .hs-podium--simple .hs-rank-grid--count-3{
+    width:100%;gap:6px;
   }
-  .hs-podium-nameplate strong{
-    font-size:.8rem!important;
+  .hs-podium--simple .hs-rank-grid--count-2{
+    width:100%;gap:8px;
   }
-  .hs-podium-plinth small{
-    max-width:94%;
-    font-size:.61rem!important;
+  .hs-podium--simple .hs-rank-grid--count-1{
+    width:min(280px,88%);
   }
-}
-
-@media (max-width:420px){
-  .hs-deck-banner{
-    padding-left:18px!important;
-    padding-right:18px!important;
+  .hs-podium--simple .hs-rank-card{
+    min-height:175px;
+    padding:12px 6px 10px;
   }
-  .hs-deck-banner span{
-    font-size:1rem!important;
-    letter-spacing:.02em!important;
+  .hs-podium--simple .hs-rank-card--place-1{transform:translateY(-8px)}
+  .hs-podium--simple .hs-rank-medal{
+    width:52px;height:52px;flex-basis:52px;
+    margin-bottom:9px;font-size:1.45rem;
   }
-  .hs-leader-grid{
-    gap:7px!important;
+  .hs-podium--simple .hs-rank-name{
+    min-height:2.6em;padding:0 2px;font-size:.76rem;
   }
+  .hs-podium--simple .hs-rank-score{margin-top:6px}
+  .hs-podium--simple .hs-rank-score b{font-size:1.45rem}
+  .hs-podium--simple .hs-rank-card small{font-size:.58rem;margin-top:6px}
 }
