@@ -1456,7 +1456,7 @@
     section.appendChild(grid);
     const note = document.createElement("p");
     note.className = "data-note";
-    note.textContent = "Das Lagebild verwendet ausschließlich bestätigte Termine und hinterlegte Endergebnisse. Offene Angaben werden sichtbar als offen geführt.";
+    note.textContent = "";
     section.appendChild(note);
     root.appendChild(section);
   }
