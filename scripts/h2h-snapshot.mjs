@@ -169,9 +169,23 @@ function buildForm(seasonMatches, id, beforeDate) {
     .filter(x => x.date && x.form && x.date < beforeDate)
     .sort((a,b) => b.date - a.date)
     .slice(0,5);
+  let won=0, draw=0, lost=0, goalsFor=0, goalsAgainst=0;
+  recent.forEach(({ match }) => {
+    const r = finishedResult(match);
+    if (!r) return;
+    const isHome = teamId(match?.team1) === id;
+    const own = isHome ? r.home : r.away;
+    const opp = isHome ? r.away : r.home;
+    goalsFor += own;
+    goalsAgainst += opp;
+    if (own > opp) won++;
+    else if (own < opp) lost++;
+    else draw++;
+  });
   return {
     available: recent.length > 0,
     values: recent.map(x => x.form),
+    record: { played:recent.length, won, draw, lost, goalsFor, goalsAgainst },
     matches: recent.map(x => compactMatch(x.match))
   };
 }
@@ -206,6 +220,7 @@ function buildTableEntry(table, id) {
     available: true,
     position,
     points: Number(row?.points ?? 0),
+    played: Number(row?.won ?? 0) + Number(row?.draw ?? 0) + Number(row?.lost ?? 0),
     won: Number(row?.won ?? 0),
     draw: Number(row?.draw ?? 0),
     lost: Number(row?.lost ?? 0),

@@ -67,12 +67,19 @@
   function formModule(entry, game) {
     const form = entry?.modules?.form;
     if (!form?.available) return "";
+
+    const detail = side => {
+      const r = side?.record;
+      if (!r || !Number(r.played || 0)) return "";
+      return `<small>${Number(r.won || 0)} S · ${Number(r.draw || 0)} U · ${Number(r.lost || 0)} N · ${Number(r.goalsFor || 0)}:${Number(r.goalsAgainst || 0)} Tore</small>`;
+    };
+
     return `
       <section class="sm-h2h__section">
         <h4>Aktuelle Form</h4>
         <div class="sm-h2h__duo">
-          <div><span>${esc(game.heim || "Heim")}</span>${formHtml(form.home?.values)}</div>
-          <div><span>${esc(game.auswaerts || "Gast")}</span>${formHtml(form.away?.values)}</div>
+          <div><span>${esc(game.heim || "Heim")}</span>${formHtml(form.home?.values)}${detail(form.home)}</div>
+          <div><span>${esc(game.auswaerts || "Gast")}</span>${formHtml(form.away?.values)}${detail(form.away)}</div>
         </div>
       </section>`;
   }
@@ -80,8 +87,16 @@
   function tableModule(entry, game) {
     const table = entry?.modules?.table;
     if (!table?.available) return "";
+
+    const played = data => Number(
+      data?.played ?? data?.matches ?? data?.games ?? data?.matchesPlayed ?? 0
+    );
+
+    // Vor dem ersten Ligaspiel ist eine Platzierung bei 0 Punkten ohne Aussagewert.
+    if (played(table.home) < 1 || played(table.away) < 1) return "";
+
     const row = (label, data) => data?.available
-      ? `<div><span>${esc(label)}</span><strong>#${Number(data.position || 0)}</strong><small>${Number(data.points || 0)} Pkt.</small></div>`
+      ? `<div><span>${esc(label)}</span><strong>#${Number(data.position || 0)}</strong><small>${Number(data.points || 0)} Pkt. · ${played(data)} Sp.</small></div>`
       : "";
     return `
       <section class="sm-h2h__section">
