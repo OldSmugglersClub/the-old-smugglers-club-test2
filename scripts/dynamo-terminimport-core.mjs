@@ -1,4 +1,3 @@
-// HF14 AUTOMATION FIX – stabile Verlegungszeit + Persistenz-Workflow
 import fs from "node:fs";
 
 export function readJson(path) {
@@ -220,7 +219,6 @@ function displayDate(date) {
 }
 
 export function validateAndPlan(data, teamsData, apiMatches) {
-  const now = new Date();
   const local = dynamoMatches(data);
   if (local.length !== 34) {
     throw new Error(`Lokaler Dynamo-Saisonplan unvollständig: ${local.length}/34.`);
@@ -293,8 +291,13 @@ export function validateAndPlan(data, teamsData, apiMatches) {
       /^\d{2}:\d{2}$/.test(String(localMatch.anstoss||""));
 
     if(!localExact){
-      // Erstkonkretisierung muss im bekannten Fenster liegen.
-      if(!dateInWindow(exact.date,localMatch.datumVon,localMatch.datumBis)){
+      // HF15: Bei eindeutig gemappter Paarung darf ein bislang komplett offener
+      // Spieltag erstmals konkretisiert werden. Existiert bereits ein lokales
+      // Datumsfenster, bleibt dessen Sicherheitsprüfung zwingend aktiv.
+      const hasLocalWindow=
+        /^\d{4}-\d{2}-\d{2}$/.test(String(localMatch.datumVon||"")) &&
+        /^\d{4}-\d{2}-\d{2}$/.test(String(localMatch.datumBis||""));
+      if(hasLocalWindow && !dateInWindow(exact.date,localMatch.datumVon,localMatch.datumBis)){
         skipped.push({localId:localMatch.id,reason:"OpenLigaDB-Datum außerhalb des lokalen Spieltagfensters"});
         continue;
       }
@@ -313,6 +316,7 @@ export function validateAndPlan(data, teamsData, apiMatches) {
 
     // Verlegung/Nachholtermin: dieselbe eindeutig gemappte Spiel-ID darf neu terminiert werden.
     // Sicherheitsfenster verhindert automatische Änderungen unmittelbar vor einem der beiden Anstoßzeitpunkte.
+    const now=new Date();
     const apiKickoff=new Date(`${exact.date}T${exact.time}:00+02:00`);
     const localKickoff=new Date(`${localMatch.datum}T${localMatch.anstoss}:00+02:00`);
     const sixHours=6*60*60*1000;
