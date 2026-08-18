@@ -1,0 +1,42 @@
+name: HF16-P3 Persistenztest
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Persistenz erzeugen
+        run: node scripts/schedule-terminstand.mjs
+
+      - name: Snapshot prüfen
+        shell: bash
+        run: |
+          test -f schedule-terminstand.json
+          echo "schedule-terminstand.json wurde erzeugt."
+          git diff --stat -- schedule-terminstand.json || true
+
+      - name: Snapshot für Testrepository committen
+        shell: bash
+        run: |
+          if git status --porcelain -- schedule-terminstand.json | grep -q .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add schedule-terminstand.json
+            git commit -m "HF16-P3: Persistenztest"
+            git push
+          else
+            echo "Snapshot bereits aktuell."
+          fi
