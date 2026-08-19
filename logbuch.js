@@ -20,7 +20,12 @@ function mainStory(entry){
    const d=against.daten||{};
    return `<span class="logbook-kicker">Gegen den Strom</span><h3>${esc(entry.bezeichnung||"Spieltags-Logbuch")}</h3>
    <p>Die meistgetippte Richtung (${esc(outcomeLabel(d.meistGetippt?.ausgang))}, ${Number(d.meistGetippt?.anzahl||0)} Tipps) lag daneben. 
-   Der richtige Ausgang war ${esc(outcomeLabel(d.richtigerAusgang))}; ${Number(d.exakt||0)} Tipper trafen sogar das Ergebnis ${esc(d.ergebnis||"")} exakt.</p>`;
+   Der richtige Ausgang war ${esc(outcomeLabel(d.richtigerAusgang))}; ${Number(d.exakt||0)} Tipper trafen sogar das Ergebnis ${esc(d.ergebnis||"")} exakt.</p>
+   <div class="logbook-teaser-distribution">
+     <div><strong>${Number(d.tippverteilung?.["1"]||0)}</strong><span>Heimsieg</span></div>
+     <div><strong>${Number(d.tippverteilung?.X||0)}</strong><span>Remis</span></div>
+     <div><strong>${Number(d.tippverteilung?.["2"]||0)}</strong><span>Auswärtssieg</span></div>
+   </div>`;
  }
  if(caps){
    const d=caps.daten||{};
@@ -49,15 +54,15 @@ function renderTeaser(entry){
 
 function renderHighlight(h){
  const d=h.daten||{};
- if(h.typ==="kapitaene") return `<article class="lb-highlight"><h3>Kapitäne des Spieltags</h3><p><strong>${Number(d.anzahl||0)} Tipper</strong> teilen sich mit ${Number(d.punkte||0)} Punkten die beste Spieltagsleistung.</p><div class="lb-names">${shortNames(d.tipper)}</div></article>`;
+ if(h.typ==="kapitaene") return `<article class="lb-highlight lb-highlight--wide lb-highlight--captains"><h3>Kapitäne des Spieltags</h3><p><strong>${Number(d.anzahl||0)} Tipper</strong> teilen sich mit ${Number(d.punkte||0)} Punkten die beste Spieltagsleistung.</p><div class="lb-names">${shortNames(d.tipper)}</div></article>`;
  if(h.typ==="gegen-den-strom") return `<article class="lb-highlight lb-highlight--hero"><h3>Gegen den Strom</h3><p>Die größte Tippgruppe setzte auf <strong>${esc(outcomeLabel(d.meistGetippt?.ausgang))}</strong> (${Number(d.meistGetippt?.anzahl||0)} Tipps) und lag falsch. Richtig war <strong>${esc(outcomeLabel(d.richtigerAusgang))}</strong>; ${Number(d.exakt||0)} Tipper trafen ${esc(d.ergebnis||"")} exakt.</p><div class="lb-scoreline"><div><strong>${Number(d.tippverteilung?.["1"]||0)}</strong><span>Heimsieg</span></div><div><strong>${Number(d.tippverteilung?.X||0)}</strong><span>Remis</span></div><div><strong>${Number(d.tippverteilung?.["2"]||0)}</strong><span>Auswärtssieg</span></div></div></article>`;
  if(h.typ==="volltreffer") return `<article class="lb-highlight"><h3>Volltreffer</h3><p>Die stärksten Präzisionstreffer: <strong>${Number(d.maxExakt||0)} exakt</strong> im Spieltag.</p><div class="lb-names">${shortNames(d.tipper)}</div></article>`;
  if(h.typ==="crewduell"){
    const teams=d.teams||[]; const a=teams[0],b=teams[1];
-   return `<article class="lb-highlight"><h3>Crewduell</h3><p><strong>${esc(d.sieger||"Gleichstand")}</strong> führt nach Durchschnittspunkten.</p>${a&&b?`<div class="lb-scoreline"><div><strong>${Number(a.durchschnitt||0).toLocaleString("de-DE",{minimumFractionDigits:2,maximumFractionDigits:2})}</strong><span>${esc(a.team)}</span></div><div><strong>:</strong><span>Ø Punkte</span></div><div><strong>${Number(b.durchschnitt||0).toLocaleString("de-DE",{minimumFractionDigits:2,maximumFractionDigits:2})}</strong><span>${esc(b.team)}</span></div></div>`:""}</article>`;
+   return `<article class="lb-highlight lb-highlight--crew"><h3>Crewduell</h3><p><strong>${esc(d.sieger||"Gleichstand")}</strong> führt nach Durchschnittspunkten.</p>${a&&b?`<div class="lb-crewline"><div><span>${esc(a.team)}</span><strong>${Number(a.durchschnitt||0).toLocaleString("de-DE",{minimumFractionDigits:2,maximumFractionDigits:2})}</strong></div><div class="lb-crew-vs">gegen</div><div><span>${esc(b.team)}</span><strong>${Number(b.durchschnitt||0).toLocaleString("de-DE",{minimumFractionDigits:2,maximumFractionDigits:2})}</strong></div></div>`:""}</article>`;
  }
  if(h.typ==="kursbewegung") return `<article class="lb-highlight"><h3>Kursbewegung</h3><p>Größter Sprung: <strong>+${Number(d.maxGewinn||0)} Plätze</strong>. Größter Verlust: <strong>${Number(d.maxVerlust||0)} Plätze</strong>.</p><div class="lb-names">${shortNames(d.gewinner,5)}</div></article>`;
- if(h.typ==="zahlen-aus-der-kombuese") return `<article class="lb-highlight"><h3>Zahlen aus der Kombüse</h3><p>${Number(d.abgegeben||0)} Abgaben · ${Number(d.nichtAbgegeben||0)} Nichtabgaben · ${Number(d.exakt||0)} exakt · ${Number(d.differenz||0)} Differenz · ${Number(d.tendenz||0)} Tendenz.</p></article>`;
+ if(h.typ==="zahlen-aus-der-kombuese") return `<article class="lb-highlight lb-highlight--wide lb-highlight--galley"><h3>Zahlen aus der Kombüse</h3><div class="lb-galley-grid"><div><strong>${Number(d.abgegeben||0)}</strong><span>Abgaben</span></div><div><strong>${Number(d.nichtAbgegeben||0)}</strong><span>Nichtabgaben</span></div><div><strong>${Number(d.exakt||0)}</strong><span>Exakt</span></div><div><strong>${Number(d.differenz||0)}</strong><span>Differenz</span></div><div><strong>${Number(d.tendenz||0)}</strong><span>Tendenz</span></div></div></article>`;
  return "";
 }
 

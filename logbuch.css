@@ -1,4 +1,4 @@
-/* Website 4.8.0-LB2 – Spieltags-Logbuch */
+/* Website 4.8.0-LB3 – Spieltags-Logbuch */
 .logbook-teaser{
   position:relative;
   overflow:hidden;
@@ -73,7 +73,7 @@
  .lb-scoreline{gap:5px}.lb-scoreline div{padding:8px 3px}
 }
 
-/* 4.8.0-LB2 – reiner Darstellungs-Feinschliff */
+/* 4.8.0-LB3 – reiner Darstellungs-Feinschliff */
 html,body{margin:0;padding:0;background:#070402}
 body{overflow-x:hidden}
 .lb-shell{width:min(1180px,100%)}
@@ -98,3 +98,131 @@ body{overflow-x:hidden}
 .logbook-teaser-main,.logbook-teaser-side{border-color:rgba(198,142,47,.42)}
 .logbook-mini-stat strong{font-size:1.02rem}
 @media(max-width:760px){.lb-hero,.lb-entry,.lb-archive{border-radius:12px}.lb-highlight{padding:15px}.lb-name{padding:7px 10px;font-size:.86rem}.lb-highlight p{font-size:.95rem}}
+
+
+/* 4.8.0-LB3 – Flächennutzung und Klarheit */
+.lb-highlight--wide{
+  grid-column:1/-1;
+}
+.lb-highlight--captains{
+  background:linear-gradient(135deg,rgba(31,17,8,.92),rgba(18,10,5,.9));
+}
+.lb-highlight--captains .lb-names{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.lb-highlight--captains .lb-name{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  text-align:center;
+  border-radius:10px;
+  font-size:.96rem;
+}
+
+.lb-highlight--galley{
+  background:linear-gradient(135deg,rgba(31,17,8,.92),rgba(18,10,5,.9));
+}
+.lb-galley-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:10px;
+  margin-top:10px;
+}
+.lb-galley-grid div{
+  text-align:center;
+  padding:12px 8px;
+  border:1px solid rgba(198,142,47,.28);
+  border-radius:9px;
+  background:rgba(11,6,3,.45);
+}
+.lb-galley-grid strong{
+  display:block;
+  color:#f0cb75;
+  font-size:1.55rem;
+}
+.lb-galley-grid span{
+  display:block;
+  margin-top:3px;
+  color:#b9a47e;
+  font-size:.72rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.lb-highlight--crew .lb-crewline{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  gap:12px;
+  align-items:center;
+  margin-top:12px;
+}
+.lb-crewline>div:not(.lb-crew-vs){
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  min-height:58px;
+  padding:11px 14px;
+  border:1px solid rgba(198,142,47,.32);
+  border-radius:9px;
+  background:rgba(11,6,3,.5);
+}
+.lb-crewline span{
+  color:#cbb58e;
+  font-weight:700;
+}
+.lb-crewline strong{
+  color:#f0cb75;
+  font-size:1.45rem;
+}
+.lb-crew-vs{
+  color:#9e8967;
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+
+.logbook-teaser-main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.logbook-teaser-distribution{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+  margin-top:14px;
+}
+.logbook-teaser-distribution div{
+  text-align:center;
+  padding:10px 6px;
+  border:1px solid rgba(198,142,47,.28);
+  border-radius:8px;
+  background:rgba(12,7,4,.5);
+}
+.logbook-teaser-distribution strong{
+  display:block;
+  color:#efcb78;
+  font-size:1.28rem;
+}
+.logbook-teaser-distribution span{
+  display:block;
+  margin-top:2px;
+  color:#ae9977;
+  font-size:.67rem;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
+@media(max-width:760px){
+  .lb-highlight--captains .lb-names{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lb-galley-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lb-galley-grid div:last-child{grid-column:1/-1}
+  .lb-highlight--crew .lb-crewline{grid-template-columns:1fr}
+  .lb-crew-vs{text-align:center}
+  .logbook-teaser-distribution{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
