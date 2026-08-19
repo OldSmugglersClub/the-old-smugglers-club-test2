@@ -1,4 +1,4 @@
-/* Website 4.8.0-LB3 – Spieltags-Logbuch */
+/* Website 4.8.0-LB3-P1 – Spieltags-Logbuch */
 .logbook-teaser{
   position:relative;
   overflow:hidden;
@@ -73,7 +73,7 @@
  .lb-scoreline{gap:5px}.lb-scoreline div{padding:8px 3px}
 }
 
-/* 4.8.0-LB3 – reiner Darstellungs-Feinschliff */
+/* 4.8.0-LB3-P1 – reiner Darstellungs-Feinschliff */
 html,body{margin:0;padding:0;background:#070402}
 body{overflow-x:hidden}
 .lb-shell{width:min(1180px,100%)}
@@ -100,7 +100,7 @@ body{overflow-x:hidden}
 @media(max-width:760px){.lb-hero,.lb-entry,.lb-archive{border-radius:12px}.lb-highlight{padding:15px}.lb-name{padding:7px 10px;font-size:.86rem}.lb-highlight p{font-size:.95rem}}
 
 
-/* 4.8.0-LB3 – Flächennutzung und Klarheit */
+/* 4.8.0-LB3-P1 – Flächennutzung und Klarheit */
 .lb-highlight--wide{
   grid-column:1/-1;
 }
@@ -225,4 +225,11 @@ body{overflow-x:hidden}
   .lb-highlight--crew .lb-crewline{grid-template-columns:1fr}
   .lb-crew-vs{text-align:center}
   .logbook-teaser-distribution{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+
+/* 4.8.0-LB3-P1-P1 – Lesbarkeit personenbezogener Auszeichnungen */
+.lb-highlight--captains .lb-name,
+.lb-highlight--volltreffer .lb-name {
+  font-size: 1.08rem;
 }
