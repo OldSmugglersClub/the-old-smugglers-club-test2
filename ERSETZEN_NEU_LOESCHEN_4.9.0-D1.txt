@@ -1,0 +1,14 @@
+ERSETZEN:
+- index.html
+- VERSION.txt
+
+NEU:
+- duell.html
+- duell.css
+- duell.js
+- CHANGELOG_4.9.0-D1.md
+- README-WEBSITE-4.9.0-D1.md
+- ERSETZEN_NEU_LOESCHEN_4.9.0-D1.txt
+
+LÖSCHEN:
+- nichts
