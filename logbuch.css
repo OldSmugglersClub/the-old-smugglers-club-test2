@@ -1,4 +1,4 @@
-/* Website 4.8.0-LB1 – Spieltags-Logbuch */
+/* Website 4.8.0-LB2 – Spieltags-Logbuch */
 .logbook-teaser{
   position:relative;
   overflow:hidden;
@@ -72,3 +72,29 @@
  .lb-page{padding:14px 9px 38px}.lb-entry,.lb-hero{padding:16px}
  .lb-scoreline{gap:5px}.lb-scoreline div{padding:8px 3px}
 }
+
+/* 4.8.0-LB2 – reiner Darstellungs-Feinschliff */
+html,body{margin:0;padding:0;background:#070402}
+body{overflow-x:hidden}
+.lb-shell{width:min(1180px,100%)}
+.lb-hero,.lb-entry,.lb-archive{border-color:rgba(196,139,45,.62);box-shadow:0 18px 45px rgba(0,0,0,.38),inset 0 0 0 1px rgba(255,226,160,.045)}
+.lb-hero{padding:28px 30px 25px}
+.lb-entry{padding:24px}
+.lb-entry-head{padding-bottom:18px}
+.lb-entry-head h2{font-size:clamp(1.55rem,3vw,2rem)}
+.lb-highlight-grid{gap:14px}
+.lb-highlight{padding:18px;border-color:rgba(198,142,47,.38);background:linear-gradient(135deg,rgba(43,23,10,.82),rgba(20,11,6,.86));box-shadow:inset 0 0 18px rgba(0,0,0,.14)}
+.lb-highlight--hero{background:linear-gradient(135deg,rgba(76,42,15,.72),rgba(28,15,7,.88))}
+.lb-highlight h3{margin-bottom:10px;font-size:.86rem;letter-spacing:.095em}
+.lb-highlight p{font-size:1rem;line-height:1.62}
+.lb-names{gap:8px;margin-top:12px}
+.lb-name{padding:7px 11px;border-color:rgba(201,146,49,.42);background:rgba(18,10,5,.72);color:#f0d39a;font-size:.9rem;line-height:1.15;font-weight:700;letter-spacing:.01em}
+.lb-scoreline{gap:10px;margin-top:13px}
+.lb-scoreline div{padding:11px 7px;border-color:rgba(198,142,47,.34);background:rgba(13,7,4,.58)}
+.lb-scoreline strong{font-size:1.55rem}
+.lb-scoreline span{margin-top:2px;color:#b8a17b;font-size:.74rem;font-weight:700}
+.lb-archive{padding:20px 22px}
+.lb-archive button{font-size:.86rem;font-weight:700}
+.logbook-teaser-main,.logbook-teaser-side{border-color:rgba(198,142,47,.42)}
+.logbook-mini-stat strong{font-size:1.02rem}
+@media(max-width:760px){.lb-hero,.lb-entry,.lb-archive{border-radius:12px}.lb-highlight{padding:15px}.lb-name{padding:7px 10px;font-size:.86rem}.lb-highlight p{font-size:.95rem}}
