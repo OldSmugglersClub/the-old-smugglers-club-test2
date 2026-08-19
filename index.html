@@ -5261,8 +5261,8 @@
 
   </style>
   <link rel="stylesheet" href="./highscore.css?v=4.0.1">
+  <link rel="stylesheet" href="./logbuch.css?v=4.8.0-LB1">
   <link rel="stylesheet" href="./accessibility-v33.css">
-  <link rel="stylesheet" href="./h2h-startseite.css?v=4.9.0-RC4">
   <style id="welcome-cleanup-v434">
     /* Version 4.4.14: Startzentrale vollständig deckend halten und alle alten Dekore abschalten.
        Wichtig: kein background-image:none – das hatte die eigenen Farbverläufe entfernt und
@@ -5473,6 +5473,7 @@
           <li><a href="#wettbewerbe">Wettbewerbe</a></li>
           <li><a href="./saison-2026-2027.html">Saisonübersicht</a></li>
           <li><a href="./highscore.html">Highscore</a></li>
+          <li><a href="./logbuch.html">Logbuch</a></li>
           <li><a href="#hall-of-fame">Hall of Fame</a></li>
           <li><a href="#piratenkodex">Gesetz der Freibeuter</a></li>
           <li><a href="#kummerkasten">Kummerkasten</a></li>
@@ -5522,6 +5523,8 @@
             </a>
             <nav class="welcome-secondary-nav" aria-label="Schnellzugriffe der Startzentrale">
               <a href="./highscore.html">Highscore</a>
+              <span class="nav-separator" aria-hidden="true">·</span>
+              <a href="./logbuch.html">Logbuch</a>
               <span class="nav-separator" aria-hidden="true">·</span>
               <a href="#hall-of-fame">Hall of Fame</a>
               <span class="nav-separator" aria-hidden="true">·</span>
@@ -5658,6 +5661,19 @@
       </div>
       <p class="highscore-teaser-action"><a class="button button-primary" href="./highscore.html">Ranglistenlogbuch öffnen</a></p>
     </section>
+
+
+<section class="section panel logbook-teaser" id="logbuch">
+  <div class="section-title"><svg class="pirate-icon" aria-hidden="true"><use href="#icon-scroll"></use></svg><h2>Spieltags-Logbuch</h2></div>
+  <p class="lead">Die automatische Nachlese aus euren eigenen Tippdaten: Auffälligkeiten, Volltreffer, Crewduell und die beste Beute des Spieltags.</p>
+  <div class="logbook-teaser-grid">
+    <article class="logbook-teaser-main" id="logbook-teaser-copy">
+      <span class="logbook-kicker">Logbuch wird geladen</span><h3>Der letzte abgeschlossene Spieltag wird vorbereitet.</h3>
+    </article>
+    <aside class="logbook-teaser-side" id="logbook-teaser-stats" aria-label="Logbuch Kurzstatistik"></aside>
+  </div>
+  <p class="logbook-teaser-action"><a class="button button-primary" href="./logbuch.html">Logbuch öffnen</a></p>
+</section>
 
 <section class="section panel" id="wettbewerbe">
       <div class="section-title"><svg class="pirate-icon" aria-hidden="true"><use href="#icon-crossed-sabres"></use></svg><h2>Unsere Wettbewerbe</h2></div>
@@ -5965,7 +5981,6 @@
   <script src="./team-badge.js"></script>
   <script src="./schedule-data-adapter.js"></script>
   <script src="./schedule-timeline.js"></script>
-  <script src="./h2h-startseite.js?v=4.9.0-RC4"></script>
   <script>
     const menuButton = document.querySelector(".menu-button");
     const navigation = document.getElementById("navigation");
@@ -6427,8 +6442,9 @@
             dayTitle.textContent=new Intl.DateTimeFormat(locale,{weekday:"long",day:"2-digit",month:"long"}).format(eventsForDay[0]._start);
             day.appendChild(dayTitle);
             eventsForDay.forEach(game=>{
-              const row=document.createElement("div");
+              const row=document.createElement(game.ereignisLink?"a":"div");
               row.className="sm-event-row"; row.dataset.competition=game.matchdayType||game.wettbewerb||"";
+              if(game.ereignisLink)row.href=game.ereignisLink;
               const time=document.createElement("span"); time.className="sm-event-row__time"; time.textContent=game.anstoss;
               const competition=document.createElement("span"); competition.className="sm-event-row__competition";
               competition.textContent=game.matchdayType==="Smugglerauftrag"?"Smugglerauftrag":(game.wettbewerbAnzeige||game.wettbewerb||"Ereignis");
@@ -6453,11 +6469,6 @@
               const rowStatus=document.createElement("span"); rowStatus.className="sm-event-row__status";
               rowStatus.textContent=game.status||"TERMINIERT";
               row.append(time,competition,match,rowStatus); day.appendChild(row);
-              window.OSCH2HPanel?.attach(row,{
-                ...game,
-                heim:game.heim,
-                auswaerts:game.auswaerts
-              });
             });
             elements.list.appendChild(day);
           });
@@ -6702,6 +6713,7 @@
   </script>
 
   <script src="./highscore-teaser.js" defer></script>
+  <script src="./logbuch.js?v=4.8.0-LB1" defer></script>
   <script src="performance-v247.js" defer></script>
   <script src="./accessibility-v33.js" defer></script>
   <script>

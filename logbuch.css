@@ -1,0 +1,74 @@
+/* Website 4.8.0-LB1 – Spieltags-Logbuch */
+.logbook-teaser{
+  position:relative;
+  overflow:hidden;
+  border-color:rgba(179,126,43,.58);
+  background:
+    linear-gradient(110deg,rgba(20,11,6,.96),rgba(39,21,9,.9)),
+    url("./piraten-spieltag-hintergrund.jpg") center/cover;
+}
+.logbook-teaser::after{
+  content:"";position:absolute;inset:8px;border:1px solid rgba(225,180,88,.14);
+  border-radius:inherit;pointer-events:none;
+}
+.logbook-teaser > *{position:relative;z-index:1}
+.logbook-teaser-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch}
+.logbook-teaser-main,.logbook-teaser-side{
+  border:1px solid rgba(190,137,48,.34);border-radius:12px;
+  background:rgba(14,8,4,.72);padding:16px 18px;
+}
+.logbook-kicker{display:block;color:#c4903b;text-transform:uppercase;letter-spacing:.13em;font-size:.69rem;font-weight:800}
+.logbook-teaser-main h3{margin:.35rem 0 .55rem;color:#f0d5a0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.25rem,2.5vw,1.8rem)}
+.logbook-teaser-main p{margin:.35rem 0;color:#d4c09b;line-height:1.55}
+.logbook-teaser-side{display:grid;gap:10px;align-content:center}
+.logbook-mini-stat{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid rgba(190,137,48,.17)}
+.logbook-mini-stat:last-child{border-bottom:0}
+.logbook-mini-stat span{color:#bda783;font-size:.76rem}
+.logbook-mini-stat strong{color:#efcb78;text-align:right}
+.logbook-teaser-action{text-align:center;margin:16px 0 0}
+
+/* Logbuch-Seite */
+.lb-page{min-height:100vh;padding:28px 18px 54px;background:
+ linear-gradient(rgba(7,4,2,.78),rgba(7,4,2,.91)),
+ url("./piraten-hintergrund.jpg") center/cover fixed;color:#e8d4ab}
+.lb-shell{width:min(1120px,100%);margin:0 auto}
+.lb-hero,.lb-entry,.lb-archive{border:1px solid rgba(186,132,45,.5);border-radius:16px;background:
+ linear-gradient(135deg,rgba(42,23,10,.94),rgba(12,7,4,.96));
+ box-shadow:0 18px 45px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,230,170,.035)}
+.lb-hero{padding:26px;margin-bottom:18px;text-align:center}
+.lb-crest{width:84px;height:84px;margin:0 auto 10px;filter:drop-shadow(0 7px 10px rgba(0,0,0,.45))}
+.lb-kicker{color:#c58c33;letter-spacing:.15em;text-transform:uppercase;font-weight:800;font-size:.72rem}
+.lb-hero h1{font-family:Georgia,"Times New Roman",serif;color:#f1d7a1;font-size:clamp(2rem,5vw,3.3rem);margin:.28rem 0 .5rem}
+.lb-hero p{max-width:760px;margin:0 auto;color:#cdbb98;line-height:1.6}
+.lb-toolbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0 0}
+.lb-btn{display:inline-flex;align-items:center;justify-content:center;padding:.72rem 1rem;border:1px solid #a66f22;border-radius:9px;background:#27150a;color:#edcf91;text-decoration:none;font-weight:800}
+.lb-btn:hover,.lb-btn:focus-visible{border-color:#d7a34d;color:#ffe0a1;outline:none}
+.lb-status{margin:16px 0;padding:12px 14px;border:1px solid rgba(188,135,47,.34);border-radius:10px;background:rgba(14,8,4,.75);text-align:center;color:#bda987}
+.lb-entry{padding:22px;margin-bottom:18px}
+.lb-entry-head{text-align:center;padding-bottom:16px;border-bottom:1px solid rgba(190,137,48,.24)}
+.lb-entry-head span{display:block;color:#b97f2d;text-transform:uppercase;font-size:.7rem;letter-spacing:.11em}
+.lb-entry-head h2{margin:.35rem 0 0;font-family:Georgia,"Times New Roman",serif;color:#f0d29a}
+.lb-highlight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.lb-highlight{padding:15px;border:1px solid rgba(190,137,48,.28);border-radius:11px;background:rgba(26,14,7,.7)}
+.lb-highlight--hero{grid-column:1/-1;background:linear-gradient(135deg,rgba(77,42,14,.66),rgba(24,13,7,.78))}
+.lb-highlight h3{margin:0 0 8px;color:#d8a84e;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+.lb-highlight strong{color:#f1d49a}
+.lb-highlight p{margin:.35rem 0;color:#cdbb99;line-height:1.55}
+.lb-names{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.lb-name{padding:5px 8px;border:1px solid rgba(190,137,48,.27);border-radius:999px;background:rgba(10,6,4,.5);color:#e7ca8f;font-size:.75rem}
+.lb-scoreline{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.lb-scoreline div{text-align:center;padding:9px 6px;border:1px solid rgba(190,137,48,.22);border-radius:8px;background:rgba(9,5,3,.44)}
+.lb-scoreline strong{display:block;font-size:1.35rem;color:#f0cb75}
+.lb-scoreline span{display:block;color:#a99572;font-size:.68rem}
+.lb-archive{padding:18px}
+.lb-archive h2{margin:0 0 12px;color:#e3bd6d;font-family:Georgia,"Times New Roman",serif}
+.lb-archive-list{display:flex;flex-wrap:wrap;gap:8px}
+.lb-archive button{border:1px solid rgba(174,119,37,.54);border-radius:8px;background:#1b0e07;color:#d9bd84;padding:8px 11px;cursor:pointer}
+.lb-archive button[aria-current="true"]{background:#5b3513;color:#ffe1a0;border-color:#d3a04a}
+.lb-legal{margin-top:22px;text-align:center;color:#8f7c61;font-size:.73rem}
+@media(max-width:760px){
+ .logbook-teaser-grid,.lb-highlight-grid{grid-template-columns:1fr}
+ .lb-highlight--hero{grid-column:auto}
+ .lb-page{padding:14px 9px 38px}.lb-entry,.lb-hero{padding:16px}
+ .lb-scoreline{gap:5px}.lb-scoreline div{padding:8px 3px}
+}
