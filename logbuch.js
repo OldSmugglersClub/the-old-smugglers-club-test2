@@ -54,45 +54,6 @@ function shortNames(rows,max=8){
 }
 function outcomeLabel(v){return v==="1"?"Heimsieg":v==="2"?"Auswärtssieg":"Remis"}
 
-function mainStory(entry){
- const against=highlight(entry,"gegen-den-strom");
- const caps=highlight(entry,"kapitaene");
- if(against){
-   const d=against.daten||{};
-   return `<span class="logbook-kicker">Gegen den Strom</span><h3>${esc(entry.bezeichnung||"Spieltags-Logbuch")}</h3>
-   <p>Die meistgetippte Richtung (${esc(outcomeLabel(d.meistGetippt?.ausgang))}, ${Number(d.meistGetippt?.anzahl||0)} Tipps) lag daneben. 
-   Der richtige Ausgang war ${esc(outcomeLabel(d.richtigerAusgang))}; ${Number(d.exakt||0)} Tipper trafen sogar das Ergebnis ${esc(d.ergebnis||"")} exakt.</p>
-   <div class="logbook-teaser-distribution">
-     <div><strong>${Number(d.tippverteilung?.["1"]||0)}</strong><span>Heimsieg</span></div>
-     <div><strong>${Number(d.tippverteilung?.X||0)}</strong><span>Remis</span></div>
-     <div><strong>${Number(d.tippverteilung?.["2"]||0)}</strong><span>Auswärtssieg</span></div>
-   </div>`;
- }
- if(caps){
-   const d=caps.daten||{};
-   return `<span class="logbook-kicker">Kapitäne des Spieltags</span><h3>${esc(entry.bezeichnung||"Spieltags-Logbuch")}</h3>
-   <p>${Number(d.anzahl||0)} Tipper erreichten gemeinsam die höchste Spieltagsbeute von <strong>${Number(d.punkte||0)} Punkten</strong>. Kein künstlicher Tie-Break.</p>`;
- }
- return `<span class="logbook-kicker">Spieltags-Logbuch</span><h3>${esc(entry.bezeichnung||"Noch ohne Eintrag")}</h3><p>Für diesen Spieltag liegen noch keine veröffentlichungsfähigen Geschichten vor.</p>`;
-}
-
-function renderTeaser(entry){
- const box=$("#logbook-teaser-copy"); if(!box) return;
- if(!entry){box.innerHTML='<span class="logbook-kicker">Noch kein Eintrag</span><h3>Das Logbuch wartet auf den ersten abgeschlossenen Spieltag.</h3>';return}
- box.innerHTML=mainStory(entry);
- const side=$("#logbook-teaser-stats");
- if(side){
-   const caps=highlight(entry,"kapitaene")?.daten;
-   const comb=highlight(entry,"zahlen-aus-der-kombuese")?.daten;
-   const crew=highlight(entry,"crewduell")?.daten;
-   side.innerHTML=[
-    ["Beste Spieltagsbeute",caps?`${Number(caps.punkte||0)} Punkte`:"–"],
-    ["Exakte Treffer",comb?String(Number(comb.exakt||0)):"–"],
-    ["Crewduell",crew?.sieger?esc(crew.sieger.replace(" Team","")):"–"]
-   ].map(([a,b])=>`<div class="logbook-mini-stat"><span>${a}</span><strong>${b}</strong></div>`).join("");
- }
-}
-
 function renderHighlight(h){
  const d=h.daten||{};
  if(h.typ==="kapitaene") return `<article class="lb-highlight lb-highlight--wide lb-highlight--captains"><h3>Kapitäne des Spieltags</h3><p><strong>${Number(d.anzahl||0)} Tipper</strong> teilen sich mit ${Number(d.punkte||0)} Punkten die beste Spieltagsleistung.</p><div class="lb-names">${shortNames(d.tipper)}</div></article>`;
@@ -127,7 +88,7 @@ async function init(){
  try{
    const r=await fetch("./spieltag-logbuch.json",{cache:"no-store"}); if(!r.ok) throw Error(`HTTP ${r.status}`);
    data=await r.json(); const latest=(data.logbuecher||[]).at(-1)||null;
-   renderTeaser(latest); renderThirtySeconds(latest); renderEntry(latest); archive();
+   renderThirtySeconds(latest); renderEntry(latest); archive();
    const st=$("#lb-status"); if(st) st.remove();
  }catch(e){
    const st=$("#lb-status"); if(st) st.textContent="Das Spieltags-Logbuch konnte nicht geladen werden.";

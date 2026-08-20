@@ -235,7 +235,7 @@ body{overflow-x:hidden}
 }
 
 
-/* Website 4.9.1-S30-1 – Spieltag in 30 Sekunden */
+/* Website 4.9.1-S30-2 – Spieltag in 30 Sekunden ersetzt den redundanten Startseiten-Logbuch-Teaser */
 .logbook-30s{
   margin:0 0 18px;padding:14px 16px 16px;border:1px solid rgba(207,151,54,.48);border-radius:12px;
   background:linear-gradient(135deg,rgba(55,30,11,.82),rgba(18,10,5,.84));
