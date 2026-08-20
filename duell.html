@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Duell auf hoher See – direkter Tippervergleich des The Old Smugglers Club">
   <title>Duell auf hoher See | The Old Smugglers Club</title>
-  <link rel="stylesheet" href="./duell.css?v=4.9.0-D1">
+  <link rel="stylesheet" href="./duell.css?v=4.9.0-D1-P1">
   <link rel="stylesheet" href="./accessibility-v33.css">
   <link rel="stylesheet" href="./legal.css">
 </head>
@@ -75,12 +75,13 @@
 
       <section class="duel-score-banner" aria-label="Direktes Duell">
         <span class="duel-score-label">Direktes Duell nach gemeinsamen Spieltagen</span>
-        <div class="duel-scoreline">
-          <strong id="duel-wins-a">0</strong>
-          <span class="duel-score-separator">:</span>
-          <strong id="duel-wins-b">0</strong>
+        <div class="duel-scoreline duel-scoreline--three">
+          <strong id="duel-wins-a">0 Siege</strong>
+          <span class="duel-score-separator">·</span>
+          <strong id="duel-draws">0 Remis</strong>
+          <span class="duel-score-separator">·</span>
+          <strong id="duel-wins-b">0 Siege</strong>
         </div>
-        <small id="duel-draws">0 Unentschieden</small>
       </section>
 
       <div class="duel-metrics" id="duel-metrics"></div>
@@ -128,7 +129,7 @@
   </div>
 </footer>
 
-<script src="./duell.js?v=4.9.0-D1"></script>
+<script src="./duell.js?v=4.9.0-D1-P1"></script>
 <script>
 (function(){const t=document.getElementById("legal-version");if(!t)return;fetch("./VERSION.txt",{cache:"no-store"}).then(r=>r.ok?r.text():Promise.reject()).then(v=>t.textContent="Version "+v.trim()).catch(()=>t.textContent="Version nicht verfügbar");})();
 </script>

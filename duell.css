@@ -253,3 +253,19 @@ body{
   .duel-metric-value{font-size:1.18rem;padding:6px 2px}
   .duel-metric-label{font-size:.55rem}
 }
+
+/* 4.9.0-D1-P1 – eindeutige Direktduell-Anzeige */
+.duel-scoreline--three{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);
+  gap:10px;
+}
+.duel-scoreline--three strong{
+  font-size:clamp(1.15rem,3.2vw,1.9rem);
+  line-height:1.15;
+}
+@media(max-width:560px){
+  .duel-scoreline--three{gap:5px}
+  .duel-scoreline--three strong{font-size:.95rem}
+  .duel-scoreline--three .duel-score-separator{font-size:1rem}
+}

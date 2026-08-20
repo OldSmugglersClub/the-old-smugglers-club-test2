@@ -104,8 +104,9 @@ function render(){
 
   $("duel-name-a").textContent=pa.name;$("duel-name-b").textContent=pb.name;
   $("duel-team-a").textContent=clean(pa.team)||"Ohne Teamzuordnung";$("duel-team-b").textContent=clean(pb.team)||"Ohne Teamzuordnung";
-  $("duel-wins-a").textContent=winsA;$("duel-wins-b").textContent=winsB;
-  $("duel-draws").textContent=`${draws} ${draws===1?"Unentschieden":"Unentschieden"}`;
+  $("duel-wins-a").textContent=`${winsA} ${winsA===1?"Sieg":"Siege"}`;
+  $("duel-wins-b").textContent=`${winsB} ${winsB===1?"Sieg":"Siege"}`;
+  $("duel-draws").textContent=`${draws} ${draws===1?"Remis":"Remis"}`;
 
   const metrics=$("duel-metrics");metrics.innerHTML="";
   metrics.append(
@@ -123,9 +124,10 @@ function render(){
 
   let verdict;
   if(!common.length) verdict=`Für ${pa.name} und ${pb.name} gibt es derzeit noch keinen gemeinsam abgeschlossenen Spieltag.`;
-  else if(winsA>winsB) verdict=`${pa.name} führt das direkte Duell mit ${winsA}:${winsB}. ${draws?`${draws} Spieltag${draws===1?"":"e"} endete${draws===1?"":"n"} punktgleich.`:""}`.trim();
-  else if(winsB>winsA) verdict=`${pb.name} führt das direkte Duell mit ${winsB}:${winsA}. ${draws?`${draws} Spieltag${draws===1?"":"e"} endete${draws===1?"":"n"} punktgleich.`:""}`.trim();
-  else verdict=`Das direkte Duell steht ${winsA}:${winsB}. ${draws?`${draws} Spieltag${draws===1?"":"e"} endete${draws===1?"":"n"} punktgleich.`:"Aktuell herrscht völliger Gleichstand."}`.trim();
+  else if(winsA>winsB) verdict=`${pa.name} führt nach gemeinsamen Spieltagen: ${winsA} ${winsA===1?"Sieg":"Siege"}, ${draws} Remis, ${winsB} ${winsB===1?"Sieg":"Siege"} für ${pb.name}.`;
+  else if(winsB>winsA) verdict=`${pb.name} führt nach gemeinsamen Spieltagen: ${winsB} ${winsB===1?"Sieg":"Siege"}, ${draws} Remis, ${winsA} ${winsA===1?"Sieg":"Siege"} für ${pa.name}.`;
+  else if(draws===common.length) verdict=`Das Duell ist ausgeglichen. Alle ${draws} gemeinsamen Spieltage endeten punktgleich.`;
+  else verdict=`Das Duell ist ausgeglichen: ${winsA} ${winsA===1?"Sieg":"Siege"} für ${pa.name}, ${draws} Remis und ${winsB} ${winsB===1?"Sieg":"Siege"} für ${pb.name}.`;
   $("duel-verdict-text").textContent=verdict;
 
   status.textContent=`Vergleich aus ${common.length} gemeinsamen abgeschlossenen Spieltag${common.length===1?"":"en"}.`;
@@ -133,11 +135,9 @@ function render(){
   board.hidden=false;
 }
 function populate(){
-  const hs=state.highscore;
-  const sorted=[...state.participants].sort((a,b)=>{
-    const ap=Number(hs.get(a.id)?.totalPoints)||0,bp=Number(hs.get(b.id)?.totalPoints)||0;
-    return bp-ap || a.name.localeCompare(b.name,"de",{sensitivity:"base"});
-  });
+  const sorted=[...state.participants].sort((a,b)=>
+    a.name.localeCompare(b.name,"de",{sensitivity:"base"})
+  );
   const makeOptions=()=>sorted.map(p=>{
     const o=document.createElement("option");o.value=p.id;o.textContent=p.name;return o;
   });
