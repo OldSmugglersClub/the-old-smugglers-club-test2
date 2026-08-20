@@ -1,4 +1,4 @@
-/* Website 4.8.0-LB3-P1 – Spieltags-Logbuch */
+/* Website 4.8.1 – Spieltags-Logbuch */
 .logbook-teaser{
   position:relative;
   overflow:hidden;
@@ -73,7 +73,7 @@
  .lb-scoreline{gap:5px}.lb-scoreline div{padding:8px 3px}
 }
 
-/* 4.8.0-LB3-P1 – reiner Darstellungs-Feinschliff */
+/* 4.8.1 – reiner Darstellungs-Feinschliff */
 html,body{margin:0;padding:0;background:#070402}
 body{overflow-x:hidden}
 .lb-shell{width:min(1180px,100%)}
@@ -100,7 +100,7 @@ body{overflow-x:hidden}
 @media(max-width:760px){.lb-hero,.lb-entry,.lb-archive{border-radius:12px}.lb-highlight{padding:15px}.lb-name{padding:7px 10px;font-size:.86rem}.lb-highlight p{font-size:.95rem}}
 
 
-/* 4.8.0-LB3-P1 – Flächennutzung und Klarheit */
+/* 4.8.1 – Flächennutzung und Klarheit */
 .lb-highlight--wide{
   grid-column:1/-1;
 }
@@ -228,8 +228,37 @@ body{overflow-x:hidden}
 }
 
 
-/* 4.8.0-LB3-P1-P1 – Lesbarkeit personenbezogener Auszeichnungen */
+/* 4.8.1-P1 – Lesbarkeit personenbezogener Auszeichnungen */
 .lb-highlight--captains .lb-name,
 .lb-highlight--volltreffer .lb-name {
   font-size: 1.08rem;
+}
+
+
+/* Website 4.9.1-S30-1 – Spieltag in 30 Sekunden */
+.logbook-30s{
+  margin:0 0 18px;padding:14px 16px 16px;border:1px solid rgba(207,151,54,.48);border-radius:12px;
+  background:linear-gradient(135deg,rgba(55,30,11,.82),rgba(18,10,5,.84));
+  box-shadow:inset 0 0 24px rgba(0,0,0,.18);
+}
+.logbook-30s-titleline{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.logbook-30s-mark{
+  display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;border:1px solid rgba(218,164,68,.62);border-radius:50%;
+  color:#f1cf86;background:rgba(16,9,4,.7);font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;font-weight:800;
+  box-shadow:inset 0 0 0 3px rgba(191,130,37,.12);
+}
+.logbook-30s-titleline h3{margin:.15rem 0 0;color:#f1d7a1;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.15rem,2vw,1.45rem)}
+.logbook-30s-head{display:flex;align-items:end;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid rgba(198,142,47,.22)}
+.logbook-30s-head strong{color:#d8bd88;font-size:.8rem;font-weight:700}
+.logbook-30s-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px}
+.logbook-30s-item{min-width:0;padding:11px 12px;border:1px solid rgba(198,142,47,.28);border-radius:9px;background:rgba(12,7,4,.52)}
+.logbook-30s-item>span{display:block;color:#d7a64d;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.logbook-30s-item p{margin:.35rem 0 0;color:#d6c29e;line-height:1.45;font-size:.88rem}
+.logbook-30s-empty{padding:8px 0;color:#ae9977;font-size:.86rem}
+@media(max-width:760px){
+  .logbook-30s{padding:13px 12px 14px}
+  .logbook-30s-head{align-items:flex-start;flex-direction:column;gap:4px}
+  .logbook-30s-list{grid-template-columns:1fr}
+  .logbook-30s-mark{flex-basis:44px;width:44px;height:44px;font-size:1.22rem}
+  .logbook-30s-item{padding:10px 11px}
 }

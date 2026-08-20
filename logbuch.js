@@ -6,6 +6,47 @@ let data=null;
 
 function shown(entry){return (entry?.highlights||[]).filter(h=>h?.anzeigen===true)}
 function highlight(entry,type){return shown(entry).find(h=>h.typ===type)}
+
+function summaryHighlights(entry,max=3){
+ return shown(entry)
+  .filter(h=>Number.isFinite(Number(h?.prioritaet)))
+  .sort((a,b)=>Number(b.prioritaet)-Number(a.prioritaet))
+  .slice(0,max);
+}
+function summaryText(h){
+ const d=h?.daten||{};
+ if(h.typ==="kapitaene") return `${Number(d.anzahl||0)} Tipper teilen sich die beste Beute mit ${Number(d.punkte||0)} Punkten.`;
+ if(h.typ==="gegen-den-strom") return `Die größte Tippgruppe lag mit ${outcomeLabel(d.meistGetippt?.ausgang)} daneben. Richtig war ${outcomeLabel(d.richtigerAusgang)}; ${Number(d.exakt||0)} trafen ${d.ergebnis||"das Ergebnis"} exakt.`;
+ if(h.typ==="volltreffer") return `${Number(d.anzahl||0)} Tipper erreichten die höchste Präzision mit ${Number(d.maxExakt||0)} exakten Treffern.`;
+ if(h.typ==="crewduell") return d.sieger?`${d.sieger} liegt im Crewduell nach Durchschnittspunkten vorn.`:"Im Crewduell herrscht Gleichstand.";
+ if(h.typ==="kursbewegung") return `Größter Sprung: +${Number(d.maxGewinn||0)} Plätze; größter Verlust: ${Number(d.maxVerlust||0)} Plätze.`;
+ if(h.typ==="zahlen-aus-der-kombuese") return `${Number(d.abgegeben||0)} Abgaben, ${Number(d.exakt||0)} exakte Treffer und ${Number(d.differenz||0)} Differenztreffer.`;
+ return "";
+}
+function summaryTitle(type){
+ return ({
+  "kapitaene":"Kapitäne",
+  "gegen-den-strom":"Gegen den Strom",
+  "volltreffer":"Volltreffer",
+  "crewduell":"Crewduell",
+  "kursbewegung":"Kursbewegung",
+  "zahlen-aus-der-kombuese":"Zahlen aus der Kombüse"
+ })[type]||"Logbuch";
+}
+function renderThirtySeconds(entry){
+ const host=$("#logbook-30s"); if(!host) return;
+ if(!entry){
+  host.innerHTML='<div class="logbook-30s-empty">Noch kein abgeschlossener Spieltag für die Kurzfassung vorhanden.</div>';
+  return;
+ }
+ const picks=summaryHighlights(entry,3).filter(h=>summaryText(h));
+ if(!picks.length){
+  host.innerHTML='<div class="logbook-30s-empty">Für diesen Spieltag liegen noch keine freigegebenen Kurzmeldungen vor.</div>';
+  return;
+ }
+ host.innerHTML=`<div class="logbook-30s-head"><span class="logbook-kicker">${esc(entry.bezeichnung||entry.runde||"Letzter Spieltag")}</span><strong>Die drei wichtigsten Logbuch-Signale</strong></div><div class="logbook-30s-list">${picks.map(h=>`<article class="logbook-30s-item"><span>${esc(summaryTitle(h.typ))}</span><p>${esc(summaryText(h))}</p></article>`).join("")}</div>`;
+}
+
 function shortNames(rows,max=8){
  const names=(rows||[]).map(x=>x.teilnehmer).filter(Boolean);
  return names.slice(0,max).map(n=>`<span class="lb-name">${esc(n)}</span>`).join("")+
@@ -86,7 +127,7 @@ async function init(){
  try{
    const r=await fetch("./spieltag-logbuch.json",{cache:"no-store"}); if(!r.ok) throw Error(`HTTP ${r.status}`);
    data=await r.json(); const latest=(data.logbuecher||[]).at(-1)||null;
-   renderTeaser(latest); renderEntry(latest); archive();
+   renderTeaser(latest); renderThirtySeconds(latest); renderEntry(latest); archive();
    const st=$("#lb-status"); if(st) st.remove();
  }catch(e){
    const st=$("#lb-status"); if(st) st.textContent="Das Spieltags-Logbuch konnte nicht geladen werden.";
