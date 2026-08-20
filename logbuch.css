@@ -178,6 +178,8 @@ body{overflow-x:hidden}
 .lb-crewline strong{
   color:#f0cb75;
   font-size:1.45rem;
+  white-space:nowrap;
+  flex:0 0 auto;
 }
 .lb-crew-vs{
   color:#9e8967;
