@@ -264,3 +264,27 @@ body{overflow-x:hidden}
   .logbook-30s-mark{flex-basis:44px;width:44px;height:44px;font-size:1.22rem}
   .logbook-30s-item{padding:10px 11px}
 }
+
+/* Website 4.9.1 – Typografie-Feinschliff für die Spieltagszuordnung in „Spieltag in 30 Sekunden“ */
+.logbook-30s-head .logbook-kicker{
+  font-size:.82rem;
+  letter-spacing:.10em;
+  line-height:1.3;
+}
+@media(max-width:760px){
+  .logbook-30s-head .logbook-kicker{font-size:.80rem}
+}
+
+/* Website 4.9.1-S30-3 – laufender Wertungsblock ohne veraltete Spieltagsauswertung */
+.logbook-30s-pending{
+  padding:12px 14px;border:1px solid rgba(207,151,54,.34);border-radius:9px;
+  background:linear-gradient(135deg,rgba(30,17,8,.72),rgba(12,7,4,.64));
+}
+.logbook-30s-pending>strong{display:block;margin:.3rem 0 .45rem;color:#f0d29a;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem}
+.logbook-30s-pending p{margin:0;color:#d2bd98;line-height:1.5}
+.logbook-30s-pending small{display:block;margin-top:.65rem;color:#c99b4d;font-weight:800;letter-spacing:.02em}
+.lb-entry--pending{background:linear-gradient(135deg,rgba(55,30,11,.92),rgba(14,8,4,.96))}
+.lb-pending-copy{max-width:760px;margin:20px auto 2px;text-align:center}
+.lb-pending-copy p{margin:0;color:#d4c09b;line-height:1.65;font-size:1rem}
+.lb-pending-copy strong{display:block;margin-top:14px;color:#efcb78;font-size:1rem}
+.lb-pending-copy small{display:block;margin-top:14px;color:#9f8b69;line-height:1.45}
