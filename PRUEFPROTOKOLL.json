@@ -1,12 +1,12 @@
 {
-  "erstelltAm": "2026-08-21T21:06:25.140Z",
+  "erstelltAm": "2026-08-21T23:55:36.719Z",
   "generatorVersion": "6.5.0-WB3-HF1-HF1-LF4-HF4-HF1",
   "modus": "zwischenstand",
   "auftrag": {
     "wertung": "bundesliga",
     "runde": "1. Spieltag",
     "status": "teilweise",
-    "beendet": 1,
+    "beendet": 6,
     "gesamt": 9
   },
   "freigabe": {

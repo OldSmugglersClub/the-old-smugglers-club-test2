@@ -1,22 +1,10 @@
-THE OLD SMUGGLERS CLUB – WEBSITE 4.9.1-S30-3-HF1 UPDATE
-
 ERSETZEN:
-- index.html
-- logbuch.html
-- logbuch.js
-- logbuch.css
-- VERSION.txt
+- spielbetrieb.json
+- highscore.json
+- website-view.json
 
-NEU:
-- CHANGELOG_4.9.1-S30-3-HF1.md
-- README_4.9.1-S30-3-HF1.md
-- DATEILISTE_ERSETZEN_NEU_LOESCHEN_4.9.1-S30-3-HF1.md
-
-LÖSCHEN:
-- keine Dateien
-
-NICHT VERÄNDERT:
-- Ergebnis-/Tabellenautomatik
-- OpenLigaDB
-- Schedule-/Countdown-Logik
-- Highscore-Logik
+NICHT FREIGEGEBEN:
+- finale Spieltagswertung
+- Spieltagssieger
+- Logbuchabschluss
+- Spieltag in 30 Sekunden

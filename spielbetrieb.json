@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "datenVersion": 7,
-  "aktualisiertAm": "2026-08-21T21:06:25.140Z",
+  "datenVersion": 8,
+  "aktualisiertAm": "2026-08-21T23:55:36.719Z",
   "aktiveSaison": "2026-27",
   "quelle": "The Old Smugglers Club Admin 6.5.0-WB3-HF1-HF1-LF4-HF4-HF1 Zwischenstand",
   "regeln": {
@@ -25183,7 +25183,7 @@
             "tippImporte": []
           }
         ],
-        "statusErmitteltAm": "2026-08-21T21:06:25.154Z"
+        "statusErmitteltAm": "2026-08-21T23:55:36.735Z"
       },
       {
         "id": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
@@ -26141,7 +26141,7 @@
             "tippImporte": []
           }
         ],
-        "statusErmitteltAm": "2026-08-21T21:06:25.154Z"
+        "statusErmitteltAm": "2026-08-21T23:55:36.735Z"
       },
       {
         "id": "2026-27__bundesliga__1-spieltag__bl-2026-27-01-001-bl-2026-27-01-002-bl-2026-27-01-003-bl-2026-27-01-004-bl-2026-27-01-005-bl-2026-27-01-006-bl-2026-27-01-007-bl-2026-27-01-008-bl-2026-27-01-009",
@@ -26151,7 +26151,7 @@
         "label": "Bundesliga",
         "runde": "1. Spieltag",
         "erstelltAm": "2026-08-21T17:24:44.586Z",
-        "aktualisiertAm": "2026-08-21T21:06:25.155Z",
+        "aktualisiertAm": "2026-08-21T23:55:36.737Z",
         "spiele": [
           {
             "id": "bl-2026-27-01-001",
@@ -26194,15 +26194,15 @@
             "datumAnzeige": "29.08.2026",
             "anstoss": "15:30",
             "terminBestaetigt": true,
-            "heimtore": null,
-            "auswaertstore": null,
-            "status": "terminiert",
+            "heimtore": 2,
+            "auswaertstore": 2,
+            "status": "beendet",
             "sonderwertungen": [],
             "notiz": "",
             "quelleStand": "2026-07-30",
             "heimTeamId": "rb-leipzig",
             "auswaertsTeamId": "moenchengladbach",
-            "ergebnisNach90MinutenBestaetigt": false,
+            "ergebnisNach90MinutenBestaetigt": true,
             "tippStatus": "vorlaeufig",
             "tippImporte": [],
             "tippsSnapshot": []
@@ -26221,15 +26221,15 @@
             "datumAnzeige": "29.08.2026",
             "anstoss": "15:30",
             "terminBestaetigt": true,
-            "heimtore": null,
-            "auswaertstore": null,
-            "status": "terminiert",
+            "heimtore": 1,
+            "auswaertstore": 0,
+            "status": "beendet",
             "sonderwertungen": [],
             "notiz": "",
             "quelleStand": "2026-07-30",
             "heimTeamId": "mainz-05",
             "auswaertsTeamId": "paderborn",
-            "ergebnisNach90MinutenBestaetigt": false,
+            "ergebnisNach90MinutenBestaetigt": true,
             "tippStatus": "vorlaeufig",
             "tippImporte": [],
             "tippsSnapshot": []
@@ -26248,15 +26248,15 @@
             "datumAnzeige": "29.08.2026",
             "anstoss": "15:30",
             "terminBestaetigt": true,
-            "heimtore": null,
-            "auswaertstore": null,
-            "status": "terminiert",
+            "heimtore": 1,
+            "auswaertstore": 4,
+            "status": "beendet",
             "sonderwertungen": [],
             "notiz": "",
             "quelleStand": "2026-07-30",
             "heimTeamId": "union-berlin",
             "auswaertsTeamId": "frankfurt",
-            "ergebnisNach90MinutenBestaetigt": false,
+            "ergebnisNach90MinutenBestaetigt": true,
             "tippStatus": "vorlaeufig",
             "tippImporte": [],
             "tippsSnapshot": []
@@ -26275,15 +26275,15 @@
             "datumAnzeige": "29.08.2026",
             "anstoss": "15:30",
             "terminBestaetigt": true,
-            "heimtore": null,
-            "auswaertstore": null,
-            "status": "terminiert",
+            "heimtore": 1,
+            "auswaertstore": 1,
+            "status": "beendet",
             "sonderwertungen": [],
             "notiz": "",
             "quelleStand": "2026-07-30",
             "heimTeamId": "koeln",
             "auswaertsTeamId": "hoffenheim",
-            "ergebnisNach90MinutenBestaetigt": false,
+            "ergebnisNach90MinutenBestaetigt": true,
             "tippStatus": "vorlaeufig",
             "tippImporte": [],
             "tippsSnapshot": []
@@ -26302,15 +26302,15 @@
             "datumAnzeige": "29.08.2026",
             "anstoss": "15:30",
             "terminBestaetigt": true,
-            "heimtore": null,
-            "auswaertstore": null,
-            "status": "terminiert",
+            "heimtore": 1,
+            "auswaertstore": 3,
+            "status": "beendet",
             "sonderwertungen": [],
             "notiz": "",
             "quelleStand": "2026-07-30",
             "heimTeamId": "elversberg",
             "auswaertsTeamId": "leverkusen",
-            "ergebnisNach90MinutenBestaetigt": false,
+            "ergebnisNach90MinutenBestaetigt": true,
             "tippStatus": "vorlaeufig",
             "tippImporte": [],
             "tippsSnapshot": []
@@ -26399,7 +26399,7 @@
         ],
         "tippImportHistorie": [],
         "status": "teilweise",
-        "statusErmitteltAm": "2026-08-21T21:06:25.155Z"
+        "statusErmitteltAm": "2026-08-21T23:55:36.737Z"
       }
     ]
   },
