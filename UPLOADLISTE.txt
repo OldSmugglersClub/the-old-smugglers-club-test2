@@ -1,7 +1,7 @@
 ERSETZEN:
-- testausgabe/spielbetrieb-test.json
-- testausgabe/highscore-test.json
-- testausgabe/punkte-test.json
+- spielbetrieb.json
+- highscore.json
+- punkte.json
 
 NICHT FREIGEGEBEN:
 - finale Spieltagswertung

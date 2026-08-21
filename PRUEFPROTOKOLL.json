@@ -1,6 +1,6 @@
 {
-  "erstelltAm": "2026-08-21T14:58:48.011Z",
-  "generatorVersion": "6.5.0-WB3-HF1-HF1-LF4",
+  "erstelltAm": "2026-08-21T17:26:14.780Z",
+  "generatorVersion": "6.5.0-WB3-HF1-HF1-LF4-HF3",
   "modus": "zwischenstand",
   "auftrag": {
     "wertung": "bundesliga",
@@ -23,8 +23,8 @@
     "mathematischGeprueft": true
   },
   "uploadDateien": [
-    "testausgabe/spielbetrieb-test.json",
-    "testausgabe/highscore-test.json",
-    "testausgabe/punkte-test.json"
+    "spielbetrieb.json",
+    "highscore.json",
+    "punkte.json"
   ]
 }
