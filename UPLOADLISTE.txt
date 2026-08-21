@@ -1,7 +1,7 @@
 ERSETZEN:
 - spielbetrieb.json
 - highscore.json
-- punkte.json
+- website-view.json
 
 NICHT FREIGEGEBEN:
 - finale Spieltagswertung

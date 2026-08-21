@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "datenVersion": 6,
-  "aktualisiertAm": "2026-08-21T17:26:14.780Z",
+  "datenVersion": 7,
+  "aktualisiertAm": "2026-08-21T21:06:25.140Z",
   "aktiveSaison": "2026-27",
-  "quelle": "The Old Smugglers Club Admin 6.5.0-WB3-HF1-HF1-LF4-HF3 Zwischenstand",
+  "quelle": "The Old Smugglers Club Admin 6.5.0-WB3-HF1-HF1-LF4-HF4-HF1 Zwischenstand",
   "regeln": {
     "tendenz": 2,
     "differenz": 3,
@@ -25182,7 +25182,8 @@
             ],
             "tippImporte": []
           }
-        ]
+        ],
+        "statusErmitteltAm": "2026-08-21T21:06:25.154Z"
       },
       {
         "id": "2026-27__smugglerauftrag__2-spieltag__sma-2026-27-02-013",
@@ -26139,7 +26140,8 @@
             ],
             "tippImporte": []
           }
-        ]
+        ],
+        "statusErmitteltAm": "2026-08-21T21:06:25.154Z"
       },
       {
         "id": "2026-27__bundesliga__1-spieltag__bl-2026-27-01-001-bl-2026-27-01-002-bl-2026-27-01-003-bl-2026-27-01-004-bl-2026-27-01-005-bl-2026-27-01-006-bl-2026-27-01-007-bl-2026-27-01-008-bl-2026-27-01-009",
@@ -26149,7 +26151,7 @@
         "label": "Bundesliga",
         "runde": "1. Spieltag",
         "erstelltAm": "2026-08-21T17:24:44.586Z",
-        "aktualisiertAm": "2026-08-21T17:26:14.795Z",
+        "aktualisiertAm": "2026-08-21T21:06:25.155Z",
         "spiele": [
           {
             "id": "bl-2026-27-01-001",
@@ -26397,7 +26399,7 @@
         ],
         "tippImportHistorie": [],
         "status": "teilweise",
-        "statusErmitteltAm": "2026-08-21T17:26:14.795Z"
+        "statusErmitteltAm": "2026-08-21T21:06:25.155Z"
       }
     ]
   },
@@ -30972,7 +30974,7 @@
       "zeitpunkt": "2026-08-01T23:54:23.184041+00:00"
     },
     "wertungsbloecke": {
-      "vonSchema": 2,
+      "vonSchema": 3,
       "zuSchema": 3,
       "modell": "6.5.0-WB3-HF1-HF1-LF4-HF3",
       "modus": "bestandsschutz-ohne-neuberechnung",

@@ -1,6 +1,6 @@
 {
-  "erstelltAm": "2026-08-21T17:26:14.780Z",
-  "generatorVersion": "6.5.0-WB3-HF1-HF1-LF4-HF3",
+  "erstelltAm": "2026-08-21T21:06:25.140Z",
+  "generatorVersion": "6.5.0-WB3-HF1-HF1-LF4-HF4-HF1",
   "modus": "zwischenstand",
   "auftrag": {
     "wertung": "bundesliga",
@@ -25,6 +25,6 @@
   "uploadDateien": [
     "spielbetrieb.json",
     "highscore.json",
-    "punkte.json"
+    "website-view.json"
   ]
 }
