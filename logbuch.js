@@ -160,7 +160,7 @@ function buildPending(view,matchdayDoc,gameDoc,logs){
  if(explicit?.label)names.push(explicit.label);
  scheduled.forEach(x=>{if(!names.some(n=>norm(n)===norm(x.label)))names.push(x.label)});
  if(!names.length)return {active:false};
- const title=names.length>1?"Mehrere Auswertungen liegen noch vor Anker":"Die Auswertung liegt noch vor Anker";
+ const title="Die Beute wird noch gezählt";
  const text=names.length>1
   ?"Mehrere Tippspieltage haben bereits begonnen. Die alten Spieltagswerte bleiben verborgen, bis die betroffenen Wertungsblöcke vollständig ausgewertet sind."
   :"Der aktuelle Tippspieltag hat bereits begonnen. Die alten Spieltagswerte bleiben verborgen, bis der Wertungsblock vollständig ausgewertet ist.";
