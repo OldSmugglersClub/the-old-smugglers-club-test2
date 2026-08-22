@@ -5,7 +5,7 @@
     "license": "ODbL",
     "url": "https://www.openligadb.de/"
   },
-  "generatedAt": "2026-08-22T07:49:04.644Z",
+  "generatedAt": "2026-08-22T13:46:09.014Z",
   "windowDays": 7,
   "retentionDays": 7,
   "entries": {
@@ -162,6 +162,237 @@
             "lost": 0,
             "goalsFor": 0,
             "goalsAgainst": 0
+          }
+        }
+      }
+    },
+    "sma-2026-27-03-020": {
+      "gameId": "sma-2026-27-03-020",
+      "competition": "2-bundesliga",
+      "kickoff": "2026-08-29T13:00:00.000Z",
+      "status": "ready",
+      "reason": "",
+      "updatedAt": "2026-08-22T13:46:09.014Z",
+      "source": {
+        "name": "OpenLigaDB",
+        "license": "ODbL",
+        "url": "https://www.openligadb.de/"
+      },
+      "openLiga": {
+        "leagueShortcut": "bl2",
+        "season": "2026",
+        "homeTeamId": 199,
+        "awayTeamId": 177,
+        "homeTeamName": "1. FC Heidenheim 1846",
+        "awayTeamName": "Dynamo Dresden"
+      },
+      "freshness": {
+        "initialLoadedAt": "2026-08-22T13:46:09.014Z",
+        "finalRefreshDone": false
+      },
+      "modules": {
+        "h2h": {
+          "available": true,
+          "total": 15,
+          "summary": {
+            "homeWins": 6,
+            "draws": 4,
+            "awayWins": 5
+          },
+          "lastMeetings": [
+            {
+              "matchId": 61785,
+              "date": "2022-02-18T17:30:00.000Z",
+              "home": "Dynamo Dresden",
+              "away": "1. FC Heidenheim 1846",
+              "homeTeamId": 177,
+              "awayTeamId": 199,
+              "result": {
+                "home": 1,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 61626,
+              "date": "2021-09-12T11:30:00.000Z",
+              "home": "1. FC Heidenheim 1846",
+              "away": "Dynamo Dresden",
+              "homeTeamId": 199,
+              "awayTeamId": 177,
+              "result": {
+                "home": 2,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 55756,
+              "date": "2020-02-02T12:30:00.000Z",
+              "home": "1. FC Heidenheim 1846",
+              "away": "Dynamo Dresden",
+              "homeTeamId": 199,
+              "awayTeamId": 177,
+              "result": {
+                "home": 0,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 55605,
+              "date": "2019-08-18T11:30:00.000Z",
+              "home": "Dynamo Dresden",
+              "away": "1. FC Heidenheim 1846",
+              "homeTeamId": 177,
+              "awayTeamId": 199,
+              "result": {
+                "home": 2,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 51663,
+              "date": "2019-02-02T12:00:00.000Z",
+              "home": "1. FC Heidenheim 1846",
+              "away": "Dynamo Dresden",
+              "homeTeamId": 199,
+              "awayTeamId": 177,
+              "result": {
+                "home": 1,
+                "away": 0
+              }
+            }
+          ]
+        },
+        "form": {
+          "available": true,
+          "home": {
+            "available": true,
+            "values": [
+              "N",
+              "S"
+            ],
+            "record": {
+              "played": 2,
+              "won": 1,
+              "draw": 0,
+              "lost": 1,
+              "goalsFor": 5,
+              "goalsAgainst": 7
+            },
+            "matches": [
+              {
+                "matchId": 83528,
+                "date": "2026-08-15T11:00:00.000Z",
+                "home": "Hertha BSC",
+                "away": "1. FC Heidenheim 1846",
+                "homeTeamId": 54,
+                "awayTeamId": 199,
+                "result": {
+                  "home": 4,
+                  "away": 1
+                }
+              },
+              {
+                "matchId": 83513,
+                "date": "2026-08-08T11:00:00.000Z",
+                "home": "1. FC Heidenheim 1846",
+                "away": "VfL Osnabrück",
+                "homeTeamId": 199,
+                "awayTeamId": 36,
+                "result": {
+                  "home": 4,
+                  "away": 3
+                }
+              }
+            ]
+          },
+          "away": {
+            "available": true,
+            "values": [
+              "S",
+              "N"
+            ],
+            "record": {
+              "played": 2,
+              "won": 1,
+              "draw": 0,
+              "lost": 1,
+              "goalsFor": 1,
+              "goalsAgainst": 3
+            },
+            "matches": [
+              {
+                "matchId": 83530,
+                "date": "2026-08-16T11:30:00.000Z",
+                "home": "Dynamo Dresden",
+                "away": "SV Darmstadt 98",
+                "homeTeamId": 177,
+                "awayTeamId": 118,
+                "result": {
+                  "home": 1,
+                  "away": 0
+                }
+              },
+              {
+                "matchId": 83519,
+                "date": "2026-08-09T11:30:00.000Z",
+                "home": "1. FC Nürnberg",
+                "away": "Dynamo Dresden",
+                "homeTeamId": 79,
+                "awayTeamId": 177,
+                "result": {
+                  "home": 3,
+                  "away": 0
+                }
+              }
+            ]
+          }
+        },
+        "table": {
+          "available": true,
+          "home": {
+            "available": true,
+            "position": 9,
+            "points": 3,
+            "played": 2,
+            "won": 1,
+            "draw": 0,
+            "lost": 1,
+            "goals": 5,
+            "opponentGoals": 7,
+            "goalDiff": -2
+          },
+          "away": {
+            "available": true,
+            "position": 11,
+            "points": 3,
+            "played": 2,
+            "won": 1,
+            "draw": 0,
+            "lost": 1,
+            "goals": 1,
+            "opponentGoals": 3,
+            "goalDiff": -2
+          }
+        },
+        "homeAway": {
+          "available": true,
+          "home": {
+            "available": true,
+            "played": 1,
+            "won": 1,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 4,
+            "goalsAgainst": 3
+          },
+          "away": {
+            "available": true,
+            "played": 1,
+            "won": 0,
+            "draw": 0,
+            "lost": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 3
           }
         }
       }
