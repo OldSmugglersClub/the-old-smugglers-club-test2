@@ -35,6 +35,6 @@ NICHT HOCHLADEN:
 - MANIFEST.json
 - SHA256-WEBSITE-DATEN.txt
 
-Erstellt: 2026-08-22T14:45:09.899Z
+Erstellt: 2026-08-22T17:38:40.814Z
 Fachliche Auftrags-ID: 2026-27__smugglerauftrag__3-spieltag__sma-2026-27-03-020
 Modus: test

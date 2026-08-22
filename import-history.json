@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-22T14:45:09.899Z",
+  "updatedAt": "2026-08-22T17:38:40.814Z",
   "imports": [
     {
       "id": "2026-27__smugglerauftrag__1-spieltag__sma-2026-27-auftakt-001-1786299073479",
@@ -105,61 +105,8 @@
       }
     },
     {
-      "id": "2026-27__bundesliga__1-spieltag__bl-2026-27-01-001-bl-2026-27-01-002-bl-2026-27-01-003-bl-2026-27-01-004-bl-2026-27-01-005-bl-2026-27-01-006-bl-2026-27-01-007-bl-2026-27-01-008-bl-2026-27-01-009-1787399064484",
-      "createdAt": "2026-08-22T11:44:24.400Z",
-      "mode": "test",
-      "valuation": "bundesliga",
-      "round": "1. Spieltag",
-      "participantCount": 100,
-      "oldSmugglers": 25,
-      "newSmugglers": 75,
-      "status": "test",
-      "files": {
-        "history": {
-          "fileName": "the-old-smugglers-club-test2-main (2).zip",
-          "complete": true
-        },
-        "tips": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Tipps-1. Spieltag-2026-08-21-14-10-25-+0000-7014056392747677060.csv.zip",
-          "complete": true
-        },
-        "overall": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Gesamtübersicht-Einzelwertung-2026-08-21-14-17-08-+0000-9161033366402439575.csv.zip",
-          "complete": true
-        },
-        "matchday": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Rangliste-Einzelwertung_1. Spieltag-2026-08-21-14-16-48-+0000-7865479515138232488.csv.zip",
-          "complete": true
-        },
-        "bonus": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Rangliste-Einzelwertung_Bonus-2026-08-21-14-17-26-+0000-4950982250663593844.csv.zip",
-          "complete": true
-        },
-        "tipper": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Tipper-2026-08-21-14-16-33-+0000-4918834859524523470.csv.zip",
-          "complete": true
-        },
-        "teamOverallOld": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Gesamtübersicht-Old Smugglers Team-2026-08-21-14-17-15-+0000-8519181209712199803.csv.zip",
-          "complete": true
-        },
-        "teamOverallNew": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Gesamtübersicht-Neue Piraten-2026-08-21-14-17-12-+0000-15715402382524444225.csv.zip",
-          "complete": true
-        },
-        "teamMatchdayOld": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Old Smugglers Team_1. Spieltag-2026-08-21-14-17-01-+0000-15833110272413885405.csv.zip",
-          "complete": true
-        },
-        "teamMatchdayNew": {
-          "fileName": "TEST-kicktipp-the-old-smugglers-club-Neue Piraten_1. Spieltag-2026-08-21-14-16-58-+0000-714974296525309018.csv.zip",
-          "complete": true
-        }
-      }
-    },
-    {
-      "id": "2026-27__smugglerauftrag__3-spieltag__sma-2026-27-03-020-1787409909994",
-      "createdAt": "2026-08-22T14:45:09.899Z",
+      "id": "2026-27__smugglerauftrag__3-spieltag__sma-2026-27-03-020-1787420320873",
+      "createdAt": "2026-08-22T17:38:40.814Z",
       "mode": "test",
       "valuation": "smugglerauftrag",
       "round": "3. Spieltag",
@@ -169,7 +116,7 @@
       "status": "test",
       "files": {
         "history": {
-          "fileName": "the-old-smugglers-club-test2-main (4).zip",
+          "fileName": "the-old-smugglers-club-test2-main.zip",
           "complete": true
         },
         "tips": {

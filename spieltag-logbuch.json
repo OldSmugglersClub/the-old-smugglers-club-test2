@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "datenVersion": 3,
-  "aktualisiert": "2026-08-22T14:45:09.899Z",
+  "datenVersion": 2,
+  "aktualisiert": "2026-08-22T17:38:40.814Z",
   "saison": "2026-27",
   "regelwerk": {
     "kapitaene": "Alle Tipper mit der höchsten tatsächlichen Spieltagspunktzahl; kein künstlicher Tie-Break.",
@@ -1750,141 +1750,6 @@
       ]
     },
     {
-      "id": "2026-27__bundesliga__1-spieltag__bl-2026-27-01-001-bl-2026-27-01-002-bl-2026-27-01-003-bl-2026-27-01-004-bl-2026-27-01-005-bl-2026-27-01-006-bl-2026-27-01-007-bl-2026-27-01-008-bl-2026-27-01-009",
-      "bezeichnung": "Bundesliga 1. Spieltag",
-      "wettbewerb": "bundesliga",
-      "runde": "1. Spieltag",
-      "abgeschlossen": true,
-      "spielIds": [
-        "bl-2026-27-01-001",
-        "bl-2026-27-01-003",
-        "bl-2026-27-01-006",
-        "bl-2026-27-01-007",
-        "bl-2026-27-01-008",
-        "bl-2026-27-01-009",
-        "bl-2026-27-01-002",
-        "bl-2026-27-01-004",
-        "bl-2026-27-01-005"
-      ],
-      "kapitaene": [
-        {
-          "teilnehmerId": "nick-zg-1501",
-          "teilnehmer": "Nick_ZG_1501",
-          "punkte": 45,
-          "exakt": 9,
-          "differenz": 0,
-          "tendenz": 0
-        }
-      ],
-      "highlights": [
-        {
-          "typ": "kapitaene",
-          "prioritaet": 100,
-          "anzeigen": true,
-          "daten": {
-            "punkte": 45,
-            "anzahl": 1,
-            "tipper": [
-              {
-                "teilnehmerId": "nick-zg-1501",
-                "teilnehmer": "Nick_ZG_1501",
-                "punkte": 45,
-                "exakt": 9,
-                "differenz": 0,
-                "tendenz": 0
-              }
-            ]
-          }
-        },
-        {
-          "typ": "volltreffer",
-          "prioritaet": 80,
-          "anzeigen": true,
-          "daten": {
-            "maxExakt": 9,
-            "anzahl": 1,
-            "tipper": [
-              {
-                "teilnehmerId": "nick-zg-1501",
-                "teilnehmer": "Nick_ZG_1501",
-                "exakt": 9
-              }
-            ]
-          }
-        },
-        {
-          "typ": "crewduell",
-          "prioritaet": 70,
-          "anzeigen": true,
-          "daten": {
-            "teams": [
-              {
-                "team": "Old Smugglers Team",
-                "durchschnitt": 21.08,
-                "punktesumme": 527,
-                "mitglieder": 25
-              },
-              {
-                "team": "New Smugglers Team",
-                "durchschnitt": 18.88,
-                "punktesumme": 1416,
-                "mitglieder": 75
-              }
-            ],
-            "sieger": "Old Smugglers Team",
-            "differenz": 2.2
-          }
-        },
-        {
-          "typ": "kursbewegung",
-          "prioritaet": 40,
-          "anzeigen": true,
-          "grund": null,
-          "daten": {
-            "gewinner": [
-              {
-                "teilnehmerId": "gordinho",
-                "teilnehmer": "Gordinho",
-                "vorher": 85,
-                "jetzt": 11,
-                "veraenderung": 74
-              },
-              {
-                "teilnehmerId": "jungunddurstig",
-                "teilnehmer": "JungundDurstig",
-                "vorher": 85,
-                "jetzt": 11,
-                "veraenderung": 74
-              }
-            ],
-            "verlierer": [
-              {
-                "teilnehmerId": "tribuna33",
-                "teilnehmer": "TRIBUNA33",
-                "vorher": 9,
-                "jetzt": 93,
-                "veraenderung": -84
-              }
-            ],
-            "maxGewinn": 74,
-            "maxVerlust": -84
-          }
-        },
-        {
-          "typ": "zahlen-aus-der-kombuese",
-          "prioritaet": 30,
-          "anzeigen": true,
-          "daten": {
-            "abgegeben": 100,
-            "nichtAbgegeben": 0,
-            "exakt": 153,
-            "differenz": 282,
-            "tendenz": 166
-          }
-        }
-      ]
-    },
-    {
       "id": "2026-27__smugglerauftrag__3-spieltag__sma-2026-27-03-020",
       "bezeichnung": "Smuggleraufträge 3. Spieltag",
       "wettbewerb": "smugglerauftrag",
@@ -1970,38 +1835,213 @@
           "daten": {
             "gewinner": [
               {
-                "teilnehmerId": "kevinhick",
-                "teilnehmer": "Kevinhick",
-                "vorher": 90,
-                "jetzt": 82,
-                "veraenderung": 8
+                "teilnehmerId": "fcahnungslos",
+                "teilnehmer": "FCAhnungslos",
+                "vorher": 85,
+                "jetzt": 53,
+                "veraenderung": 32
+              },
+              {
+                "teilnehmerId": "gordinho",
+                "teilnehmer": "Gordinho",
+                "vorher": 85,
+                "jetzt": 53,
+                "veraenderung": 32
+              },
+              {
+                "teilnehmerId": "milad",
+                "teilnehmer": "Milad",
+                "vorher": 85,
+                "jetzt": 53,
+                "veraenderung": 32
+              },
+              {
+                "teilnehmerId": "mythos",
+                "teilnehmer": "Mythos",
+                "vorher": 85,
+                "jetzt": 53,
+                "veraenderung": 32
               }
             ],
             "verlierer": [
               {
+                "teilnehmerId": "audauzvares",
+                "teilnehmer": "Audauzvares",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "ben1909",
+                "teilnehmer": "Ben1909",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "bene",
+                "teilnehmer": "Bene",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "bigdog",
+                "teilnehmer": "Bigdog",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "bvb09-opam",
+                "teilnehmer": "BvB09-OpaM",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "cali79",
+                "teilnehmer": "Cali79",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "cobra75",
+                "teilnehmer": "Cobra75",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "glueckspfennig",
+                "teilnehmer": "Glückspfennig",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "hardy17",
+                "teilnehmer": "Hardy17",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "juergen70",
+                "teilnehmer": "Juergen70",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
                 "teilnehmerId": "juri",
                 "teilnehmer": "JuRi",
-                "vorher": 54,
-                "jetzt": 61,
-                "veraenderung": -7
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "kevin",
+                "teilnehmer": "Kevin",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "lucas",
+                "teilnehmer": "Lucas",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "maikiliii",
+                "teilnehmer": "Maikiliii",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "mariusv",
+                "teilnehmer": "mariusv",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "mary-grace",
+                "teilnehmer": "Mary-Grace",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "normiks",
+                "teilnehmer": "Normiks",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "nurderscf",
+                "teilnehmer": "NurDerSCF",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "playboymarc88",
+                "teilnehmer": "PlayBoyMarc88",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "quick",
+                "teilnehmer": "Quick",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "realzaragoza",
+                "teilnehmer": "Realzaragoza",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "sam-entspender",
+                "teilnehmer": "SAM_ENTSPENDER",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
               },
               {
                 "teilnehmerId": "sgbw",
                 "teilnehmer": "sgbw",
-                "vorher": 54,
-                "jetzt": 61,
-                "veraenderung": -7
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
               },
               {
-                "teilnehmerId": "mikoog",
-                "teilnehmer": "MiKoog",
-                "vorher": 71,
-                "jetzt": 78,
-                "veraenderung": -7
+                "teilnehmerId": "stevie26",
+                "teilnehmer": "Stevie26",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
+              },
+              {
+                "teilnehmerId": "yorik",
+                "teilnehmer": "Yorik",
+                "vorher": 33,
+                "jetzt": 66,
+                "veraenderung": -33
               }
             ],
-            "maxGewinn": 8,
-            "maxVerlust": -7
+            "maxGewinn": 32,
+            "maxVerlust": -33
           }
         },
         {
