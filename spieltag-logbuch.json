@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "datenVersion": 2,
-  "aktualisiert": "2026-08-22T11:44:24.400Z",
+  "datenVersion": 3,
+  "aktualisiert": "2026-08-22T14:45:09.899Z",
   "saison": "2026-27",
   "regelwerk": {
     "kapitaene": "Alle Tipper mit der höchsten tatsächlichen Spieltagspunktzahl; kein künstlicher Tie-Break.",
@@ -1880,6 +1880,140 @@
             "exakt": 153,
             "differenz": 282,
             "tendenz": 166
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-27__smugglerauftrag__3-spieltag__sma-2026-27-03-020",
+      "bezeichnung": "Smuggleraufträge 3. Spieltag",
+      "wettbewerb": "smugglerauftrag",
+      "runde": "3. Spieltag",
+      "abgeschlossen": true,
+      "spielIds": [
+        "sma-2026-27-03-020"
+      ],
+      "kapitaene": [
+        {
+          "teilnehmerId": "nick-zg-1501",
+          "teilnehmer": "Nick_ZG_1501",
+          "punkte": 5,
+          "exakt": 1,
+          "differenz": 0,
+          "tendenz": 0
+        }
+      ],
+      "highlights": [
+        {
+          "typ": "kapitaene",
+          "prioritaet": 100,
+          "anzeigen": true,
+          "daten": {
+            "punkte": 5,
+            "anzahl": 1,
+            "tipper": [
+              {
+                "teilnehmerId": "nick-zg-1501",
+                "teilnehmer": "Nick_ZG_1501",
+                "punkte": 5,
+                "exakt": 1,
+                "differenz": 0,
+                "tendenz": 0
+              }
+            ]
+          }
+        },
+        {
+          "typ": "volltreffer",
+          "prioritaet": 80,
+          "anzeigen": true,
+          "daten": {
+            "maxExakt": 1,
+            "anzahl": 1,
+            "tipper": [
+              {
+                "teilnehmerId": "nick-zg-1501",
+                "teilnehmer": "Nick_ZG_1501",
+                "exakt": 1
+              }
+            ]
+          }
+        },
+        {
+          "typ": "crewduell",
+          "prioritaet": 70,
+          "anzeigen": true,
+          "daten": {
+            "teams": [
+              {
+                "team": "New Smugglers Team",
+                "durchschnitt": 1.48,
+                "punktesumme": 111,
+                "mitglieder": 75
+              },
+              {
+                "team": "Old Smugglers Team",
+                "durchschnitt": 1.36,
+                "punktesumme": 34,
+                "mitglieder": 25
+              }
+            ],
+            "sieger": "New Smugglers Team",
+            "differenz": 0.12
+          }
+        },
+        {
+          "typ": "kursbewegung",
+          "prioritaet": 40,
+          "anzeigen": true,
+          "grund": null,
+          "daten": {
+            "gewinner": [
+              {
+                "teilnehmerId": "kevinhick",
+                "teilnehmer": "Kevinhick",
+                "vorher": 90,
+                "jetzt": 82,
+                "veraenderung": 8
+              }
+            ],
+            "verlierer": [
+              {
+                "teilnehmerId": "juri",
+                "teilnehmer": "JuRi",
+                "vorher": 54,
+                "jetzt": 61,
+                "veraenderung": -7
+              },
+              {
+                "teilnehmerId": "sgbw",
+                "teilnehmer": "sgbw",
+                "vorher": 54,
+                "jetzt": 61,
+                "veraenderung": -7
+              },
+              {
+                "teilnehmerId": "mikoog",
+                "teilnehmer": "MiKoog",
+                "vorher": 71,
+                "jetzt": 78,
+                "veraenderung": -7
+              }
+            ],
+            "maxGewinn": 8,
+            "maxVerlust": -7
+          }
+        },
+        {
+          "typ": "zahlen-aus-der-kombuese",
+          "prioritaet": 30,
+          "anzeigen": true,
+          "daten": {
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "exakt": 1,
+            "differenz": 38,
+            "tendenz": 13
           }
         }
       ]

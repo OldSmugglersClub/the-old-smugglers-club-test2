@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "datenVersion": 9,
+  "datenVersion": 10,
   "aktualisiert": "2026-08-22",
   "hinweis": "Kompatible Website-Ausgabe, automatisch aus spielbetrieb.json/stammdaten.vereine erzeugt. Nicht direkt bearbeiten.",
   "quelle": "Admin 6.5.0-WB3-HF1-HF1-LF4-HF4-HF6",

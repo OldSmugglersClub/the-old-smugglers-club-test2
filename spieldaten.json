@@ -114,16 +114,40 @@
           "datumAnzeige": "29.08.2026",
           "anstoss": "13:00",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 2,
+          "auswaertstore": 1,
+          "status": "beendet",
           "sonderwertungen": [
             "smugglerauftrag"
           ],
           "notiz": "Die genaue Ansetzung innerhalb des angegebenen Spieltagszeitraums ist noch offen. Smugglerauftrag zum 3. Spieltag der 2. Bundesliga.",
           "quelleStand": "2026-07-30",
           "heimTeamId": "heidenheim",
-          "auswaertsTeamId": "dynamo-dresden"
+          "auswaertsTeamId": "dynamo-dresden",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T14:45:09.899Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 52,
+                "prozent": 52
+              },
+              "2": {
+                "anzahl": 24,
+                "prozent": 24
+              },
+              "X": {
+                "anzahl": 24,
+                "prozent": 24
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T14:45:09.899Z"
         },
         {
           "id": "sma-2026-27-04-032",
@@ -8557,6 +8581,6 @@
       ]
     }
   ],
-  "datenVersion": 11,
+  "datenVersion": 12,
   "aktualisiert": "2026-08-22"
 }

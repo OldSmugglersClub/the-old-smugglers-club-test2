@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "datenVersion": 3,
-  "aktualisiertAm": "2026-08-22T11:44:24.400Z",
+  "datenVersion": 4,
+  "aktualisiertAm": "2026-08-22T14:45:09.899Z",
   "saison": "2026-27",
   "status": "Berechnet",
   "kategorien": [
     {
       "titel": "Spieltagsführer",
       "name": "Nick_ZG_1501",
-      "wert": "52 Punkte"
+      "wert": "57 Punkte"
     },
     {
       "titel": "Meiste exakte Tipps",
       "name": "Nick_ZG_1501",
-      "wert": "10"
+      "wert": "11"
     },
     {
       "titel": "Beste Serie",
