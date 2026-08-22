@@ -1,10 +1,15 @@
-ERSETZEN:
-- spielbetrieb.json
-- highscore.json
-- website-view.json
+THE OLD SMUGGLERS CLUB – ADMIN-TESTPAKET
 
-NICHT FREIGEGEBEN:
-- finale Spieltagswertung
-- Spieltagssieger
-- Logbuchabschluss
-- Spieltag in 30 Sekunden
+NICHT AUF GITHUB HOCHLADEN
+
+ERSETZEN:
+- keine Dateien
+
+NEU:
+- keine Dateien
+
+LÖSCHEN:
+- keine Dateien
+
+Erstellt: 2026-08-22T10:40:12.740Z
+Fachliche Auftrags-ID: 2026-27__bundesliga__1-spieltag__bl-2026-27-01-001-bl-2026-27-01-002-bl-2026-27-01-003-bl-2026-27-01-004-bl-2026-27-01-005-bl-2026-27-01-006-bl-2026-27-01-007-bl-2026-27-01-008-bl-2026-27-01-009

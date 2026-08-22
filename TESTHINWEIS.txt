@@ -1,0 +1,2 @@
+TESTPAKET – NICHT INS PRODUKTIVE GITHUB LADEN.
+Alle Dateien liegen ausschließlich unter testausgabe/ und tragen den Zusatz -test.
