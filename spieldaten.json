@@ -914,14 +914,38 @@
           "datumAnzeige": "28.08.2026",
           "anstoss": "20:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 2,
+          "auswaertstore": 1,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "bayern-muenchen",
-          "auswaertsTeamId": "stuttgart"
+          "auswaertsTeamId": "stuttgart",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 75,
+                "prozent": 75
+              },
+              "2": {
+                "anzahl": 0,
+                "prozent": 0
+              },
+              "X": {
+                "anzahl": 25,
+                "prozent": 25
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-01-003",
@@ -937,14 +961,38 @@
           "datumAnzeige": "29.08.2026",
           "anstoss": "15:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 2,
+          "auswaertstore": 2,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "rb-leipzig",
-          "auswaertsTeamId": "moenchengladbach"
+          "auswaertsTeamId": "moenchengladbach",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 25,
+                "prozent": 25
+              },
+              "2": {
+                "anzahl": 25,
+                "prozent": 25
+              },
+              "X": {
+                "anzahl": 50,
+                "prozent": 50
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-01-006",
@@ -960,14 +1008,38 @@
           "datumAnzeige": "29.08.2026",
           "anstoss": "15:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 1,
+          "auswaertstore": 0,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "mainz-05",
-          "auswaertsTeamId": "paderborn"
+          "auswaertsTeamId": "paderborn",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 75,
+                "prozent": 75
+              },
+              "2": {
+                "anzahl": 0,
+                "prozent": 0
+              },
+              "X": {
+                "anzahl": 25,
+                "prozent": 25
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-01-007",
@@ -983,14 +1055,38 @@
           "datumAnzeige": "29.08.2026",
           "anstoss": "15:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 1,
+          "auswaertstore": 4,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "union-berlin",
-          "auswaertsTeamId": "frankfurt"
+          "auswaertsTeamId": "frankfurt",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 0,
+                "prozent": 0
+              },
+              "2": {
+                "anzahl": 75,
+                "prozent": 75
+              },
+              "X": {
+                "anzahl": 25,
+                "prozent": 25
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-01-008",
@@ -1006,14 +1102,38 @@
           "datumAnzeige": "29.08.2026",
           "anstoss": "15:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 1,
+          "auswaertstore": 1,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "koeln",
-          "auswaertsTeamId": "hoffenheim"
+          "auswaertsTeamId": "hoffenheim",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 25,
+                "prozent": 25
+              },
+              "2": {
+                "anzahl": 25,
+                "prozent": 25
+              },
+              "X": {
+                "anzahl": 50,
+                "prozent": 50
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-01-009",
@@ -1029,14 +1149,38 @@
           "datumAnzeige": "29.08.2026",
           "anstoss": "15:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 1,
+          "auswaertstore": 3,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "elversberg",
-          "auswaertsTeamId": "leverkusen"
+          "auswaertsTeamId": "leverkusen",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 25,
+                "prozent": 25
+              },
+              "2": {
+                "anzahl": 75,
+                "prozent": 75
+              },
+              "X": {
+                "anzahl": 0,
+                "prozent": 0
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-01-002",
@@ -1052,14 +1196,38 @@
           "datumAnzeige": "29.08.2026",
           "anstoss": "18:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 3,
+          "auswaertstore": 1,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "dortmund",
-          "auswaertsTeamId": "hamburger-sv"
+          "auswaertsTeamId": "hamburger-sv",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 67,
+                "prozent": 67
+              },
+              "2": {
+                "anzahl": 33,
+                "prozent": 33
+              },
+              "X": {
+                "anzahl": 0,
+                "prozent": 0
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-01-004",
@@ -1075,14 +1243,38 @@
           "datumAnzeige": "30.08.2026",
           "anstoss": "15:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 2,
+          "auswaertstore": 1,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "freiburg",
-          "auswaertsTeamId": "werder-bremen"
+          "auswaertsTeamId": "werder-bremen",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 67,
+                "prozent": 67
+              },
+              "2": {
+                "anzahl": 33,
+                "prozent": 33
+              },
+              "X": {
+                "anzahl": 0,
+                "prozent": 0
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-01-005",
@@ -1098,14 +1290,38 @@
           "datumAnzeige": "30.08.2026",
           "anstoss": "17:30",
           "terminBestaetigt": true,
-          "heimtore": null,
-          "auswaertstore": null,
-          "status": "terminiert",
+          "heimtore": 1,
+          "auswaertstore": 1,
+          "status": "beendet",
           "sonderwertungen": [],
           "notiz": "",
           "quelleStand": "2026-07-30",
           "heimTeamId": "augsburg",
-          "auswaertsTeamId": "schalke-04"
+          "auswaertsTeamId": "schalke-04",
+          "ergebnisNach90MinutenBestaetigt": true,
+          "tippverteilung": {
+            "schemaVersion": 1,
+            "quelle": "Kicktipp – Tipps aller Tipper",
+            "stand": "2026-08-22T11:44:24.400Z",
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "verborgen": 0,
+            "tendenzen": {
+              "1": {
+                "anzahl": 33,
+                "prozent": 33
+              },
+              "2": {
+                "anzahl": 0,
+                "prozent": 0
+              },
+              "X": {
+                "anzahl": 67,
+                "prozent": 67
+              }
+            }
+          },
+          "aktualisiertAm": "2026-08-22T11:44:24.400Z"
         },
         {
           "id": "bl-2026-27-02-010",
@@ -8341,6 +8557,6 @@
       ]
     }
   ],
-  "datenVersion": 10,
-  "aktualisiert": "2026-08-18"
+  "datenVersion": 11,
+  "aktualisiert": "2026-08-22"
 }

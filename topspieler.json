@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "datenVersion": 2,
-  "aktualisiertAm": "2026-08-17T18:25:35.135Z",
+  "datenVersion": 3,
+  "aktualisiertAm": "2026-08-22T11:44:24.400Z",
   "saison": "2026-27",
   "status": "Berechnet",
   "kategorien": [
     {
       "titel": "Spieltagsführer",
-      "name": "baslermario",
-      "wert": "7 Punkte"
+      "name": "Nick_ZG_1501",
+      "wert": "52 Punkte"
     },
     {
       "titel": "Meiste exakte Tipps",
-      "name": "baslermario",
-      "wert": "1"
+      "name": "Nick_ZG_1501",
+      "wert": "10"
     },
     {
       "titel": "Beste Serie",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "datenVersion": 1,
-  "aktualisiert": "2026-08-18T14:27:06.371Z",
+  "datenVersion": 2,
+  "aktualisiert": "2026-08-22T11:44:24.400Z",
   "saison": "2026-27",
   "regelwerk": {
     "kapitaene": "Alle Tipper mit der höchsten tatsächlichen Spieltagspunktzahl; kein künstlicher Tie-Break.",
@@ -1283,8 +1283,8 @@
             "nichtAbgegeben": 4,
             "tippverteilung": {
               "1": 36,
-              "X": 18,
-              "2": 39
+              "2": 39,
+              "X": 18
             },
             "exakt": 8,
             "differenz": 18,
@@ -1745,6 +1745,141 @@
             "exakt": 8,
             "differenz": 18,
             "tendenz": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-27__bundesliga__1-spieltag__bl-2026-27-01-001-bl-2026-27-01-002-bl-2026-27-01-003-bl-2026-27-01-004-bl-2026-27-01-005-bl-2026-27-01-006-bl-2026-27-01-007-bl-2026-27-01-008-bl-2026-27-01-009",
+      "bezeichnung": "Bundesliga 1. Spieltag",
+      "wettbewerb": "bundesliga",
+      "runde": "1. Spieltag",
+      "abgeschlossen": true,
+      "spielIds": [
+        "bl-2026-27-01-001",
+        "bl-2026-27-01-003",
+        "bl-2026-27-01-006",
+        "bl-2026-27-01-007",
+        "bl-2026-27-01-008",
+        "bl-2026-27-01-009",
+        "bl-2026-27-01-002",
+        "bl-2026-27-01-004",
+        "bl-2026-27-01-005"
+      ],
+      "kapitaene": [
+        {
+          "teilnehmerId": "nick-zg-1501",
+          "teilnehmer": "Nick_ZG_1501",
+          "punkte": 45,
+          "exakt": 9,
+          "differenz": 0,
+          "tendenz": 0
+        }
+      ],
+      "highlights": [
+        {
+          "typ": "kapitaene",
+          "prioritaet": 100,
+          "anzeigen": true,
+          "daten": {
+            "punkte": 45,
+            "anzahl": 1,
+            "tipper": [
+              {
+                "teilnehmerId": "nick-zg-1501",
+                "teilnehmer": "Nick_ZG_1501",
+                "punkte": 45,
+                "exakt": 9,
+                "differenz": 0,
+                "tendenz": 0
+              }
+            ]
+          }
+        },
+        {
+          "typ": "volltreffer",
+          "prioritaet": 80,
+          "anzeigen": true,
+          "daten": {
+            "maxExakt": 9,
+            "anzahl": 1,
+            "tipper": [
+              {
+                "teilnehmerId": "nick-zg-1501",
+                "teilnehmer": "Nick_ZG_1501",
+                "exakt": 9
+              }
+            ]
+          }
+        },
+        {
+          "typ": "crewduell",
+          "prioritaet": 70,
+          "anzeigen": true,
+          "daten": {
+            "teams": [
+              {
+                "team": "Old Smugglers Team",
+                "durchschnitt": 21.08,
+                "punktesumme": 527,
+                "mitglieder": 25
+              },
+              {
+                "team": "New Smugglers Team",
+                "durchschnitt": 18.88,
+                "punktesumme": 1416,
+                "mitglieder": 75
+              }
+            ],
+            "sieger": "Old Smugglers Team",
+            "differenz": 2.2
+          }
+        },
+        {
+          "typ": "kursbewegung",
+          "prioritaet": 40,
+          "anzeigen": true,
+          "grund": null,
+          "daten": {
+            "gewinner": [
+              {
+                "teilnehmerId": "gordinho",
+                "teilnehmer": "Gordinho",
+                "vorher": 85,
+                "jetzt": 11,
+                "veraenderung": 74
+              },
+              {
+                "teilnehmerId": "jungunddurstig",
+                "teilnehmer": "JungundDurstig",
+                "vorher": 85,
+                "jetzt": 11,
+                "veraenderung": 74
+              }
+            ],
+            "verlierer": [
+              {
+                "teilnehmerId": "tribuna33",
+                "teilnehmer": "TRIBUNA33",
+                "vorher": 9,
+                "jetzt": 93,
+                "veraenderung": -84
+              }
+            ],
+            "maxGewinn": 74,
+            "maxVerlust": -84
+          }
+        },
+        {
+          "typ": "zahlen-aus-der-kombuese",
+          "prioritaet": 30,
+          "anzeigen": true,
+          "daten": {
+            "abgegeben": 100,
+            "nichtAbgegeben": 0,
+            "exakt": 153,
+            "differenz": 282,
+            "tendenz": 166
           }
         }
       ]

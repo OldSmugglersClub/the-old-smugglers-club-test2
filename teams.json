@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "datenVersion": 5,
-  "aktualisiert": "2026-08-17",
+  "datenVersion": 9,
+  "aktualisiert": "2026-08-22",
   "hinweis": "Kompatible Website-Ausgabe, automatisch aus spielbetrieb.json/stammdaten.vereine erzeugt. Nicht direkt bearbeiten.",
-  "quelle": "Admin 6.2.0-a6-HF3-HF13",
+  "quelle": "Admin 6.5.0-WB3-HF1-HF1-LF4-HF4-HF6",
   "teams": [
     {
       "id": "heidenheim",

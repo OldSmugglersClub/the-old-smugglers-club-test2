@@ -113,15 +113,15 @@
   },
   "meta": {
     "titel": "Ehrenlogbuch des Old Smugglers Club",
-    "stand": "2026-08-17T18:25:35.135Z",
+    "stand": "2026-08-22T11:44:24.400Z",
     "hinweis": "Nur bestätigte Titel und Rekorde werden dauerhaft eingetragen.",
     "schemaVersion": 2,
     "adminUebergabeErforderlich": true,
     "generatorVersion": "6.2.0-a6-HF3-HF7"
   },
   "schemaVersion": 3,
-  "datenVersion": 1,
-  "aktualisiertAm": "2026-08-17T18:25:35.135Z",
+  "datenVersion": 2,
+  "aktualisiertAm": "2026-08-22T11:44:24.400Z",
   "saison": "2026-27",
   "quelle": "Admin 6.2.0-a6-HF3-HF7 – bestätigte Titel, Bestandsschutz und Website-Zielstruktur",
   "aktuelleSaison": {
@@ -130,7 +130,7 @@
       "bundesliga": {
         "id": "bundesliga",
         "label": "Bundesliga",
-        "status": "noch-ohne-wertung",
+        "status": "laufend",
         "abschluss": {
           "completed": false,
           "target": 34,
@@ -239,7 +239,7 @@
       "erforderlich": false,
       "vorhanden": true,
       "gueltig": true,
-      "anzahlErstplatzierte": 6
+      "anzahlErstplatzierte": 1
     },
     "ehrenchampions": {
       "gueltig": true,

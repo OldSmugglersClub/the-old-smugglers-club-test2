@@ -1,6 +1,6 @@
 {
-  "erstelltAm": "2026-08-22T10:40:12.740Z",
-  "generatorVersion": "6.5.0-WB3-HF1-HF1-LF4-HF4-HF5",
+  "erstelltAm": "2026-08-22T11:44:24.400Z",
+  "generatorVersion": "6.5.0-WB3-HF1-HF1-LF4-HF4-HF6",
   "auftrag": {
     "fachlicheId": "2026-27__bundesliga__1-spieltag__bl-2026-27-01-001-bl-2026-27-01-002-bl-2026-27-01-003-bl-2026-27-01-004-bl-2026-27-01-005-bl-2026-27-01-006-bl-2026-27-01-007-bl-2026-27-01-008-bl-2026-27-01-009",
     "wertung": "bundesliga",
@@ -29,7 +29,25 @@
   "modus": "test",
   "vergebenePunkte": 2191,
   "produktiveAuftraege": 3,
-  "uploadDateien": [],
+  "uploadDateien": [
+    "spielbetrieb.json",
+    "teilnehmer.json",
+    "import-history.json",
+    "spieldaten.json",
+    "tipps.json",
+    "punkte.json",
+    "spieltagpunkte.json",
+    "wettbewerbspunkte.json",
+    "smugglerpunkte.json",
+    "teampunkte.json",
+    "ranglistenverlauf.json",
+    "highscore.json",
+    "hall-of-fame.json",
+    "website-view.json",
+    "spieltag-logbuch.json",
+    "topspieler.json",
+    "teams.json"
+  ],
   "websiteDateienEnthalten": true,
   "konsistenz": {
     "kicktippGesamtwertung": {
@@ -44,7 +62,7 @@
   "importmodell": {
     "schemaVersion": 1,
     "source": "Kicktipp",
-    "createdAt": "2026-08-22T10:40:12.748Z",
+    "createdAt": "2026-08-22T11:44:24.408Z",
     "assignment": {
       "competitionId": "bundesliga",
       "valuationId": "bundesliga",
