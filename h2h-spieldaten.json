@@ -5,7 +5,7 @@
     "license": "ODbL",
     "url": "https://www.openligadb.de/"
   },
-  "generatedAt": "2026-08-22T13:46:09.014Z",
+  "generatedAt": "2026-08-22T19:11:20.012Z",
   "windowDays": 7,
   "retentionDays": 7,
   "entries": {
@@ -393,6 +393,1044 @@
             "lost": 1,
             "goalsFor": 0,
             "goalsAgainst": 3
+          }
+        }
+      }
+    },
+    "bl-2026-27-01-003": {
+      "gameId": "bl-2026-27-01-003",
+      "competition": "bundesliga",
+      "kickoff": "2026-08-29T15:30:00.000Z",
+      "status": "ready",
+      "reason": "",
+      "updatedAt": "2026-08-22T19:11:20.012Z",
+      "source": {
+        "name": "OpenLigaDB",
+        "license": "ODbL",
+        "url": "https://www.openligadb.de/"
+      },
+      "openLiga": {
+        "leagueShortcut": "bl1",
+        "season": "2026",
+        "homeTeamId": 1635,
+        "awayTeamId": 87,
+        "homeTeamName": "RB Leipzig",
+        "awayTeamName": "Borussia Mönchengladbach"
+      },
+      "freshness": {
+        "initialLoadedAt": "2026-08-22T19:11:20.012Z",
+        "finalRefreshDone": false
+      },
+      "modules": {
+        "h2h": {
+          "available": true,
+          "total": 28,
+          "summary": {
+            "homeWins": 17,
+            "draws": 6,
+            "awayWins": 5
+          },
+          "lastMeetings": [
+            {
+              "matchId": 84693,
+              "date": "2026-07-06T13:30:00.000Z",
+              "home": "RB Leipzig",
+              "away": "Borussia Mönchengladbach",
+              "homeTeamId": 1635,
+              "awayTeamId": 87,
+              "result": {
+                "home": 2,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 77511,
+              "date": "2026-04-11T13:30:00.000Z",
+              "home": "RB Leipzig",
+              "away": "Borussia Mönchengladbach",
+              "homeTeamId": 1635,
+              "awayTeamId": 87,
+              "result": {
+                "home": 1,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 77360,
+              "date": "2025-11-28T19:30:00.000Z",
+              "home": "Borussia Mönchengladbach",
+              "away": "RB Leipzig",
+              "homeTeamId": 87,
+              "awayTeamId": 1635,
+              "result": {
+                "home": 0,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 72455,
+              "date": "2025-03-29T14:30:00.000Z",
+              "home": "Borussia Mönchengladbach",
+              "away": "RB Leipzig",
+              "homeTeamId": 87,
+              "awayTeamId": 1635,
+              "result": {
+                "home": 1,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 72296,
+              "date": "2024-11-09T17:30:00.000Z",
+              "home": "RB Leipzig",
+              "away": "Borussia Mönchengladbach",
+              "homeTeamId": 1635,
+              "awayTeamId": 87,
+              "result": {
+                "home": 0,
+                "away": 0
+              }
+            }
+          ]
+        },
+        "form": {
+          "available": false,
+          "home": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          },
+          "away": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          }
+        },
+        "table": {
+          "available": true,
+          "home": {
+            "available": true,
+            "position": 12,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          },
+          "away": {
+            "available": true,
+            "position": 6,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          }
+        },
+        "homeAway": {
+          "available": false,
+          "home": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          }
+        }
+      }
+    },
+    "bl-2026-27-01-006": {
+      "gameId": "bl-2026-27-01-006",
+      "competition": "bundesliga",
+      "kickoff": "2026-08-29T15:30:00.000Z",
+      "status": "ready",
+      "reason": "",
+      "updatedAt": "2026-08-22T19:11:20.012Z",
+      "source": {
+        "name": "OpenLigaDB",
+        "license": "ODbL",
+        "url": "https://www.openligadb.de/"
+      },
+      "openLiga": {
+        "leagueShortcut": "bl1",
+        "season": "2026",
+        "homeTeamId": 81,
+        "awayTeamId": 31,
+        "homeTeamName": "1. FSV Mainz 05",
+        "awayTeamName": "SC Paderborn 07"
+      },
+      "freshness": {
+        "initialLoadedAt": "2026-08-22T19:11:20.012Z",
+        "finalRefreshDone": false
+      },
+      "modules": {
+        "h2h": {
+          "available": true,
+          "total": 10,
+          "summary": {
+            "homeWins": 6,
+            "draws": 4,
+            "awayWins": 0
+          },
+          "lastMeetings": [
+            {
+              "matchId": 84694,
+              "date": "2026-07-06T13:30:00.000Z",
+              "home": "1. FSV Mainz 05",
+              "away": "SC Paderborn 07",
+              "homeTeamId": 81,
+              "awayTeamId": 31,
+              "result": {
+                "home": 3,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 55489,
+              "date": "2020-02-29T14:30:00.000Z",
+              "home": "1. FSV Mainz 05",
+              "away": "SC Paderborn 07",
+              "homeTeamId": 81,
+              "awayTeamId": 31,
+              "result": {
+                "home": 2,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 55339,
+              "date": "2019-10-05T13:30:00.000Z",
+              "home": "SC Paderborn 07",
+              "away": "1. FSV Mainz 05",
+              "homeTeamId": 31,
+              "awayTeamId": 81,
+              "result": {
+                "home": 1,
+                "away": 2
+              }
+            },
+            {
+              "matchId": 28149,
+              "date": "2015-01-31T14:30:00.000Z",
+              "home": "1. FSV Mainz 05",
+              "away": "SC Paderborn 07",
+              "homeTeamId": 81,
+              "awayTeamId": 31,
+              "result": {
+                "home": 5,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 31082,
+              "date": "2015-01-31T14:30:00.000Z",
+              "home": "1. FSV Mainz 05",
+              "away": "SC Paderborn 07",
+              "homeTeamId": 81,
+              "awayTeamId": 31,
+              "result": {
+                "home": 5,
+                "away": 0
+              }
+            }
+          ]
+        },
+        "form": {
+          "available": false,
+          "home": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          },
+          "away": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          }
+        },
+        "table": {
+          "available": true,
+          "home": {
+            "available": true,
+            "position": 3,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          },
+          "away": {
+            "available": true,
+            "position": 14,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          }
+        },
+        "homeAway": {
+          "available": false,
+          "home": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          }
+        }
+      }
+    },
+    "bl-2026-27-01-007": {
+      "gameId": "bl-2026-27-01-007",
+      "competition": "bundesliga",
+      "kickoff": "2026-08-29T15:30:00.000Z",
+      "status": "ready",
+      "reason": "",
+      "updatedAt": "2026-08-22T19:11:20.012Z",
+      "source": {
+        "name": "OpenLigaDB",
+        "license": "ODbL",
+        "url": "https://www.openligadb.de/"
+      },
+      "openLiga": {
+        "leagueShortcut": "bl1",
+        "season": "2026",
+        "homeTeamId": 80,
+        "awayTeamId": 91,
+        "homeTeamName": "1. FC Union Berlin",
+        "awayTeamName": "Eintracht Frankfurt"
+      },
+      "freshness": {
+        "initialLoadedAt": "2026-08-22T19:11:20.012Z",
+        "finalRefreshDone": false
+      },
+      "modules": {
+        "h2h": {
+          "available": true,
+          "total": 21,
+          "summary": {
+            "homeWins": 5,
+            "draws": 5,
+            "awayWins": 11
+          },
+          "lastMeetings": [
+            {
+              "matchId": 84695,
+              "date": "2026-07-06T13:30:00.000Z",
+              "home": "1. FC Union Berlin",
+              "away": "Eintracht Frankfurt",
+              "homeTeamId": 80,
+              "awayTeamId": 91,
+              "result": {
+                "home": 0,
+                "away": 2
+              }
+            },
+            {
+              "matchId": 77442,
+              "date": "2026-02-06T19:30:00.000Z",
+              "home": "1. FC Union Berlin",
+              "away": "Eintracht Frankfurt",
+              "homeTeamId": 80,
+              "awayTeamId": 91,
+              "result": {
+                "home": 1,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 77284,
+              "date": "2025-09-21T13:30:00.000Z",
+              "home": "Eintracht Frankfurt",
+              "away": "1. FC Union Berlin",
+              "homeTeamId": 91,
+              "awayTeamId": 80,
+              "result": {
+                "home": 3,
+                "away": 4
+              }
+            },
+            {
+              "matchId": 72433,
+              "date": "2025-03-09T14:30:00.000Z",
+              "home": "Eintracht Frankfurt",
+              "away": "1. FC Union Berlin",
+              "homeTeamId": 91,
+              "awayTeamId": 80,
+              "result": {
+                "home": 1,
+                "away": 2
+              }
+            },
+            {
+              "matchId": 72283,
+              "date": "2024-10-27T16:30:00.000Z",
+              "home": "1. FC Union Berlin",
+              "away": "Eintracht Frankfurt",
+              "homeTeamId": 80,
+              "awayTeamId": 91,
+              "result": {
+                "home": 1,
+                "away": 1
+              }
+            }
+          ]
+        },
+        "form": {
+          "available": false,
+          "home": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          },
+          "away": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          }
+        },
+        "table": {
+          "available": true,
+          "home": {
+            "available": true,
+            "position": 2,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          },
+          "away": {
+            "available": true,
+            "position": 7,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          }
+        },
+        "homeAway": {
+          "available": false,
+          "home": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          }
+        }
+      }
+    },
+    "bl-2026-27-01-008": {
+      "gameId": "bl-2026-27-01-008",
+      "competition": "bundesliga",
+      "kickoff": "2026-08-29T15:30:00.000Z",
+      "status": "ready",
+      "reason": "",
+      "updatedAt": "2026-08-22T19:11:20.012Z",
+      "source": {
+        "name": "OpenLigaDB",
+        "license": "ODbL",
+        "url": "https://www.openligadb.de/"
+      },
+      "openLiga": {
+        "leagueShortcut": "bl1",
+        "season": "2026",
+        "homeTeamId": 65,
+        "awayTeamId": 175,
+        "homeTeamName": "1. FC Köln",
+        "awayTeamName": "TSG Hoffenheim"
+      },
+      "freshness": {
+        "initialLoadedAt": "2026-08-22T19:11:20.012Z",
+        "finalRefreshDone": false
+      },
+      "modules": {
+        "h2h": {
+          "available": true,
+          "total": 37,
+          "summary": {
+            "homeWins": 9,
+            "draws": 12,
+            "awayWins": 16
+          },
+          "lastMeetings": [
+            {
+              "matchId": 84692,
+              "date": "2026-07-06T13:30:00.000Z",
+              "home": "1. FC Köln",
+              "away": "TSG Hoffenheim",
+              "homeTeamId": 65,
+              "awayTeamId": 175,
+              "result": {
+                "home": 1,
+                "away": 2
+              }
+            },
+            {
+              "matchId": 77463,
+              "date": "2026-02-21T14:30:00.000Z",
+              "home": "1. FC Köln",
+              "away": "TSG Hoffenheim",
+              "homeTeamId": 65,
+              "awayTeamId": 175,
+              "result": {
+                "home": 2,
+                "away": 2
+              }
+            },
+            {
+              "matchId": 77308,
+              "date": "2025-10-03T18:30:00.000Z",
+              "home": "TSG Hoffenheim",
+              "away": "1. FC Köln",
+              "homeTeamId": 175,
+              "awayTeamId": 65,
+              "result": {
+                "home": 0,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 66816,
+              "date": "2024-02-11T16:30:00.000Z",
+              "home": "TSG Hoffenheim",
+              "away": "1. FC Köln",
+              "homeTeamId": 175,
+              "awayTeamId": 65,
+              "result": {
+                "home": 1,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 66662,
+              "date": "2023-09-16T13:30:00.000Z",
+              "home": "1. FC Köln",
+              "away": "TSG Hoffenheim",
+              "homeTeamId": 65,
+              "awayTeamId": 175,
+              "result": {
+                "home": 1,
+                "away": 3
+              }
+            }
+          ]
+        },
+        "form": {
+          "available": false,
+          "home": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          },
+          "away": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          }
+        },
+        "table": {
+          "available": true,
+          "home": {
+            "available": true,
+            "position": 1,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          },
+          "away": {
+            "available": true,
+            "position": 17,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          }
+        },
+        "homeAway": {
+          "available": false,
+          "home": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          }
+        }
+      }
+    },
+    "bl-2026-27-01-009": {
+      "gameId": "bl-2026-27-01-009",
+      "competition": "bundesliga",
+      "kickoff": "2026-08-29T15:30:00.000Z",
+      "status": "ready",
+      "reason": "",
+      "updatedAt": "2026-08-22T19:11:20.012Z",
+      "source": {
+        "name": "OpenLigaDB",
+        "license": "ODbL",
+        "url": "https://www.openligadb.de/"
+      },
+      "openLiga": {
+        "leagueShortcut": "bl1",
+        "season": "2026",
+        "homeTeamId": 198,
+        "awayTeamId": 6,
+        "homeTeamName": "SV 07 Elversberg",
+        "awayTeamName": "Bayer 04 Leverkusen"
+      },
+      "freshness": {
+        "initialLoadedAt": "2026-08-22T19:11:20.012Z",
+        "finalRefreshDone": false
+      },
+      "modules": {
+        "h2h": {
+          "available": true,
+          "total": 4,
+          "summary": {
+            "homeWins": 2,
+            "draws": 0,
+            "awayWins": 2
+          },
+          "lastMeetings": [
+            {
+              "matchId": 85944,
+              "date": "2026-08-15T12:30:00.000Z",
+              "home": "SV 07 Elversberg",
+              "away": "Bayer 04 Leverkusen",
+              "homeTeamId": 198,
+              "awayTeamId": 6,
+              "result": {
+                "home": 3,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 84690,
+              "date": "2026-07-06T13:30:00.000Z",
+              "home": "SV 07 Elversberg",
+              "away": "Bayer 04 Leverkusen",
+              "homeTeamId": 198,
+              "awayTeamId": 6,
+              "result": {
+                "home": 0,
+                "away": 2
+              }
+            },
+            {
+              "matchId": 73958,
+              "date": "2024-10-29T17:00:00.000Z",
+              "home": "Bayer 04 Leverkusen",
+              "away": "SV 07 Elversberg",
+              "homeTeamId": 6,
+              "awayTeamId": 198,
+              "result": {
+                "home": 3,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 63533,
+              "date": "2022-07-30T13:30:00.000Z",
+              "home": "SV 07 Elversberg",
+              "away": "Bayer 04 Leverkusen",
+              "homeTeamId": 198,
+              "awayTeamId": 6,
+              "result": {
+                "home": 4,
+                "away": 3
+              }
+            }
+          ]
+        },
+        "form": {
+          "available": false,
+          "home": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          },
+          "away": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          }
+        },
+        "table": {
+          "available": true,
+          "home": {
+            "available": true,
+            "position": 15,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          },
+          "away": {
+            "available": true,
+            "position": 4,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          }
+        },
+        "homeAway": {
+          "available": false,
+          "home": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          }
+        }
+      }
+    },
+    "bl-2026-27-01-002": {
+      "gameId": "bl-2026-27-01-002",
+      "competition": "bundesliga",
+      "kickoff": "2026-08-29T18:30:00.000Z",
+      "status": "ready",
+      "reason": "",
+      "updatedAt": "2026-08-22T19:11:20.012Z",
+      "source": {
+        "name": "OpenLigaDB",
+        "license": "ODbL",
+        "url": "https://www.openligadb.de/"
+      },
+      "openLiga": {
+        "leagueShortcut": "bl1",
+        "season": "2026",
+        "homeTeamId": 7,
+        "awayTeamId": 100,
+        "homeTeamName": "Borussia Dortmund",
+        "awayTeamName": "Hamburger SV"
+      },
+      "freshness": {
+        "initialLoadedAt": "2026-08-22T19:11:20.012Z",
+        "finalRefreshDone": false
+      },
+      "modules": {
+        "h2h": {
+          "available": true,
+          "total": 41,
+          "summary": {
+            "homeWins": 21,
+            "draws": 6,
+            "awayWins": 14
+          },
+          "lastMeetings": [
+            {
+              "matchId": 84689,
+              "date": "2026-07-06T13:30:00.000Z",
+              "home": "Borussia Dortmund",
+              "away": "Hamburger SV",
+              "homeTeamId": 7,
+              "awayTeamId": 100,
+              "result": {
+                "home": 3,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 77492,
+              "date": "2026-03-21T17:30:00.000Z",
+              "home": "Borussia Dortmund",
+              "away": "Hamburger SV",
+              "homeTeamId": 7,
+              "awayTeamId": 100,
+              "result": {
+                "home": 3,
+                "away": 2
+              }
+            },
+            {
+              "matchId": 77345,
+              "date": "2025-11-08T14:30:00.000Z",
+              "home": "Hamburger SV",
+              "away": "Borussia Dortmund",
+              "homeTeamId": 100,
+              "awayTeamId": 7,
+              "result": {
+                "home": 1,
+                "away": 1
+              }
+            },
+            {
+              "matchId": 60546,
+              "date": "2019-04-30T13:30:00.000Z",
+              "home": "Borussia Dortmund",
+              "away": "Hamburger SV",
+              "homeTeamId": 7,
+              "awayTeamId": 100,
+              "result": {
+                "home": 0,
+                "away": 0
+              }
+            },
+            {
+              "matchId": 45627,
+              "date": "2018-02-10T14:30:00.000Z",
+              "home": "Borussia Dortmund",
+              "away": "Hamburger SV",
+              "homeTeamId": 7,
+              "awayTeamId": 100,
+              "result": {
+                "home": 2,
+                "away": 0
+              }
+            }
+          ]
+        },
+        "form": {
+          "available": false,
+          "home": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          },
+          "away": {
+            "available": false,
+            "values": [],
+            "record": {
+              "played": 0,
+              "won": 0,
+              "draw": 0,
+              "lost": 0,
+              "goalsFor": 0,
+              "goalsAgainst": 0
+            },
+            "matches": []
+          }
+        },
+        "table": {
+          "available": true,
+          "home": {
+            "available": true,
+            "position": 5,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          },
+          "away": {
+            "available": true,
+            "position": 11,
+            "points": 0,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goals": 0,
+            "opponentGoals": 0,
+            "goalDiff": 0
+          }
+        },
+        "homeAway": {
+          "available": false,
+          "home": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "available": false,
+            "played": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
           }
         }
       }
