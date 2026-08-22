@@ -15,11 +15,25 @@ function summaryHighlights(entry,max=3){
   .sort((a,b)=>Number(b.prioritaet)-Number(a.prioritaet))
   .slice(0,max);
 }
+function firstTipperName(rows){
+ const first=arr(rows).map(x=>x?.teilnehmer).find(Boolean);
+ return first?String(first):"";
+}
 function summaryText(h){
  const d=h?.daten||{};
- if(h.typ==="kapitaene") return `${Number(d.anzahl||0)} Tipper teilen sich die beste Beute mit ${Number(d.punkte||0)} Punkten.`;
+ if(h.typ==="kapitaene"){
+  const count=Number(d.anzahl||0),name=firstTipperName(d.tipper);
+  return count===1
+   ?`${name||"1 Tipper"} holt mit ${Number(d.punkte||0)} Punkten die beste Spieltagsleistung.`
+   :`${count} Tipper teilen sich die beste Beute mit ${Number(d.punkte||0)} Punkten.`;
+ }
  if(h.typ==="gegen-den-strom") return `Die größte Tippgruppe lag mit ${outcomeLabel(d.meistGetippt?.ausgang)} daneben. Richtig war ${outcomeLabel(d.richtigerAusgang)}; ${Number(d.exakt||0)} trafen ${d.ergebnis||"das Ergebnis"} exakt.`;
- if(h.typ==="volltreffer") return `${Number(d.anzahl||0)} Tipper erreichten die höchste Präzision mit ${Number(d.maxExakt||0)} exakten Treffern.`;
+ if(h.typ==="volltreffer"){
+  const count=Number(d.anzahl||0),name=firstTipperName(d.tipper);
+  return count===1
+   ?`${name||"1 Tipper"} erreicht mit ${Number(d.maxExakt||0)} exakten Treffern die höchste Präzision.`
+   :`${count} Tipper erreichten die höchste Präzision mit ${Number(d.maxExakt||0)} exakten Treffern.`;
+ }
  if(h.typ==="crewduell") return d.sieger?`${d.sieger} liegt im Crewduell nach Durchschnittspunkten vorn.`:"Im Crewduell herrscht Gleichstand.";
  if(h.typ==="kursbewegung") return `Größter Sprung: +${Number(d.maxGewinn||0)} Plätze; größter Verlust: ${Number(d.maxVerlust||0)} Plätze.`;
  if(h.typ==="zahlen-aus-der-kombuese") return `${Number(d.abgegeben||0)} Abgaben, ${Number(d.exakt||0)} exakte Treffer und ${Number(d.differenz||0)} Differenztreffer.`;
@@ -62,7 +76,13 @@ function outcomeLabel(v){return v==="1"?"Heimsieg":v==="2"?"Auswärtssieg":"Remi
 
 function renderHighlight(h){
  const d=h.daten||{};
- if(h.typ==="kapitaene") return `<article class="lb-highlight lb-highlight--wide lb-highlight--captains"><h3>Kapitäne des Spieltags</h3><p><strong>${Number(d.anzahl||0)} Tipper</strong> teilen sich mit ${Number(d.punkte||0)} Punkten die beste Spieltagsleistung.</p><div class="lb-names">${shortNames(d.tipper)}</div></article>`;
+ if(h.typ==="kapitaene"){
+   const count=Number(d.anzahl||0),name=firstTipperName(d.tipper);
+   const text=count===1
+    ?`${esc(name||"1 Tipper")} holt mit ${Number(d.punkte||0)} Punkten die beste Spieltagsleistung.`
+    :`<strong>${count} Tipper</strong> teilen sich mit ${Number(d.punkte||0)} Punkten die beste Spieltagsleistung.`;
+   return `<article class="lb-highlight lb-highlight--wide lb-highlight--captains"><h3>Kapitäne des Spieltags</h3><p>${text}</p><div class="lb-names">${shortNames(d.tipper)}</div></article>`;
+ }
  if(h.typ==="gegen-den-strom") return `<article class="lb-highlight lb-highlight--hero"><h3>Gegen den Strom</h3><p>Die größte Tippgruppe setzte auf <strong>${esc(outcomeLabel(d.meistGetippt?.ausgang))}</strong> (${Number(d.meistGetippt?.anzahl||0)} Tipps) und lag falsch. Richtig war <strong>${esc(outcomeLabel(d.richtigerAusgang))}</strong>; ${Number(d.exakt||0)} Tipper trafen ${esc(d.ergebnis||"")} exakt.</p><div class="lb-scoreline"><div><strong>${Number(d.tippverteilung?.["1"]||0)}</strong><span>Heimsieg</span></div><div><strong>${Number(d.tippverteilung?.X||0)}</strong><span>Remis</span></div><div><strong>${Number(d.tippverteilung?.["2"]||0)}</strong><span>Auswärtssieg</span></div></div></article>`;
  if(h.typ==="volltreffer") return `<article class="lb-highlight lb-highlight--volltreffer"><h3>Volltreffer</h3><p>Die stärksten Präzisionstreffer: <strong>${Number(d.maxExakt||0)} exakt</strong> im Spieltag.</p><div class="lb-names">${shortNames(d.tipper)}</div></article>`;
  if(h.typ==="crewduell"){
