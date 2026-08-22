@@ -87,8 +87,15 @@ function renderEntry(entry,pending){
 }
 function archive(){
  const host=$("#lb-archive-list"); if(!host) return;
- const logs=[...(data?.logbuecher||[])].reverse();
- host.innerHTML=logs.map((e,i)=>`<button type="button" data-log-id="${esc(e.id)}" aria-current="${i===0?"true":"false"}">${esc(e.runde||e.bezeichnung)}</button>`).join("");
+ const source=[...(data?.logbuecher||[])];
+ const ordinalById=new Map(source.map((e,i)=>[e?.id,i+1]));
+ const logs=[...source].reverse();
+ host.innerHTML=logs.map((e,i)=>{
+   const ordinal=ordinalById.get(e?.id)||source.indexOf(e)+1;
+   const competition=labelType(e?.wettbewerb||e?.typ||"");
+   const archiveLabel=`${ordinal}. Tippspieltag · ${competition}`;
+   return `<button type="button" data-log-id="${esc(e.id)}" aria-current="${i===0?"true":"false"}">${esc(archiveLabel)}</button>`;
+ }).join("");
  host.addEventListener("click",ev=>{
    const b=ev.target.closest("button[data-log-id]"); if(!b)return;
    const entry=(data.logbuecher||[]).find(x=>x.id===b.dataset.logId); renderEntry(entry,null);
